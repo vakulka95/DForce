@@ -1,0 +1,10 @@
+$backgroundColor: #0D0D0D;
+
+.footer{
+    background-color: $backgroundColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 57px 0;
+}
