@@ -5,7 +5,9 @@ import './style.scss';
 function Footer() {
     return (
         <footer className='footer'>
-            <Logo logoClass='footer-logo'/>
+            <div className='container'>
+                <Logo logoClass='footer-logo'/>
+            </div>
         </footer>
     )
 }
