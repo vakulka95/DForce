@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.scss';
 import SpecItem from '../../components/SpecItem/SpecItem';
 import TitleOfBlock from '../../components/TitleOfBlock/TitleOfBlock';
 
@@ -9,22 +10,24 @@ function Specialization({specItems}) {
             <div className='container'>
                 <TitleOfBlock title='Наша Спеціалізація'/>
                 <div className='spec-section'>
-                    {specItems.map(({
+                    {
+                    specItems.map(({ 
                         id,
                         image,
                         alt,
                         title,
                         text
                          }) => (
-                            <SpecItem 
+                            <SpecItem key={id}
                                 id={id}
                                 image={image}
                                 alt={alt}
                                 title={title}
                                 text={text}
-                            />
+                            /> 
                         ))
                     }
+                    {console.log(specItems[0].image)}
                 </div>
             </div>
         </section>

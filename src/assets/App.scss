@@ -2,16 +2,32 @@
 
 body {
     margin: 0;
-    font-family: 'CA Saygon Text','Grandis',Arial, Helvetica, sans-serif;
+    font-family: 'Grandis','CA Saygon Text',Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1,h2,h3,h4{
-    font-family: 'Grandis';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+h1,h2,h3,h4{
+  font-family: 'CA Saygon Text';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  text-align: left;
+  font-weight: 600;
+  font-size: 63px;
+  line-height: 90px;
+  letter-spacing: 0.02em;
+  margin: 100px 0;
+}
+
+.container{
+  width: 1600px;
+  margin: 0 auto;
+}
   
   // code {
   //   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

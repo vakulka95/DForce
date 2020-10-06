@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function TitleOfBlock({title}) {
     return (
         <Fragment>
-            <h2>{title}</h2>
+            <h2 className='title-of-block'>{title}</h2>
         </Fragment>
     )
 }

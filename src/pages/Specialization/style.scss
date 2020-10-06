@@ -1,0 +1,13 @@
+$background: #000000;
+
+.specialization{
+    color: #fff;
+    background-color: $background;
+    padding: 180px 0 180px 160px;
+}
+
+.spec-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
