@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/App.scss';
+//import './assets/App.scss';
 import Footer from './layout/Footer/Footer';
 
 function App() {
