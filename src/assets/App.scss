@@ -2,15 +2,21 @@
 
 body {
     margin: 0;
-    font-family: 'CASaygonText';
+    font-family: 'CA Saygon Text','Grandis',Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,h2,h3,h4{
+    font-family: 'Grandis';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+  // code {
+  //   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  //     monospace;
+  // }
 .App {
     text-align: center;
   &-logo {

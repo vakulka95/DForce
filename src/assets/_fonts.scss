@@ -1,14 +1,317 @@
- @font-face {
-    font-family: 'CASaygonText';
-    src: url('../assets/fonts/CASaygonText-LightItalic.ttf');
-     font-weight: normal;
-     font-style: italic;
-     font-display: swap;
-   }
-   @font-face {
-    font-family: 'CASaygonText';
-    src: url('../assets/fonts/CASaygonText-regular.ttf');
-     font-weight: normal;
-     font-style: normal;
-     font-display: swap;
-   }
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Italic.eot');//./fonts/CASaygonText/
+  src: local('CA Saygon Text Italic'), local('CASaygonText-Italic'),
+      url('./fonts/CASaygonText/CASaygonText-Italic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Italic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Italic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-ExtraBold.eot');
+  src: local('CA Saygon Text ExtraBold'), local('CASaygonText-ExtraBold'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBold.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBold.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-SemiBold.eot');
+  src: local('CA Saygon Text SemiBold'), local('CASaygonText-SemiBold'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBold.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBold.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Light.eot');
+  src: local('CA Saygon Text Light'), local('CASaygonText-Light'),
+      url('./fonts/CASaygonText/CASaygonText-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Light.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Light.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-ExtraBoldItalic.eot');
+  src: local('CA Saygon Text ExtraBold Italic'), local('CASaygonText-ExtraBoldItalic'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBoldItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBoldItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-LightItalic.eot');
+  src: local('CA Saygon Text Light Italic'), local('CASaygonText-LightItalic'),
+      url('./fonts/CASaygonText/CASaygonText-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-LightItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-LightItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Medium.eot');
+  src: local('CA Saygon Text Medium'), local('CASaygonText-Medium'),
+      url('./fonts/CASaygonText/CASaygonText-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Medium.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Medium.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-ThinItalic.eot');
+  src: local('CA Saygon Text Thin Italic'), local('CASaygonText-ThinItalic'),
+      url('./fonts/CASaygonText/CASaygonText-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-ThinItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-ThinItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-MediumItalic.eot');
+  src: local('CA Saygon Text Medium Italic'), local('CASaygonText-MediumItalic'),
+      url('./fonts/CASaygonText/CASaygonText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-MediumItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-MediumItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Regular.eot');
+  src: local('CA Saygon Text Regular'), local('CASaygonText-Regular'),
+      url('./fonts/CASaygonText/CASaygonText-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Regular.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Regular.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Thin.eot');
+  src: local('CA Saygon Text Thin'), local('CASaygonText-Thin'),
+      url('./fonts/CASaygonText/CASaygonText-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Thin.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Thin.woff') format('woff'),
+      url('./fonts/CASaygonText/./fonts/CASaygonText/CASaygonText-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-SemiBoldItalic.eot');
+  src: local('CA Saygon Text SemiBold Italic'), local('CASaygonText-SemiBoldItalic'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBoldItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBoldItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-Bold.eot');
+  src: local('CA Saygon Text Bold'), local('CASaygonText-Bold'),
+      url('./fonts/CASaygonText/CASaygonText-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-Bold.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-Bold.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./fonts/CASaygonText/CASaygonText-BoldItalic.eot');
+  src: local('CA Saygon Text Bold Italic'), local('CASaygonText-BoldItalic'),
+      url('./fonts/CASaygonText/CASaygonText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/CASaygonText/CASaygonText-BoldItalic.woff2') format('woff2'),
+      url('./fonts/CASaygonText/CASaygonText-BoldItalic.woff') format('woff'),
+      url('./fonts/CASaygonText/CASaygonText-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on October 5, 2020 */
+
+
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Regular.eot');
+  src: local('Grandis Regular'), local('Grandis-Regular'),
+      url('./fonts/Grandis/Grandis-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Regular.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Regular.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-RegularItalic.eot');
+  src: local('Grandis Regular Italic'), local('Grandis-RegularItalic'),
+      url('./fonts/Grandis/Grandis-RegularItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-RegularItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-RegularItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Medium.eot');
+  src: local('Grandis Medium'), local('Grandis-Medium'),
+      url('./fonts/Grandis/Grandis-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Medium.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Medium.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Bold.eot');
+  src: local('Grandis Bold'), local('Grandis-Bold'),
+      url('./fonts/Grandis/Grandis-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Bold.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Bold.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Light.eot');
+  src: local('Grandis Light'), local('Grandis-Light'),
+      url('./fonts/Grandis/Grandis-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Light.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Light.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-LightItalic.eot');
+  src: local('Grandis Light Italic'), local('Grandis-LightItalic'),
+      url('./fonts/Grandis/Grandis-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-LightItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-LightItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Thin.eot');
+  src: local('Grandis Thin'), local('Grandis-Thin'),
+      url('./fonts/Grandis/Grandis-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Thin.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Thin.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-Black.eot');
+  src: local('Grandis Black'), local('Grandis-Black'),
+      url('./fonts/Grandis/Grandis-Black.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-Black.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-Black.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-ThinItalic.eot');
+  src: local('Grandis Thin Italic'), local('Grandis-ThinItalic'),
+      url('./fonts/Grandis/Grandis-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-ThinItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-ThinItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-MediumItalic.eot');
+  src: local('Grandis Medium Italic'), local('Grandis-MediumItalic'),
+      url('./fonts/Grandis/Grandis-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-MediumItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-MediumItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/Grandis-BlackItalic.eot');
+  src: local('Grandis Black Italic'), local('Grandis-BlackItalic'),
+      url('./fonts/Grandis/Grandis-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-BlackItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-BlackItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Grandis';
+  src: url('./fonts/Grandis/./fonts/Grandis/Grandis-BoldItalic.eot');
+  src: local('Grandis Bold Italic'), local('Grandis-BoldItalic'),
+      url('./fonts/Grandis/Grandis-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Grandis/Grandis-BoldItalic.woff2') format('woff2'),
+      url('./fonts/Grandis/Grandis-BoldItalic.woff') format('woff'),
+      url('./fonts/Grandis/Grandis-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
