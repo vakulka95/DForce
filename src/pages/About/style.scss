@@ -1,23 +1,39 @@
 .about{
     background-color: #15161c;
-    padding: 10px;
+   // padding: 10px;
     &-title{
         color:white;
+        padding: 80px 80px;
+        margin: 0;
     }
     &-content{
-        width: 70%;
+        width: 60%;
+        padding: 0 0 20 80px;
     }
     &-items{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 10px;
-        //background-color: black;
-        &-one{
-            width: 35%;
-            background-color: black;
-            margin: 10px;
-            padding: 20px;
-        }
+        margin: 0px 80px;
+        padding-bottom: 80px
     }
+    &-one{
+        width: 35%;
+        background-color: black;
+        margin: 0px 26px 26px 0;
+        padding: 50px;
+    }
+}
+.spec{
+&-item{
+    width:100%;
+    margin-bottom: 0;   
+}
+&-title{
+    color: white;
+}
+&-image{
+    position: relative;
+    top: 15px;
+}
 }
