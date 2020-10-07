@@ -1,5 +1,6 @@
 import React from 'react';
-//import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+//import { NavHashLink as NavLink } from 'react-router-hash-link';
 import './style.scss';
 
 const Header = () =>{
@@ -8,14 +9,16 @@ const Header = () =>{
             {/* <Link className = 'header-logo' to = '/'>
                 <img src = '../../../public/images/Logo.svg' alt = 'logo' />
             </Link> */}
+            <Link to = '/'>
              <img className = 'header-logo' src='./images/Logo.svg' alt = 'logo' />
+             </Link>
             <div className = 'header-wrap'>
                 <ul className = 'header-container'>
-                    <li className = 'header-container-item'>Головна</li>
-                    <li className = 'header-container-item'>Послуги</li>
-                    <li className = 'header-container-item'>Портфоліо</li>
-                    <li className = 'header-container-item'>Про нас</li>
-                    <li className = 'header-container-item'>Контакти</li>
+                    <li className = 'header-container-item'><Link to = '/'><span>Головна</span></Link></li>
+                    <li className = 'header-container-item'><Link to = '/#specialization'><span>Послуги</span></Link></li>
+                    <li className = 'header-container-item'><Link to = '/#portfolio'><span>Портфоліо</span></Link></li>
+                    <li className = 'header-container-item'><Link to = '/#about'><span>Про нас</span></Link></li>
+                    <li className = 'header-container-item'><Link to = '/#forcustomer'><span>Контакти</span></Link></li>
                 </ul>
             </div>
             <div className = 'header-media'><div className = 'header-media-button'></div></div>
