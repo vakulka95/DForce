@@ -1,0 +1,33 @@
+
+.case{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 18;
+    margin-top: 60px;
+    &-image{
+        display: flex;
+        justify-content: center;
+        width: 750px;
+        border-radius: 8px;
+        margin-right: 90px;
+    }
+    &-description{
+        width: 40%;
+    }
+    &-text{
+        font-size: 28px;
+        line-height: 45px;
+    }
+}
+
+.itseems{
+    background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
+    padding-top: 60px;
+
+}
+
+.tellme{
+    background: #329AE5;
+    padding: 60px 0;
+}
