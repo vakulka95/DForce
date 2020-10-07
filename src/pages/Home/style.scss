@@ -1,8 +1,7 @@
 .home{
     background-image: url('../../assets/images/homeBackground.jpg');
     color:white;
-    height: 100vh;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: bottom;
     &-wrap{
@@ -11,12 +10,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 80px;
     }
     &-header{
-        color:green;
+        margin-top: 100px;
+        color:#3ACC81;
         font-size: 50px;
-        padding: 15px 0px;
+        padding: 100px 80px 15px;
         line-height: 90px;
         &-first{
             color:white;
@@ -25,6 +24,7 @@
     &-paragraph{
         font-size: 14px;
         width: 40%;
-        padding-left: 10px;
+        padding: 10px 15px 80px 80px;
+        margin-bottom: 100px;
     }
 }
