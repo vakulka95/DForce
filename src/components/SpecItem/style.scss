@@ -1,0 +1,29 @@
+.spec-item{
+    width: 33.33%;
+    text-align: left;
+    margin-bottom: 200px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 45px;
+    margin-top: 48px;
+    margin-bottom: 15px;
+
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.8);
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.spec-text{
+    width: 65%;
+}

@@ -11,6 +11,8 @@ function App(props) {
       <h1>Let`s go!!!</h1>
       <p>We must do it</p>
       <Specialization specItems={props.specItems} />
+      {console.log(props.specItems[0].image)}
+
       <Footer />
     </div>
   );
