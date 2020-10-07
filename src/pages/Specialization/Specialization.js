@@ -27,7 +27,6 @@ function Specialization({specItems}) {
                             /> 
                         ))
                     }
-                    {console.log(specItems[0].image)}
                 </div>
             </div>
         </section>

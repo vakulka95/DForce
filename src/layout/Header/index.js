@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import Logo from '../../components/Logo/Logo';
 //import { NavHashLink as NavLink } from 'react-router-hash-link';
 import './style.scss';
 
@@ -9,9 +10,10 @@ const Header = () =>{
             {/* <Link className = 'header-logo' to = '/'>
                 <img src = '../../../public/images/Logo.svg' alt = 'logo' />
             </Link> */}
-            <Link to = '/'>
+            <Logo parentClass='logo' logoClass='header-logo'/>
+            {/* <Link to = '/'>
              <img className = 'header-logo' src='./images/Logo.svg' alt = 'logo' />
-             </Link>
+             </Link> */}
             <div className = 'header-wrap'>
                 <ul className = 'header-container'>
                     <li className = 'header-container-item'><Link className = 'header-container-link' to = '/'><span>Головна</span></Link></li>
