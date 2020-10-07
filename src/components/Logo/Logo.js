@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 function Logo({logoClass}) {
     return (
-        <img src='./images/logo.svg'  className={logoClass} alt='Logo'/>
+        <div>
+            <img src='./images/logo.svg'  className={logoClass} alt='Logo'/>
+        </div>
     )
 }
 

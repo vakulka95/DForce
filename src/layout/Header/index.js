@@ -7,9 +7,6 @@ import './style.scss';
 const Header = () =>{
     return(
         <div className = 'header'>
-            {/* <Link className = 'header-logo' to = '/'>
-                <img src = '../../../public/images/Logo.svg' alt = 'logo' />
-            </Link> */}
             <Link to = '/'>
                 <Logo parentClass='logo' logoClass='header-logo'/>
             </Link>

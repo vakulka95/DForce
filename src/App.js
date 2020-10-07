@@ -13,8 +13,6 @@ function App() {
     <Router history = {customHistory}>
     <div className="App">
       <Header />
-      <h1>Let`s go!!!</h1>
-      <p>We must do it</p>
       <Content />
       <Footer />
     </div>
