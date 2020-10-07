@@ -14,11 +14,11 @@ const Header = () =>{
              </Link>
             <div className = 'header-wrap'>
                 <ul className = 'header-container'>
-                    <li className = 'header-container-item'><Link to = '/'><span>Головна</span></Link></li>
-                    <li className = 'header-container-item'><Link to = '/specialization'><span>Послуги</span></Link></li>
-                    <li className = 'header-container-item'><Link to = '/portfolio'><span>Портфоліо</span></Link></li>
-                    <li className = 'header-container-item'><Link to = '/about'><span>Про нас</span></Link></li>
-                    <li className = 'header-container-item'><Link to = '/forcustomer'><span>Контакти</span></Link></li>
+                    <li className = 'header-container-item'><Link className = 'header-container-link' to = '/'><span>Головна</span></Link></li>
+                    <li className = 'header-container-item'><Link className = 'header-container-link' to = '/specialization'><span>Послуги</span></Link></li>
+                    <li className = 'header-container-item'><Link className = 'header-container-link' to = '/portfolio'><span>Портфоліо</span></Link></li>
+                    <li className = 'header-container-item'><Link className = 'header-container-link' to = '/about'><span>Про нас</span></Link></li>
+                    <li className = 'header-container-item'><Link className = 'header-container-link' to = '/forcustomer'><span>Контакти</span></Link></li>
                 </ul>
             </div>
             <div className = 'header-media'><div className = 'header-media-button'></div></div>
