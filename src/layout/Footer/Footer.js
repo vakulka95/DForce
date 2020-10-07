@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='container'>
-                <Logo logoClass='footer-logo'/>
+                <Logo parentClass='footer-logo'/>
             </div>
         </footer>
     )
