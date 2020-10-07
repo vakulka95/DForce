@@ -10,8 +10,10 @@ const Header = () =>{
             {/* <Link className = 'header-logo' to = '/'>
                 <img src = '../../../public/images/Logo.svg' alt = 'logo' />
             </Link> */}
-            <Logo parentClass='logo' logoClass='header-logo'/>
-            {/* <Link to = '/'>
+            <Link to = '/'>
+                <Logo parentClass='logo' logoClass='header-logo'/>
+            </Link>
+            {/* 
              <img className = 'header-logo' src='./images/Logo.svg' alt = 'logo' />
              </Link> */}
             <div className = 'header-wrap'>
