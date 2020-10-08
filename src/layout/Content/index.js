@@ -6,16 +6,23 @@ import Portfolio from '../../pages/Portfolio';
 import ForCustomer from '../../pages/ForCustomer';
 import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
+import { animateScroll } from 'react-scroll';
+import './style.scss';
 
 
 function Content(props) {
+    const scroll = animateScroll;
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      }
     return (
         <main>
-            <Home />
-            <Specialization specItems={specItems} />
-            <Portfolio portfolioItems={portfolioItems}/>
-            <About />
-            <ForCustomer />
+            <Home id='home'/>
+            <Specialization specItems={specItems} id='specialization' />
+            <Portfolio portfolioItems={portfolioItems} id='portfolio' />
+            <About id='about' />
+            <ForCustomer id='forcustomer' />
+            <div className='scrolling' onClick={scrollToTop}>Up</div>
         </main>
     )
 }

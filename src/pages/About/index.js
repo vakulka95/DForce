@@ -4,7 +4,6 @@ import SpecItem from '../../components/SpecItem/SpecItem';
 import about from '../../json/aboutItems.js';
 
 const About = () => {
-    console.log(about.map((item)=>item.image))
     return (
         <section className = 'about'>
             <h2 className = 'about-title'>Наші цінності</h2>

@@ -1,0 +1,17 @@
+.scrolling{
+    display:block;
+    height:50px;
+    width: 50px;
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+    border:1px solid green;
+    border-radius: 50%;
+   // background-color: green;
+    cursor:pointer;
+    // background-image: url('/public/images/about/arrow.jpg');
+    // background-size: cover;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+}
