@@ -24,6 +24,11 @@ function Specialization({specItems}) {
                                 alt={alt}
                                 title={title}
                                 text={text}
+
+                                classItem='spec-item'
+                                classImage='spec-image'
+                                classTitle='spec-title'
+                                classText='spec-text'
                             /> 
                         ))
                     }
