@@ -1,0 +1,23 @@
+.about{
+    background-color: #15161c;
+    padding: 10px;
+    &-title{
+        color:white;
+    }
+    &-content{
+        width: 70%;
+    }
+    &-items{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+        //background-color: black;
+        &-one{
+            width: 35%;
+            background-color: black;
+            margin: 10px;
+            padding: 20px;
+        }
+    }
+}

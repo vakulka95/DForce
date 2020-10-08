@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import './style.scss';
 import PropTypes from 'prop-types';
 
 function TitleOfBlock({title}) {

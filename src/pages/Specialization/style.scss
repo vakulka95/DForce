@@ -1,10 +1,12 @@
-$background: #000000;
+$background: #15161c;
 
 .specialization{
     color: #fff;
     background-color: $background;
     padding: 110px 80px 130px 80px;
-
+    .title-of-block{
+        margin-bottom: 100px;
+    }
     
 }
 

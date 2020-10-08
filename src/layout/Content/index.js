@@ -10,13 +10,13 @@ import portfolioItems from '../../json/portfolioItems';
 
 function Content(props) {
     return (
-        <div>
+        <main>
             <Home />
             <Specialization specItems={specItems} />
             <Portfolio portfolioItems={portfolioItems}/>
             <About />
             <ForCustomer />
-        </div>
+        </main>
     )
 }
 

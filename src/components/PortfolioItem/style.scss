@@ -4,7 +4,8 @@
     align-items: center;
     position: relative;
     z-index: 18;
-    margin-top: 60px;
+    margin-top: 95px;
+    // padding-bottom: 100px;
     &-image{
         display: flex;
         justify-content: center;
@@ -18,16 +19,56 @@
     &-text{
         font-size: 28px;
         line-height: 45px;
+        h3{
+            margin-top: 0;
+        }
+    }
+    &-link{
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover{
+            text-decoration: underline;
+        }
+        }
+    }
+    &-circle{
+        content: '';
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+        border-radius: 50%;
+        background: linear-gradient(219.47deg, #10CC94 3.01%, #83CC59 107.31%);
+        box-shadow: 0px 4px 8px rgba(58, 204, 129, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .itseems{
     background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
-    padding-top: 60px;
+    padding-top: 85px;
 
 }
 
 .tellme{
     background: #329AE5;
     padding: 60px 0;
+}
+
+.vote{
+    visibility: hidden;
+    background: #1F1F1F;
 }
