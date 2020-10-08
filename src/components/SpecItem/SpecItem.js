@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 
 function SpecItem({image, alt, title, text}) {
     return (
-        <div className='spec-item'>
-            <div className='spec-image'>
+        <div className='value-item'>
+            <div className='value-image'>
                 <img src={image} alt={alt} />
             </div>
-            <div className='spec-title'>
+            <div className='value-title'>
                 <h3>{title}</h3>
             </div>
-            <div className='spec-text'>
+            <div className='value-text'>
                 <p>{text}</p>
             </div>
         </div>
