@@ -8,6 +8,8 @@ import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
 import { animateScroll } from 'react-scroll';
 import './style.scss';
+import contactItem from '../../json/contactItem';
+
 
 
 function Content(props) {
@@ -21,7 +23,7 @@ function Content(props) {
             <Specialization specItems={specItems} id='specialization' />
             <Portfolio portfolioItems={portfolioItems} id='portfolio' />
             <About id='about' />
-            <ForCustomer id='forcustomer' />
+            <ForCustomer id='forcustomer' contactItem={contactItem}/>
             <div className='scrolling' onClick={scrollToTop}>Up</div>
         </main>
     )

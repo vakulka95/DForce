@@ -3,16 +3,16 @@ import './style.scss';
 import PropTypes from 'prop-types';
 
 
-function SpecItem({image, alt, title, text}) {
+function SpecItem({image, alt, title, text, classItem, classImage, classTitle, classText}) {
     return (
-        <div className='value-item'>
-            <div className='value-image'>
+        <div className={classItem}>
+            <div className={classImage}>
                 <img src={image} alt={alt} />
             </div>
-            <div className='value-title'>
+            <div className={classTitle}>
                 <h3>{title}</h3>
             </div>
-            <div className='value-text'>
+            <div className={classText}>
                 <p>{text}</p>
             </div>
         </div>
@@ -23,7 +23,11 @@ SpecItem.propTypes = {
     image: PropTypes.string.isRequired,
     alt: PropTypes.string,
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    classItem: PropTypes.string.isRequired,
+    classImage: PropTypes.string.isRequired,
+    classTitle: PropTypes.string.isRequired,
+    classText: PropTypes.string.isRequired,
 }
 
 export default SpecItem

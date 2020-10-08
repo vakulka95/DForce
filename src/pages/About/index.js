@@ -17,7 +17,13 @@ const About = () => {
                 image = {item.image}
                 alt = {item.alt}
                 text = {item.text}
-                /></div>
+
+                classItem='value-item'
+                classImage='value-image'
+                classTitle='value-title'
+                classText='value-text'
+                />
+                </div>
                )}</div>
         </section>
     )
