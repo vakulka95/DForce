@@ -23,7 +23,7 @@ function Content(props) {
             <Specialization specItems={specItems} id='specialization' />
             <Portfolio portfolioItems={portfolioItems} id='portfolio' />
             <About id='about' />
-            <ForCustomer id='forcustomer' contactItem={contactItem}/>
+            <ForCustomer  contactItem={contactItem} id='forcustomer' />
             <div className='scrolling' onClick={scrollToTop}>Up</div>
         </main>
     )

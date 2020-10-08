@@ -45,7 +45,7 @@ const Header = () =>{
                     <li className = 'header-container-item'>
                         <Link className = 'header-container-link' 
                         activeClass="active" 
-                        to="forcustomers" 
+                        to="forcustomer" 
                         spy={true} 
                         smooth={true} 
                         duration={1000}><span>Контакти</span>
