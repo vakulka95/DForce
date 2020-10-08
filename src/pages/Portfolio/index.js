@@ -12,14 +12,17 @@ const Portfolio = ({portfolioItems}) => {
                     {portfolioItems.map(({
                         id,
                         image, 
+                        backgroundCLass,
                         alt,
-                        description 
+                        description,
+                        to
                     })=><PortfolioItem key={id}
                         id={id}
                         image={image}
+                        backgroundCLass={backgroundCLass}
                         alt={alt}
                         description={description}
-
+                        to={to}
                     />)
                     }
                     

@@ -1,5 +1,10 @@
 @use './fonts';
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
     margin: 0;
     font-family: 'Grandis','CA Saygon Text',Arial, Helvetica, sans-serif;
@@ -21,7 +26,6 @@ h2{
   font-size: 63px;
   line-height: 90px;
   letter-spacing: 0.02em;
-  margin: 100px 0;
 }
 
 .container{
