@@ -6,6 +6,8 @@ import Portfolio from '../../pages/Portfolio';
 import ForCustomer from '../../pages/ForCustomer';
 import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
+import contactItem from '../../json/contactItem';
+
 
 
 function Content(props) {
@@ -15,7 +17,7 @@ function Content(props) {
             <Specialization specItems={specItems} />
             <Portfolio portfolioItems={portfolioItems}/>
             <About />
-            <ForCustomer />
+            <ForCustomer contactItem={contactItem}/>
         </main>
     )
 }

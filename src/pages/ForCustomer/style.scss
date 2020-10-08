@@ -1,0 +1,32 @@
+.for-customer{
+    background: #0D0E12 url('../../assets/images/FormCustomer.png') no-repeat;
+    background-position-x: right;
+    background-position-y: -100px;
+    background-size: 100%;
+    padding-top: 175px;
+    padding-bottom: 315px;
+    position: relative;
+    &-wrap{
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-info{
+        width: 30%;
+    }
+    &-title{
+        color: #fff;
+        font-size: 44px;
+        line-height: 70px;
+    }
+    &-text{
+        margin: 39px 0 112px 0;
+    }
+    &-contacts{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   
+}
+

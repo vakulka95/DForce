@@ -1,0 +1,88 @@
+.form-block{
+    background: #15161C;
+    border: 1px solid #2D9662;
+    border-radius: 12px;
+    width: 30%;
+    position: absolute;
+    right: 80px;
+    top: -70px;
+}
+
+.form-wrap{
+    padding: 105px 70px 70px;
+    
+}
+
+.form-title{
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    width: 60%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.form-group{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 28px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    /* identical to box height, or 219% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    textarea{
+        height: 125px;
+        width: 100%;
+        background: #262833;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 15px;
+        font-size: 16px;
+        font-family: 'Grandis', sans-serif;
+    }
+    
+}
+.form-input{
+    width: 96%;
+    background: #262833;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0 0 0 15px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Grandis', sans-serif;
+
+}
+
+form {
+    button{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height */
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: #FFFFFF;
+        background: #2D9662;
+        box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;
+        width: 100%;
+        padding: 22px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    
+    }
+}
