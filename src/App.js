@@ -1,7 +1,7 @@
 import React from 'react';
 import './assets/App.scss';
 import { createBrowserHistory } from "history";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {  Router, Switch, Route } from 'react-router-dom';
 import Footer from './layout/Footer/Footer';
 import Content from './layout/Content';
 import Header from './layout/Header';
