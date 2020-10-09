@@ -15,7 +15,9 @@ const Header = () =>{
                     <li className = 'header-container-item'>
                         <Link className = 'header-container-link'
                         activeClass="active" to="home" 
-                        spy={true} smooth={true} 
+                        spy={true} 
+                        hashSpy={true}
+                        smooth={true} 
                         duration={1000}><span>Головна</span>
                         </Link></li>
                     <li className = 'header-container-item'>
@@ -23,7 +25,8 @@ const Header = () =>{
                         activeClass="active" 
                         to="specialization" 
                         spy={true} 
-                        smooth={true} 
+                        smooth={true}
+                        hashSpy={true} 
                         duration={1000}><span>Послуги</span>
                         </Link></li>
                     <li className = 'header-container-item'>
@@ -31,6 +34,7 @@ const Header = () =>{
                         activeClass="active" 
                         to="portfolio" 
                         spy={true} 
+                        hashSpy={true}
                         smooth={true} 
                         duration={1000}><span>Портфоліо</span>
                         </Link></li>
@@ -39,6 +43,7 @@ const Header = () =>{
                         activeClass="active" 
                         to="about" 
                         spy={true} 
+                        hashSpy={true}
                         smooth={true} 
                         duration={1000}><span>Про нас</span>
                         </Link></li>
@@ -47,6 +52,8 @@ const Header = () =>{
                         activeClass="active" 
                         to="forcustomer" 
                         spy={true} 
+                        hashSpy={true}
+                        offset={-90}
                         smooth={true} 
                         duration={1000}><span>Контакти</span>
                         </Link></li>

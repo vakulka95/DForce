@@ -5,7 +5,7 @@ import './style.scss';
 
 const ForCustomer = ({contactItem}) => {
     return (
-        <section className='for-customer'>
+        <section className='for-customer' id='forcustomer'>
             <div className='for-customer-wrap'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>

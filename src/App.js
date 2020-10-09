@@ -14,11 +14,12 @@ function App() {
     <Router history = {customHistory}>
     <div className="App">
       <Header />
-      <Content />
+     
       <Switch>
-        <Route path='/itseems'>
-          <ItSeems />
-        </Route>
+        <Route path='/'> 
+          <Content />
+          </Route>
+        <Route component={ItSeems} />
       </Switch>
       <Footer />
     </div>
