@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './style.scss';
+import PropTypes from 'prop-types';
 
-function FormBlock() {
+function FormBlock({onSuccess}) {
 
     const [formData, setFormData] = useState({
         name: '',
@@ -29,17 +30,20 @@ function FormBlock() {
 
     let handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://www.testvakulenko.fun/send.php", formData)
-            .then(res => {
-                console.log(res)
-                console.log(res.data)
-                if(res.status === 200){
-                    changeSuccess()
-                }
-            })
-            .catch(() => {
-                console.log('message not send');
-            })
+         axios.post("http://www.testvakulenko.fun/send.php", formData)
+             .then(res => {
+                 console.log(res)
+                 console.log(res.data)
+                 if(res.status === 200){
+                     changeSuccess()
+                 }
+             })
+             .catch(() => {
+                 console.log('message not send');
+             });
+        if(success){
+            onSuccess()
+        }
     }
 
     return (
@@ -71,14 +75,18 @@ function FormBlock() {
                             <textarea style={{resize:'none'}} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
-                    {success &&
+                    {/* {success &&
                         alert('message was sent')
-                    }
+                    } */}
                     <button type='submit'>Заказать консультацию</button>
                 </form>
             </div>
         </div>
     )
+}
+
+FormBlock.propTypes = {
+    onSucces: PropTypes.func
 }
 
 export default FormBlock
