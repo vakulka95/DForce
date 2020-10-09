@@ -33,7 +33,7 @@ function FormBlock() {
             .then(res => {
                 console.log(res)
                 console.log(res.data)
-                if(res.status == 200){
+                if(res.status === 200){
                     changeSuccess()
                 }
             })
@@ -68,7 +68,7 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                             Залиште свій коментар:
-                            <textarea name='comment' onChange={onChange}>{formData.comment}</textarea>
+                            <textarea style={{resize:'none'}} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
                     {success &&
