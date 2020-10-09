@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-scroll";
 import Logo from '../../components/Logo/Logo';
-//import { NavHashLink as NavLink } from 'react-router-hash-link';
 import './style.scss';
 
 const Header = () =>{
