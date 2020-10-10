@@ -1,6 +1,6 @@
 import React from 'react';
-import PortfolioItem from '../../components/PortfolioItem/PortfolioItem';
-import TitleOfBlock from '../../components/TitleOfBlock/TitleOfBlock';
+import PortfolioItem from '../../../components/PortfolioItem/PortfolioItem';
+import TitleOfBlock from '../../../components/TitleOfBlock/TitleOfBlock';
 import './style.scss';
 
 const Portfolio = ({portfolioItems}) => {

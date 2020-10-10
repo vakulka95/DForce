@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
-import SpecItem from '../../components/SpecItem/SpecItem';
-import about from '../../json/aboutItems.js';
+import SpecItem from '../../../components/SpecItem/SpecItem';
+import about from '../../../json/aboutItems.js';
 
 const About = () => {
     return (
