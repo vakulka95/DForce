@@ -31,33 +31,42 @@ function FormBlock({ onSuccess }) {
         setSuccess(true);
         setTimeout(() => {
             setSuccess(false)
+            setErrorName(false)
+            setErrorPhone(false)
+            setErrorMail(false)
         }, 4000)
     }
 
-    // let validate = () => {
+    let validate = () => {
         
-    //     if (formData.name == null || formData.name == '') {
-    //         setErrorName(true)
-    //     }
-    //     if (formData.phone == null || formData.phone == '') {
-    //         setErrorPhone(true)
-    //     }
-    //     if (formData.mail == null || formData.mail == '') {
-    //         setErrorMail(true)
-    //     }
+        if (formData.name === null || formData.name == '') {
+            setErrorName(true)
+            
+            return false
+        }
+        if (formData.phone === null || formData.phone === '') {
+            setErrorPhone(true)
+            return false
+        }
+        if (formData.mail === null || formData.mail === '') {
+            setErrorMail(true)
+            return false
+        }
+        setTimeout(() => {
+            setSuccess(false)
+            setErrorName(false)
+            setErrorPhone(false)
+            setErrorMail(false)
+        }, 4000)
 
-    //     if(errorName == true || errorPhone == true || errorMail == true){
-    //         return null 
-    //     }else{
+        if(!errorName || !errorPhone || !errorMail){
+            axios.post("http://www.testvakulenko.fun/send.php", formData)
 
-    //     }}
-
-    let handleSubmit = (e) => {
-        e.preventDefault();
-        axios.post("http://www.testvakulenko.fun/send.php", formData)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
+
+                onSuccess()
                 if(res.status === 200){
                     changeSuccess()
                 }
@@ -65,6 +74,13 @@ function FormBlock({ onSuccess }) {
             .catch(() => {
                 console.log('message not send');
             })
+        }
+    }
+
+    let handleSubmit = (e) => {
+        e.preventDefault();
+        validate()
+       
     }
 
     return (

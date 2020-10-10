@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const PhonePopUp = () => {
+const Message = () => {
     return (
         <>
             <p className = 'templatesModal__content-text'>This is modal window.Thank you for watching. press button close, please</p>
@@ -9,4 +9,4 @@ const PhonePopUp = () => {
     );
 };
 
-export default PhonePopUp;
+export default Message;

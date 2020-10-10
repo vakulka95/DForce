@@ -23,8 +23,6 @@ mail($to, $subject, $message, $headers);
 var_dump($_POST);
 var_dump($_REQUEST);
 
-echo($mail);
-
 
 file_get_contents('php://input');
 

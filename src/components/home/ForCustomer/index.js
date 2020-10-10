@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import ContactItem from '../../components/ContactItem/ContactItem';
-import FormBlock from '../../components/FormBlock/FormBlock';
+import ContactItem from '../../../components/ContactItem/ContactItem';
+import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
 
-import Modal from '../../components/Modal';
-import GeneralModal from '../../components/Modal/GeneralModal';
-import Message from '../../components/Modal/templatesModal/Message';
+import Modal from '../../../components/Modal';
+import GeneralModal from '../../../components/Modal/GeneralModal';
+import Message from '../../../components/Modal/templatesModal/Message';
 
 const ForCustomer = ({contactItem}) => {
 
@@ -29,7 +29,7 @@ const ForCustomer = ({contactItem}) => {
                         <GeneralModal
                         img = {'./images/modalImage.svg'}
                         alt = {'success'}
-                        title = {'Here will be image '}
+                        title = {'Title if it need'}
                         onButtonPress = {onClose}
                         onClose = {onClose}>
                             <Message />

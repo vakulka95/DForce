@@ -1,7 +1,8 @@
 import React from 'react';
 import './style.scss';
-import SpecItem from '../../components/SpecItem/SpecItem';
 
+import SpecItem from '../../SpecItem/SpecItem';
+// import TitleOfBlock from '../../TitleOfBlock/TitleOfBlock';
 
 
 function Specialization({specItems}) {

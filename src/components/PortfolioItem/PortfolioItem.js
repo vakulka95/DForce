@@ -18,8 +18,8 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
                     <h3>{description}</h3>
                 </div>
                 <div className='case-link'>
-                    <Link to={`/#portfolio${to}`} >Подивитися проект</Link> 
-                    <Link to={`/#portfolio${to}`} >
+                    <Link to={`${to}`} >Подивитися проект</Link> 
+                    <Link to={`${to}`} >
                         <div className='case-circle'>
                             <FontAwesomeIcon className='icon' icon={faAngleRight} size='lg'/>
                         </div>

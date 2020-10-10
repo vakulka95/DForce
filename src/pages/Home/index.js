@@ -1,19 +1,33 @@
 import React from 'react';
+import Specialization from '../../components/home/Specialization/Specialization';
+import First from '../../components/home/First';
+import About from '../../components/home/About';
+import Portfolio from '../../components/home/Portfolio';
+import ForCustomer from '../../components/home/ForCustomer';
+import specItems from '../../json/specItems';
+import portfolioItems from '../../json/portfolioItems';
+import { animateScroll } from 'react-scroll';
 import './style.scss';
+import contactItem from '../../json/contactItem';
 
-const Home = () => {
+function Home(props) {
+    const scroll = animateScroll;
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      }
     return (
-        <section className = 'home'>
-            <div className = 'container'>
-                <div className='introduce'>
-                    <h1 className = 'home-header'><span className = 'home-header-first'>Ми</span> створюємо майбутнє!</h1>
-                    <p className = 'home-paragraph text'>Dforce - це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя  та досвіду людей.Dforce - це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя  та досвіду людей.</p>
-              </div>
-              <div>
-                  <img src='images/Home.svg' alt='home'/>
-              </div>
-            </div>
-        </section>
+
+
+        <main>
+            <First id='home'/>
+            <Specialization specItems={specItems} id='specialization' />
+            <Portfolio portfolioItems={portfolioItems} id='portfolio' />
+            <About id='about' />
+            <ForCustomer  contactItem={contactItem} id='forcustomer' />
+            <div className='scrolling' onClick={scrollToTop}>Up</div>
+        </main>
+
+
     )
 }
 

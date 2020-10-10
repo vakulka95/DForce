@@ -9,29 +9,11 @@ const routes = [
         ),
     },
     {
-        path:       ['/specialization'],
+        path:       ['/itseems'],
         components: lazy(
-            () => import('../pages/Specialization')
+            () => import('../pages/ItSeems/ItSeems.js')
         ),
-    },
-    {
-        path:       ['/portfolio'],
-        components: lazy(
-            () => import('../pages/GiveHelp')
-        ),
-    },
-    {
-        path:       ['/about'],
-        components: lazy(
-            () => import('../pages/About')
-        ),
-    },
-    {
-        path:       ['/forcustomer'],
-        components: lazy(
-            () => import('../pages/ForCustomer')
-        ),
-    },
+    }
 ];
 
 export default routes;
