@@ -3,7 +3,9 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+
     .title-of-block{
+
         color:white;
         padding-bottom: 30px;
         margin: 0;
@@ -14,10 +16,12 @@
     }
     &-items{
         display:flex;
-        // padding: 50px
+
     }
     &-one{
         border-radius: 12px;
+
+
         width: 20%;
         background-color: black;
         margin: 0px 15px 150px 0;
