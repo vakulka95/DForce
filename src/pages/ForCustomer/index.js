@@ -4,8 +4,8 @@ import FormBlock from '../../components/FormBlock/FormBlock';
 import './style.scss';
 
 import Modal from '../../components/Modal';
-import GeneralModal from '../../components/GeneralModal';
-import Message from '../../components/templatesModal/Message';
+import GeneralModal from '../../components/Modal/GeneralModal';
+import Message from '../../components/Modal/templatesModal/Message';
 
 const ForCustomer = ({contactItem}) => {
 
@@ -27,6 +27,8 @@ const ForCustomer = ({contactItem}) => {
                 <div className = 'result'>
                     <Modal isModal = {modal}>
                         <GeneralModal
+                        img = {'./images/modalImage.svg'}
+                        alt = {'success'}
                         title = {'Here will be image '}
                         onButtonPress = {onClose}
                         onClose = {onClose}>

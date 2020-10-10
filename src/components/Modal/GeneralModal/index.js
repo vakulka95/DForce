@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 import { Link } from "react-router-dom";
 
-const GeneralModal = ({ title, children, onClose, onButtonPress, link }) => {
+const GeneralModal = ({ title, children, onClose, onButtonPress, link, img, alt }) => {
 
     return (
         <div className = 'generalModal__container' >{
@@ -11,7 +11,7 @@ const GeneralModal = ({ title, children, onClose, onButtonPress, link }) => {
                 <div className = 'generalModal__close-wrap' >
                     <button className = 'generalModal__close' onClick = { onClose } />
                 </div>: null}
-                <img src='./images/modalImage.svg' alt="success" />
+                {img&&<div className=''><img src={img} alt={alt} /></div>}
             <div className = 'generalModal__title'>{title}</div>
             <div className = 'generalModal__content'>{children}</div>
             { (onButtonPress || link)?
@@ -29,6 +29,8 @@ GeneralModal.propTypes = {
     onButtonPress: PropTypes.func,
     title:        PropTypes.string.isRequired,
     link:         PropTypes.string,
+    img:          PropTypes.string,
+    alt:          PropTypes.string,
 };
 
 export default GeneralModal;
