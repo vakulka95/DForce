@@ -1,27 +1,29 @@
 .spec-item{
-    width: 25.33%;
+    width: 400px;
     text-align: left;
     margin-bottom: 100px;
 }
 
-h3{
-    font-weight: 500;
-    font-size: 34px;
+.spec-title{
+    // font-size: 34px;
     line-height: 45px;
     margin-top: 48px;
     margin-bottom: 15px;
-
 }
 
-p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
+.value-title{
+    display: flex;
+    align-items: center;
+    h3{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+}
 
-    color: rgba(255, 255, 255, 0.8);
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+
+
+.value-image{
+    height: 55px;
 }
 
 .spec-text{

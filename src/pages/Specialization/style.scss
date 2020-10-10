@@ -1,16 +1,11 @@
 
 .specialization{
-    color: #fff;
     background-color: #15161c;
-    padding: 110px 80px 130px 80px;
-    .title-of-block{
-        margin-bottom: 100px;
-    }
-    
+
 }
 
 .spec-section{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }

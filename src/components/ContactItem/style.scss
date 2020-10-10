@@ -31,11 +31,22 @@
 }
 
 .contact-data{
-    p{
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+
+        // font-weight: 500;
         font-size: 18px;
         line-height: 35px;
-        /* identical to box height, or 194% */
-        
+        // /* identical to box height */
+
+        // text-align: left;
         letter-spacing: 0.03em;
+        // color: #fff;
+        margin: 15px 0 10px 0;
+        :hover{
+            text-decoration: underline;
+        }
     }
 }
+

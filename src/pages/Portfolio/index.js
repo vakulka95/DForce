@@ -1,13 +1,12 @@
 import React from 'react';
 import PortfolioItem from '../../components/PortfolioItem/PortfolioItem';
-import TitleOfBlock from '../../components/TitleOfBlock/TitleOfBlock';
 import './style.scss';
 
 const Portfolio = ({portfolioItems}) => {
     return (
-        <section className='portfolio'>
-            <div className='portfolio-wrap'>
-                <TitleOfBlock title='Наші кейси' />
+        <section className='portfolio main-padding'>
+            <div className='container'>
+            <h2 className='title-of-block'>Наші кейси</h2>
                 <div className='portfolio-list'>
                     {portfolioItems.map(({
                         id,

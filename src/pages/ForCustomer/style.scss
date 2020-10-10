@@ -1,7 +1,7 @@
 .for-customer{
     background: #0D0E12 url('../../assets/images/FormCustomer.png') no-repeat;
     background-position-x: right;
-    background-position-y: -100px;
+    background-position-y: -36px;
     background-size: 100%;
     padding-top: 175px;
     padding-bottom: 315px;
@@ -12,7 +12,7 @@
         justify-content: space-between;
     }
     &-info{
-        width: 30%;
+        width: 40%;
     }
     &-title{
         color: #fff;
@@ -21,6 +21,7 @@
     }
     &-text{
         margin: 39px 0 112px 0;
+        width: 80%;
     }
     &-contacts{
         display: flex;

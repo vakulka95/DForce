@@ -6,10 +6,10 @@ import './style.scss';
 const ForCustomer = ({contactItem}) => {
     return (
         <section className='for-customer' id='forcustomer'>
-            <div className='for-customer-wrap'>
+            <div className='container'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
-                    <p className='for-customer-text'>«Мені здається» – це анонімний онлайн-щоденник, де кожен абсолютно анонімно може поділитися власною історією абсолютно анонімно.</p>
+                    <p className='for-customer-text text'>«Мені здається» – це анонімний онлайн-щоденник, де кожен абсолютно анонімно може поділитися власною історією абсолютно анонімно.</p>
                     <div className='for-customer-contacts'>
                         {contactItem.map(({
                             id,

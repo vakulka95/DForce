@@ -1,16 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.scss';
 
-function Logo({logoClass}) {
+function Logo({logoClass, parentClass}) {
     return (
-        <div>
+        <div className={parentClass}>
             <img src='./images/logo.svg'  className={logoClass} alt='Logo'/>
         </div>
     )
 }
 
 Logo.propTypes = {
-    logoClass: PropTypes.string.isRequired
+    logoClass: PropTypes.string.isRequired,
+    parentClass: PropTypes.string.isRequired
+
 }
 
 Logo.defaultProps = {

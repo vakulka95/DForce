@@ -7,21 +7,26 @@ import './style.scss';
 const Header = () =>{
     return(
         <div className = 'header'>
-            <Link to = '/'>
+            <div className='container header-container'>
+            <Link to="home" 
+                        spy={true} 
+                        hashSpy={true}
+                        smooth={true} 
+                        duration={1000}>
                 <Logo parentClass='logo' logoClass='header-logo'/>
             </Link>
-            <div className = 'header-wrap'>
-                <ul className = 'header-container'>
-                    <li className = 'header-container-item'>
-                        <Link className = 'header-container-link'
+            <div className = 'header-navigation'>
+                <ul className = 'header-navigation-list'>
+                    <li className = 'header-navigation-item'>
+                        <Link className = 'header-navigation-link'
                         activeClass="active" to="home" 
                         spy={true} 
                         hashSpy={true}
                         smooth={true} 
                         duration={1000}><span>Головна</span>
                         </Link></li>
-                    <li className = 'header-container-item'>
-                        <Link className = 'header-container-link' 
+                    <li className = 'header-navigation-item'>
+                        <Link className = 'header-navigation-link' 
                         activeClass="active" 
                         to="specialization" 
                         spy={true} 
@@ -29,8 +34,8 @@ const Header = () =>{
                         hashSpy={true} 
                         duration={1000}><span>Послуги</span>
                         </Link></li>
-                    <li className = 'header-container-item'>
-                        <Link className = 'header-container-link'
+                    <li className = 'header-navigation-item'>
+                        <Link className = 'header-navigation-link'
                         activeClass="active" 
                         to="portfolio" 
                         spy={true} 
@@ -38,8 +43,8 @@ const Header = () =>{
                         smooth={true} 
                         duration={1000}><span>Портфоліо</span>
                         </Link></li>
-                    <li className = 'header-container-item'>
-                        <Link className = 'header-container-link' 
+                    <li className = 'header-navigation-item'>
+                        <Link className = 'header-navigation-link' 
                         activeClass="active" 
                         to="about" 
                         spy={true} 
@@ -47,8 +52,8 @@ const Header = () =>{
                         smooth={true} 
                         duration={1000}><span>Про нас</span>
                         </Link></li>
-                    <li className = 'header-container-item'>
-                        <Link className = 'header-container-link' 
+                    <li className = 'header-navigation-item'>
+                        <Link className = 'header-navigation-link' 
                         activeClass="active" 
                         to="forcustomer" 
                         spy={true} 
@@ -60,6 +65,7 @@ const Header = () =>{
                 </ul>
             </div>
             <div className = 'header-media'><div className = 'header-media-button'></div></div>
+            </div>
         </div>
     )
 }

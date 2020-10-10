@@ -14,7 +14,7 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
                 <img src={image} alt={alt} />
             </div>
             <div className='case-description'>
-                <div className='case-text'>
+                <div className='case-title sub-title'>
                     <h3>{description}</h3>
                 </div>
                 <div className='case-link'>
