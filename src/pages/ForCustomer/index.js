@@ -29,7 +29,7 @@ const ForCustomer = ({contactItem}) => {
                         <GeneralModal
                         img = {'./images/modalImage.svg'}
                         alt = {'success'}
-                        title = {'Here will be image '}
+                        title = {'Title if it need'}
                         onButtonPress = {onClose}
                         onClose = {onClose}>
                             <Message />
