@@ -8,13 +8,13 @@ const Header = () =>{
     return(
         <div className = 'header'>
             <div className='container header-container'>
-            <Link to="home" 
+            {/* <Link to="home" 
                         spy={true} 
                         hashSpy={true}
                         smooth={true} 
-                        duration={1000}>
+                        duration={1000}> */}
                 <Logo parentClass='logo' logoClass='header-logo'/>
-            </Link>
+            {/* </Link> */}
             <div className = 'header-navigation'>
                 <ul className = 'header-navigation-list'>
                     <li className = 'header-navigation-item'>
