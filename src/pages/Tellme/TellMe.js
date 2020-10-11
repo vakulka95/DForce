@@ -1,5 +1,5 @@
 import React from 'react';
-import tellme from '../../json/itseems.json';
+import tellme from '../../json/tellme.json';
 
 function TellMe() {
     const renderLoop = () => {
