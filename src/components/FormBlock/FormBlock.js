@@ -27,10 +27,18 @@ function FormBlock({ onSuccess }) {
         }))
     }
 
+    // let resetInput = ({target}) => {
+    //     setFormData(prevState => ({
+    //         ...prevState,
+    //         [target.name]: ''
+    //     }))
+    //     setFormData()
+    // }
+
     let changeSuccess = () => {
         setSuccess(true);
         setTimeout(() => {
-            setSuccess(false)
+            // setSuccess(false)
             setErrorName(false)
             setErrorPhone(false)
             setErrorMail(false)
@@ -39,7 +47,7 @@ function FormBlock({ onSuccess }) {
 
     let validate = () => {
         
-        if (formData.name === null || formData.name == '') {
+        if (formData.name === null || formData.name ==='') {
             setErrorName(true)
             
             return false
@@ -53,7 +61,7 @@ function FormBlock({ onSuccess }) {
             return false
         }
         setTimeout(() => {
-            setSuccess(false)
+            // setSuccess(false)
             setErrorName(false)
             setErrorPhone(false)
             setErrorMail(false)
@@ -65,13 +73,15 @@ function FormBlock({ onSuccess }) {
             .then(res => {
                 console.log(res)
                 console.log(res.data)
-
-                onSuccess()
+               
+                
                 if(res.status === 200){
                     changeSuccess()
+                    onSuccess()
                 }
             })
-            .catch(() => {
+            .catch(() => {    
+                // resetInput(formData)            
                 console.log('message not send');
             })
         }
@@ -91,28 +101,28 @@ function FormBlock({ onSuccess }) {
                     <div className='form-group'>
                         <label>
                             Ваше ім'я:
-                            <input type='text' name='name' className={errorName ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
+                            <input type='text' name='name' className={errorName ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={success ? '' : formData.name} />
                             {errorName && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваш телефон:
-                            <input type='text' name='phone' className={errorPhone ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
+                            <input type='text' name='phone' className={errorPhone ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={success ? '' : formData.phone} />
                             {errorPhone && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
-                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail} />
+                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={success ? '' : formData.mail}/>
                             {errorMail && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Залиште свій коментар:
-                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
+                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={success ? '' : formData.comment}></textarea>
                         </label>
                     </div>
                     {/* {success &&
