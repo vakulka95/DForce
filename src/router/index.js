@@ -14,6 +14,12 @@ const routes = [
             () => import('../pages/ItSeems/ItSeems.js')
         ),
     },
+    {
+        path:       ['/tellme'],
+        components: lazy(
+            () => import('../pages/Tellme/TellMe.js')
+        ),
+    },
 
 ];
 
