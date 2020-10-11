@@ -13,7 +13,8 @@ const routes = [
         components: lazy(
             () => import('../pages/ItSeems/ItSeems.js')
         ),
-    }
+    },
+
 ];
 
 export default routes;

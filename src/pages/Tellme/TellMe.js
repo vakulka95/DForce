@@ -1,7 +1,7 @@
 import React from 'react';
-import itseems from '../../json/itseems.json';
+import tellme from '../../json/itseems.json';
 
-function ItSeems() {
+function TellMe() {
     const renderLoop = () => {
     const loop = (item) => {
         
@@ -33,7 +33,7 @@ function ItSeems() {
         </div>);
     
     };
-    return itseems.map(loop);
+    return tellme.map(loop);
 
 };
 return (
@@ -45,5 +45,4 @@ return (
 );
 }
 
-
-export default ItSeems;
+export default TellMe;
