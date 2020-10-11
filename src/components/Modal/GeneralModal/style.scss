@@ -1,11 +1,12 @@
 .generalModal {  
-    &__container{
+    
       max-width: 478px;
       margin: 0 28px;
-      background-color: wheat;
-      border-radius: 2px;
+      background: #15161C;
+      border: 1px solid #2D9662;
+      border-radius: 12px;
       position: relative;
-      padding: 20px 15px;
+      
       @media screen and (max-width: 340px) {
         margin: 0 10px;
         padding: 14px 10px;
@@ -13,7 +14,21 @@
       @media screen and (min-width: 768px) {
         padding: 25px 33px;
       }
-    }
+      &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 150px 70px;
+        .sub-title{
+            margin-top: 35px;
+        }
+        .text{
+          text-align: center;
+          
+        }
+      }
+    
   
     &__close{
       width: 24px;

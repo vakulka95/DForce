@@ -27,18 +27,19 @@ function FormBlock({ onSuccess }) {
         }))
     }
 
-    // let resetInput = ({target}) => {
-    //     setFormData(prevState => ({
-    //         ...prevState,
-    //         [target.name]: ''
-    //     }))
-    //     setFormData()
-    // }
+    let resetInput = () => {
+        setFormData({
+            name: '',
+            phone: '',
+            mail: '',
+            comment: ''
+        })
+    }
 
     let changeSuccess = () => {
         setSuccess(true);
         setTimeout(() => {
-            // setSuccess(false)
+            setSuccess(false)
             setErrorName(false)
             setErrorPhone(false)
             setErrorMail(false)
@@ -61,7 +62,7 @@ function FormBlock({ onSuccess }) {
             return false
         }
         setTimeout(() => {
-            // setSuccess(false)
+            setSuccess(false)
             setErrorName(false)
             setErrorPhone(false)
             setErrorMail(false)
@@ -77,12 +78,13 @@ function FormBlock({ onSuccess }) {
                 
                 if(res.status === 200){
                     changeSuccess()
-                    onSuccess()
+                    resetInput()
                 }
             })
             .catch(() => {    
-                // resetInput(formData)            
                 console.log('message not send');
+                onSuccess()
+
             })
         }
     }
@@ -101,28 +103,28 @@ function FormBlock({ onSuccess }) {
                     <div className='form-group'>
                         <label>
                             Ваше ім'я:
-                            <input type='text' name='name' className={errorName ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={success ? '' : formData.name} />
+                            <input type='text' name='name' className={errorName ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
                             {errorName && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваш телефон:
-                            <input type='text' name='phone' className={errorPhone ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={success ? '' : formData.phone} />
+                            <input type='text' name='phone' className={errorPhone ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
                             {errorPhone && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
-                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={success ? '' : formData.mail}/>
+                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail}/>
                             {errorMail && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Залиште свій коментар:
-                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={success ? '' : formData.comment}></textarea>
+                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
                     {/* {success &&
