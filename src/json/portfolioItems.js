@@ -3,7 +3,7 @@ let portfolioItems = [
         id: 1,
         image: './images/cases/ItSeems.jpg',
         alt: 'ItSeems',
-        backgroundCLass: 'case-image itseems',
+        backgroundCLass: 'case-image itseems-background',
         description: 'Інтернет-платформа для психологічних консультацій, яка допомагає всім хто потребує емоційної підтримки.',
         to: '/itseems',
     },

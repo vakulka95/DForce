@@ -6,9 +6,10 @@ function ItSeems() {
     const loop = (item) => {
         
         return (<div key = { item.title }>
-                <h3>{item.title}</h3>
-                <figure className = 'partner__img-wrap'>
-                { item.group1.map((img)=><img alt = { item.title } src ={img} key = { img } />)}
+            
+                <h2 className='title-of-block'>{item.title}</h2>
+                <figure className = 'case-image itseems-background padding-cases'>
+                    <img alt = 'image' src ={item.group1} key = { item.group1 } />
                 </figure>
                 <div>
                     <p>
@@ -30,6 +31,7 @@ function ItSeems() {
                         { item.paragraph3 }
                     </p>
                 </div>
+                
         </div>);
     
     };
@@ -37,8 +39,8 @@ function ItSeems() {
 
 };
 return (
-    <section>
-       <div>
+    <section className='product-page main-padding'>
+       <div className='container'>
             { renderLoop() }
         </div>
     </section>

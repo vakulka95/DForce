@@ -22,6 +22,12 @@ h1,h2,h3,h4{
   padding: 0;
 }
 
+h1{
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 90px;
+}
+
 h2{
   text-align: left;
   font-weight: 600;
@@ -50,6 +56,7 @@ h2{
   .title-of-block{
     color: #fff;
     margin-bottom: 100px;
+    width: 60%;
   }
 }
   
@@ -75,6 +82,29 @@ h2{
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
+
+.case-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 85px;
+  border-radius: 8px;
+}
+
+.padding-cases{
+  padding-top: 85px;
+  padding-bottom: 85px;
+
+}
+
+.itseems-background{
+  background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
+}
+
+
+
+
+
 
 .App {
   &-logo {
