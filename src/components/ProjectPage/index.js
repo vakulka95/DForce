@@ -9,7 +9,7 @@ function ProjectPage({item}) {
             return (<div className='container' key={item.title}>
 
                 <h2 className='title-of-block'>{item.title1}</h2>
-                <figure className='case-image itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
                     <img alt='image' src={item.group1} key={item.group1} />
                 </figure>
                 <div className='right'>
@@ -18,7 +18,7 @@ function ProjectPage({item}) {
                         {item.paragraph1}
                     </p>
                 </div>
-                <figure className='case-image itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
                     {item.group2.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div>
@@ -27,10 +27,10 @@ function ProjectPage({item}) {
                         {item.paragraph2}
                     </p>
                 </div>
-                <figure className='case-image indifferent-background padding-cases'>
+                <figure className='case-image margin-for-images-cases indifferent-background padding-cases'>
                     {item.group3.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
-                <figure className='case-image indifferent-background padding-cases'>
+                <figure className='case-image margin-for-images-cases indifferent-background padding-cases'>
                     {item.group4.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div>
@@ -39,7 +39,7 @@ function ProjectPage({item}) {
                         {item.paragraph2}
                     </p>
                 </div>
-                <figure className='case-image itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
                     {item.group5.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='right'>
@@ -48,7 +48,7 @@ function ProjectPage({item}) {
                         {item.paragraph1}
                     </p>
                 </div>
-                <div className='flex'>
+                <div className='flex margin-for-images-cases'>
                     <figure className='case-image indifferent-background padding-cases'>
                         {item.group6.map((img) => <img alt={item.title} src={img} key={img} />)}
                     </figure>
@@ -60,10 +60,10 @@ function ProjectPage({item}) {
                     {item.group8.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 
-                 <ForCustomer /> 
+                 
 
             </div>);
-
+           
         };
         return item.map(loop);
 

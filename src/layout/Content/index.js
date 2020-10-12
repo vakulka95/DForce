@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Route } from "react-router-dom";
 import routes from '../../router';
 import './style.scss';
+import ForCustomer from '../../components/home/ForCustomer/index'
 
 
 const Content = () => {
@@ -22,6 +23,7 @@ const Content = () => {
                     }
                 
             </Suspense>
+            <ForCustomer /> 
     </main>
     )
 };
