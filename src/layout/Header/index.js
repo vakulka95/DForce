@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Logo from '../../components/Logo/Logo';
+import {useLocation} from 'react-router-dom';
 import './style.scss';
 
 const Header = () =>{
@@ -10,8 +11,21 @@ const Header = () =>{
         const yOffset = -90; 
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
+
+    let pathName = useLocation().pathname;
+
+    const opasityHeader = () => {
+        
+        if(pathName==='/'){
+            return true
+        } else {
+            return false
+        }
+    };
+    console.log(opasityHeader())
+    let opasity = opasityHeader();
     return(
-        <div className = 'header'>
+        <div className = {opasity? 'header-opasity': 'header'}>
             <div className='container header-container'>
                 <Logo parentClass='logo' logoClass='header-logo'/>
             <div className = 'header-navigation'>
