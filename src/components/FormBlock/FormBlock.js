@@ -48,26 +48,36 @@ function FormBlock({ onSuccess }) {
 
     let validate = () => {
         
-        if (formData.name === null || formData.name ==='') {
-            setErrorName(true)
-            
-            return false
-        }
-        if (formData.phone === null || formData.phone === '') {
-            setErrorPhone(true)
-            return false
-        }
-        if (formData.mail === null || formData.mail === '') {
-            setErrorMail(true)
-            return false
-        }
-        setTimeout(() => {
-            setSuccess(false)
-            setErrorName(false)
-            setErrorPhone(false)
-            setErrorMail(false)
-        }, 4000)
+        for(let input in formData){
+            console.log(formData[input] === null || formData[input] === '')
 
+            if(formData[input] == null || formData[input] === ''){
+                setErrorName(true)
+                setErrorPhone(true)
+                setErrorMail(true)
+                return false
+            } 
+                return false
+        }
+        // if ((formData.name === null || formData.name ==='') || (formData.phone === null || formData.phone === '') || (formData.mail === null || formData.mail === '')) {
+        //     setErrorName(true)
+        //     setErrorPhone(true)
+        //     setErrorMail(true)
+        //     return false
+        // }
+        // if (formData.phone === null || formData.phone === '') {
+        //     setErrorName(true)
+        //     setErrorPhone(true)
+        //     setErrorMail(true)
+        //     return false
+        // }
+        // if (formData.mail === null || formData.mail === '') {
+        //     setErrorName(true)
+        //     setErrorPhone(true)
+        //     setErrorMail(true)
+        //     return false
+        // }
+        
         if(!errorName || !errorPhone || !errorMail){
             axios.post("http://www.testvakulenko.fun/send.php", formData)
 
@@ -87,6 +97,8 @@ function FormBlock({ onSuccess }) {
 
             })
         }
+
+        
     }
 
     let handleSubmit = (e) => {
@@ -94,6 +106,12 @@ function FormBlock({ onSuccess }) {
         validate()
        
     }
+    setTimeout(() => {
+        setSuccess(false)
+        setErrorName(false)
+        setErrorPhone(false)
+        setErrorMail(false)
+    }, 7000)
 
     return (
         <div className='form-block'>
