@@ -1,71 +1,65 @@
-.form-block{
+.form{
     background: #15161C;
     border: 1px solid #2D9662;
     border-radius: 12px;
-    width: 30%;
-    position: absolute;
+    margin-top: -243px;
+    width: 660px;
     right: 190px;
     top: -70px;
-}
-
-.form-wrap{
-    padding: 105px 70px 70px;
+    &-wrap{
+        padding: 105px 70px 70px;
+        
+    }
+    &-title{
+        color: #fff;
+        font-size: 30px;
+        line-height: 45px;
+        width: 60%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
+    &-group{
+        width: 100%;
+        color: #fff;
+        margin-bottom: 28px;
     
-}
-
-.form-title{
-    color: #fff;
-    font-size: 30px;
-    line-height: 45px;
-    width: 60%;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 48px;
-}
-
-.form-group{
-    width: 100%;
-    color: #fff;
-    margin-bottom: 28px;
-
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 35px;
-    /* identical to box height, or 219% */
-
-    letter-spacing: 0.03em;
-
-    color: #FFFFFF;
-    textarea{
-        height: 125px;
-        width: 97%;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 35px;
+        /* identical to box height, or 219% */
+    
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+        textarea{
+            height: 125px;
+            width: 97%;
+            background: #262833;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 15px;
+            font-size: 16px;
+            font-family: 'Grandis', sans-serif;
+        }
+        
+    }
+    &-input{
+        width: 100%;
         background: #262833;
         border-radius: 8px;
         border: none;
         outline: none;
         color: #fff;
-        padding: 15px;
+        padding: 0 0 0 15px;
+        height: 40px;
         font-size: 16px;
         font-family: 'Grandis', sans-serif;
-    }
     
-}
-.form-input{
-    width: 100%;
-    background: #262833;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 0 0 0 15px;
-    height: 40px;
-    font-size: 16px;
-    font-family: 'Grandis', sans-serif;
-
-}
-
-form {
-    button{
+    }
+    &-button{
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
@@ -85,6 +79,7 @@ form {
         cursor: pointer;
     
     }
+    
 }
 
 .error{

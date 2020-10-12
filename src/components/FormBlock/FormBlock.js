@@ -81,11 +81,12 @@ function FormBlock({ onSuccess }) {
                     if (res.status === 200) {
                         changeSuccess()
                         resetInput()
+                        onSuccess()
                     }
                 })
                 .catch(() => {
                     console.log('message not send');
-                    onSuccess()
+                    
                 })
         // }
 
@@ -105,7 +106,7 @@ function FormBlock({ onSuccess }) {
     
 
     return (
-        <div className='form-block'>
+        <div className='form'>
             <div className='form-wrap'>
                 <h3 className='form-title'>Це анонімний онлайн кожен абсолютно</h3>
                 <form onSubmit={handleSubmit}>
@@ -139,7 +140,7 @@ function FormBlock({ onSuccess }) {
                     {/* {success &&
                         alert('message was sent')
                     } */}
-                    <button type='submit'>Заказать консультацию</button>
+                    <button type='submit' className='form-button'>Заказать консультацию</button>
                 </form>
             </div>
         </div>

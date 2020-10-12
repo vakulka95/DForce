@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Specialization from '../../components/home/Specialization/Specialization';
 import First from '../../components/home/First';
 import About from '../../components/home/About';
@@ -12,13 +12,13 @@ function Home() {
     return (
 
 
-        <main>
+        <Fragment>
             <First id='home'/>
             <Specialization specItems={specItems} id='specialization' />
             <Portfolio portfolioItems={portfolioItems} id='portfolio' />
             <About id='about' />
             <HashLink to="#"><div className='scrolling'>Up</div></HashLink>
-        </main>
+        </Fragment>
 
 
     )
