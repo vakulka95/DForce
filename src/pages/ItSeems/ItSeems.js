@@ -1,5 +1,5 @@
 import React from 'react';
-// import ForCustomer from '../../components/home/ForCustomer';
+import ForCustomer from '../../components/home/ForCustomer';
 import itseems from '../../json/itseems.json';
 
 function ItSeems() {
@@ -60,7 +60,7 @@ function ItSeems() {
                     {item.group8.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 
-                {/* <ForCustomer /> */}
+                 <ForCustomer /> 
 
             </div>);
 

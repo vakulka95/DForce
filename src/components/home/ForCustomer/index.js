@@ -6,8 +6,9 @@ import './style.scss';
 import Modal from '../../../components/Modal';
 import GeneralModal from '../../../components/Modal/GeneralModal';
 import Message from '../../../components/Modal/templatesModal/Message';
+import contactItem from '../../../json/contactItem';
 
-const ForCustomer = ({contactItem}) => {
+const ForCustomer = () => {
 
     const [modal, setModal] = useState(true);
     const [success, setSuccess] = useState(false);
