@@ -5,7 +5,7 @@ import {  Router, Switch } from 'react-router-dom';
 import Footer from './layout/Footer/Footer';
 import Content from './layout/Content';
 import Header from './layout/Header';
-//import Scroll from 'react-scroll';
+import ScrollToTop from 'react-router-scroll-top';
 
 const customHistory = createBrowserHistory();
 //const scroll = Scroll.animateScroll;
@@ -16,6 +16,7 @@ function App() {
   // },[])
   return (
     <Router history = {customHistory}>
+      <ScrollToTop>
     <div className="App">
       <Header />
       <Switch>
@@ -23,6 +24,7 @@ function App() {
       </Switch>
       <Footer />
     </div>
+    </ScrollToTop>
     </Router>
   );
 }
