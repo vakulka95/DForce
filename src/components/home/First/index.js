@@ -3,7 +3,7 @@ import './style.scss';
 
 const First = () => {
     return (
-        <div className = 'home'>
+        <div className = 'home' id='home'>
             <div className='container'>
             <div className = 'home-wrap'>
               <h1 className = 'home-header'><span className = 'home-header-first'>Ми</span> створюємо майбутнє!</h1>

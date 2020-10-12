@@ -6,7 +6,7 @@ import './style.scss';
 
 const Portfolio = ({portfolioItems}) => {
     return (
-        <section className='portfolio main-padding'>
+        <section className='portfolio main-padding' id='portfolio'>
             <div className='container'>
             <h2 className='title-of-block'>Наші кейси</h2>
                 <div className='portfolio-list'>

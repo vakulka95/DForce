@@ -47,37 +47,43 @@ function FormBlock({ onSuccess }) {
     }
 
     let validate = () => {
-        
+       
         for(let input in formData){
-            console.log(formData[input] === null || formData[input] === '')
-
-            if(formData[input] == null || formData[input] === ''){
-                setErrorName(true)
-                setErrorPhone(true)
-                setErrorMail(true)
-                return false
-            } 
-                return false
+            switch(formData[input]){
+                case(false):
+                case(''):
+                    return null;
+                case(true):
+                    break;
+                default:
+                    return null;
+            }
         }
-        // if ((formData.name === null || formData.name ==='') || (formData.phone === null || formData.phone === '') || (formData.mail === null || formData.mail === '')) {
+        
+        // if (formData.name === null || formData.name === '') {
         //     setErrorName(true)
-        //     setErrorPhone(true)
-        //     setErrorMail(true)
-        //     return false
+
+        //     // return false
         // }
         // if (formData.phone === null || formData.phone === '') {
-        //     setErrorName(true)
         //     setErrorPhone(true)
-        //     setErrorMail(true)
-        //     return false
+        //     // return false
         // }
         // if (formData.mail === null || formData.mail === '') {
-        //     setErrorName(true)
-        //     setErrorPhone(true)
         //     setErrorMail(true)
         //     return false
         // }
-        
+
+        // for(let input in formData){
+
+        //     if(formData[input] == null || formData[input] === ''){
+        //         setErrorName(true)
+        //         setErrorPhone(true)
+        //         setErrorMail(true)
+        //         return false
+        //     } 
+        // }
+
         if(!errorName || !errorPhone || !errorMail){
             axios.post("http://www.testvakulenko.fun/send.php", formData)
 
@@ -94,11 +100,9 @@ function FormBlock({ onSuccess }) {
             .catch(() => {    
                 console.log('message not send');
                 onSuccess()
-
             })
         }
 
-        
     }
 
     let handleSubmit = (e) => {
