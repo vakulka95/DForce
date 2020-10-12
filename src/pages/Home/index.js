@@ -17,7 +17,7 @@ function Home() {
             <Specialization specItems={specItems} id='specialization' />
             <Portfolio portfolioItems={portfolioItems} id='portfolio' />
             <About id='about' />
-            <HashLink to="#top"><div className='scrolling'>Up</div></HashLink>
+            <HashLink to="#"><div className='scrolling'>Up</div></HashLink>
         </main>
 
 
