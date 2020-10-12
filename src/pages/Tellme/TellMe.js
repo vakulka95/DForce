@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import './style.scss'
 import tellme from '../../json/tellme.json';
 import ProjectPage from '../../components/ProjectPage';
 
 function TellMe() {
     return (
-        <div>
+        <Fragment>
             <ProjectPage item={tellme} />
-        </div>
+        </Fragment>
     )
 }
 

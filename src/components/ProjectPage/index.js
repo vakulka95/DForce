@@ -1,15 +1,15 @@
 import React from 'react';
-import ForCustomer from '../../components/home/ForCustomer';
 //import itseems from '../../json/itseems.json';
 
 function ProjectPage({item}) {
+    console.log(item)
     const renderLoop = () => {
         const loop = (item) => {
 
             return (<div className='container' key={item.title}>
 
                 <h2 className='title-of-block'>{item.title1}</h2>
-                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases image-background padding-cases'>
                     <img alt='image' src={item.group1} key={item.group1} />
                 </figure>
                 <div className='right'>
@@ -18,7 +18,7 @@ function ProjectPage({item}) {
                         {item.paragraph1}
                     </p>
                 </div>
-                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases image-background padding-cases'>
                     {item.group2.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div>
@@ -39,7 +39,7 @@ function ProjectPage({item}) {
                         {item.paragraph2}
                     </p>
                 </div>
-                <figure className='case-image margin-for-images-cases itseems-background padding-cases'>
+                <figure className='case-image margin-for-images-cases image-background padding-cases'>
                     {item.group5.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='right'>
@@ -56,7 +56,7 @@ function ProjectPage({item}) {
                         {item.group7.map((img) => <img alt={item.title} src={img} key={img} />)}
                     </figure>
                 </div>
-                <figure className='case-image itseems-background padding-cases'>
+                <figure className='case-image image-background padding-cases'>
                     {item.group8.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 
