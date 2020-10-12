@@ -62,7 +62,6 @@ function FormBlock({ onSuccess }) {
             setErrorPhone(true)
             setErrorMail(true)
             return false
-
         }
         sendMail()
         
