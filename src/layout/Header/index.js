@@ -25,7 +25,7 @@ const Header = () =>{
     console.log(opasityHeader())
     let opasity = opasityHeader();
     return(
-        <div className = {opasity? 'header-opasity': 'header'}>
+        <header className = {opasity? 'header-opasity': 'header'}>
             <div className='container header-container'>
                 <Logo parentClass='logo' logoClass='header-logo'/>
             <div className = 'header-navigation'>
@@ -60,7 +60,7 @@ const Header = () =>{
             </div>
             <div className = 'header-media'><div className = 'header-media-button'></div></div>
             </div>
-        </div>
+        </header>
     )
 }
 
