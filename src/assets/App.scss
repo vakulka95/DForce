@@ -55,7 +55,6 @@ h2{
   // padding: 110px 80px 130px 80px;
   .title-of-block{
     color: #fff;
-    margin-bottom: 100px;
     width: 60%;
   }
 }
@@ -77,18 +76,22 @@ h2{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-
+    width: 60%;
     color: rgba(255, 255, 255, 0.8);
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
 
+
+// FOR CASES
 .case-image{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 85px;
   border-radius: 8px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .padding-cases{
@@ -101,10 +104,25 @@ h2{
   background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
 }
 
+.indifferent-background{
+  background: #20222B;
+}
 
 
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
-
+.flex{
+  display: flex;
+  justify-content: space-between;
+  figure{
+    width: 49%;
+    margin-bottom: 0;
+  }
+}
 
 .App {
   &-logo {

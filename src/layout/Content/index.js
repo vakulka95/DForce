@@ -8,7 +8,6 @@ const Content = () => {
 
     return(
     <main >
-        <div>
             <Suspense fallback={ <div style={{textAlign:'center',fontSize:'25px',height:'900px'}}>{'Loading'}</div> }>
                 
                     {
@@ -23,7 +22,6 @@ const Content = () => {
                     }
                 
             </Suspense>
-        </div>
     </main>
     )
 };
