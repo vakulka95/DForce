@@ -1,13 +1,13 @@
-import React from 'react';
-//import ForCustomer from '../../components/home/ForCustomer';
+import React, { Fragment } from 'react';
+import './style.scss';
 import itseems from '../../json/itseems.json';
 import ProjectPage from '../../components/ProjectPage';
 
 function ItSeems() {
     return(
-        <div>
+        <Fragment>
             <ProjectPage item={itseems} />
-        </div>
+        </Fragment>
 
     )
 }
