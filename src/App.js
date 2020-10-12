@@ -5,15 +5,15 @@ import {  Router, Switch } from 'react-router-dom';
 import Footer from './layout/Footer/Footer';
 import Content from './layout/Content';
 import Header from './layout/Header';
-import Scroll from 'react-scroll';
+//import Scroll from 'react-scroll';
 
 const customHistory = createBrowserHistory();
-const scroll = Scroll.animateScroll;
+//const scroll = Scroll.animateScroll;
 
 function App() {
-  useEffect(() => {scroll.scrollToTop()
-  console.log('scrolling?')
-  },[])
+  // useEffect(() => {scroll.scrollToTop()
+  // console.log('scrolling?')
+  // },[])
   return (
     <Router history = {customHistory}>
     <div className="App">

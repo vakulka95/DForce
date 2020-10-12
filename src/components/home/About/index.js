@@ -5,7 +5,7 @@ import about from '../../../json/aboutItems.js';
 
 const About = () => {
     return (
-        <section className='about main-padding'>
+        <section className='about main-padding' id='about'>
             <div className='container'>
                 <h2 className='title-of-block'>Наші цінності</h2>
                 <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям та допомагають компаніями бути більш ефективними. Наша команда зацікавлена у рості вашого бізнесу та довготривалій співпраці!</p>

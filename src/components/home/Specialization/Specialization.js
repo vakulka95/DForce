@@ -7,7 +7,7 @@ import SpecItem from '../../SpecItem/SpecItem';
 
 function Specialization({specItems}) {
     return (
-        <section className='specialization main-padding'>
+        <section className='specialization main-padding' id='specialization'>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>
