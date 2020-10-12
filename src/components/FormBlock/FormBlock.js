@@ -38,6 +38,7 @@ function FormBlock({ onSuccess }) {
 
     let changeSuccess = () => {
         setSuccess(true);
+
         setTimeout(() => {
             setSuccess(false)
             setErrorName(false)
@@ -47,75 +48,62 @@ function FormBlock({ onSuccess }) {
     }
 
     let validate = () => {
-       
-        for(let input in formData){
-            switch(formData[input]){
-                case(false):
-                case(''):
-                    return null;
-                case(true):
-                    break;
-                default:
-                    return null;
-            }
-        }
-        
-        // if (formData.name === null || formData.name === '') {
-        //     setErrorName(true)
-
-        //     // return false
-        // }
-        // if (formData.phone === null || formData.phone === '') {
-        //     setErrorPhone(true)
-        //     // return false
-        // }
-        // if (formData.mail === null || formData.mail === '') {
-        //     setErrorMail(true)
-        //     return false
-        // }
 
         // for(let input in formData){
-
-        //     if(formData[input] == null || formData[input] === ''){
-        //         setErrorName(true)
-        //         setErrorPhone(true)
-        //         setErrorMail(true)
+        //     if(formData.input === ''){
+        //         setErrorName(false)
+        //         setErrorPhone(false)
+        //         setErrorMail(false)
         //         return false
-        //     } 
+        //     }
         // }
+        if (formData.phone === '' || formData.name === '' || formData.mail === '') {
+            setErrorName(true)
+            setErrorPhone(true)
+            setErrorMail(true)
+            return false
 
-        if(!errorName || !errorPhone || !errorMail){
-            axios.post("http://www.testvakulenko.fun/send.php", formData)
-
-            .then(res => {
-                console.log(res)
-                console.log(res.data)
-               
-                
-                if(res.status === 200){
-                    changeSuccess()
-                    resetInput()
-                }
-            })
-            .catch(() => {    
-                console.log('message not send');
-                onSuccess()
-            })
         }
+        sendMail()
+        
+
+        
+
+        
+        }
+        
+        let sendMail = () =>{
+        // if (!errorName || !errorPhone || !errorMail) {
+            axios.post("http://www.testvakulenko.fun/send.php", formData)
+                .then(res => {
+                    console.log(res)
+                    console.log(res.data)
+
+                    if (res.status === 200) {
+                        changeSuccess()
+                        resetInput()
+                    }
+                })
+                .catch(() => {
+                    console.log('message not send');
+                    onSuccess()
+                })
+        // }
 
     }
 
     let handleSubmit = (e) => {
         e.preventDefault();
         validate()
-       
     }
+
     setTimeout(() => {
         setSuccess(false)
         setErrorName(false)
         setErrorPhone(false)
         setErrorMail(false)
-    }, 7000)
+    }, 4000)
+    
 
     return (
         <div className='form-block'>
@@ -139,7 +127,7 @@ function FormBlock({ onSuccess }) {
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
-                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail}/>
+                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail} />
                             {errorMail && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
