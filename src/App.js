@@ -17,14 +17,14 @@ function App() {
   return (
     <Router history = {customHistory}>
       <ScrollToTop>
-    <div className="App">
-      <Header />
-      <Switch>
-        <Content />
-      </Switch>
-      <Footer />
-    </div>
-    </ScrollToTop>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Content />
+          </Switch>
+          <Footer />
+        </div>
+      </ScrollToTop>
     </Router>
   );
 }
