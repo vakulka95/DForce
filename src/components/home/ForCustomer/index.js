@@ -5,8 +5,9 @@ import './style.scss';
 
 import Modal from '../../../components/Modal';
 import GeneralModal from '../../../components/Modal/GeneralModal';
-import Message from '../../../components/Modal/templatesModal/Message';
+//import Message from '../../../components/Modal/templatesModal/Message';
 import contactItem from '../../../json/contactItem';
+import Loader from '../../Loader';
 
 const ForCustomer = () => {
 
@@ -28,12 +29,21 @@ const ForCustomer = () => {
                 <div className='result'>
                     <Modal isModal={modal}>
                         <GeneralModal
-                            img={'./images/modalImage.svg'}
-                            alt={'success'}
-                            title={'Title if it need'}
-                            onButtonPress={onClose}
-                            onClose={onClose}>
-                            <Message />
+// <<<<<<< HEAD
+//                             img={'./images/modalImage.svg'}
+//                             alt={'success'}
+//                             title={'Title if it need'}
+//                             onButtonPress={onClose}
+//                             onClose={onClose}>
+//                             <Message />
+// =======
+                        img = {'./images/modalImage.svg'}
+                        alt = {'success'}
+                        title = {'Title if it need'}
+                        onButtonPress = {onClose}
+                        onClose = {onClose}>
+                            <Loader />
+{/* >>>>>>> origin/myvariant2.0 */}
                         </GeneralModal>
                     </Modal>
                 </div>
