@@ -5,8 +5,9 @@ import './style.scss';
 
 import Modal from '../../../components/Modal';
 import GeneralModal from '../../../components/Modal/GeneralModal';
-import Message from '../../../components/Modal/templatesModal/Message';
+//import Message from '../../../components/Modal/templatesModal/Message';
 import contactItem from '../../../json/contactItem';
+import Loader from '../../Loader';
 
 const ForCustomer = () => {
 
@@ -33,7 +34,7 @@ const ForCustomer = () => {
                         title = {'Title if it need'}
                         onButtonPress = {onClose}
                         onClose = {onClose}>
-                            <Message />
+                            <Loader />
                         </GeneralModal>
                     </Modal>
                 </div>
