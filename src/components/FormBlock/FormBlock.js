@@ -81,12 +81,12 @@ function FormBlock({ onSuccess }) {
                     if (res.status === 200) {
                         changeSuccess()
                         resetInput()
-                        onSuccess()
                     }
                 })
                 .catch(() => {
                     console.log('message not send');
-                    
+                    onSuccess()
+
                 })
         // }
 

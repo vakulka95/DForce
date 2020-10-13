@@ -1,15 +1,18 @@
 .spec-item{
-    width: 400px;
+    width: 402px;
     text-align: left;
     margin-bottom: 100px;
+    .spec-title{
+        // font-size: 34px;
+        line-height: 45px;
+        margin-top: 48px;
+        margin-bottom: 15px;
+    }
+    .spec-text{
+        width: 82%;
+    }    
 }
 
-.spec-title{
-    // font-size: 34px;
-    line-height: 45px;
-    margin-top: 48px;
-    margin-bottom: 15px;
-}
 
 .value-title{
     display: flex;
