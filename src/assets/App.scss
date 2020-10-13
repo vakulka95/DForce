@@ -36,6 +36,13 @@ h2{
   letter-spacing: 0.02em;
 }
 
+.margin-top-none{
+  margin-top: 0;
+}
+.margin-bottom-none{
+  margin-bottom: 0;
+}
+
 .sub-title{
   margin-bottom: 15px;
   h3{
@@ -63,10 +70,63 @@ h2{
   padding-top: 170px;
 }
 
-.product-page{
+.detail{
   background-color: #000000;
-  padding-bottom: 250px;
+  padding: 200px 0 260px 0;
+  :last-child{
+    margin-bottom: 0;
+  }
+  &-sub-title{
+    color: #fff;
+    width: 60%;
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 85px;
+    letter-spacing: 0.02em;
+  }
+  &-figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 135px 225px;
+    border-radius: 8px;
+    margin: 150px 0 200px 0;
+    
+  }
+  &-text{
+    font-weight: 400;
+    font-size: 16px;
+    width: 60%;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.8);
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-top: 28px;
+  }
+  &-block{
+    &-desktop-figures{
+      margin-bottom: 200px;
+      figure:first-child{
+        margin-bottom: 35px;
+      }
+      figure:last-child{
+        margin-top: 0;
+      }
+    }
+    &-figures{
+      margin-bottom: -110px;
+      .detail-figure:first-child{
+        margin-right: 20px;
+      }
+      .detail-figure:last-child{
+        margin-left: 20px;
+      }
+    }
+  }
 }
+
+
   // code {
   //   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   //     monospace;
@@ -92,27 +152,26 @@ h2{
   border-radius: 8px;
 }
 
-.margin-for-images-cases{
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
+// .margin-for-images-cases{
+//   margin-top: 150px;
+//   margin-bottom: 150px;
+// }
 
-.padding-cases{
-  padding-top: 85px;
-  padding-bottom: 85px;
+// .padding-cases{
+//   padding-top: 85px;
+//   padding-bottom: 85px;
 
-}
+// }
 
 .itseems-background{
   background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
 }
 
-.indifferent-background{
-  background: #20222B;
-}
+
 
 
 .right{
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
