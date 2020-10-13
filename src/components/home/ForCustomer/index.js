@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
@@ -18,16 +18,16 @@ const ForCustomer = () => {
         setSuccess(true)
     }
 
-    const onClose = () => { 
+    const onClose = () => {
         setModal(false)
     }
 
     const renderModal = () => {
-        if(success) {
+        if (success) {
             console.log('function is working')
             return (
-                <div className = 'result'>
-                    <Modal isModal = {modal}>
+                <div className='result'>
+                    <Modal isModal={modal}>
                         <GeneralModal
                         img = {'./images/modalImage.svg'}
                         alt = {'success'}
@@ -43,9 +43,9 @@ const ForCustomer = () => {
     };
     return (
         <section className='for-customer' id='forcustomer'>
-           
-                        {success && renderModal()}
-                        <div className='container'>
+
+            {success && renderModal()}
+            <div className='container flex'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
                     <p className='for-customer-text text'>«Мені здається» – це анонімний онлайн-щоденник, де кожен абсолютно анонімно може поділитися власною історією абсолютно анонімно.</p>
@@ -62,11 +62,11 @@ const ForCustomer = () => {
                             alt={alt}
                             info={info}
                             data={data}
-                        />
+                            />
                         )}
                     </div>
                 </div>
-                <FormBlock onSuccess = {showModal}/>
+                <FormBlock onSuccess={showModal} />
             </div>
         </section>
     )

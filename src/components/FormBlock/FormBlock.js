@@ -38,6 +38,7 @@ function FormBlock({ onSuccess }) {
 
     let changeSuccess = () => {
         setSuccess(true);
+
         setTimeout(() => {
             setSuccess(false)
             setErrorName(false)
@@ -47,56 +48,65 @@ function FormBlock({ onSuccess }) {
     }
 
     let validate = () => {
-        
-        if (formData.name === null || formData.name ==='') {
+
+        // for(let input in formData){
+        //     if(formData.input === ''){
+        //         setErrorName(false)
+        //         setErrorPhone(false)
+        //         setErrorMail(false)
+        //         return false
+        //     }
+        // }
+        if (formData.phone === '' || formData.name === '' || formData.mail === '') {
             setErrorName(true)
-            
-            return false
-        }
-        if (formData.phone === null || formData.phone === '') {
             setErrorPhone(true)
-            return false
-        }
-        if (formData.mail === null || formData.mail === '') {
             setErrorMail(true)
             return false
         }
-        setTimeout(() => {
-            setSuccess(false)
-            setErrorName(false)
-            setErrorPhone(false)
-            setErrorMail(false)
-        }, 4000)
+        sendMail()
+        
 
-        if(!errorName || !errorPhone || !errorMail){
-            axios.post("http://www.testvakulenko.fun/send.php", formData)
+        
 
-            .then(res => {
-                console.log(res)
-                console.log(res.data)
-               
-                
-                if(res.status === 200){
-                    changeSuccess()
-                    resetInput()
-                }
-            })
-            .catch(() => {    
-                console.log('message not send');
-                onSuccess()
-
-            })
+        
         }
+        
+        let sendMail = () =>{
+        // if (!errorName || !errorPhone || !errorMail) {
+            axios.post("http://www.testvakulenko.fun/send.php", formData)
+                .then(res => {
+                    console.log(res)
+                    console.log(res.data)
+
+                    if (res.status === 200) {
+                        changeSuccess()
+                        resetInput()
+                        onSuccess()
+                    }
+                })
+                .catch(() => {
+                    console.log('message not send');
+                    
+                })
+        // }
+
     }
 
     let handleSubmit = (e) => {
         e.preventDefault();
         validate()
-       
     }
 
+    setTimeout(() => {
+        setSuccess(false)
+        setErrorName(false)
+        setErrorPhone(false)
+        setErrorMail(false)
+    }, 4000)
+    
+
     return (
-        <div className='form-block'>
+        <div className='form'>
             <div className='form-wrap'>
                 <h3 className='form-title'>Це анонімний онлайн кожен абсолютно</h3>
                 <form onSubmit={handleSubmit}>
@@ -117,7 +127,7 @@ function FormBlock({ onSuccess }) {
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
-                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail}/>
+                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail} />
                             {errorMail && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
                         </label>
                     </div>
@@ -130,7 +140,7 @@ function FormBlock({ onSuccess }) {
                     {/* {success &&
                         alert('message was sent')
                     } */}
-                    <button type='submit'>Заказать консультацию</button>
+                    <button type='submit' className='form-button'>Заказать консультацию</button>
                 </form>
             </div>
         </div>
