@@ -54,6 +54,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover{
+            background: linear-gradient(219.47deg, #10CC94 107.31%, #83CC59 3.01%);
+        }
     }
 }
 
