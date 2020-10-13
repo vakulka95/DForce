@@ -34,7 +34,7 @@ const ForCustomer = () => {
                         title = {'Title if it need'}
                         onButtonPress = {onClose}
                         onClose = {onClose}>
-                            <Loader />
+                            <Loader classStyle='anim' />
                         </GeneralModal>
                     </Modal>
                 </div>
