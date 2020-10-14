@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom'
 import './style.scss';
 
-function Logo({logoClass, parentClass}) {
+function Logo({logoClass, parentClass, mobile}) {
     return (
         <div className={parentClass}>
-            <Link to='/'>
+            <Link to='/' onClick={mobile}>
             <img src='./images/logo.svg'  className={logoClass} alt='Logo'/>
             </Link>
         </div>
@@ -15,11 +15,12 @@ function Logo({logoClass, parentClass}) {
 
 Logo.propTypes = {
     logoClass: PropTypes.string.isRequired,
-    parentClass: PropTypes.string.isRequired
+    parentClass: PropTypes.string.isRequired,
+    mobile: PropTypes.func.isRequired
 
 }
 
 Logo.defaultProps = {
     logoClass: 'logo'
 }
-export default Logo
+export default Logo;
