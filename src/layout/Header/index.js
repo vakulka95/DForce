@@ -1,10 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Logo from '../../components/Logo/Logo';
 import {useLocation} from 'react-router-dom';
 import './style.scss';
 
 const Header = () =>{
+    // const [mobileNav, setMobileNav] = useState({
+    //     display:'none'
+    // });
+
+    // const showMobileNav = () => {
+    //     setMobileNav({
+    //         display: 'Block'
+    //     })
+    // }
 
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -58,7 +67,7 @@ const Header = () =>{
                         </NavLink></li>
                 </ul>
             </div>
-            <div className = 'header-media'><div className = 'header-media-button'></div></div>
+            <div className = 'header-media'><div className = 'header-media-button' onClick={showMobileNav}><img src="./images/mobileNav.svg" alt="button" /></div></div>
             </div>
         </header>
     )
