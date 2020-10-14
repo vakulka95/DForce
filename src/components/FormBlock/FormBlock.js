@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './style.scss';
 import PropTypes from 'prop-types';
+import Button from '../Button';
 
 function FormBlock({ onSuccess }) {
 
@@ -140,7 +141,8 @@ function FormBlock({ onSuccess }) {
                     {/* {success &&
                         alert('message was sent')
                     } */}
-                    <button type='submit' className='form-button'>Заказать консультацию</button>
+                    {/* <button type='submit' className='form-button'>Заказать консультацию</button> */}
+                    <Button submit={true} />
                 </form>
             </div>
         </div>

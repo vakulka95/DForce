@@ -1,9 +1,12 @@
 .btn{
     display:block;
     &-wrap{
-        position: fixed;
-        bottom: 50px;
-        left: 40%;
+        display:block;
+        &-active{
+            position: fixed;
+            bottom: 50px;
+            left: 40%;
+        }
     }
     &-btn{
         font-weight: 500;
