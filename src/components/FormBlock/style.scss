@@ -4,7 +4,7 @@
     border-radius: 12px;
     margin-top: -243px;
     width: 660px;
-    right: 35px;
+    right: 1%;
     position: relative;
     top: -70px;
     &-wrap{
@@ -92,7 +92,7 @@
   and (max-device-width: 1899px){
     .form{
         width: 546px;
-        margin-right: 50px;
+        //margin-right: 50px;
         &-title{
             font-size: 28px;
             line-height: 40px;
