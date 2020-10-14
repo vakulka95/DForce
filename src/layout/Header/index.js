@@ -31,7 +31,7 @@ const Header = () =>{
     return(
         <header className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
-                <Logo parentClass='logo' logoClass='header-logo' mobile={activateMobileNav}/>
+                <Logo parentClass='logo' logoClass='header-logo' mobile={mobileNav?activateMobileNav:null}/>
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
                 <ul className = 'header-navigation-list'>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
