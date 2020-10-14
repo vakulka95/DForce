@@ -290,6 +290,40 @@ h2{
     .main-padding{
       padding-top: 80px;
     }
+
+    .detail{
+      &-figure{
+        margin: 90px 0 150px 0;
+      }
+      padding: 100px 0 160px 0;
+      &-sub{
+        &-title{
+          line-height: 60px;
+        }
+      }
+      &-block{
+        &-figures{
+          // padding: 100px 50px;
+          .detail-figure{
+            padding: 100px 50px;
+            &-item{
+              width: 200px;
+            }
+          }
+        }
+      }
+      &-figure{
+        justify-content: center;
+        img{
+          width: 900px;
+        }
+        .mob-group-map{
+          width: 500px;
+          height: 500px;
+          margin: 0 15px;
+        }
+      }
+    }
   }
 
 
