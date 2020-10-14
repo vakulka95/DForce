@@ -3,14 +3,15 @@ import { Route } from "react-router-dom";
 import routes from '../../router';
 import './style.scss';
 import ForCustomer from '../../components/home/ForCustomer/index'
-import Loader from '../../components/Loader';
+import PreLoader from '../../components/Loader/PreLoader';
 
 
 const Content = () => {
 
     return(
+        
     <main >
-            <Suspense fallback={ <Loader /> }>
+            <Suspense fallback={ <PreLoader /> }>
                 
                     {
                         routes.map( ( route, index ) => (

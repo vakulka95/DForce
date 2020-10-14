@@ -17,7 +17,6 @@
         width: 40%;
     }
     &-title{
-        font-size: 28px;
         line-height: 55px;
         h3{
             margin-top: 0;
@@ -70,3 +69,55 @@
 .vote{
     background: #1F1F1F;
 }
+
+
+@media only screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1899px){
+    .case{
+        margin-top: 28px;
+        margin-bottom: 60px;
+        
+        &-image{
+            min-width: 580px;
+            width: 100%;
+            max-width: 40%;
+            img{
+                min-width: 318px;
+                width: 100%;
+                max-width: 50%;
+            }
+        }
+        &-title{
+            font-size: 28px;
+            line-height: 45px;
+        }
+        &-description{
+            width: 41%;
+        }
+      }
+    
+  }
+
+
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1299px){
+      .case{
+          &-image{
+              margin-right: 0;
+              width: 100%;
+          }
+          &-title{
+            width: 80%;
+        }
+
+        &-description{
+            width: 100%;
+            margin-top: 30px;
+        }
+        &-link{
+            margin-top: 30px;
+        }
+      }
+  }

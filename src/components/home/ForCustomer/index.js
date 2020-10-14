@@ -29,21 +29,14 @@ const ForCustomer = () => {
                 <div className='result'>
                     <Modal isModal={modal}>
                         <GeneralModal
-// <<<<<<< HEAD
-//                             img={'./images/modalImage.svg'}
-//                             alt={'success'}
-//                             title={'Title if it need'}
-//                             onButtonPress={onClose}
-//                             onClose={onClose}>
-//                             <Message />
-// =======
+
                         img = {'./images/modalImage.svg'}
                         alt = {'success'}
                         title = {'Title if it need'}
                         onButtonPress = {onClose}
                         onClose = {onClose}>
-                            <Loader />
-{/* >>>>>>> origin/myvariant2.0 */}
+
+                            <Loader classStyle='anim' />
                         </GeneralModal>
                     </Modal>
                 </div>

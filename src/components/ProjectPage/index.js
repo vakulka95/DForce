@@ -18,7 +18,7 @@ function ProjectPage({item}) {
                         {item.paragraph1}
                     </p>
                 </div>
-                <figure className='detail-figure color flex'>
+                <figure className='detail-figure mob-group color flex'>
                     {item.group2.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div>
@@ -41,7 +41,7 @@ function ProjectPage({item}) {
                         {item.paragraph2}
                     </p>
                 </div>
-                <figure className='detail-figure color flex'>
+                <figure className='detail-figure color mob-group flex'>
                     {item.group5.map((img) => <img alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='right'>
