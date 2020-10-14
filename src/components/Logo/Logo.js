@@ -16,7 +16,7 @@ function Logo({logoClass, parentClass, mobile}) {
 Logo.propTypes = {
     logoClass: PropTypes.string.isRequired,
     parentClass: PropTypes.string.isRequired,
-    mobile: PropTypes.func.isRequired
+    mobile: PropTypes.func
 
 }
 
