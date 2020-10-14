@@ -8,3 +8,16 @@
     //     padding: 100px 80px;
     // }
 }
+
+@media only screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1899px){
+      .portfolio{
+          padding-bottom: 140px;
+          &-list{
+            :last-child{
+                margin-bottom: 0;
+            }
+          }
+      }
+  }

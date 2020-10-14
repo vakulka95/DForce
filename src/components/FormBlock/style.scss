@@ -4,7 +4,8 @@
     border-radius: 12px;
     margin-top: -243px;
     width: 660px;
-    right: 190px;
+    right: 1%;
+    position: relative;
     top: -70px;
     &-wrap{
         padding: 105px 70px 70px;
@@ -85,3 +86,19 @@
 .error{
     border: 1px solid red;
 }
+
+@media only screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1899px){
+    .form{
+        width: 546px;
+        //margin-right: 50px;
+        &-title{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &-group{
+            margin-bottom: 18px;
+        }
+    }
+  }

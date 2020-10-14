@@ -9,6 +9,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 100px;
-
 }
 
+@media only screen 
+    and (min-device-width: 1300px) 
+    and (max-device-width: 1899px){
+        
+        .spec-section{
+            margin-top: 78px;
+        }
+    }
+
+
+
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1299px){
+    .specialization{
+        &-paragraph{
+            width: 53%;
+       }   
+    }
+    .spec-section{
+        margin-top: 58px;
+        justify-content: space-between;
+    }
+  }
