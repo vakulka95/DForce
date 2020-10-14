@@ -67,7 +67,7 @@ const Header = () =>{
                         </NavLink></li>
                 </ul>
             </div>
-            <div className = 'header-media'><div className = 'header-media-button' onClick={showMobileNav}><img src="./images/mobileNav.svg" alt="button" /></div></div>
+            <div className = 'header-media'><div className = 'header-media-button'><img src="./images/mobileNav.svg" alt="button" /></div></div>
             </div>
         </header>
     )
