@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import './style.scss';
 
 function Logo({logoClass, parentClass, mobile}) {
@@ -16,7 +16,7 @@ function Logo({logoClass, parentClass, mobile}) {
 Logo.propTypes = {
     logoClass: PropTypes.string.isRequired,
     parentClass: PropTypes.string.isRequired,
-    mobile: PropTypes.func.isRequired
+    mobile: PropTypes.func
 
 }
 

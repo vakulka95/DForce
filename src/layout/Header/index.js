@@ -3,6 +3,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Logo from '../../components/Logo/Logo';
 import {useLocation} from 'react-router-dom';
 import './style.scss';
+import Button from '../../components/Button';
 
 const Header = () =>{
    const [mobileNav, setMobileNav] = useState(false)
@@ -68,6 +69,7 @@ const Header = () =>{
                 </ul>
             </div>
             <div className = 'header-media'><div className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></div></div>
+            {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav}/>}
             </div>
         </header>
     )
