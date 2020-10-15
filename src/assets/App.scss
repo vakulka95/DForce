@@ -13,6 +13,10 @@ body {
     box-sizing: border-box;
 
   }
+  img{
+    max-width: 100%;
+    display: inline-block;
+  }
 
 h1,h2,h3,h4{
   font-family: 'CA Saygon Text';
@@ -326,4 +330,47 @@ h2{
     }
   }
 
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 760px){
+    
+    .case{
+      &-image{
+        border-radius: 0;
+        width: 100%;
+        padding: 50px 0;
+        margin-right: 0;
+        img{
+          width: 75%;
+        }
+      }
+    }
+    .container{
+      width: 100%;
+      padding: 0;
+      .text{
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+      }
+      h1{
+        font-size: 38px;
+        line-height: 40px;
+      }
+      h2{
+        font-size: 30px;
+        line-height: 40px;
 
+      }
+      h3{
+        font-size: 28px;
+      }
+
+      .header-logo{
+        width: 155px;
+      }
+
+    
+      
+    }
+  }
