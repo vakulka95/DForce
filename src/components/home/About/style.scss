@@ -17,18 +17,23 @@
     }
     &-items{
         display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        // :last-child{
-        //     margin-right: 0;
-        // }
+        justify-content: center;
+        :last-child{
+            margin-right: 0;
+        }
+    }
+    &-item-wrap{
+        width: 25%;
+        border-radius: 12px;
+        background: #111217;
+        margin-right: 15px;
+        
     }
     &-one{
-        border-radius: 12px;
-        width: 17%;
-        background-color: #111217;
-        margin: 0px 0px 35px 0;
-        padding: 62px 55px 52px 55px;
+        margin: 55px;
+        background: #111217;
+
+        // padding: 62px 55px 52px 55px;
         
     }
 }
@@ -66,22 +71,48 @@
             padding-bottom: 79px;
         }
         &-items{
+            flex-wrap: wrap;
             justify-content: center;
             // max-width: 100%;
-            :nth-child(odd){
-                margin-right: 35px;
-            }
+            
             
         }
+        &-item-wrap{
+            width: 48%;
+            margin: 0;
+        }
         &-one{
-            min-width: 385px;
-            width: auto;
-            max-width: 40%;
-            display: inline-block;
-            vertical-align: top;
+            // min-width: 385px;
+            // width: auto;
+            // max-width: 40%;
+            // display: inline-block;
+            // vertical-align: top;
             
         }
     }
+  }
+
+  @for $i from 1 through 4{
+    @if $i % 2 == 1{
+        .about{
+            &-items{
+                :nth-child(#{$i}){
+                    margin-right: 35px;
+                    // margin-bottom: 35px;
+                }
+            }
+        }
+      }
+      @if $i > 2{
+        .about{
+            &-items{
+                flex-wrap: wrap;
+            }
+            &-item-wrap{
+                margin-bottom: 35px;
+            }
+        }
+      }
   }
 
 //   @media only screen and(max-device-width: 1510px){
@@ -97,17 +128,32 @@
   and (min-device-width: 1024px) 
   and (max-device-width: 1299px){
     .about{
-        &-items{
-            justify-content: space-around;
-            display: flex;
+        &-item-wrap{
+            width: 48%;
         }
-        &-one{
-            width: 37%;
-            height: 300px;
-            align-self: center;
-            display: block;
-            // vertical-align: 0;
-        }
+    }
+    @for $i from 1 through 4{
+        @if $i % 2 == 0{
+            .about{
+                &-items{
+                    :nth-child(#{$i}){
+                        margin-right: 0;
+                        // margin-bottom: 35px;
+                    }
+                }
+            }
+          }
+          @if $i > 2{
+            .about{
+                &-items{
+                    flex-wrap: wrap;
+                }
+                &-item-wrap{
+                    
+                    margin-bottom: 35px;
+                }
+            }
+          }
     }
   }
 
@@ -122,10 +168,13 @@
         &-items{
             flex-direction: column;
         }
+        &-item-wrap{
+            width: 100%;
+        }
         &-one{
-            padding: 35px 25px 29px 20px;
-            width: auto;
-            margin-bottom: 15px;
+            // padding: 35px 25px 29px 20px;
+            // width: auto;
+            // margin-bottom: 15px;
         }
     }
   }

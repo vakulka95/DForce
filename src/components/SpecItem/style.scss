@@ -1,5 +1,5 @@
 .spec-item{
-    width: 441px;
+    width: 500px;
     // text-align: left;
     margin-bottom: 100px;
     .spec-title{
@@ -29,7 +29,19 @@
     height: 55px;
 }
 
-
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1299px){
+    .spec-item{
+        width: 50%;
+        .spec-title{
+            // font-size: 34px;
+            line-height: 45px;
+            margin-top: 44px;
+            margin-bottom: 6px;
+        }
+    }
+}
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 760px){

@@ -58,11 +58,7 @@
     .for-customer{
         padding-top: 110px;
         background-position-y: 20px;
-        .flex{
-            flex-direction: column;
-            justify-content: center;
-          
-      }
+
       &-title{
         line-height: 55px;
     }
@@ -72,17 +68,12 @@
         width: 100%;
     }
     &-contacts{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         .contact-item{
             margin-right: 50px;
         }
     }
-      .form{
-            align-self: center;
-            width: 100%;
-            right: 0;
-            top: 90px;
-      }
+      
     }
      
   }
@@ -113,35 +104,7 @@
         .flex{
             flex-direction: column-reverse;
 
-            .form{
-                right: 0;
-                left: 0;
-                width: 100%;
-                top: -50px;
-                &-wrap{
-                    padding: 45px 20px 35px 20px;
-                }
-                &-title{
-                    width:100%;
-                    font-size: 20px;
-                    line-height: 30px;
-                    margin-bottom: 14px;
-                }
-                &-group{
-                    margin-bottom: 4px;
-                    textarea{
-                        display: block;
-                        width: 95%;
-                    }
-                }
-                &-input{
-                    display: block;
-                    width: 97%;
-                }
-                .btn-wrap{
-                    margin: 35px 0; 
-                }
-            }
+            
         }
         
         
