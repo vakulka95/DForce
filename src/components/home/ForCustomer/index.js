@@ -5,7 +5,7 @@ import './style.scss';
 
 import Modal from '../../../components/Modal';
 import GeneralModal from '../../../components/Modal/GeneralModal';
-//import Message from '../../../components/Modal/templatesModal/Message';
+// import Message from '../../../components/Modal/templatesModal/Message';
 import contactItem from '../../../json/contactItem';
 import Loader from '../../Loader';
 
@@ -13,9 +13,15 @@ const ForCustomer = () => {
 
     const [modal, setModal] = useState(true);
     const [success, setSuccess] = useState(false);
+    const [error,setError] = useState(false);
 
-    const showModal = () => {
-        setSuccess(true)
+    let showModal = (sending) => {
+        console.log(sending)
+        if(sending===true){
+            setSuccess(true)
+        }
+        else setError(true)
+   
     }
 
     const onClose = () => {
@@ -24,7 +30,6 @@ const ForCustomer = () => {
 
     const renderModal = () => {
         if (success) {
-            console.log('function is working')
             return (
                 <div className='result'>
                     <Modal isModal={modal}>
@@ -40,11 +45,24 @@ const ForCustomer = () => {
                 </div>
             )
         }
+        if(error) {
+            return (
+                <div className='result'>
+                    <Modal isModal={modal}>
+                        <GeneralModal 
+                        title = {'Something went wrong'}
+                        onButtonPress = {onClose}>   
+                        </GeneralModal>
+                    </Modal>
+
+                </div>
+            )
+        }
     };
     return (
         <section className='for-customer' id='forcustomer'>
 
-            {success && renderModal()}
+            {(success || error) && renderModal()}
             <div className='container flex'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>

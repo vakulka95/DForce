@@ -3,7 +3,7 @@ $_POST = json_decode(file_get_contents("php://input"), true);
 
 $name = $_POST["name"];
 $phone = $_POST["phone"];
-$mail = $_POST["mail"];
+$mail = $_POST["email"];
 $comment = $_POST["comment"];
 
 $to = "vakulka95@gmail.com";
