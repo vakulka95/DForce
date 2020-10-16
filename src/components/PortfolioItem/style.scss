@@ -121,3 +121,40 @@
         }
       }
   }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 760px){
+    
+        .case{
+            margin-top: 23px;
+            margin-bottom: 50px;
+            
+            .itseems-background{
+                padding-bottom: 0;
+            }
+            &-image{
+                border-radius: 0;
+                width: 100%;
+                padding: 50px 0;
+                margin-right: 0;
+                img{
+                width: 60%;
+                }
+            }
+            &-description{
+                padding: 0 15px;
+                width: 100%;
+                margin-top: 19px;
+            }
+            &-title{
+                margin-bottom: 0;
+            }
+            &-link{
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 15px;
+            }
+        }
+    
+  }

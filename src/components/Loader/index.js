@@ -4,7 +4,7 @@ import './style.scss';
 const Loader = ({classStyle}) => {
     return (
         <div className={classStyle}>
-            <img height="100px" alt="loading" width="100px" src="./images/load.svg" />
+            <div className='load'><span className="loader-5"></span></div>
         </div>
  
     )

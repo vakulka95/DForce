@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.scss';
 //import itseems from '../../json/itseems.json';
 
 function ProjectPage({item}) {

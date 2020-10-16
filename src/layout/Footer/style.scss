@@ -8,3 +8,11 @@ $backgroundColor: #0D0D0D;
 
     padding: 57px 0;
 }
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 760px){
+    .footer{
+        padding: 36px 0;
+    }
+}

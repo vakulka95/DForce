@@ -8,11 +8,9 @@ import PreLoader from '../../components/Loader/PreLoader';
 
 const Content = () => {
 
-    return(
-        
+    return(       
     <main >
-            <Suspense fallback={ <PreLoader /> }>
-                
+            <Suspense fallback={ <PreLoader /> }>    
                     {
                         routes.map( ( route, index ) => (
                             <Route

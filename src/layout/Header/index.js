@@ -68,7 +68,7 @@ const Header = () =>{
                         </NavLink></li>
                 </ul>
             </div>
-            <div className = 'header-media'><div className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></div></div>
+            <div className = 'header-media'><button className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></button></div>
             {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav}/>}
             </div>
         </header>

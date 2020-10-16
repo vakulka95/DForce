@@ -1,0 +1,238 @@
+.detail{
+    background-color: #000000;
+    padding: 200px 0 260px 0;
+    :last-child{
+      margin-bottom: 0;
+    }
+    &-sub-title{
+      color: #fff;
+      width: 60%;
+      font-weight: 600;
+      font-size: 63px;
+      line-height: 85px;
+      letter-spacing: 0.02em;
+    }
+    &-figure{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 135px 225px;
+      border-radius: 8px;
+      margin: 150px 0 200px 0;
+      
+    }
+    &-text{
+      font-weight: 400;
+      font-size: 16px;
+      width: 60%;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.8);
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      margin-top: 28px;
+    }
+    &-block{
+      &-desktop-figures{
+        margin-bottom: 200px;
+        figure:first-child{
+          margin-bottom: 35px;
+        }
+        figure:last-child{
+          margin-top: 0;
+        }
+      }
+      &-figures{
+        margin-bottom: -110px;
+        .detail-figure:first-child{
+          margin-right: 20px;
+        }
+        .detail-figure:last-child{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+
+.right{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    figure{
+      width: 49%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .App {
+    &-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+    width: 100%;
+    
+  }
+  
+
+@media only screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1899px){
+.detail{
+    padding: 123px 0 201px 0;
+    
+    &-figure{
+      margin: 97px 0 93px 0;
+      &-img{
+        width: 70vw;
+        height: 100%;
+    
+      }
+      &-item{
+        height: 100%;
+        max-width: 30vw;
+      }
+      
+    }
+
+    .mob-group{
+      justify-content: center;
+      :last-child{
+        margin-right: 0;
+      }
+      &-map{
+        width: 50%;
+         height:100%;
+         margin-right: 30px;
+      } 
+    }
+    &-text{
+      margin-top: 20px;
+    }
+    &-block-figures{
+      margin-bottom: -55px;
+      .detail-figure{
+        padding: 50px;
+        img{
+          width: 300px;
+        }
+      }
+    }
+  }
+  }
+  
+  
+  
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1299px){
+.detail{
+    &-figure{
+      margin: 90px 0 150px 0;
+    }
+    padding: 100px 0 160px 0;
+    &-sub{
+      &-title{
+        line-height: 60px;
+      }
+    }
+    &-block{
+      &-figures{
+        // padding: 100px 50px;
+        .detail-figure{
+          padding: 100px 50px;
+          &-item{
+            width: 200px;
+          }
+        }
+      }
+    }
+    &-figure{
+      justify-content: center;
+      img{
+        width: 900px;
+      }
+      .mob-group-map{
+        width: 500px;
+        height: 500px;
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 760px){
+    
+.detail{
+    padding: 46px 0 69px 0;
+    figure:last-child{
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 35px;
+        width: 90%;
+        padding: 0 15px;
+    }
+    &-text{
+        padding: 0 15px;
+        width: 90%;
+    }
+    &-figure{
+        margin: 44px 0 60px 0;
+        width: 100%;
+        padding: 50px 0;
+        border-radius: 0;
+        &-item{
+            width: 150px;
+        }
+        
+        &-img{
+            width: 300px;
+        }
+    }
+    &-block{
+        &-figures{
+            margin-bottom: 40px;
+            .detail-figure:first-child{
+                margin-right: 0;
+            }
+            .detail-figure:last-child{
+                margin-top: 6px;
+                margin-left: 0;
+            }
+        }
+        &-desktop-figures{
+            margin-bottom: 60px;
+            :first-child{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .flex{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        figure{
+            width: 100%;
+        }
+    }
+    .mob-group{
+        &-map{
+            width: 85px;
+        }
+    }
+    .right{
+        margin: 0;
+        display: block;
+    }
+  }
+}

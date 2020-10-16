@@ -29,45 +29,13 @@
     height: 55px;
 }
 
-@media only screen 
-    and (min-device-width: 1300px) 
-    and (max-device-width: 1899px){
-    .spec-item{
-        min-width: 250px;
-        width: auto;
-        max-width: 30%;
-
-        display: inline-block;
-        vertical-align: top;
-
-        margin-bottom: 69px;
-        .spec-title{
-            font-size: 28px;
-            margin-top: 36px;
-            margin-bottom: 6px;
-        } 
-        .spec-image{
-            width: 110px;
-        }
-        .spec-text{
-            width: 90%;
-        }  
-    }
-    
-  
-}
-
 
 @media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1299px){
-    .spec-item{
-        width: 47%;
-        .spec-title{
-            margin-top: 30px;
-        }
-        .spec-text{
-            width: 100%;
-        }
+and (min-device-width: 320px) 
+and (max-device-width: 760px){
+    .value-title{
+        margin-bottom: 15px;
+        margin-top: 31px;
     }
 }
+

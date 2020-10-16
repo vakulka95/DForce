@@ -1,7 +1,7 @@
 .about{
     background-color: #15161c;
     display: flex;
-    width: 100%;
+    // width: 100%;
     // flex-direction: row;
     padding-bottom: 150px;
 
@@ -84,13 +84,13 @@
     }
   }
 
-  @media only screen and(max-device-width: 1510px){
-      .about{
-          &-one{
-              max-width: 38%;
-          }
-      }
-  }
+//   @media only screen and(max-device-width: 1510px){
+//       .about{
+//           &-one{
+//               max-width: 38%;
+//           }
+//       }
+//   }
 
 
   @media only screen 
@@ -107,6 +107,25 @@
             align-self: center;
             display: block;
             // vertical-align: 0;
+        }
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 760px){
+    .about{
+        padding: 72px 15px 85px 15px;
+        &-content{
+            width: 100%;
+        }
+        &-items{
+            flex-direction: column;
+        }
+        &-one{
+            padding: 35px 25px 29px 20px;
+            width: auto;
+            margin-bottom: 15px;
         }
     }
   }

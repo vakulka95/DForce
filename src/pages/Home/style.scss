@@ -25,12 +25,13 @@
             color:white;
         }
     }
-    // &-paragraph{
-    //     font-size: 14px;
-    //     width: 55%;
+    &-paragraph{
+        font-size: 18px;
+        line-height: 35px;
         // padding: 10px 15px 80px 80px;
-        // margin-bottom: 100px;
-    // }
+        margin-top: 21px;
+        width: 40%;
+    }
 }
 
 
@@ -50,7 +51,7 @@
   and (min-device-width: 320px) 
   and (max-device-width: 760px){
     .home{
-        padding: 0 15px;
+        padding: 46px 15px 60px 15px;
         &-paragraph{
         width: 100%
         }
