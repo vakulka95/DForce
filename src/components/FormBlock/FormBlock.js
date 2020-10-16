@@ -3,133 +3,106 @@ import axios from 'axios';
 import './style.scss';
 import PropTypes from 'prop-types';
 import Button from '../Button';
+import isInvalid from '../../utils/isInvalis';
 
 function FormBlock({ onSuccess }) {
 
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
-        mail: '',
+        email: '',
         comment: '',
+        nameInvalid:null,
+        emailInvalid:null,
+        phoneInvalid:null,
+        commentInvalid:null
     })
 
-    const [errorName, setErrorName] = useState(false);
-    const [errorPhone, setErrorPhone] = useState(false);
-    const [errorMail, setErrorMail] = useState(false);
-
-
-    const [success, setSuccess] = useState(false);
-
-
     let onChange = ({ target }) => {
+        console.log(target.value)
         setFormData(prevState => ({
             ...prevState,
             [target.name]: target.value
         }))
     }
 
-    let resetInput = () => {
+    const resetInput = () => {
         setFormData({
             name: '',
             phone: '',
-            mail: '',
-            comment: ''
+            email: '',
+            comment: '',
+            nameInvalid:null,
+            emailInvalid:null,
+            phoneInvalid:null,
+            commentInvalid:null
         })
     }
-
-    let changeSuccess = () => {
-        setSuccess(true);
-
-        setTimeout(() => {
-            setSuccess(false)
-            setErrorName(false)
-            setErrorPhone(false)
-            setErrorMail(false)
-        }, 4000)
-    }
-
-    let validate = () => {
-
-        // for(let input in formData){
-        //     if(formData.input === ''){
-        //         setErrorName(false)
-        //         setErrorPhone(false)
-        //         setErrorMail(false)
-        //         return false
-        //     }
-        // }
-        if (formData.phone === '' || formData.name === '' || formData.mail === '') {
-            setErrorName(true)
-            setErrorPhone(true)
-            setErrorMail(true)
-            return false
-        }
-        sendMail()
-        
-
-        
-
-        
-        }
         
         let sendMail = () =>{
-        // if (!errorName || !errorPhone || !errorMail) {
-            axios.post("http://www.testvakulenko.fun/send.php", formData)
-                .then(res => {
-                    console.log(res)
-                    console.log(res.data)
+        const newData = { ...formData };
 
-                    if (res.status === 200) {
-                        changeSuccess()
-                        resetInput()
-                    }
-                })
-                .catch(() => {
-                    console.log('message not send');
-                    onSuccess()
+        const name = isInvalid("name", formData.name);
+        const phone = isInvalid("phone", formData.phone);
+        const email = isInvalid("email",formData.email);
 
-                })
-        // }
+        newData.nameInvalid = name;
+        newData.phoneInvalid = phone;
+        newData.emailInvalid = email;
 
-    }
+        if (!name && !phone && !email) {
+            const dataForSend = {
+                name:formData.name,
+                phone:formData.phone,
+                email:formData.email,
+                comment:formData.comment
+            };
+            return  axios.post("http://www.testvakulenko.fun/send.php", dataForSend)
+            .then(res => {
+                console.log(res)
+                console.log(res.data)
 
-    let handleSubmit = (e) => {
-        e.preventDefault();
-        validate()
-    }
+                if (res.status === 200) {
+                    resetInput()
+                    onSuccess(true)
+                }
+            })
+            .catch(() => {
+                console.log('message not send');
+                onSuccess(false)
+                resetInput()
 
-    setTimeout(() => {
-        setSuccess(false)
-        setErrorName(false)
-        setErrorPhone(false)
-        setErrorMail(false)
-    }, 4000)
-    
+            });
+        } else {
+            setFormData(newData);
+        }
+
+    };
 
     return (
         <div className='form'>
             <div className='form-wrap'>
                 <h3 className='form-title'>Це анонімний онлайн кожен абсолютно</h3>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <div className='form-group'>
                         <label>
                             Ваше ім'я:
-                            <input type='text' name='name' className={errorName ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
-                            {errorName && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
+                            <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
+                            {formData.nameInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.nameInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваш телефон:
-                            <input type='text' name='phone' className={errorPhone ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
-                            {errorPhone && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
+                            <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
+                            {formData.phoneInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.phoneInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
-                            <input type='email' name='mail' className={errorMail ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.mail} />
-                            {errorMail && <div style={{ color: 'red', fontSize: '14px' }}><p>Заповніть поле</p></div>}
+                            <input type='email' name='email' className={formData.emailInvalid ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.email} />
+                            {formData.emailInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.emailInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
@@ -138,11 +111,7 @@ function FormBlock({ onSuccess }) {
                             <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
-                    {/* {success &&
-                        alert('message was sent')
-                    } */}
-                    {/* <button type='submit' className='form-button'>Заказать консультацию</button> */}
-                    <Button submit={true} />
+                    <Button submit={true} onClick={sendMail}/>
                 </form>
             </div>
         </div>
