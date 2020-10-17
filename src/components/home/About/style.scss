@@ -1,25 +1,26 @@
 .about{
     background-color: #15161c;
     display: flex;
-    // width: 100%;
-    // flex-direction: row;
-    padding-bottom: 150px;
+    padding: 72px 15px 85px 15px;
 
     .title-of-block{
 
         color:white;
-        padding-bottom: 30px;
+        padding-bottom: 16px;
         margin: 0;
     }
     &-content{
-        width: 45%;
-        padding-bottom: 100px;
+        width: 100%;
+        color: white;
+        padding-bottom: 30px;
     }
     &-items{
         display:flex;
         justify-content: center;
+        flex-direction: column;
         :last-child{
             margin-right: 0;
+            color: white;
         }
     }
     &-item-wrap{
@@ -27,6 +28,7 @@
         border-radius: 12px;
         background: #111217;
         margin-right: 15px;
+        margin-bottom: 15px;
         
     }
     &-one{
@@ -81,14 +83,7 @@
             width: 48%;
             margin: 0;
         }
-        &-one{
-            // min-width: 385px;
-            // width: auto;
-            // max-width: 40%;
-            // display: inline-block;
-            // vertical-align: top;
-            
-        }
+
     }
 
   @for $i from 1 through 4{
@@ -115,16 +110,6 @@
   }
   }
 
-
-//   @media screen and(max-width: 1510px){
-//       .about{
-//           &-one{
-//               max-width: 38%;
-//           }
-//       }
-//   }
-
-
   @media screen 
   and (min-width: 1024px) 
   and (max-width: 1299px){
@@ -139,7 +124,6 @@
                 &-items{
                     :nth-child(#{$i}){
                         margin-right: 0;
-                        // margin-bottom: 35px;
                     }
                 }
             }
@@ -162,10 +146,7 @@
   and (min-width: 320px) 
   and (max-width: 760px){
     .about{
-        padding: 72px 15px 85px 15px;
-        &-content{
-            width: 100%;
-        }
+ 
         &-items{
             flex-direction: column;
         }

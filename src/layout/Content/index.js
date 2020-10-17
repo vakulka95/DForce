@@ -10,6 +10,7 @@ const Content = () => {
 
     return(       
     <main >
+        <PreLoader />
             <Suspense fallback={ <PreLoader /> }>    
                     {
                         routes.map( ( route, index ) => (

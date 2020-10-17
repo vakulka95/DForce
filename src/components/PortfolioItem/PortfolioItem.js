@@ -14,9 +14,7 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
                 <img src={image} alt={alt} />
             </div>
             <div className='case-description'>
-                <div className='case-title sub-title'>
-                    <h3>{description}</h3>
-                </div>
+                <p className='case-title sub-title'>{description}</p>
                 <div className='case-link'>
                     <Link to={`${to}`} className='case-link-item'>Подивитися проект</Link> 
                     <Link to={`${to}`} className='case-link-item'>

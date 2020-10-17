@@ -9,12 +9,8 @@ function SpecItem({image, alt, title, text, classItem, classImage, classTitle, c
             <div className={classImage}>
                 <img src={image} alt={alt} />
             </div>
-            <div className={classTitle}>
-                <h3>{title}</h3>
-            </div>
-            <div className={classText}>
-                <p>{text}</p>
-            </div>
+            <h3 className={classTitle}>{title}</h3>
+            <p className={classText}>{text}</p>
         </div>
     )
 }

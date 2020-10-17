@@ -1,59 +1,88 @@
 .detail{
-    background-color: #000000;
-    padding: 200px 0 260px 0;
-    :last-child{
-      margin-bottom: 0;
-    }
-    &-sub-title{
-      color: #fff;
-      width: 60%;
-      font-weight: 600;
-      font-size: 63px;
-      line-height: 85px;
-      letter-spacing: 0.02em;
-    }
-    &-figure{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 135px 225px;
-      border-radius: 8px;
-      margin: 150px 0 200px 0;
-      
-    }
-    &-text{
-      font-weight: 400;
-      font-size: 16px;
-      width: 60%;
-      line-height: 30px;
-      letter-spacing: 0.03em;
-      color: rgba(255, 255, 255, 0.8);
-      text-overflow: ellipsis;
-      word-wrap: break-word;
-      margin-top: 28px;
-    }
-    &-block{
-      &-desktop-figures{
-        margin-bottom: 200px;
-        figure:first-child{
-          margin-bottom: 35px;
-        }
-        figure:last-child{
-          margin-top: 0;
-        }
-      }
-      &-figures{
-        margin-bottom: -55px;
-        .detail-figure:first-child{
-          margin-right: 20px;
-        }
-        .detail-figure:last-child{
-          margin-left: 20px;
-        }
-      }
-    }
-  }
+  background-color: #000000;
+  padding: 46px 0 69px 0;
 
+  &-sub-title{
+    color: #fff;
+    width: 60%;
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 85px;
+    letter-spacing: 0.02em;
+  }    
+  &-text{
+    font-weight: 400;
+    font-size: 16px;
+    width: 60%;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.8);
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-top: 28px;
+  }
+  h2{
+      font-size: 24px;
+      line-height: 35px;
+      width: 90%;
+      padding: 0 15px 44px 15px;
+  }
+  &-text{
+      padding: 0 15px;
+      width: 90%;
+      margin-bottom: 40px;
+  }
+  &-figure{
+      margin: 0px 0 60px 0;
+      width: 100%;
+      padding: 50px 0;
+      border-radius: 0;
+      &-item{
+          width: 150px;
+          margin-left: 33%;
+      }
+      
+      &-img{
+          width: 300px;
+          margin-left: 20%;
+      }
+  }
+  &-block{
+      &-figures{
+          margin-bottom: 10px;
+          .detail-figure:first-child{
+              margin-right: 0;
+          }
+          .detail-figure:last-child{
+              margin-top: 10px;
+              margin-left: 0;
+          }
+      }
+      &-desktop-figures{
+          margin-bottom: 60px;
+          :first-child{
+              margin-bottom: 10px;
+          }
+      }
+  }
+  
+  .flex{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      figure{
+          width: 100%;
+      }
+  }
+  .mob-group{
+      &-map{
+          width: 85px;
+      }
+  }
+  .right{
+      margin: 0;
+      display: block;
+  }
+}
 
 .right{
     margin-left: 100px;
@@ -169,71 +198,45 @@
 }
 
 @media screen 
-and (min-width: 320px) 
-and (max-width: 760px){
-    
-.detail{
-    padding: 46px 0 69px 0;
-    figure:last-child{
-        margin-top: 40px;
+and (min-width: 1901px) {
+  .detail{
+
+    padding: 200px 0 260px 0;
+    :last-child{
+      margin-bottom: 0;
     }
-    h2{
-        font-size: 24px;
-        line-height: 35px;
-        width: 90%;
-        padding: 0 15px;
-    }
-    &-text{
-        padding: 0 15px;
-        width: 90%;
-    }
+
     &-figure{
-        margin: 44px 0 60px 0;
-        width: 100%;
-        padding: 50px 0;
-        border-radius: 0;
-        &-item{
-            width: 150px;
-        }
-        
-        &-img{
-            width: 300px;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 135px 225px;
+      border-radius: 8px;
+      margin: 150px 0 200px 0;
+      
     }
+
     &-block{
-        &-figures{
-            margin-bottom: 40px;
-            .detail-figure:first-child{
-                margin-right: 0;
-            }
-            .detail-figure:last-child{
-                margin-top: 6px;
-                margin-left: 0;
-            }
+      &-desktop-figures{
+        margin-bottom: 200px;
+        figure:first-child{
+          margin-bottom: 35px;
         }
-        &-desktop-figures{
-            margin-bottom: 60px;
-            :first-child{
-                margin-bottom: 10px;
-            }
+        figure:last-child{
+          margin-top: 0;
         }
-    }
-    
-    .flex{
-        justify-content: space-around;
-        flex-wrap: wrap;
-        figure{
-            width: 100%;
+      }
+      &-figures{
+        margin-bottom: -55px;
+        .detail-figure:first-child{
+          margin-right: 20px;
         }
-    }
-    .mob-group{
-        &-map{
-            width: 85px;
+        .detail-figure:last-child{
+          margin-left: 20px;
         }
-    }
-    .right{
-        margin: 0;
-        display: block;
+      }
     }
   }
+
 }
+

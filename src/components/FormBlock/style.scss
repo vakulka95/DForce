@@ -2,9 +2,7 @@
     background: #15161C;
     border: 1px solid #2D9662;
     border-radius: 12px;
-    // margin-top: -243px;
     width: 660px;
-    //right: 1%;
     position: relative;
     top: -250px;
     right: 50px;
@@ -36,20 +34,20 @@
         color: #FFFFFF;
         textarea{
             height: 125px;
-            width: 97%;
+            width: 95%;
             background: #262833;
             border-radius: 8px;
             border: none;
             outline: none;
             color: #fff;
-            padding: 15px;
+            padding: 10px 0px 0px 15px;
             font-size: 16px;
             font-family: 'Grandis', sans-serif;
         }
         
     }
     &-input{
-        width: 100%;
+        width: 95%;
         background: #262833;
         border-radius: 8px;
         border: none;
@@ -88,21 +86,6 @@
     border: 1px solid red;
 }
 
-@media screen 
-  and (min-width: 1300px) 
-  and (max-width: 1899px){
-    // .form{
-    //     width: 546px;
-    //     //margin-right: 50px;
-    //     &-title{
-    //         font-size: 28px;
-    //         line-height: 40px;
-    //     }
-    //     &-group{
-    //         margin-bottom: 18px;
-    //     }
-    // }
-  }
 
   @media screen 
   and (min-width: 1024px) 
@@ -148,10 +131,6 @@
                 display: block;
                 width: 95%;
             }
-        }
-        &-input{
-            display: block;
-            width: 97%;
         }
         .btn-wrap{
             margin: 35px 0; 

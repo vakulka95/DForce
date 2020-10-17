@@ -1,6 +1,8 @@
 
 .specialization{
-    background-color: #15161c;
+    background-color: #15161c;    
+    padding: 60px 15px 50px 15px;
+    text-align: center;
 
 }
 
@@ -64,8 +66,8 @@
   and (max-width: 760px){
 
     .specialization{
-        padding: 69px 15px 69px 15px;
-        text-align: center;
+        // padding: 69px 15px 69px 15px;
+        // text-align: center;
         .title-of-block{
             width: 100%;
         }

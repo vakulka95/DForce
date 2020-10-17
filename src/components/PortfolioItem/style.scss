@@ -3,10 +3,12 @@
     display: flex;
     align-items: center;
     position: relative;
-    // flex-wrap: wrap;
-    margin-top: 95px;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    margin-top: 63px;
     // padding-bottom: 100px;
     &-image{
+        background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
         display: flex;
         justify-content: center;
         width: 750px;
@@ -14,13 +16,14 @@
         margin-right: 90px;
     }
     &-description{
-        width: 40%;
+        padding: 0 15px;
+        width: 100%;
+        margin-top: 30px;
     }
     &-title{
-        line-height: 55px;
-        h3{
-            margin-top: 0;
-        }
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 18px;
     }
     &-link{
         margin-top: 72px;
@@ -28,7 +31,7 @@
         align-items: center;
         a{
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 23px;
         text-decoration: none;
         text-align: center;
@@ -133,9 +136,6 @@
   and (max-width: 760px){
     
         .case{
-            flex-wrap: wrap;
-            margin-top: 23px;
-            margin-bottom: 50px;
             
             .itseems-background{
                 padding-bottom: 0;
@@ -152,7 +152,7 @@
             &-description{
                 padding: 0 15px;
                 width: 100%;
-                margin-top: 19px;
+                margin-top: 30px;
             }
             &-title{
                 margin-bottom: 0;
