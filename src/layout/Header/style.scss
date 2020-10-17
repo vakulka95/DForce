@@ -13,7 +13,7 @@
     &-opasity{
         left: 0;
         right: 0;
-        padding: 20px 0px;
+        padding: 20px 30px 20px 0px;
         position: fixed;
         &-active{
             width: 100%;
@@ -112,7 +112,6 @@
     and (max-width: 760px){
 
         .header-opasity{
-            padding: 20px 30px 20px 15px;
             .home-paragraph{
                 margin-top: 21px;
             }
