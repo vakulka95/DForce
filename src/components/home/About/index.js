@@ -10,9 +10,9 @@ const About = () => {
                 <h2 className='title-of-block'>Наші цінності</h2>
                 <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям та допомагають компаніями бути більш ефективними. Наша команда зацікавлена у рості вашого бізнесу та довготривалій співпраці!</p>
                 <div className='about-items'>{
-                    about.map((item) => <div className='about-item-wrap'><div className='about-one' key={item.id}>
+                    about.map((item) => <div className='about-item-wrap'key={item.title}><div className='about-one' key={item.alt}>
                         <SpecItem
-                            key={item.id}
+                            keys={item.id}
                             title={item.title}
                             id={item.id}
                             image={item.image}
