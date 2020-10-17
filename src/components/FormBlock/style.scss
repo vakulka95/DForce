@@ -88,9 +88,9 @@
     border: 1px solid red;
 }
 
-@media only screen 
-  and (min-device-width: 1300px) 
-  and (max-device-width: 1899px){
+@media screen 
+  and (min-width: 1300px) 
+  and (max-width: 1899px){
     // .form{
     //     width: 546px;
     //     //margin-right: 50px;
@@ -104,9 +104,9 @@
     // }
   }
 
-  @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1299px){
+  @media screen 
+  and (min-width: 1024px) 
+  and (max-width: 1299px){
     .flex{
         display: flex;
         justify-content: space-between;
@@ -125,9 +125,9 @@
     }
   }
 
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 760px){
+  @media screen 
+  and (min-width: 320px) 
+  and (max-width: 760px){
     .form{
         right: 0;
         left: 0;

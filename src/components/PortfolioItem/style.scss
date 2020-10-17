@@ -71,9 +71,9 @@
 }
 
 
-@media only screen 
-  and (min-device-width: 1300px) 
-  and (max-device-width: 1899px){
+@media screen 
+  and (min-width: 1300px) 
+  and (max-width: 1899px){
     .case{
         margin-top: 28px;
         margin-bottom: 60px;
@@ -100,9 +100,9 @@
   }
 
 
-  @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1299px){
+  @media screen 
+  and (min-width: 1024px) 
+  and (max-width: 1299px){
       .case{
           &-image{
             //   flex-wrap: nowrap;
@@ -128,9 +128,9 @@
       }
   }
 
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 760px){
+  @media screen 
+  and (min-width: 320px) 
+  and (max-width: 760px){
     
         .case{
             flex-wrap: wrap;
