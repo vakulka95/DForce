@@ -46,7 +46,7 @@
 &-title{
     color: white;
     margin-bottom: 20px;
-    margin-top: 35px;
+    margin-top: 40px;
     h3{
         margin-top: 0;
     }
@@ -90,7 +90,6 @@
             
         }
     }
-  }
 
   @for $i from 1 through 4{
     @if $i % 2 == 1{
@@ -114,6 +113,8 @@
         }
       }
   }
+  }
+
 
 //   @media only screen and(max-device-width: 1510px){
 //       .about{
@@ -129,7 +130,7 @@
   and (max-device-width: 1299px){
     .about{
         &-item-wrap{
-            width: 48%;
+            width: 48.9%;
         }
     }
     @for $i from 1 through 4{
@@ -171,8 +172,14 @@
         &-item-wrap{
             width: 100%;
         }
+        .value{
+            &-title{
+                margin-bottom: 15px;
+                margin-top: 31px;
+            }
+        }
         &-one{
-            // padding: 35px 25px 29px 20px;
+            margin: 35px 25px 29px 20px;
             // width: auto;
             // margin-bottom: 15px;
         }
