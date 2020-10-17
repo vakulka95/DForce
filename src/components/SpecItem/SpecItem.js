@@ -3,9 +3,9 @@ import './style.scss';
 import PropTypes from 'prop-types';
 
 
-function SpecItem({image, alt, title, text, classItem, classImage, classTitle, classText}) {
+function SpecItem({image, alt, title, text, classItem, classImage, classTitle, classText, key}) {
     return (
-        <div className={classItem}>
+        <div className={classItem} key={key}>
             <div className={classImage}>
                 <img src={image} alt={alt} />
             </div>
