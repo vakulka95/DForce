@@ -20,7 +20,9 @@
             height: 100vh;
             padding: 20px 0px;
             position: fixed;
+
             background-color: #0D0E12;
+
         }
     }
     &-container{
@@ -32,6 +34,12 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            @media screen and (max-width:1023px){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
     &-navigation{
@@ -52,6 +60,8 @@
         }
         &-active{
             display:block;
+            position: relative;
+            top: 30px;
         }
         &-item{
             margin-right: 10px;
@@ -60,7 +70,7 @@
             margin-left: 30px;
             cursor: pointer;
             &-active{
-                margin-top:10vh;
+                margin-top:8vh;
             }
             }
         &-link{
@@ -88,10 +98,12 @@
             border: none;
             outline: none;
             background-color: rgba(255, 255, 255, 0);
-           // background-image: url('/src/assets/images/mobileNav.jpg');
-           height: 20px;
-           width:20px;
-           cursor: pointer;
+            height: 20px;
+            width:20px;
+            cursor: pointer;
+            position: absolute;
+            top: 33px;
+            right: 45px;
         }
     }
 }
@@ -99,12 +111,7 @@
 @media only screen 
     and (min-width: 320px)
     and (max-width: 760px){
-        .header{
-            // padding: 20px 30px 20px 15px;
-            &-container{
-                justify-content: space-around;
-            }
-        }
+
         .header-opasity{
             padding: 20px 30px 20px 15px;
             .home-paragraph{

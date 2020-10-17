@@ -1,11 +1,10 @@
 .btn{
     display:block;
     &-wrap{
-        display:block;
+        display:inline-block;
         &-active{
             position: fixed;
             bottom: 50px;
-            left: 40%;
         }
     }
     &-btn{

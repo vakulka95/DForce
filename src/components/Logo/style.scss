@@ -4,4 +4,9 @@
 
 .header-logo{
     cursor: pointer;
+
+    &-active{
+        position: absolute;
+        left: 80px;
+      }
 }

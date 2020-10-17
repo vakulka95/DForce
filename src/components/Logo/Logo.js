@@ -20,7 +20,7 @@ Logo.propTypes = {
 
 }
 
-Logo.defaultProps = {
-    logoClass: 'logo'
-}
+// Logo.defaultProps = {
+//     logoClass: 'logo'
+// }
 export default Logo;
