@@ -63,7 +63,7 @@ const ForCustomer = () => {
         <section className='for-customer' id='forcustomer'>
 
             {(success || error) && renderModal()}
-            <div className='container flex'>
+            <div className='flex'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
                     <p className='for-customer-text text'>«Мені здається» – це анонімний онлайн-щоденник, де кожен абсолютно анонімно може поділитися власною історією абсолютно анонімно.</p>

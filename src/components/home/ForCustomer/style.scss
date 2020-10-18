@@ -1,11 +1,16 @@
 .for-customer{
     background: #0D0E12 url('../../../assets/images/FormCustomer.png') no-repeat;
     background-position-x: right;
-    background-position-y: -36px;
+    background-position-y: 0px;
     background-size: cover;
     padding-top: 175px;
     padding-bottom: 315px;
     position: relative;
+    @media (min-width:1300px){
+        padding-left: 80px;
+        padding-bottom: 0;
+        padding-right: 80px;
+    }
     &-wrap{
         padding: 0 80px;
         display: flex;
@@ -18,6 +23,10 @@
         color: #fff;
         font-size: 54px;
         line-height: 80px;
+        @media (min-width:1300px){
+            font-size: 44px;
+            line-height: 70px;
+        }
     }
     &-text{
         margin: 39px 0 112px 0;
@@ -27,30 +36,12 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-   
+    }   
 }
 .result{
     height:100%;
     display:flex;
 }
-
-
-
-@media  screen 
-  and (min-width: 1300px) 
-  and (max-width: 1899px){
-    .for-customer{
-        background-position-y: 0;
-        &-title{
-            font-size: 44px;
-            line-height: 70px;
-        }
-        padding-bottom: 70px;
-    }
-  }
-
-
 
   @media  screen 
   and (min-width: 1024px) 
@@ -101,12 +92,7 @@
                 margin-bottom: 28px;
             }
         }
-        .flex{
-            display: flex;
-            flex-direction: column-reverse;
 
-            
-        }
         
         
     }

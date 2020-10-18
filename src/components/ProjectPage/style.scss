@@ -1,6 +1,9 @@
 .detail{
   background-color: #000000;
   padding: 46px 0 69px 0;
+  @media (min-width:1300px){
+    padding: 199px 150px 201px 150px;
+  }
 
   &-sub-title{
     color: #fff;
@@ -37,14 +40,24 @@
       width: 100%;
       padding: 50px 0;
       border-radius: 0;
+      @media (min-width:1300px){
+        margin: 97px 0 93px 0;
+        padding: 120px 0;
+        border-radius: 10px;
+      }
       &-item{
           width: 150px;
           margin-left: 33%;
       }
       
       &-img{
-          width: 300px;
-          margin-left: 20%;
+          width: 75vw;
+          margin-left: 13%;
+          @media (min-width:1300px){
+            margin-left: 12%;
+            width: 60vw;
+            height: 100%;
+          }
       }
   }
   &-block{
@@ -66,7 +79,7 @@
       }
   }
   
-  .flex{
+  .fleX{
       justify-content: space-around;
       flex-wrap: wrap;
       figure{
@@ -74,8 +87,19 @@
       }
   }
   .mob-group{
+    @media (min-width:1300px){
+      justify-content: center;
+      :last-child{
+        margin-right: 0;
+      }
+    }
       &-map{
-          width: 85px;
+          width: 23vw;
+          @media (min-width:1300px){
+            width: 20vw;
+            height:100%;
+            margin-right: 30px;
+          }
       }
   }
   .right{
@@ -91,9 +115,10 @@
     align-items: flex-end;
   }
   
-  .flex{
+  .fleX{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
     figure{
       width: 49%;
       margin-bottom: 0;
@@ -109,37 +134,19 @@
     
   }
   
-
+//////////////////////////////////////////////////////////////
 @media screen 
   and (min-width: 1300px) 
   and (max-width: 1899px){
 .detail{
-    padding: 123px 0 201px 0;
     
     &-figure{
-      margin: 97px 0 93px 0;
-      &-img{
-        width: 70vw;
-        height: 100%;
-    
-      }
+
       &-item{
         height: 100%;
         max-width: 30vw;
       }
       
-    }
-
-    .mob-group{
-      justify-content: center;
-      :last-child{
-        margin-right: 0;
-      }
-      &-map{
-        width: 50%;
-         height:100%;
-         margin-right: 30px;
-      } 
     }
     &-text{
       margin-top: 20px;

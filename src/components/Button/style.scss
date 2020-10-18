@@ -25,6 +25,9 @@
         border: none;
         outline: none;
         cursor: pointer;
+        @media (min-width:1300px){
+            padding:22px 105px;
+        }
     
     }
 }
