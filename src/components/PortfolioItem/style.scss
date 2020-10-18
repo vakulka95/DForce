@@ -6,7 +6,9 @@
     flex-wrap: wrap;
     margin-top: 23px;
     margin-top: 63px;
-    // padding-bottom: 100px;
+        @media (min-width:1299px){
+            flex-direction: row;
+        }
     &-image{
         background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
         display: flex;
@@ -17,7 +19,7 @@
     }
     &-description{
         padding: 0 15px;
-        width: 100%;
+        width: 92%;
         margin-top: 30px;
     }
     &-title{
@@ -148,11 +150,6 @@
                 img{
                 width: 60%;
                 }
-            }
-            &-description{
-                padding: 0 15px;
-                width: 100%;
-                margin-top: 30px;
             }
             &-title{
                 margin-bottom: 0;
