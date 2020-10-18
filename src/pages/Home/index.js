@@ -5,7 +5,6 @@ import About from '../../components/home/About';
 import Portfolio from '../../components/home/Portfolio';
 import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
-import './style.scss';
 
 function Home() {
     return (

@@ -1,5 +1,5 @@
 .portfolio{
-    @media screen and (min-width: 1023px){
+    @media (min-width: 1024px){
         padding: 112px 80px 140px 80px;
     }
     background: #111217;
@@ -7,7 +7,14 @@
     color: #FFFFFF;
     padding: 60px 0px 50px 0px;
     @media (min-width:1300px){
-        padding: 110px 0px 50px 80px;
+        padding: 112px 80px 140px 80px;
+    }
+    &-list{
+        @media (min-width:1300px){
+            :last-child{
+                margin-bottom: 0;
+            }
+        }
     }
     &-title{
         margin-left: 0px;
@@ -15,19 +22,5 @@
     }
 
 }
-
-@media screen 
-  and (min-width: 1300px) 
-  and (max-width: 1899px){
-      .portfolio{
-          padding-bottom: 140px;
-          &-list{
-            :last-child{
-                margin-bottom: 0;
-            }
-          }
-      }
-  }
-
 
 
