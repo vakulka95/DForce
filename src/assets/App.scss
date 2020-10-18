@@ -39,5 +39,10 @@ h2{
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #fff;
+  @media (min-width:1299px){
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 90px;
+  }
 }
 

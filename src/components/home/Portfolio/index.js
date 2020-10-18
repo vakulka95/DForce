@@ -8,7 +8,7 @@ const Portfolio = ({portfolioItems}) => {
     return (
         <section className='portfolio main-padding' id='portfolio'>
             <div className='container'>
-            <h2 className='title-of-block'>Наші кейси</h2>
+            <h2 className='portfolio-title'>Наші кейси</h2>
                 <div className='portfolio-list'>
                     {portfolioItems.map(({
                         id,

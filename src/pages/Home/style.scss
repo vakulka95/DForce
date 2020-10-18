@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     background-position-y: bottom;
     padding: 0px 15px 60px 15px;
+    @media (min-width:1299px){
+        padding: 0px 0px 60px 80px;
+    }
     .container{
         display: flex;
 
@@ -24,10 +27,13 @@
         }
     }
     &-paragraph{
-        font-size: 15px;
+        font-size: 16px;
         line-height: 30px;
         margin: 21px 0px 70px 0px;
-        width: 100%
+        width: 100%;
+        @media (min-width:1299px){
+            width:50%
+        }
     }
 }
 

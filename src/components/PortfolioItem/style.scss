@@ -1,7 +1,7 @@
 
 .case{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     position: relative;
     flex-wrap: wrap;
     margin-top: 23px;

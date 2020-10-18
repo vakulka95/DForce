@@ -3,6 +3,10 @@
     background-color: #15161c;    
     padding: 60px 15px 50px 15px;
     text-align: center;
+    @media (min-width:1299px){
+        padding: 110px 80px 120px 80px;
+        text-align: initial;
+    }
 
 }
 
@@ -10,7 +14,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
+    @media (min-width:1299px){
+        margin-top: 78px;
+    }
 }
 
     @media screen 
@@ -32,9 +39,12 @@
                     font-size: 28px;
                     margin-top: 36px;
                     margin-bottom: 6px;
+                    align-self: baseline
                 } 
                 .spec-image{
                     width: 110px;
+                    position: relative;
+                    left: -17px;
                 }
                 .spec-text{
                     width: 90%;
@@ -66,13 +76,11 @@
   and (max-width: 760px){
 
     .specialization{
-        // padding: 69px 15px 69px 15px;
-        // text-align: center;
         .title-of-block{
             width: 100%;
         }
         .spec-section{
-            margin-top: 50px;
+
             :last-child{
                 margin-bottom: 0;
             }
@@ -94,28 +102,3 @@
     }
     
   }
-
-
-
-// @media screen 
-// and (min-width: 1024px) 
-// and (max-width: 1299px){
-//     .spec-item{
-//         width: 47%;
-//         .spec-title{
-//             margin-top: 30px;
-//         }
-//         .spec-text{
-//             width: 100%;
-//         }
-//     }
-// }
-
-// @media screen 
-// and (min-width: 320px) 
-// and (max-width: 760px){
-//     .spec-item{
-        
-        
-//     }
-// }

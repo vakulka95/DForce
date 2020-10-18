@@ -4,13 +4,15 @@ import Logo from '../../components/Logo/Logo';
 import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
+import {useOnScroll} from '../../utils/useOnScroll'
 
 const Header = () =>{
-   const [mobileNav, setMobileNav] = useState(false)
+   const [mobileNav, setMobileNav] = useState(false);
+    const usingScrolling = useOnScroll();
    const activateMobileNav = () => {
        setMobileNav((prev)=>!prev)
    }
-
+   console.log(usingScrolling)
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = -150; 
@@ -30,7 +32,7 @@ const Header = () =>{
     console.log(opasityHeader())
     let opasity = opasityHeader();
     return(
-        <header className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
+        <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
                 <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo' mobile={mobileNav?activateMobileNav:null}/>
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
