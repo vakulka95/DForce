@@ -1,5 +1,6 @@
 
 .case{
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -10,16 +11,24 @@
             flex-direction: row;
         }
     &-image{
-        background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
-        display: flex;
-        justify-content: center;
-        width: 750px;
-        border-radius: 8px;
-        margin-right: 90px;
+        // background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
+        // display: flex;
+        // justify-content: center;
+        // width: 750px;
+        // border-radius: 8px;
+        // margin-right: 90px;
+
+        border-radius: 0;
+        width: 100%;
+        padding: 50px 0;
+        margin-right: 0;
+        img{
+        width: 60%;
+        }
     }
     &-description{
         padding: 0 15px;
-        width: 92%;
+        width: 90%;
         margin-top: 30px;
     }
     &-title{
@@ -64,7 +73,9 @@
     }
 }
 
-
+.itseems-background{
+    padding-bottom: 0;
+}
 
 .tellme{
     background: #329AE5;
@@ -153,9 +164,9 @@
     
         .case{
             
-            .itseems-background{
-                padding-bottom: 0;
-            }
+            // .itseems-background{
+            //     padding-bottom: 0;
+            // }
             &-image{
                 border-radius: 0;
                 width: 100%;
