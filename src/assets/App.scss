@@ -46,10 +46,27 @@ h2{
       line-height: 90px;
       letter-spacing: 0.02em;
   }
-  @media (min-width:1299px){
+  @media (min-width:1300px){
     font-weight: 600;
     font-size: 47px;
     line-height: 90px;
   }
+}
+h3{
+  font-family: CA Saygon Text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+}
+p{
+  font-family: Grandis;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 30px;
+@media (min-width:1300px){
+  font-size: 16px;
+}
 }
 

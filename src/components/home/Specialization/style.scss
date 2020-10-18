@@ -4,9 +4,9 @@
     padding: 60px 15px 50px 15px;
     text-align: center;
     @media (min-width:1023px){
-        padding: 110px 80px 120px 80px;
+        padding: 110px 80px 129px 80px;
     }
-    @media (min-width:1299px){
+    @media (min-width:1300px){
         text-align: initial;
     }
 
@@ -17,8 +17,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
-    @media (min-width:1299px){
-        padding: 178px 152px 162px 152px;
+    @media (min-width:1300px){
+        //padding: 178px 152px 162px 152px;
         margin-top: 78px;
     }
 }
@@ -28,7 +28,6 @@
     and (max-width: 1899px){
          
         .spec-section{
-            margin-top: 78px;
             .spec-item{
                 min-width: 250px;
                 width: auto;
