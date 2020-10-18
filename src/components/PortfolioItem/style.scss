@@ -80,13 +80,13 @@
   and (min-width: 1300px) 
   and (max-width: 1899px){
     .case{
-        margin-top: 28px;
         margin-bottom: 60px;
         
         &-image{
             min-width: 580px;
             width: 100%;
             max-width: 40%;
+            padding: 60px 22px 0px;
             img{
                 min-width: 318px;
                 width: 100%;
