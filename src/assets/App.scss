@@ -30,6 +30,7 @@ h1{
   font-weight: 600;
   font-size: 66px;
   line-height: 90px;
+  
 }
 
 h2{
@@ -39,6 +40,12 @@ h2{
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #fff;
+    @media screen and (min-width: 1023px){
+      font-weight: 600;
+      font-size: 47px;
+      line-height: 90px;
+      letter-spacing: 0.02em;
+  }
   @media (min-width:1299px){
     font-weight: 600;
     font-size: 47px;

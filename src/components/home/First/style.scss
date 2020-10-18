@@ -12,14 +12,22 @@
     &-header{
         margin-top: 100px;
         color:#3ACC81;
-         font-size: 38px;
+        font-size: 38px;
         line-height: 50px;
+        @media screen and (min-width: 1023px){
+            font-size: 50px;
+            line-height: 90px;
+          }
         @media(min-width:1299px){
             font-size: 50px;
             line-height: 90px;
         }
         &-first{
             color:white;
+            @media screen and (min-width: 1023px){
+                font-size: 60px;
+                line-height: 90px;
+              }
         }
     }
    

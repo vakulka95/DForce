@@ -1,4 +1,7 @@
 .portfolio{
+    @media screen and (min-width: 1023px){
+        padding: 112px 80px 140px 80px;
+    }
     background: #111217;
     //width: 100%;
     color: #FFFFFF;
@@ -8,13 +11,14 @@
     }
     &-title{
         margin-left: 15px;
+        
     }
 
 }
 
-@media only screen 
-  and (min-device-width: 1300px) 
-  and (max-device-width: 1899px){
+@media screen 
+  and (min-width: 1300px) 
+  and (max-width: 1899px){
       .portfolio{
           padding-bottom: 140px;
           &-list{
