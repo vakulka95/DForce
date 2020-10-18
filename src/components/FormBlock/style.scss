@@ -2,10 +2,9 @@
     background: #15161C;
     border: 1px solid #2D9662;
     border-radius: 12px;
-    width: 660px;
+    width: 100%;
     position: relative;
     top: -30px;
-    right: 10px;
     @media (min-width:1300px){
         max-width: 560px;
         top: -220px;
@@ -102,25 +101,25 @@
 }
 
 
-  @media screen 
-  and (min-width: 1024px) 
-  and (max-width: 1299px){
-    .flex{
-        display: flex;
-        justify-content: space-between;
-        .form{
-            width: 48%;
-            right: 6px;
-            top: -150px;
-            &-wrap{
-                padding: 65px 50px 65px 45px;
-            }
-            &-group{
-                margin-bottom: 18px;
-            }
-        }
+//   @media screen 
+//   and (min-width: 1024px) 
+//   and (max-width: 1299px){
+//     .flex{
+//         display: flex;
+//         justify-content: space-between;
+//         .form{
+//             width: 48%;
+//             right: 6px;
+//             top: -150px;
+//             &-wrap{
+//                 padding: 65px 50px 65px 45px;
+//             }
+//             &-group{
+//                 margin-bottom: 18px;
+//             }
+//         }
 
-    }
-  }
+//     }
+//   }
 
 

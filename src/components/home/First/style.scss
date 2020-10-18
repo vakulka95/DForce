@@ -1,4 +1,26 @@
 .home{
+    background-image: url('../../../assets/images/homeBackground.png');
+    color:white;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding: 0px 15px 60px 15px;
+    @media (min-width:1300px){
+        padding: 0px 0px 60px 80px;
+    }
+    @media (min-width: 1023px){
+        padding: 60px 81px 60px 81px;
+    }
+    .container{
+        display: flex;
+
+        .introduce{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
     &-wrap{
         width: 100%;
         height: 100vh;
@@ -14,7 +36,7 @@
         color:#3ACC81;
         font-size: 38px;
         line-height: 50px;
-        @media screen and (min-width: 1023px){
+        @media (min-width: 1024px){
             font-size: 50px;
             line-height: 90px;
           }
@@ -24,12 +46,57 @@
         }
         &-first{
             color:white;
-            @media screen and (min-width: 1023px){
+            line-height: 40px;
+            @media (min-width: 1024px){
                 font-size: 60px;
                 line-height: 90px;
               }
         }
     }
+    &-paragraph{
+                font-size: 15px;
+                line-height: 30px;
+                margin: 21px 0px 70px 0px;
+                letter-spacing: 0.03em;
+                width: 100%;
+                @media (min-width:1300px){
+                    width:50%
+                }
+                @media (min-width: 1023px){
+                    width: 45%;
+                }
+    }
    
-}
+}   
+
+
+
+// .home{
+   
+   
+//     &-header{
+//         color:#3ACC81;
+//         line-height: 90px;
+//         &-first{
+//             color:white;
+//             @media screen and (min-width: 1023px){
+//                 font-size: 60px;
+//                 line-height: 90px;
+//               }
+//         }
+//     }
+//     &-paragraph{
+//         font-size: 16px;
+//         line-height: 30px;
+//         margin: 21px 0px 70px 0px;
+//         width: 100%;
+//         @media (min-width:1300px){
+//             width:50%
+//         }
+//         @media (min-width: 1023px){
+//             width: 45%;
+//         }
+//     }
+// }
+
 
