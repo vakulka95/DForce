@@ -25,7 +25,7 @@
             padding: 42px 81px 42px 81px;
         }
         @media (min-width:1300px){
-            padding: 50px 80px 50px 80px; 
+            padding: 20px 0px 20px 0px; 
         }
         &-active{
             width: 100%;
@@ -41,7 +41,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 150px;
+        @media (min-width:1300px){
+            padding: 20px 80px;
+        }
+        @media (min-width:1900px){
+            padding: 20px 150px;
+        }
+        
         &-active{
             display: flex;
             justify-content: space-between;
