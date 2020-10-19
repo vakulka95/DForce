@@ -10,7 +10,7 @@
         text-align: initial;
     }
     @media (min-width:1900px){
-        padding:178px 150px 129px 128px;
+        padding:178px 150px 160px 150px;
     }
     .title-of-block{
         width: 100%;
@@ -29,64 +29,21 @@
         }
         @media (min-width:1300px){
             //padding: 178px 152px 162px 152px;
-            margin-top: 78px;
-        }
-        .spec-item{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 41px;
-            @media (min-width:1300px){
-               min-width: 250px;
-                width: auto;
-                max-width: 30%;
-        
-                display: inline-block;
-                vertical-align: top;
-        
-                margin-bottom: 69px;
-            }
-            .spec-title{
-                margin-top: 30px;
-                @media (min-width:1300px){
-                    font-size: 28px;
-                    margin-top: 36px;
-                    margin-bottom: 6px;
-                    align-self: baseline
-                }
-                @media (min-width:1900px){
-                    margin-top: 48px;
-                    margin-bottom: 15px;
-                    font-weight: 500;
-                    font-size: 34px;
-                    line-height: 45px;
-                  }
-            }
-            .spec-image{
-                @media (min-width: 1300px){
-                    width: 110px;
-                    position: relative;
-                    left: -17px;
-                }
-                @media (min-width:1900px){
-                    width: 130px;
-                    height: 130px;
-                    left: -20px;
-                }
-            }
-            .spec-text{
-                width: 100%;
-                @media (min-width: 1300px){
-                    width: 90%;
-
-
-                }
-
-            }
+            margin-top: 100px;
         }
     }
 
 }
 
+@for $i from 1 through 6{
+    @if $i >3{
+        .spec-section{
+            :nth-child(#{$i}){
+                @media (min-width:1024px){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
 

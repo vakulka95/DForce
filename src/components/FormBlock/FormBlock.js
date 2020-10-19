@@ -88,21 +88,21 @@ function FormBlock({ onSuccess }) {
                         <label>
                             Ваше ім'я:
                             <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
-                            {formData.nameInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.nameInvalid}</p></div>}
+                            {formData.nameInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваш телефон:
                             <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
-                            {formData.phoneInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.phoneInvalid}</p></div>}
+                            {formData.phoneInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
                             Ваша пошта:
                             <input type='email' name='email' className={formData.emailInvalid ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.email} />
-                            {formData.emailInvalid && <div style={{ color: 'red', fontSize: '14px' }}><p>{formData.emailInvalid}</p></div>}
+                            {formData.emailInvalid && <div><p style={{ color:'red', fontSize: '14px' }}>{formData.emailInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>

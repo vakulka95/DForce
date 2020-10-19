@@ -1,19 +1,71 @@
 .spec-item{
-    width: 500px;
-    // text-align: left;
-    margin-bottom: 100px;
-    .spec-title{
-         font-size: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 41px;
+    @media (min-width:1024px){
+        min-width: 250px;
+         width: auto;
+         max-width: 30%;
+ 
+         display: inline-block;
+         vertical-align: top;
+ 
+         margin-bottom: 69px;
+         text-align: left;
+     }
+     @media (min-width:1900px){
+        margin-bottom: 200px;
+     }
+    .spec-title{        
+        font-size: 24px;
         line-height: 45px;
         margin-top: 30px;
         margin-bottom: 15px;
         color:white;
         font-weight: 500;
+        @media (min-width:1024px){
+            font-size: 28px;
+            margin-top: 36px;
+            margin-bottom: 6px;
+            align-self: baseline
+        }
+        @media (min-width:1900px){
+            margin-top: 48px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 45px;
+          }
     }
     .spec-text{
         width: 100%;
-        color: #fff;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.8);
+         @media (min-width: 1024px){
+            font-size: 16px;
+            width: 90%;
+         }
+         @media (min-width: 1900px){
+            font-size: 18px;
+            line-height: 35px;
+         }
     }    
+    .spec-image{
+        @media (min-width: 1024px){
+            width: 110px;
+            position: relative;
+            left: -17px;
+        }
+        @media (min-width:1900px){
+            width: 130px;
+            height: 130px;
+            left: -20px;
+        }
+    }
 }
 
 
@@ -33,37 +85,6 @@
 }
 
 @media screen 
-and (min-width: 1024px) 
-and (max-width: 1299px){
-    @for $i from 1 through 6{
-        @if $i >3{
-            .spec-section{
-                :nth-child(#{$i}){
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .spec-item{
-        width: 30%;
-        text-align: left;
-       
-        .spec-title{
-            font-size: 28px;
-            line-height: 45px;
-            margin-top: 44px;
-            margin-bottom: 6px;
-        }
-        .spec-text{
-            font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-   
-}
-@media screen 
 and (min-width: 320px) 
 and (max-width: 760px){
     .value-title{
@@ -71,4 +92,3 @@ and (max-width: 760px){
         margin-top: 31px;
     }
 }
-
