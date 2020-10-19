@@ -5,8 +5,9 @@
 
     @media (min-width:1024px){
         padding:  112px 80px 145px;
-
-
+    }
+    @media (min-width:1900px){
+        padding: 180px 150px 260px 150px;
     }
 
     .title-of-block{
@@ -15,6 +16,9 @@
         margin: 0;
         @media (min-width:1024px){
             padding-bottom: 6px;
+        }
+        @media (min-width:1900px){
+            padding-bottom: 30px;
         }
     }
     &-content{
@@ -27,6 +31,9 @@
             margin-bottom: 79px;
             font-size: 16px;
             line-height: 30px;
+        }
+        @media (min-width:1900px){
+            padding-bottom: 107px;
         }
     }
     &-items{
@@ -42,6 +49,9 @@
             flex-direction: row;
             flex-wrap: wrap;
             // justify-content: end;
+        }
+        @media (min-width:1900px){
+            flex-wrap: nowrap;
         }
     }
     // &-item-wrap{
@@ -116,10 +126,9 @@
         color: white;
         margin-bottom: 15px;
         margin-top: 30px;
-        
-        // h3{
-        //     margin-top: 0;
-        // }
+        @media (min-width:1900px){
+            line-height: 40px;
+        }
 }
 
     &-image{
