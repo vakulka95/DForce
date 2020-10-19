@@ -3,7 +3,7 @@
     padding: 0 15px 27px 15px;
     @media (min-width:1024px){
         background: #0D0E12 url('../../../assets/images/FormCustomer.png') no-repeat;
-        padding: 110px 80px 0 80px;
+        padding: 120px 80px 0 80px;
         background-position-y: 20px;
     }
     @media (min-width: 1900px){
@@ -54,9 +54,12 @@
         display: none;
         @media (min-width:1024px){
             display: inline-block;
-            margin-top: 29px;
-            margin-bottom: 30px;
-            width: 70%;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            width: 100%;
+
+            font-size: 16px;
+            line-height: 30px;
         }
         @media(min-width: 1900px){
             margin: 39px 0 112px 0;
@@ -64,6 +67,7 @@
         }
     }
     &-contacts{
+        display: flex;
         flex-direction: column;
         margin-left: 15px;
         .contact-item{
@@ -73,11 +77,14 @@
             }
         }
         @media(min-width: 1024px){
-            display: flex;
+            // flex-direction: row;
+        }
+        @media (min-width: 1300px){
             flex-direction: row;
         }
         @media(min-width: 1900px){
             display: flex;
+            
             justify-content: space-between;
             
         }
