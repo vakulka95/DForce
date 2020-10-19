@@ -1,8 +1,9 @@
 .anim{
   &-preloader{
     position: fixed;
-    top: 48%;
-    left: 42%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
   }
 }
 .load {
