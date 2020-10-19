@@ -3,31 +3,11 @@
     display: flex;
     padding: 72px 15px 85px 15px;
 
-    // @media (min-width:1024px){
-    //     padding:  112px 80px 145px;
-    //     @for $i from 1 through 4{
-    //         @if $i % 2 == 1{
-    //             .about{
-    //                 &-items{
-    //                     :nth-child(#{$i}){
-    //                         margin-right: 35px;
-    //                         // margin-bottom: 35px;
-    //                     }
-    //                 }
-    //             }
-    //           }
-    //           @if $i < 2{
-    //             .about{
-    //                 &-items{
-    //                     flex-wrap: wrap;
-    //                 }
-    //                 &-item-wrap{
-    //                     margin-bottom: 35px;
-    //                 }
-    //             }
-    //           }
-    //       }
-    // }
+    @media (min-width:1024px){
+        padding:  112px 80px 145px;
+
+
+    }
 
     .title-of-block{
         color:white;
@@ -57,9 +37,11 @@
             margin-right: 0;
             color: white;
         }
-        @media (min-width:1300px){
+        @media (min-width:1024px){
+            display: flex;
             flex-direction: row;
-            justify-content: end;
+            flex-wrap: wrap;
+            // justify-content: end;
         }
     }
     // &-item-wrap{
@@ -72,28 +54,72 @@
     // }
     &-one{
         margin: 35px;
+        border-radius: 8px;
         background: #111217;
 
         // padding: 62px 55px 52px 55px;
         @media (min-width: 1024px){
-            width: 45%;
-            margin-bottom: 35px;
+            width: 47.9%;
+            margin: 0;
+        }
+        @media (min-width: 1300px){
+            width: 48.4%;
+        }
+        @media (min-width: 1800px){
+            width: 48.9%;
         }
         
     }
 }
+    @for $i from 1 through 4{
+            @if $i % 2 == 1{
+                .about{
+                    &-items{
+                        :nth-child(#{$i}){
+                            @media (min-width:1024px){
+                                margin-right: 35px;
+                            }
+                            
+                            // margin-bottom: 35px;
+                        }
+                    }
+                }
+              }
+              @if $i < 3{
+                .about{
+                    &-items{
+                        flex-wrap: wrap;
+                        :nth-child(#{$i}){
+                            @media (min-width:1024px){
+                                margin-bottom: 35px;
+                            }
+                        }
+                    }
+                    // &-one{
+                    //     @media (min-width:1024px){
+                    //         margin-bottom: 35px;
+                    //     }
+                        
+                    // }
+                }
+              }
+          }
 .value{
     &-item{
-        margin: 35px 20px 30px 25px  
+        margin: 35px 20px 30px 25px;
+        @media (min-width: 1024px){
+            margin: 60px 50px 54px 50px;
+        }
     }
 
     &-title{
         color: white;
-        margin-bottom: 20px;
-        margin-top: 40px;
-        h3{
-            margin-top: 0;
-        }
+        margin-bottom: 15px;
+        margin-top: 30px;
+        
+        // h3{
+        //     margin-top: 0;
+        // }
 }
 
     &-image{

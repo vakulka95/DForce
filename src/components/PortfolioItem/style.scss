@@ -27,6 +27,7 @@
         img{
             width: 75%;
             @media (min-width: 1024px){
+                
                 width: 100%;
             }
             @media (min-width: 1300px){
@@ -37,6 +38,7 @@
             width: 37%;
             margin-right: 70px;
             border-radius: 8px;
+            padding: 50px 49px;
         }
         @media (min-width: 1300px){
 
@@ -66,7 +68,7 @@
             width: 36%;
         }
         @media (min-width: 1300px){
-            width: 41%;
+            width: 40%;
         }
     }
     // &-title{
@@ -150,7 +152,7 @@
 
 .tellme{
     background: #329AE5;
-    padding: 77px 0;
+    padding: 77px 49px;
 }
 
 .vote{
@@ -163,7 +165,6 @@
 //   and (max-width: 1899px){
 //     .case{
         
-
     
 //   }
 

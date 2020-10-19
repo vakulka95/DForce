@@ -6,10 +6,10 @@
     position: relative;
     top: -30px;
 
-    @media (min-width:1300px){
+    @media (min-width:1024px){
         max-width: 560px;
         top: -220px;
-        right: -137px;
+        right: 0px;
     }
     &-wrap{
         padding: 105px 70px 70px;

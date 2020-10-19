@@ -2,7 +2,7 @@
   background-color: #000000;
   padding: 46px 0 69px 0;
   @media (min-width:1300px){
-    padding: 199px 150px 201px 150px;
+    padding: 5px 150px 201px 150px;
   }
 
   &-sub-title{
@@ -35,6 +35,7 @@
         line-height: 90px;
         width: 79%;
         padding: 0 15px 44px 0px;
+        margin-top: 205px;
       }
   }
   &-text{
@@ -44,6 +45,7 @@
       @media (min-width:1300px){
         padding:0px;
         width:74%;
+        margin-bottom: 160px;
       }
   }
   &-figure{
@@ -73,6 +75,7 @@
       &-last{
         margin-top: 70px;
         padding: 50px 0;
+        border-radius: 8px;
       }
   }
   &-block{
