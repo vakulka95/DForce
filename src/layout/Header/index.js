@@ -76,7 +76,7 @@ const Header = () =>{
                 </ul>
             </div>
             <div className = 'header-media'><button className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></button></div>
-            {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav}/>}
+            {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Заказать консультацию'}/>}
             </div>
         </header>
     )
