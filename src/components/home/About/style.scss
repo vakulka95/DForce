@@ -2,8 +2,8 @@
     background-color: #15161c;
     display: flex;
     padding: 72px 15px 85px 15px;
-    @media (min-width:1300px){
-        padding:  72px 80px 85px 80px;
+    @media (min-width:1024px){
+        padding:  112px 80px 145px;
     }
 
     .title-of-block{
@@ -11,14 +11,20 @@
         color:white;
         padding-bottom: 16px;
         margin: 0;
+        @media (min-width:1024px){
+            padding-bottom: 6px;
+        }
     }
     &-content{
         width: 100%;
         color: white;
         padding-bottom: 30px;
-        @media (min-width:1300px){
+        @media (min-width:1024px){
             width:50%;
-            padding-bottom: 79px;
+            padding-bottom: 0;
+            margin-bottom: 79px;
+            font-size: 16px;
+            line-height: 30px;
         }
     }
     &-items{
@@ -34,41 +40,44 @@
             justify-content: end;
         }
     }
-    &-item-wrap{
-        width: 25%;
-        border-radius: 12px;
-        background: #111217;
-        margin-right: 15px;
-        margin-bottom: 15px;
+    // &-item-wrap{
+    //     width: 25%;
+    //     border-radius: 12px;
+    //     background: #111217;
+    //     margin-right: 15px;
+    //     margin-bottom: 15px;
         
-    }
+    // }
     &-one{
         margin: 55px;
         background: #111217;
 
         // padding: 62px 55px 52px 55px;
+        @media (min-width: 1024px){
+            width: 47%;
+            margin: 10px;
+        }
         
     }
 }
 .value{
-&-item{
-    width:100%;
-    margin-bottom: 0;   
-}
-
-&-title{
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    h3{
-        margin-top: 0;
+    &-item{
+        margin: 35px 20px 30px 25px  
     }
+
+    &-title{
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        h3{
+            margin-top: 0;
+        }
 }
 
-&-image{
-    position: relative;
-    top: 15px;
-}
+    &-image{
+        position: relative;
+        top: 15px;
+    }
 }
 
 @media screen 
@@ -76,14 +85,14 @@
   and (max-width: 1899px){
       
     .about{
-        padding-bottom: 145px;
+        // padding-bottom: 145px;
         .title-of-block{
-            padding-bottom: 6px;
+            // padding-bottom: 6px;
         }
-        &-item-wrap{
-            width: 48%;
-            margin: 0;
-        }
+        // &-item-wrap{
+        //     width: 48%;
+        //     margin: 0;
+        // }
 
     }
 
