@@ -9,13 +9,18 @@ import {useOnScroll} from '../../utils/useOnScroll'
 const Header = () =>{
    const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
+    let num = 0;
+
+    if (mobileNav){
+        num=-150;
+    } else num=-240
    const activateMobileNav = () => {
        setMobileNav((prev)=>!prev)
    }
-   console.log(usingScrolling)
+
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -150; 
+        const yOffset = num; 
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
 
