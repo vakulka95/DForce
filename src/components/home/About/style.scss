@@ -148,10 +148,14 @@
         color: white;
         margin-bottom: 15px!important;
         margin-top: 30px;
+        @media (min-width){
+            font-size: 28px;
+        }
         @media (min-width:1900px){
             line-height: 40px;
             margin-bottom: 20px;
             margin-top: 38px;
+            
         }
         &-text{
             font-size: 28px;
