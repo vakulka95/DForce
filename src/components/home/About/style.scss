@@ -2,12 +2,34 @@
     background-color: #15161c;
     display: flex;
     padding: 72px 15px 85px 15px;
-    @media (min-width:1024px){
-        padding:  112px 80px 145px;
-    }
+
+    // @media (min-width:1024px){
+    //     padding:  112px 80px 145px;
+    //     @for $i from 1 through 4{
+    //         @if $i % 2 == 1{
+    //             .about{
+    //                 &-items{
+    //                     :nth-child(#{$i}){
+    //                         margin-right: 35px;
+    //                         // margin-bottom: 35px;
+    //                     }
+    //                 }
+    //             }
+    //           }
+    //           @if $i < 2{
+    //             .about{
+    //                 &-items{
+    //                     flex-wrap: wrap;
+    //                 }
+    //                 &-item-wrap{
+    //                     margin-bottom: 35px;
+    //                 }
+    //             }
+    //           }
+    //       }
+    // }
 
     .title-of-block{
-
         color:white;
         padding-bottom: 16px;
         margin: 0;
@@ -49,13 +71,13 @@
         
     // }
     &-one{
-        margin: 55px;
+        margin: 35px;
         background: #111217;
 
         // padding: 62px 55px 52px 55px;
         @media (min-width: 1024px){
-            width: 47%;
-            margin: 10px;
+            width: 45%;
+            margin-bottom: 35px;
         }
         
     }
@@ -80,45 +102,56 @@
     }
 }
 
-@media screen 
-  and (min-width: 1300px) 
-  and (max-width: 1899px){
+// @media screen 
+//   and (min-width: 1300px) 
+//   and (max-width: 1899px){
       
-    .about{
-        // padding-bottom: 145px;
-        .title-of-block{
-            // padding-bottom: 6px;
-        }
-        // &-item-wrap{
-        //     width: 48%;
-        //     margin: 0;
-        // }
+//     .about{
+//         // padding-bottom: 145px;
+//         .title-of-block{
+//             // padding-bottom: 6px;
+//         }
+//         // &-item-wrap{
+//         //     width: 48%;
+//         //     margin: 0;
+//         // }
 
-    }
+//     }
 
-  @for $i from 1 through 4{
-    @if $i % 2 == 1{
-        .about{
-            &-items{
-                :nth-child(#{$i}){
-                    margin-right: 35px;
-                    // margin-bottom: 35px;
-                }
-            }
-        }
-      }
-      @if $i > 2{
-        .about{
-            &-items{
-                flex-wrap: wrap;
-            }
-            &-item-wrap{
-                margin-bottom: 35px;
-            }
-        }
-      }
-  }
-  }
+
+//   }
+
+// //   @for $i from 1 through 4{
+// //     @if $i % 2 == 0{
+// //         .about{
+// //             &-items{
+// //                 :nth-child(#{$i}){
+// //                     @media (min-width:1024px){ 
+// //                         margin-right: 0;
+// //                     }
+                   
+// //                 }
+// //             }
+// //         }
+// //       }
+// //       @if $i > 2{
+// //         .about{
+// //             &-items{
+// //                 @media (min-width:1024px){ 
+// //                     flex-wrap: wrap;
+// //                 }
+// //             }
+// //             &-one{
+                
+// //                 @media (min-width:1024px){ 
+// //                     margin-bottom: 0;
+// //                 }
+// //             }
+// //         }
+// //       }
+// }
+
+
 
   @media screen 
   and (min-width: 1024px) 
@@ -128,28 +161,7 @@
             width: 48.9%;
         }
     }
-    @for $i from 1 through 4{
-        @if $i % 2 == 0{
-            .about{
-                &-items{
-                    :nth-child(#{$i}){
-                        margin-right: 0;
-                    }
-                }
-            }
-          }
-          @if $i > 2{
-            .about{
-                &-items{
-                    flex-wrap: wrap;
-                }
-                &-item-wrap{
-                    
-                    margin-bottom: 35px;
-                }
-            }
-          }
-    }
+   
   }
 
   @media screen 
