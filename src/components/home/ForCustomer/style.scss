@@ -36,12 +36,13 @@
     &-title{
        display: none;
        @media (min-width:1024px){
-            line-height: 55px;
+            font-size: 38px;
+            line-height: 70px;
             display: inline-block;
         }
         @media (min-width:1300px){
-            font-size: 44px;
-            line-height: 70px;
+            // font-size: 44px;
+            // line-height: 70px;
         }
         @media(min-width: 1900px){
             color: #fff;
@@ -62,6 +63,8 @@
         }
         @media(min-width: 1900px){
             margin: 39px 0 112px 0;
+            font-size: 18px;
+            line-height: 35px;
             width: 80%;
         }
     }
