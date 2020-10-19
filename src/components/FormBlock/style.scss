@@ -7,25 +7,35 @@
     top: -30px;
 
     @media (min-width:1024px){
-        max-width: 560px;
+        max-width: 50%;
         top: -220px;
         right: 0px;
     }
+    // @media (min-width: 1300px){
+    //     max-width: 580px;
+    //     top: -220px;
+    //     right: 0px;
+    // }
     &-wrap{
         padding: 105px 70px 70px;
-        @media (min-width:1300px){
+        @media (min-width:1024px){
             padding:65px 50px;
         }
         
     }
     &-title{
         color: #fff;
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 20px;
+        line-height: 30px;
         width: 60%;
         text-align: left;
         margin-top: 0;
-        margin-bottom: 48px;
+        margin-bottom: 14px;
+        @media (min-width:1024px){
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
     }
     &-group{
         width: 100%;
@@ -40,6 +50,9 @@
         letter-spacing: 0.03em;
     
         color: #FFFFFF;
+        @media (min-width:1024px){
+            margin-bottom: 18px;
+        }
         textarea{
             height: 125px;
             width: 95%;
@@ -85,7 +98,12 @@
         border: none;
         outline: none;
         cursor: pointer;
-    
+        
+    }
+    .btn-wrap{
+        @media (min-width: 1024px){
+            display: block;
+        }
     }
     
 }

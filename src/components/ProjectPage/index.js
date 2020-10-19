@@ -13,8 +13,8 @@ function ProjectPage({item}) {
                     <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                 </figure>
                 <div className='right' key={`${item.title2}-wrap`}>
-                    <h2 className='detail-sub-title ' key={item.title2}>{item.title2}</h2>
-                    <p className='detail-text' key={item.paragraph1}>
+                    <h2 className='detail-sub-title right-title' key={item.title2}>{item.title2}</h2>
+                    <p className='detail-text right-text' key={item.paragraph1}>
                         {item.paragraph1}
                     </p>
                 </div>
@@ -46,8 +46,8 @@ function ProjectPage({item}) {
                     {item.group5.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='right'key={`${item}-wrap5`}>
-                    <h2 className='detail-sub-title ' key='title5'>{item.title2}</h2>
-                    <p className='detail-text' key='paragraph4'>
+                    <h2 className='detail-sub-title right-title' key='title5'>{item.title2}</h2>
+                    <p className='detail-text right-text' key='paragraph4'>
                         {item.paragraph1}
                     </p>
                 </div>
