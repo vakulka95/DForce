@@ -59,7 +59,7 @@ function ProjectPage({item}) {
                         {item.group7.map((img) => <img className='detail-figure-item' alt={item.title} src={img} key={img} />)}
                     </figure>
                 </div>
-                <figure className='detail-figure color' key={item.group8}>
+                <figure className='detail-figure-last color' key={item.group8}>
                     {item.group8.map((img) => <img className='detail-figure-img' alt={item.title} src={img} key={img} />)}
                 </figure>
             </div>);

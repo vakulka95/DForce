@@ -29,11 +29,22 @@
       line-height: 35px;
       width: 90%;
       padding: 0 15px 44px 15px;
+      @media (min-width:1300px){
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 90px;
+        width: 79%;
+        padding: 0 15px 44px 0px;
+      }
   }
   &-text{
       padding: 0 15px;
       width: 90%;
       margin-bottom: 40px;
+      @media (min-width:1300px){
+        padding:0px;
+        width:74%;
+      }
   }
   &-figure{
       margin: 0px 0 60px 0;
@@ -41,8 +52,8 @@
       padding: 50px 0;
       border-radius: 0;
       @media (min-width:1300px){
-        margin: 97px 0 93px 0;
-        padding: 120px 0;
+        //margin: 130px 0px;
+        //padding: 120px 0;
         border-radius: 10px;
       }
       &-item{
@@ -58,6 +69,10 @@
             width: 60vw;
             height: 100%;
           }
+      }
+      &-last{
+        margin-top: 70px;
+        padding: 50px 0;
       }
   }
   &-block{
@@ -104,7 +119,11 @@
   }
   .right{
       margin: 0;
-      display: block;
+      //display: block;
+      @media (min-width:1300px){
+        width: 75%;
+        margin:0 0 0 39%;
+      }
   }
 }
 
@@ -113,6 +132,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media (min-width:1300px){
+      margin-left: 0px;
+      align-items: baseline;
+    }
   }
   
   .fleX{
@@ -154,7 +177,6 @@
     &-block-figures{
       margin-bottom: -55px;
       .detail-figure{
-        padding: 50px;
         img{
           width: 300px;
         }
