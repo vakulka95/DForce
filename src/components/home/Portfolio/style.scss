@@ -19,7 +19,10 @@
 
     }
     &-title{
-        margin-left: 0px;
+        margin-left: 15px;
+        @media (min-width:1300px){
+            margin-left: 0px;
+        }
         
     }
 
