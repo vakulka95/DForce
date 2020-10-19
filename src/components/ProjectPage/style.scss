@@ -1,8 +1,8 @@
 .detail{
   background-color: #000000;
   padding: 46px 0 69px 0;
-  @media (min-width:1300px){
-    padding: 5px 80px 120px 80px;
+  @media (min-width:1024px){
+    padding: 120px 80px 201px 80px;
   }
   @media (min-width:1900px){
     padding: 5px 150px 201px 150px;
@@ -11,22 +11,16 @@
   &-title{
     color: #fff;
     font-size: 24px;
-      line-height: 35px;
-      width: 90%;
-      padding: 0 15px 44px 15px;
-      margin-bottom: 20px;
+    line-height: 35px;
+    width: 90%;
+    padding: 0 15px 0 15px;
+    margin-bottom: 20px;
+    @media(min-width: 1024px){
+      font-size: 46px;
+      line-height: 70px;
+      margin-bottom: 65px;
+    }
   }    
-  &-text{
-    font-weight: 400;
-    font-size: 16px;
-    width: 60%;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.8);
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    margin-top: 28px;
-  }
   &-sub-title{
       color: #fff;
       font-weight: 600;
@@ -34,26 +28,30 @@
       line-height: 30px;
       margin-left: 15px;
       margin-right: 15px;
-      @media (min-width:1300px){
+      @media (min-width:1024px){
         font-weight: 600;
-        font-size: 50px;
-        line-height: 80px;
-        width: 79%;
-        padding: 0 15px 44px 0px;
-        margin-top: 100px;
+        font-size: 45px;
+        line-height: 70px;
+        width: 60%;
+        margin-right: 0;
+        margin-left: 0  ;
+        margin-top: 90px;
+        margin-bottom: 20px;
+      }
+      @media(min-width: 1300px){
+        width: 94%;
+
       }
       @media (min-width:1900px){
         font-weight: 600;
         font-size: 60px;
         line-height: 90px;
         width: 79%;
-        padding: 0 15px 44px 0px;
         margin-top: 205px;
       }
   }
   &-text{
       padding: 0 15px;
-      width: 90%;
       margin-bottom: 40px;
       font-size: 15px;
       line-height: 30px;
@@ -61,10 +59,12 @@
 
       color: rgba(255, 255, 255, 0.8);
       
-      @media (min-width:1300px){
+      @media (min-width:1024px){
         padding:0px;
-        width:74%;
-        margin-bottom: 160px;
+        width:60%;
+        margin-bottom: 95px;
+        font-size: 18px;
+        line-height: 35px;
       }
   }
   &-figure{
@@ -74,18 +74,23 @@
       border-radius: 0;
       display: block;
       text-align: center;
-      @media (min-width:1300px){
+      @media (min-width:1024px){
+        margin-bottom: 0;
         //margin: 130px 0px;
         //padding: 120px 0;
         border-radius: 10px;
       }
       &-item{
           width: 150px;
+          @media (min-width:1024px){
+            width: 250px;
+          }
+
       }
       
       &-img{
           width: 75vw;
-          @media (min-width:1300px){
+          @media (min-width:1024px){
             width: 60vw;
             height: 100%;
           }
@@ -113,6 +118,9 @@
           margin-bottom: 60px;
           :first-child{
               margin-bottom: 10px;
+              @media (min-width: 1024px){
+                margin-bottom: 20px;
+              }
           }
       }
   }
@@ -141,26 +149,28 @@
   }
   .right{
       margin: 0;
-      //display: block;
-      @media (min-width:1300px){
-        width: 70%;
+      display: flex;
+      flex-direction: column;
+      @media (min-width:1024px){
+        width: 60%;
         margin:0 0 0 36%;
+        align-items: flex-end;
       }
       @media (min-width:1900px){
         width: 75%;
         margin:0 0 0 39%;
       }
       &-title{
-        @media (min-width:1300px){
-          padding: 0 15px 44px 146px;
+        @media (min-width:1024px){
+          width: 95%;
         }
         @media (min-width:1900px){
           padding: 0 15px 44px 146px;
         }
       }
       &-text{
-        @media (min-width:1300px){
-          padding: 0px 0px 0px 149px;
+        @media (min-width:1024px){
+          width: 90%;
         }
         @media (min-width:1900px){
           padding: 0px 0px 0px 149px;
@@ -169,17 +179,7 @@
   }
 }
 
-.right{
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    @media (min-width:1300px){
-      margin-left: 0px;
-      align-items: baseline;
-    }
-  }
-  
+
   .fleX{
     display: flex;
     justify-content: space-around;
@@ -200,73 +200,73 @@
   }
   
 //////////////////////////////////////////////////////////////
-@media screen 
-  and (min-width: 1300px) 
-  and (max-width: 1899px){
-.detail{
+// @media screen 
+//   and (min-width: 1300px) 
+//   and (max-width: 1899px){
+// .detail{
     
-    &-figure{
+//     &-figure{
 
-      &-item{
-        height: 100%;
-        max-width: 30vw;
-      }
+//       &-item{
+//         height: 100%;
+//         max-width: 30vw;
+//       }
       
-    }
-    &-text{
-      margin-top: 20px;
-    }
-    &-block-figures{
-      margin-bottom: -55px;
-      .detail-figure{
-        img{
-          width: 300px;
-        }
-      }
-    }
-  }
-  }
+//     }
+//     &-text{
+//       margin-top: 20px;
+//     }
+//     &-block-figures{
+//       margin-bottom: -55px;
+//       .detail-figure{
+//         img{
+//           width: 300px;
+//         }
+//       }
+//     }
+//   }
+//   }
   
   
   
-  @media screen 
-  and (min-width: 1024px) 
-  and (max-width: 1299px){
-.detail{
-    &-figure{
-      margin: 90px 0 150px 0;
-      padding: 75px 125px;
-    }
-    padding: 100px 0 160px 0;
-    &-sub{
-      &-title{
-        line-height: 60px;
-      }
-    }
-    &-block{
-      &-figures{
-        // padding: 100px 50px;
-        .detail-figure{
-          padding: 100px 50px;
-          &-item{
-            width: 200px;
-          }
-        }
-      }
-    }
-    &-figure{
-      justify-content: center;
-      img{
-        width: 900px;
-      }
-      .mob-group-map{
-        width: 500px;
-        height: 500px;
-        margin: 0 15px;
-      }
-    }
-  }
-}
+//   @media screen 
+//   and (min-width: 1024px) 
+//   and (max-width: 1299px){
+// .detail{
+//     &-figure{
+//       margin: 90px 0 150px 0;
+//       padding: 75px 125px;
+//     }
+//     padding: 100px 0 160px 0;
+//     &-sub{
+//       &-title{
+//         line-height: 60px;
+//       }
+//     }
+//     &-block{
+//       &-figures{
+//         // padding: 100px 50px;
+//         .detail-figure{
+//           padding: 100px 50px;
+//           &-item{
+//             width: 200px;
+//           }
+//         }
+//       }
+//     }
+//     &-figure{
+//       justify-content: center;
+//       img{
+//         width: 900px;
+//       }
+//       .mob-group-map{
+//         width: 500px;
+//         height: 500px;
+//         margin: 0 15px;
+//       }
+//     }
+//   }
+// }
 
 @media screen 
 and (min-width: 1901px) {
