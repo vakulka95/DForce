@@ -9,6 +9,9 @@
     @media (min-width:1300px){
         text-align: initial;
     }
+    @media (min-width:1900px){
+        padding:178px 150px 129px 128px;
+    }
     .title-of-block{
         width: 100%;
     }
@@ -52,13 +55,24 @@
                     margin-bottom: 6px;
                     align-self: baseline
                 }
+                @media (min-width:1900px){
+                    margin-top: 48px;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    font-size: 34px;
+                    line-height: 45px;
+                  }
             }
             .spec-image{
                 @media (min-width: 1300px){
                     width: 110px;
                     position: relative;
                     left: -17px;
-
+                }
+                @media (min-width:1900px){
+                    width: 130px;
+                    height: 130px;
+                    left: -20px;
                 }
             }
             .spec-text{

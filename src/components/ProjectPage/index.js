@@ -8,12 +8,12 @@ function ProjectPage({item}) {
         const loop = (item) => {
 
             return (<div className='container' key={item}>
-                <h2 className='detail-sub-title' key={item.title1}>{item.title1}</h2>
+                <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
                 <figure className='detail-figure color' key={item.group1}>
                     <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                 </figure>
                 <div className='right' key={`${item.title2}-wrap`}>
-                    <h2 className='detail-sub-title right-title' key={item.title2}>{item.title2}</h2>
+                    <h3 className='detail-sub-title right-title' key={item.title2}>{item.title2}</h3>
                     <p className='detail-text right-text' key={item.paragraph1}>
                         {item.paragraph1}
                     </p>
@@ -23,7 +23,7 @@ function ProjectPage({item}) {
                     {console.log(item.group2.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />))}
                 </figure>
                 <div key={`${item}-wrap2`}>
-                    <h2 className='detail-sub-title' key={item.title2}>{item.title2}</h2>
+                    <h3 className='detail-sub-title' key={item.title2}>{item.title2}</h3>
                     <p className='detail-text' key={item.paragraph2}>
                         {item.paragraph2}
                     </p>
@@ -37,7 +37,7 @@ function ProjectPage({item}) {
                     </figure>
                 </div>
                 <div key={`${item}-wrap4`}>
-                    <h2 className='detail-sub-title' key='title4'>{item.title2}</h2>
+                    <h3 className='detail-sub-title' key='title4'>{item.title2}</h3>
                     <p className='detail-text' key='paragraph3'>
                         {item.paragraph2}
                     </p>
@@ -46,7 +46,7 @@ function ProjectPage({item}) {
                     {item.group5.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='right'key={`${item}-wrap5`}>
-                    <h2 className='detail-sub-title right-title' key='title5'>{item.title2}</h2>
+                    <h3 className='detail-sub-title right-title' key='title5'>{item.title2}</h3>
                     <p className='detail-text right-text' key='paragraph4'>
                         {item.paragraph1}
                     </p>

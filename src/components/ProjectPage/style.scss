@@ -8,13 +8,13 @@
     padding: 5px 150px 201px 150px;
   }
 
-  &-sub-title{
+  &-title{
     color: #fff;
-    width: 60%;
-    font-weight: 600;
-    font-size: 63px;
-    line-height: 85px;
-    letter-spacing: 0.02em;
+    font-size: 24px;
+      line-height: 35px;
+      width: 90%;
+      padding: 0 15px 44px 15px;
+      margin-bottom: 20px;
   }    
   &-text{
     font-weight: 400;
@@ -27,11 +27,13 @@
     word-wrap: break-word;
     margin-top: 28px;
   }
-  h2{
-      font-size: 24px;
-      line-height: 35px;
-      width: 90%;
-      padding: 0 15px 44px 15px;
+  &-sub-title{
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
       @media (min-width:1300px){
         font-weight: 600;
         font-size: 50px;
@@ -53,6 +55,12 @@
       padding: 0 15px;
       width: 90%;
       margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.8);
+      
       @media (min-width:1300px){
         padding:0px;
         width:74%;
