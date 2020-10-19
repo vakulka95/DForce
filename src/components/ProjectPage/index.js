@@ -1,4 +1,5 @@
 import React from 'react';
+// import Button from '../Button/index';
 import './style.scss';
 //import itseems from '../../json/itseems.json';
 
@@ -8,7 +9,19 @@ function ProjectPage({item}) {
         const loop = (item) => {
 
             return (<div className='container' key={item}>
-                <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
+                <div className='intro-wrap'>
+                    <div>
+                        <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
+                        <p className='detail-text' key={item.paragraph2}>
+                                {item.paragraph2}
+                        </p>
+                    </div>
+                    {/* <Button message={'подивитися всі проекти'}/> */}
+                    <div className='btn-wrap'>
+                        <button>Hello</button>
+                    </div>
+                </div>
+               
                 <figure className='detail-figure color' key={item.group1}>
                     <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                 </figure>

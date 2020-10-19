@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PortfolioItem from '../../../components/PortfolioItem/PortfolioItem';
-// import TitleOfBlock from '../../../components/TitleOfBlock/TitleOfBlock';
+import PortfolioItem from '../../PortfolioItem/PortfolioItem';
+import Button from '../../Button'
 import './style.scss';
 
 const Portfolio = ({portfolioItems}) => {
@@ -28,6 +28,7 @@ const Portfolio = ({portfolioItems}) => {
                     }
                     
                 </div>
+              <Button to={'/allprojects'} message={'подивитися всі проекти'} />
             </div>
         </section>
     )

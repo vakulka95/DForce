@@ -111,7 +111,7 @@ function FormBlock({ onSuccess }) {
                             <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
-                    <Button submit={true} onClick={sendMail}/>
+                    <Button submit={true} onClick={sendMail} message={'Заказать консультацию'}/>
                 </form>
             </div>
         </div>
