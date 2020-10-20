@@ -9,18 +9,16 @@ function ProjectPage({item}) {
         const loop = (item) => {
 
             return (<div className='container' key={item}>
+                    <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
                 <div className='intro-wrap'>
-                    <div>
-                        <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
-                        <p className='detail-text' key={item.paragraph2}>
+                    <p className='detail-text' key={item.paragraph2}>
                                 {item.paragraph2}
-                        </p>
-                    </div>
-                    {/* <Button message={'подивитися всі проекти'}/> */}
-                    <div className='btn-wrap'>
-                    <Button to={item.to} directly message={'перейти на сайт'} >
-                        <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
-                                     key={'./images/fontImages/tosite.svg'} /></Button>
+                    </p>
+                    <div className='button'>
+                        <Button to={item.to} directly message={'перейти на сайт'} >
+                            <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
+                                key={'./images/fontImages/tosite.svg'} />
+                        </Button>
                     </div>
                 </div>
                

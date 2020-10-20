@@ -15,6 +15,16 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
             </div>
             <div className='case-description'>
                 <p className='case-title sub-title'>{description}</p>
+                <div className='icons'>
+                    <img src={'./images/fontImages/icon1.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon2.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon3.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon4.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon5.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon6.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon7.svg'} alt='icon'/>
+                    <img src={'./images/fontImages/icon8.svg'} alt='icon'/>
+                </div>
                 <div className='case-link'>
                     <Link to={`${to}`} className='case-link-item'>Подивитися проект</Link> 
                     <Link to={`${to}`} className='case-link-item'>
