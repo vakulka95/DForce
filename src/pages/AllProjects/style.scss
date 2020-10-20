@@ -4,12 +4,16 @@
 }
 .allProjectsWrap{
     display: flex;
-    height: 50vh;
+    height: 100%;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .allProjectsItem{
-    width: 20vw;
+    width: 26vw;
     background: #20222B;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px 10px 0;
     
 }
