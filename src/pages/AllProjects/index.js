@@ -8,8 +8,8 @@ const AllProjects = () => {
     function renderPhoto (item) {
         const loop = (item) => {
             return(
-                <div key={item}>
-                {item.src.map((photo)=><img src={photo} alt={photo} key={photo} />)}
+                <div className='allProjectsWrap' key={item}>
+                {item.src.map((photo)=><img className='allProjectsItem' src={photo} alt={photo} key={photo} />)}
                 </div>
             )
         }
