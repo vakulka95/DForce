@@ -4,7 +4,6 @@ import tellmeProject from '../../json/tellmeProject.json';
 import itSeemsProject from '../../json/itSeemsProject.json';
 
 const AllProjects = () => {
-    console.log(renderPhoto(tellmeProject))
     function renderPhoto (item) {
         const loop = (item) => {
             return(

@@ -7,10 +7,10 @@ function ProjectPage({ item }) {
     const renderLoop = () => {
         const loop = (item) => {
 
-            return (<div className='container' key={item}>
-                <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
+            return (<div className='container' key={item.title1}>
+                <h2 className='detail-title' key='title1'>{item.title1}</h2>
                 <div className='intro-wrap'>
-                    <p className='detail-text' key={item.paragraph2}>
+                    <p className='detail-text' key='paragraph2'>
                         {item.paragraph2}
                     </p>
                     <Button to={item.to} directly message={'перейти на сайт'} >
@@ -31,17 +31,17 @@ function ProjectPage({ item }) {
                 <figure className='detail-figure mob-group color fleX' key={item.group2}>
                     {item.group2.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                 </figure>
-                <div className='detail-wrap right' key={`${item}-wrap2`}>
+                <div className='detail-wrap right' key='paragraph3-wrap'>
                     <h3 className='detail-sub-title right-title' key={item.title2}>{item.title2}</h3>
                     <p className='detail-text right-text' key={item.paragraph2}>
                         {item.paragraph2}
                     </p>
                 </div>
-                <div className='detail-block-all-figures' key={`${item}-wrap3`}>
+                <div className='detail-block-all-figures' key='group3'>
                     <figure className='detail-figure dark' key={item.group3}>
                         {item.group3.map((img) => <img className='detail-figure-img' alt={item.title} src={img} key={img} />)}
                     </figure>
-                    <div className='detail-block-figures fleX' key={`${item}-wrap6`}>
+                    <div className='detail-block-figures fleX' key='group6'>
                         <figure className='detail-figure dark' key={item.group6}>
                             {item.group6.map((img) => <img className='detail-figure-item' alt={item.title} src={img} key={img} />)}
                         </figure>
@@ -50,13 +50,13 @@ function ProjectPage({ item }) {
                         </figure>
                     </div>   
                 </div>
-                <div key={`${item}-wrap4`}>
+                <div key='group4-wrap'>
                     <h3 className='detail-sub-title' key='title4'>{item.title2}</h3>
                     <p className='detail-text' key='paragraph3'>
                         {item.paragraph2}
                     </p>
                 </div>
-                <div className='detail-block-all-figures' key={`${item}-wrap3`}>
+                <div className='detail-block-all-figures' key='group1-wrap'>
                         <figure className='detail-figure color' key={item.group1}>
                             <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                         </figure>
@@ -70,17 +70,17 @@ function ProjectPage({ item }) {
                 {/* <figure className='detail-figure color mob-group fleX' key={item.group5}>
                     {item.group5.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                 </figure> */}
-                <div className='right' key={`${item}-wrap5`}>
+                <div className='right' key='right-paragraph'>
                     <h3 className='detail-sub-title right-title' key='title5'>{item.title2}</h3>
                     <p className='detail-text right-text' key='paragraph4'>
                         {item.paragraph1}
                     </p>
                 </div>
-                <div className='detail-block-all-figures last' key={`${item}-wrap3`}>
+                <div className='detail-block-all-figures last' key='last-group'>
                     <figure className='detail-figure color' key={item.group3}>
                         {item.group3.map((img) => <img className='detail-figure-img' alt={item.title} src={img} key={img} />)}
                     </figure>
-                    <div className='detail-block-figures fleX' key={`${item}-wrap6`}>
+                    <div className='detail-block-figures fleX' key='darkGroup'>
                         <figure className='detail-figure dark' key={item.group6}>
                             {item.group6.map((img) => <img className='detail-figure-item' alt={item.title} src={img} key={img} />)}
                         </figure>
