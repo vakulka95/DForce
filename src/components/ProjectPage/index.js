@@ -33,7 +33,6 @@ function ProjectPage({item}) {
                 </div>
                 <figure className='detail-figure mob-group color fleX' key={item.group2}>
                     {item.group2.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
-                    {console.log(item.group2.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />))}
                 </figure>
                 <div key={`${item}-wrap2`}>
                     <h3 className='detail-sub-title' key={item.title2}>{item.title2}</h3>
