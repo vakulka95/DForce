@@ -1,10 +1,24 @@
 import React from 'react';
+import './style.scss'
 
 const AllProjects = () => {
     return (
-        <div>
-            <h3>All PROJECTS</h3>
-        </div>
+        <section className='allContainer'>
+            <h2>Наші кейси</h2>
+            <div className='allProjectsWrap'>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+            </div>
+            <h2>Наші кейси</h2>
+            <div className='allProjectsWrap'>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+                <div className='allProjectsItem'></div>
+            </div>
+        </section>
     )
 }
 
