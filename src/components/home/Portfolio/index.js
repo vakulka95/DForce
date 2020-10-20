@@ -1,8 +1,10 @@
 import React from 'react';
 
 import PortfolioItem from '../../../components/PortfolioItem/PortfolioItem';
-import Button from '../../Button'
+import Button from '../../Button';
 import './style.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = ({portfolioItems}) => {
     return (
@@ -28,7 +30,7 @@ const Portfolio = ({portfolioItems}) => {
                     }
                     
                 </div>
-              <Button to={'/allprojects'} message={'подивитися всі проекти'} />
+              <Button to={'/allprojects'} innerRef message={`всі проекти`} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='lg'/></Button>
             </div>
         </section>
     )
