@@ -9,8 +9,12 @@
   }
 
   .intro-wrap{
-    @media(min-width: 1900px){
+    @media(min-width: 1024px){
       display: flex;
+      flex-direction: row;
+      margin-bottom: 65px;
+    }
+    @media(min-width: 1900px){
     }
     .detail-text{
       margin-bottom: 0;
@@ -18,6 +22,10 @@
     .btn-wrap{
       display: flex;
       margin: 30px 15px;
+      @media(min-width: 1024px){
+        display: block;
+        align-self: flex-end;
+      }
       @media(min-width: 1900px){
         align-self: flex-end;
         position: relative;
@@ -47,7 +55,7 @@
     @media(min-width: 1024px){
       font-size: 46px;
       line-height: 70px;
-      margin-bottom: 65px;
+      margin-bottom: 20px;
     }
     @media(min-width: 1900px){
       font-size: 54px;
@@ -154,6 +162,9 @@
           margin-bottom: 10px;
           :first-child{
             margin-right: 0;
+            @media (min-width: 1024px){
+              margin-right: 7px;
+            }
             @media (min-width: 1900px){
               margin-right: 40px;
             }
@@ -161,12 +172,19 @@
           :last-child{
             // margin-top: 10px;
             margin-left: 0;
-            @media (min-width: 1900px){
+            @media (min-width: 1024px){
               margin: 0;
+            }
+            @media (min-width: 1900px){
+
             }
           }
           .detail-figure{
             width: 100%;
+            @media (min-width: 1024px){
+              margin-top: 0;
+              width: 48.8%;
+            }
             @media (min-width: 1900px){
               margin-top: 0;
               width: 48.7%;
@@ -183,6 +201,10 @@
           }
           .detail-figure{
             margin-bottom: 10px;
+            @media (min-width: 1024px){
+              margin-bottom: 0;
+              margin-top: 15px;
+            }
             @media (min-width: 1900px){
               margin-top: 40px;
             }
@@ -207,6 +229,11 @@
     .icons{
       display: flex;
       justify-content: space-around;
+      @media (min-width: 1300px){
+        width: 80%;
+        margin: 0 auto;
+        // align-items: center;
+      }
       @media (min-width: 1900px){
         display: flex;
         justify-content: space-between;
@@ -215,8 +242,13 @@
     }
     .detail{
       &-wrap{
-        @media (min-width: 1900px){
+        @media (min-width: 1024px){
           text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        @media (min-width: 1900px){
           margin-top: 68px;
         }
       }
@@ -253,9 +285,8 @@
       }
     }
       &-map{
-          width: 23vw;
+          width: 70vw;
           @media (min-width:1300px){
-            width: 20vw;
             margin-right: 30px;
           }
       }
@@ -266,7 +297,7 @@
       flex-direction: column;
       @media (min-width:1024px){
         width: 60%;
-        margin:0 0 0 36%;
+        margin:93px 0 0 36%;
         align-items: flex-end;
       }
       @media (min-width:1900px){
