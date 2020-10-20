@@ -7,6 +7,20 @@
   @media (min-width:1900px){
     padding: 5px 150px 201px 150px;
   }
+  .intro-wrap{
+    @media(min-width: 1900px){
+      display: flex;
+    }
+    .btn-wrap{
+      @media(min-width: 1900px){
+        align-self: flex-end;
+        button{
+          padding: 50px 150px;
+
+        }
+      }
+    }
+  }
 
   &-title{
     color: #fff;
@@ -19,6 +33,11 @@
       font-size: 46px;
       line-height: 70px;
       margin-bottom: 65px;
+    }
+    @media(min-width: 1900px){
+      font-size: 54px;
+      line-height: 75px;
+      margin-bottom: 21px;
     }
   }    
   &-sub-title{
@@ -269,7 +288,7 @@
 // }
 
 @media screen 
-and (min-width: 1901px) {
+and (min-width: 1900px) {
   .detail{
 
     padding: 200px 0 260px 0;

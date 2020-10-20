@@ -41,11 +41,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (min-width:1300px){
-            padding: 20px 80px;
+        @media (min-width:1024px){
+            padding: 0 80px;
         }
         @media (min-width:1900px){
-            padding: 50px 150px;
+            padding: 0 150px;
         }
         
         &-active{
@@ -63,7 +63,7 @@
     &-navigation{
         // padding-right: 80px;
         display:block;
-        @media screen and (max-width:1023px){
+        @media screen and (max-width:1024px){
             display: none;
         }
         &-list{
@@ -71,7 +71,7 @@
             align-items: center;
             justify-content: space-around;
             list-style-type: none;
-            @media screen and (max-width:1023px) {
+            @media screen and (max-width:1024px) {
                 flex-direction: column;
             }
            
@@ -109,7 +109,7 @@
     
     &-media{
         display: none;
-        @media screen and (max-width:1023px){
+        @media screen and (max-width:1024px){
             display: block;
         }
         &-button{

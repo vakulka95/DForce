@@ -1,4 +1,5 @@
 import React from 'react';
+// import Button from '../Button/index';
 import './style.scss';
 import Button from '../Button';
 
@@ -8,10 +9,21 @@ function ProjectPage({item}) {
         const loop = (item) => {
 
             return (<div className='container' key={item}>
-                <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
-                <Button to={item.to} directly message={'перейти на сайт'} ><img src={'./images/fontImages/tosite.svg'}
-                                                 alt={'ref'}
-                                                  key={'./images/fontImages/tosite.svg'} /></Button>
+                <div className='intro-wrap'>
+                    <div>
+                        <h2 className='detail-title' key={item.title1}>{item.title1}</h2>
+                        <p className='detail-text' key={item.paragraph2}>
+                                {item.paragraph2}
+                        </p>
+                    </div>
+                    {/* <Button message={'подивитися всі проекти'}/> */}
+                    <div className='btn-wrap'>
+                    <Button to={item.to} directly message={'перейти на сайт'} >
+                        <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
+                                     key={'./images/fontImages/tosite.svg'} /></Button>
+                    </div>
+                </div>
+               
                 <figure className='detail-figure color' key={item.group1}>
                     <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                 </figure>
