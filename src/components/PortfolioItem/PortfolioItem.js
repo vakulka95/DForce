@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import technologies from '../../json/technologies.json'
 import './style.scss';
 
 
@@ -11,19 +12,12 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
     return (
         <div className='case'>
             <div className={backgroundCLass}>
-                <img src={image} alt={alt} />
+                <img src={image} alt={alt} key={image}/>
             </div>
             <div className='case-description'>
                 <p className='case-title sub-title'>{description}</p>
                 <div className='icons'>
-                    <img src={'./images/fontImages/icon1.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon2.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon3.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon4.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon5.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon6.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon7.svg'} alt='icon'/>
-                    <img src={'./images/fontImages/icon8.svg'} alt='icon'/>
+                    {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
                 </div>
                 <div className='case-link'>
                     <Link to={`${to}`} className='case-link-item'>Подивитися проект</Link> 
