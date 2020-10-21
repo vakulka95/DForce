@@ -2,18 +2,131 @@
     padding:60px 80px 150px 80px;
     background: #000000;
 }
-.allProjectsWrap{
+.mainProjects{
     display: flex;
     height: 100%;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    @media(min-width: 1024px){
+        margin: 33px 0 105px 0 ;
+    }
+    @media(min-width: 1900px){
+        margin: 43px 0 135px 0 ;
+    }
+    &-item{
+        background: #20222B;
+        padding: 20px;
+        border-radius: 8px;
+        // margin: 0 10px 10px 0;
+        @media(min-width: 1024px){
+            width: 44.2%;
+        }
+        @media(min-width: 1300px){
+            width: 44.7%;
+        }
+        @media(min-width: 1900px){
+            width: 46.8%;
+        }
+    }
 }
-.allProjectsItem{
-    width: 26vw;
-    background: #20222B;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 0 10px 10px 0;
-    
+
+.secondaryProjects{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(min-width: 1900px){
+        margin: 43px 0 0 0 ;
+    }
+    &-item{
+        background: #20222B;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        // margin: 0 10px 10px 0;
+        @media(min-width: 1024px){
+            width: 27.1%;;
+            margin-right: 20px;
+        }
+        @media(min-width: 1300px){
+            width: 28%;
+        }
+        @media(min-width: 1900px){
+            width: 29.8%;
+            margin-right: 30px;
+        }
+    }
+}
+
+
+
+
+
+@for $i from 1 through 6{
+    @if($i % 2) == 1{
+        .mainProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-right: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    @if($i < 3){
+        .mainProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .mainProjects-item{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // Secondary //
+    @if( $i % 3 == 0){
+        .secondaryProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-right: 0;
+                }
+                @media(min-width: 1900px){
+                    // margin-right: 30px;
+                }
+            }
+        }
+    }
+    @if($i < 4){
+        .secondaryProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .secondaryProjects-item{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

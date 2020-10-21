@@ -34,7 +34,6 @@ const Header = () =>{
             return false
         }
     };
-    console.log(opasityHeader())
     let opasity = opasityHeader();
     return(
         <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>

@@ -54,6 +54,7 @@
     margin-bottom: 20px;
     @media(min-width: 1024px){
       font-size: 46px;
+      width: 70%;
       line-height: 70px;
       margin-bottom: 20px;
     }
@@ -285,9 +286,8 @@
       }
     }
       &-map{
-          width: 23vw;
+          width: 70vw;
           @media (min-width:1300px){
-            width: 20vw;
             margin-right: 30px;
           }
       }
