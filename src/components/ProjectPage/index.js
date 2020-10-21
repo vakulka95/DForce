@@ -2,19 +2,12 @@ import React from 'react';
 import './style.scss';
 import Button from '../Button';
 
-function ProjectPage({ item }) {
-    
+
+function ProjectPage({ item,color }) {
+
     const renderLoop = () => {
         const loop = (item) => {
-            let loc;
-            loc = window.location.href
-            console.log(loc)
-    if(loc.indexOf('/itseems')){
-         console.log('itseems');
-    }else if(loc.indexOf('/tellme')){
-         console.log('tellme');
-    }
-           
+            console.log(color);
             return (<div className='container' key={item.title1}>
                 <h2 className='detail-title' key='title1'>{item.title1}</h2>
                 <div className='intro-wrap'>
@@ -27,7 +20,7 @@ function ProjectPage({ item }) {
                     </Button>
                 </div>
 
-                <figure className='detail-figure color' key={item.group1}>
+                <figure className='detail-figure' style={color} key={item.group1}>
                     <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                 </figure>
                 <div className='detail-wrap' key={`${item.title2}-wrap`}>
@@ -36,7 +29,7 @@ function ProjectPage({ item }) {
                         {item.paragraph1}
                     </p>
                 </div>
-                <figure className='detail-figure mob-group color fleX' key={item.group2}>
+                <figure className='detail-figure mob-group fleX' style={color} key={item.group2}>
                     {item.group2.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                 </figure>
                 <div className='detail-wrap right' key='paragraph3-wrap'>
@@ -65,13 +58,13 @@ function ProjectPage({ item }) {
                     </p>
                 </div>
                 <div className='detail-block-all-figures' key='group1-wrap'>
-                        <figure className='detail-figure color' key={item.group1}>
+                        <figure className='detail-figure' style={color} key={item.group1}>
                             <img className='detail-figure-img' alt={item.title1} src={item.group1} key={item.group1} />
                         </figure>
                     <figure className='detail-figure dark' key={item.group3}>
                         {item.group3.map((img) => <img className='detail-figure-img' alt={item.title} src={img} key={img} />)}
                     </figure>
-                    <figure className='detail-figure color mob-group fleX' key={item.group5}>
+                    <figure className='detail-figure mob-group fleX' style={color} key={item.group5}>
                         {item.group5.map((img) => <img className='mob-group-map' alt={item.title} src={img} key={img} />)}
                     </figure> 
                 </div>
@@ -85,7 +78,7 @@ function ProjectPage({ item }) {
                     </p>
                 </div>
                 <div className='detail-block-all-figures last' key='last-group'>
-                    <figure className='detail-figure color' key={item.group3}>
+                    <figure className='detail-figure' style={color} key={item.group3}>
                         {item.group3.map((img) => <img className='detail-figure-img' alt={item.title} src={img} key={img} />)}
                     </figure>
                     <div className='detail-block-figures fleX' key='darkGroup'>

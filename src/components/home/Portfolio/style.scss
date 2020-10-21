@@ -27,6 +27,15 @@
         }
         
     }
+    .button{
+        .btn-wrap{
+            display: flex;
+            width: 100%;
+            @media (min-width:1024px){
+                display: block;
+            }
+        }
+    }
 
 }
 

@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
-import './style.scss'
 import tellme from '../../json/tellme.json';
 import ProjectPage from '../../components/ProjectPage';
 
 function TellMe() {
+    const color = {
+        backgroundColor:'#329AE5'
+    }
     return (
         <Fragment>
-            <ProjectPage item={tellme} />
+            <ProjectPage item={tellme} color={color} />
         </Fragment>
     )
 }
