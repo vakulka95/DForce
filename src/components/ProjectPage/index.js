@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import Button from '../Button';
 
+
 function ProjectPage({ item,color }) {
 
     const renderLoop = () => {
