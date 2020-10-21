@@ -342,6 +342,9 @@
         align-items: center;
       }
   }
+  .dark{
+    background: #21222B;
+  }
 
   .last{
     @media(min-width: 1900px){
@@ -350,126 +353,4 @@
     }
   }
 
-  // .icons{
-  //   @media(min-width: 1900px){
-  //     display: flex;
-  //     margin: 0 auto;
-  //     justify-content: space-between;
-  //     width: 50%;
-  //   }
-  // }
-
-
-  
-//////////////////////////////////////////////////////////////
-// @media screen 
-//   and (min-width: 1300px) 
-//   and (max-width: 1899px){
-// .detail{
-    
-//     &-figure{
-
-//       &-item{
-//         height: 100%;
-//         max-width: 30vw;
-//       }
-      
-//     }
-//     &-text{
-//       margin-top: 20px;
-//     }
-//     &-block-figures{
-//       margin-bottom: -55px;
-//       .detail-figure{
-//         img{
-//           width: 300px;
-//         }
-//       }
-//     }
-//   }
-//   }
-  
-  
-  
-//   @media screen 
-//   and (min-width: 1024px) 
-//   and (max-width: 1299px){
-// .detail{
-//     &-figure{
-//       margin: 90px 0 150px 0;
-//       padding: 75px 125px;
-//     }
-//     padding: 100px 0 160px 0;
-//     &-sub{
-//       &-title{
-//         line-height: 60px;
-//       }
-//     }
-//     &-block{
-//       &-figures{
-//         // padding: 100px 50px;
-//         .detail-figure{
-//           padding: 100px 50px;
-//           &-item{
-//             width: 200px;
-//           }
-//         }
-//       }
-//     }
-//     &-figure{
-//       justify-content: center;
-//       img{
-//         width: 900px;
-//       }
-//       .mob-group-map{
-//         width: 500px;
-//         height: 500px;
-//         margin: 0 15px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen 
-// and (min-width: 1900px) {
-//   .detail{
-
-//     padding: 200px 0 260px 0;
-//     :last-child{
-//       margin-bottom: 0;
-//     }
-
-//     &-figure{
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       padding: 135px 225px;
-//       border-radius: 8px;
-//       margin: 150px 0 200px 0;
-      
-//     }
-
-//     &-block{
-//       &-desktop-figures{
-//         margin-bottom: 200px;
-//         figure:first-child{
-//           margin-bottom: 35px;
-//         }
-//         figure:last-child{
-//           margin-top: 0;
-//         }
-//       }
-//       &-figures{
-//         margin-bottom: -55px;
-//         .detail-figure:first-child{
-//           margin-right: 20px;
-//         }
-//         .detail-figure:last-child{
-//           margin-left: 20px;
-//         }
-//       }
-//     }
-//   }
-
-// }
 
