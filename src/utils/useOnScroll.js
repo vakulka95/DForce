@@ -11,11 +11,6 @@ export const useOnScroll = ()=>{
         }else{
             setBgLight( false );
         }
-
-
-           
-        
-
     };
 
     useEffect( () => {
