@@ -13,12 +13,10 @@ const Portfolio = ({portfolioItems}) => {
     const [position,setPosition] = useState({ y: null })
 
     const handleMouseMove = (e)=> {
-        console.log(position.y);
         setPosition({
           y: e.clientY
         });
-        if(position.y){
-            console.log(locate);  
+        if(position.y){ 
             locate.hash = '#Dumb'
             history.replace(locate.hash)
             }

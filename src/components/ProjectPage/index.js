@@ -7,7 +7,6 @@ function ProjectPage({ item,color }) {
 
     const renderLoop = () => {
         const loop = (item) => {
-            console.log(color);
             return (<div className='container' key={item.title1}>
                 <h2 className='detail-title' key='title1'>{item.title1}</h2>
                 <div className='intro-wrap'>

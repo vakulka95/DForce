@@ -16,7 +16,7 @@ function Specialization({specItems}) {
           y: e.clientY
         });
         if(position.y){
-            console.log(locate);  
+            console.log(locate, window.pageYOffset,'cho');  
             locate.hash = '#Sheet'
             history.replace(locate.hash)
             }

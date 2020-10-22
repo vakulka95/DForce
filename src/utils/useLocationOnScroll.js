@@ -7,12 +7,10 @@ export const useLocationOnScroll = () => {
   let history = useHistory()
 
   const handleMouseMove = (e)=> {
-    console.log(position.y);
     setPosition({
       y: e.clientY
     });
-    if(position.y){
-        console.log(locate);  
+    if(position.y){  
         locate.hash = '#fuck'
         history.replace(locate.hash)
         }
@@ -24,7 +22,6 @@ export const useLocationOnScroll = () => {
       return ()=> window.removeEventListener('scroll', handleMouseMove)
   })
   
-  console.log(position.y);
 
   return position;
 };
