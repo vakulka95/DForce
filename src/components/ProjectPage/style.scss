@@ -20,7 +20,6 @@
       margin-bottom: 0;
     }
     .btn-wrap{
-      display: flex;
       margin: 30px 15px;
       @media(min-width: 1024px){
         display: block;
@@ -336,6 +335,7 @@
   }
   .intro-wrap{
     display: flex;
+    margin-bottom: 39px;
     flex-direction: column;
       @media (min-width:1300px){
         flex-direction: row;
