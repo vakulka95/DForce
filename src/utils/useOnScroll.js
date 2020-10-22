@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 
-
 export const useOnScroll = ()=>{
 
     const [bgLight, setBgLight] = useState( false );
@@ -13,6 +12,8 @@ export const useOnScroll = ()=>{
             setBgLight( false );
         }
 
+
+           
         
 
     };
@@ -22,6 +23,8 @@ export const useOnScroll = ()=>{
         window.addEventListener( 'scroll', handleScroll );
 
         return () => window.removeEventListener( 'scroll', handleScroll );
+
+       
 
 
     });
