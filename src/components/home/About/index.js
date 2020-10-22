@@ -1,11 +1,33 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './style.scss';
 import SpecItem from '../../../components/SpecItem/SpecItem';
 import about from '../../../json/aboutItems.js';
+import {useHistory,useLocation }from 'react-router-dom';
 
 const About = () => {
+    let history = useHistory()
+    let locate = useLocation()
+
+    const [position,setPosition] = useState({ y: null })
+
+    const handleMouseMove = (e)=> {
+        console.log(position.y);
+        setPosition({
+          y: e.clientY
+        });
+        if(position.y){
+            console.log(locate);  
+            locate.hash = '#motherfucker'
+            history.replace(locate.hash)
+            }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleMouseMove)
+        return ()=> window.removeEventListener('scroll', handleMouseMove)
+    } )      
     return (
-        <section className='about main-padding' id='about'>
+        <section className='about main-padding' id='about' onMouseEnter={handleMouseMove}>
             <div className='container'>
                 <h2 className='title-of-block'>Наші цінності</h2>
                 <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям та допомагають компаніями бути більш ефективними. Наша команда зацікавлена у рості вашого бізнесу та довготривалій співпраці!</p>

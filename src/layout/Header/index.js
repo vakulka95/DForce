@@ -4,11 +4,13 @@ import Logo from '../../components/Logo/Logo';
 import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
-import {useOnScroll} from '../../utils/useOnScroll'
+import {useOnScroll} from '../../utils/useOnScroll';
 
 const Header = () =>{
-   const [mobileNav, setMobileNav] = useState(false);
+    const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
+
+
     let num = 0;
 
     if (mobileNav){
@@ -17,6 +19,12 @@ const Header = () =>{
    const activateMobileNav = () => {
        setMobileNav((prev)=>!prev)
    }
+
+   const isActive = (hash, find) => {
+    return hash === find;
+    }   
+    
+    //console.log(isActive(),useLocation().hash);
 
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;

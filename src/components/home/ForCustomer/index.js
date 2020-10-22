@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
-
+import {useHistory,useLocation }from 'react-router-dom';
 import Modal from '../../../components/Modal';
 import GeneralModal from '../../../components/Modal/GeneralModal';
 // import Message from '../../../components/Modal/templatesModal/Message';
@@ -10,6 +10,27 @@ import contactItem from '../../../json/contactItem';
 import Loader from '../../Loader';
 
 const ForCustomer = () => {
+    let history = useHistory()
+    let locate = useLocation()
+
+    const [position,setPosition] = useState({ y: null })
+
+    const handleMouseMove = (e)=> {
+        console.log(position.y);
+        setPosition({
+          y: e.clientY
+        });
+        if(position.y){
+            console.log(locate);  
+            locate.hash = '#stupid'
+            history.replace(locate.hash)
+            }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleMouseMove)
+        return ()=> window.removeEventListener('scroll', handleMouseMove)
+    } ) 
 
     const [modal, setModal] = useState(true);
     const [success, setSuccess] = useState(false);
@@ -60,7 +81,7 @@ const ForCustomer = () => {
         }
     };
     return (
-        <section className='for-customer' id='forcustomer'>
+        <section className='for-customer' id='forcustomer' onMouseMove={handleMouseMove}>
 
             {(success || error) && renderModal()}
             <div className='flex'>

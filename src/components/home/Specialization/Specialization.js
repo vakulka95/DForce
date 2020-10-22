@@ -1,13 +1,33 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './style.scss';
-
+import {useHistory,useLocation }from 'react-router-dom';
 import SpecItem from '../../SpecItem/SpecItem';
-// import TitleOfBlock from '../../TitleOfBlock/TitleOfBlock';
 
 
 function Specialization({specItems}) {
+    let history = useHistory()
+    let locate = useLocation()
+
+    const [position,setPosition] = useState({ y: null })
+
+    const handleMouseMove = (e)=> {
+        console.log(position.y);
+        setPosition({
+          y: e.clientY
+        });
+        if(position.y){
+            console.log(locate);  
+            locate.hash = '#Sheet'
+            history.replace(locate.hash)
+            }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleMouseMove)
+        return ()=> window.removeEventListener('scroll', handleMouseMove)
+    } ) 
     return (
-        <section className='specialization main-padding' id='specialization'>
+        <section className='specialization main-padding' id='specialization' onMouseEnter={handleMouseMove}>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>
