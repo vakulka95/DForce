@@ -73,18 +73,23 @@
             animation-duration: 6s;
             animation-iteration-count: infinite;
             // animation-delay: 2s;
+            @media (min-width: 1900px){
+
+            }
 
         }
         .animation-two{
             position: relative;
             left: 125px;
             opacity: 0;
-            bottom: 50%;
+            
             animation-name: change-text-two;
             animation-duration: 6s;
             animation-iteration-count: infinite;
             // animation-delay: 2s;
-            
+            @media (min-width: 1900px){
+                left: 125px;
+            }
         }
         .animation-three{
             position: relative;
@@ -95,6 +100,13 @@
             animation-duration: 6s;
             animation-iteration-count: infinite;
             // animation-delay: 4s;
+            @media(min-width: 1024px){
+                left: -140px;
+                white-space: nowrap;
+            }
+            @media (min-width: 1900px){
+                left: -210px;
+            }
         }
         
     }
@@ -106,9 +118,13 @@
                 width: 100%;
                 @media (min-width: 1023px){
                     width: 45%;
+                    margin-top: -80px;
                 }
                 @media (min-width:1300px){
                     width:50%
+                }
+                @media (min-width: 1600px){
+                    margin-top: 0;
                 }
                 @media (min-width:1900px){
                     font-size: 18px;
@@ -132,6 +148,7 @@
     30%{
         opacity: 0;
         top: -100px;
+
     }
     100%{
         top: -100px;
@@ -153,10 +170,10 @@
     }
     60%{
         opacity: 0;
-        top: -150px;
+        top: -185px;
     }
     100%{
-        top: -150px;
+        top: -100px;
         opacity: 0;
     }
 }
@@ -169,7 +186,7 @@
     }
     60%{
         opacity: 0;
-        top: -40px;
+        top: -30px;
     }
     75%{
         opacity: 1;
