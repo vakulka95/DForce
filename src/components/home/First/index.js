@@ -1,12 +1,8 @@
 import React from 'react';
 import './style.scss';
-import { useLocation } from "react-router-dom";
 
 
-const First = () => {
-            let loc = useLocation();
-           
-            
+const First = () => {            
     return (
         <section className = 'home' id='home'>
             <div className='container'>
