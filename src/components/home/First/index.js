@@ -23,7 +23,7 @@ const First = () => {
         return ()=> window.removeEventListener('scroll', handleMouseMove)
     } ) 
     return (
-        <section className = 'home' id='home' onMouseMove={handleMouseMove}>
+        <section className = 'home' id='home' onMouseEnter={handleMouseMove}>
             <div className='container'>
             <div className = 'home-wrap'>
               <h1 className = 'home-header'><span className = 'home-header-first'>Ми</span> створюємо майбутнє!</h1>

@@ -13,21 +13,32 @@ function Specialization({specItems}) {
     const handleMouseMove = (e)=> {
         console.log(position.y);
         setPosition({
-          y: e.clientY
+          y: e.pageYOffset
         });
         if(position.y){
-            console.log(locate, window.pageYOffset,'cho');  
+            console.log( window.pageYOffset,'cho');  
             locate.hash = '#Sheet'
             history.replace(locate.hash)
             }
     }
+
+    window.onscroll = function() {
+        let scrolled = window.pageYOffset;
+        console.log( 'Позиция скрола: '+scrolled  );
+    };
+     const element = document.querySelector('section')
+     console.log(element);
+     element.onscroll= function(){
+       let   intElemScrollTop = element.current.scrollTop;
+        console.log('Позиция скрола у элемента: '+ intElemScrollTop)
+    };
 
     useEffect(()=>{
         window.addEventListener('scroll', handleMouseMove)
         return ()=> window.removeEventListener('scroll', handleMouseMove)
     } ) 
     return (
-        <section className='specialization main-padding' id='specialization' onMouseEnter={handleMouseMove}>
+        <section className='specialization main-padding' id='specialization' onScroll={handleMouseMove}>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>

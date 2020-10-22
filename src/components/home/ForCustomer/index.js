@@ -16,12 +16,10 @@ const ForCustomer = () => {
     const [position,setPosition] = useState({ y: null })
 
     const handleMouseMove = (e)=> {
-        console.log(position.y);
         setPosition({
           y: e.clientY
         });
-        if(position.y){
-            console.log(locate);  
+        if(position.y){  
             locate.hash = '#stupid'
             history.replace(locate.hash)
             }
@@ -81,7 +79,7 @@ const ForCustomer = () => {
         }
     };
     return (
-        <section className='for-customer' id='forcustomer' onMouseMove={handleMouseMove}>
+        <section className='for-customer' id='forcustomer' onMouseEnter={handleMouseMove}>
 
             {(success || error) && renderModal()}
             <div className='flex'>
