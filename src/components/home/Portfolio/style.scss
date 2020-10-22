@@ -13,6 +13,7 @@
         @media (min-width:1024px){
             :last-child{
                 margin-bottom: 0;
+                
             }
         }
     }
@@ -34,6 +35,12 @@
             @media (min-width:1024px){
                 display: block;
             }
+        }
+    }
+
+    .vote{
+        img{
+            width: 50%;
         }
     }
 

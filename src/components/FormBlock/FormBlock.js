@@ -86,28 +86,28 @@ function FormBlock({ onSuccess }) {
                 <form>
                     <div className='form-group'>
                         <label>
-                            Ваше ім'я:
+                           <span>Ваше ім'я:</span>
                             <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
                             {formData.nameInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
-                            Ваш телефон:
+                        <span>Ваш телефон:</span>
                             <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
                             {formData.phoneInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
-                            Ваша пошта:
+                        <span>Ваша пошта:</span>
                             <input type='email' name='email' className={formData.emailInvalid ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange} value={formData.email} />
                             {formData.emailInvalid && <div><p style={{ color:'red', fontSize: '14px' }}>{formData.emailInvalid}</p></div>}
                         </label>
                     </div>
                     <div className='form-group'>
                         <label>
-                            Залиште свій коментар:
+                        <span>Залиште свій коментар:</span>
                             <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>

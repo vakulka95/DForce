@@ -3,8 +3,9 @@
     &-wrap{
         display:block;
         &-active{
-            position: fixed;
-            bottom: 50px;
+            margin-bottom: 75px;
+            // position: fixed;
+            // bottom: 50px;
         }
     }
     &-btn{

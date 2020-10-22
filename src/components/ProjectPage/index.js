@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import technologies from '../../json/technologies.json';
 import Button from '../Button';
 
 
@@ -92,14 +93,7 @@ function ProjectPage({ item,color }) {
                 </div>
                 <div className='detail-about'>
                     <div className='icons'>
-                        <img src={'./images/fontImages/icon1.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon2.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon3.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon4.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon5.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon6.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon7.svg'} alt='icon'/>
-                        <img src={'./images/fontImages/icon8.svg'} alt='icon'/>
+                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
                     </div>
                     <div className='detail-wrap' key={`${item.title2}-wrap`}>
                         <h3 className='detail-sub-title ' key={item.title2}>Волонтери проекту</h3>

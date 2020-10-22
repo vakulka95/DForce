@@ -71,6 +71,7 @@
     &-contacts{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         margin-left: 15px;
         .contact-item{
             margin-bottom: 28px;
@@ -79,10 +80,10 @@
             }
         }
         @media(min-width: 1024px){
-            // flex-direction: row;
+            flex-direction: row;
         }
         @media (min-width: 1300px){
-            flex-direction: row;
+            // flex-direction: row;
         }
         @media(min-width: 1900px){
             display: flex;
