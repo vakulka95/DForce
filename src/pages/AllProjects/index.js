@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import { Link } from 'react-router-dom';
 
 // import tellmeProject from '../../json/tellmeProject.json';
 // import itSeemsProject from '../../json/itSeemsProject.json';
@@ -22,14 +23,14 @@ const AllProjects = () => {
                 {/* {renderPhoto(tellmeProject)}  */}
 
                 <div className='mainProjects-item'>
-                    <a href='#'>
+                    <Link to='/itseems'>
                         <img src='./images/cases/itSeems/Rectangle-1372.png' alt='ItSeems' />
-                    </a>
+                    </Link>
                 </div>
                 <div className='mainProjects-item'>
-                    <a href='https://tellme.com.ua/'>
+                    <Link to='/tellme'>
                         <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' />
-                    </a>
+                    </Link>
                 </div>
                 <div className='mainProjects-item'>
                     <a href='#'>
