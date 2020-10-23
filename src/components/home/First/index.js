@@ -27,7 +27,7 @@ const First = () => {
                         <span className='animation-two'>інженери</span>
                         <span className='animation-three'>якісний результат</span>
                     </h1>
-                    <p className = 'home-paragraph'>Dforce - це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя  та досвіду людей.Dforce - це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя  та досвіду людей.</p>
+                    <p className = 'home-paragraph'>Dforce - це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя та досвіду людей. Ми допомагаємо нашим клієнтам ефективно реалізувати найамбітніші ідеї!</p>
                     {/* <button onClick={setHistory}>BUTTON</button> */}
                 </div>
             </div>
