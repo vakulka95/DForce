@@ -17,7 +17,7 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
             <div className='case-description'>
                 <p className='case-title sub-title'>{description}</p>
                 <div className='icons'>
-                    {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
+                    {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} title={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
                 </div>
                 <div className='case-link'>
                     <Link to={`${to}`} className='case-link-item'>Подивитися проект</Link> 

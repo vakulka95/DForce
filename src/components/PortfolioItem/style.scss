@@ -134,10 +134,19 @@
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
+    // justify-content: center;
     @media (min-width: 1024px){
-        max-width: 70%;
+        // justify-content: start;
     }
+    img{
+        margin-bottom: 20px;
+        margin-right: 30px;
+        @media (min-width: 1024px){
+            
+        }
+    }
+    
+    
 }
 

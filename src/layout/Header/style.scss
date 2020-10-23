@@ -3,7 +3,8 @@
     width:100%;
     padding: 20px 0px;
     background-color: #0D0E12;
-    
+    position: fixed;
+
     &-active{
         width: 100%;
         height: 100vh;
@@ -12,13 +13,21 @@
         background-color: #0D0E12;
     }
     &-logo{
-        @media (min-width:1023px){
+        margin-left: 15px;
+        @media (min-width:1024px){
             margin-left: 0;
+        }
+        img{
+            margin: 0;
+        }
+        &-active{
+            align-self: start;
         }
     }
     &-opasity{
         left: 0;
         right: 0;
+        z-index: 100;
         padding: 20px 30px 20px 0px;
         position: fixed;
         @media (min-width:1023px){
@@ -49,6 +58,7 @@
         }
         
         &-active{
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -78,8 +88,7 @@
         }
         &-active{
             display:block;
-            position: relative;
-            top: 30px;
+            height: 100%;
         }
         &-item{
             margin-right: 10px;
@@ -87,9 +96,9 @@
             //font-weight: 400;
             margin-left: 30px;
             cursor: pointer;
-            &-active{
-                margin-top:8vh;
-            }
+                &-active{
+                    margin-top:8vh;
+                }
             }
         &-link{
             text-decoration: none;
@@ -98,7 +107,7 @@
             letter-spacing: 0.08em;
             font-weight: 400;
             &:hover{
-                color:greenyellow;
+                color:#3ACC81;
             }
             &-active{
                 color:#3ACC81;
@@ -108,6 +117,7 @@
     }
     
     &-media{
+        
         display: none;
         @media screen and (max-width:1024px){
             display: block;
@@ -117,11 +127,12 @@
             outline: none;
             background-color: rgba(255, 255, 255, 0);
             height: 20px;
-            width:20px;
+            width:25px;
             cursor: pointer;
             position: absolute;
             top: 33px;
-            right: 37px;
+            right: 30px;
+            
         }
     }
 }

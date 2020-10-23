@@ -33,10 +33,11 @@ const Header = () =>{
     }
 
     let pathName = useLocation().pathname;
-
+    console.log(pathName)
     const opasityHeader = () => {
         
         if(pathName==='/'){
+            
             return true
         } else {
             return false
