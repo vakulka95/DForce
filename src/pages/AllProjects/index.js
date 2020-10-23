@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.scss';
 import { Link } from 'react-router-dom';
+import {useHistory,useLocation }from 'react-router-dom';
 
 // import tellmeProject from '../../json/tellmeProject.json';
 // import itSeemsProject from '../../json/itSeemsProject.json';
@@ -16,6 +17,15 @@ const AllProjects = () => {
     // }
     // return item.map(loop);
     // }
+    let history = useHistory()
+    let locate = useLocation()
+    useEffect(()=>{
+        if(locate.pathname==='/allprojects#forcustomer'){
+            locate.pathname = '/allprojects'
+            history.replace(locate.pathname)
+        }
+    },[history,locate.pathname])
+
     return (
         <section className='allContainer'>
             <h2 className='allProjects-title'>Наші кейси</h2>
