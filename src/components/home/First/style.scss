@@ -73,7 +73,7 @@
             // animation-delay: 2s;
             @media (min-width: 1024px){
                 animation-name: change-text;
-                animation-duration: 6s;
+                animation-duration: 8s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1900px){
@@ -92,7 +92,7 @@
                 left: 125px;
                 opacity: 0;
                 animation-name: change-text-two;
-                animation-duration: 6s;
+                animation-duration: 7s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1600px){
@@ -118,7 +118,7 @@
                 white-space: nowrap;
                 display: inline;
                 animation-name: change-text-three;
-                animation-duration: 6s;
+                animation-duration: 7s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1600px){

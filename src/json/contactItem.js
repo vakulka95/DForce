@@ -4,7 +4,7 @@ let contactItem = [
         image: './images/fontImages/phone.svg',
         alt: 'phone',
         info: 'Phone:',
-        data: 'tel:+3801234567'
+        data: 'tel: 063 134 81 54'
     },
     {
         id: 2,
