@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import {useHistory,useLocation }from 'react-router-dom';
 import PortfolioItem from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
@@ -22,10 +22,6 @@ const Portfolio = ({portfolioItems}) => {
             }
     }
 
-    useEffect(()=>{
-        window.addEventListener('mouseOver', handleMouseMove)
-        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
-    } ) 
     return (
         <section className='portfolio main-padding' id='portfolio' onMouseOver={handleMouseMove}>
             <div className='container'>

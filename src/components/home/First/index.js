@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
 
@@ -18,10 +18,6 @@ const First = () => {
             }
     }
 
-    useEffect(()=>{
-        window.addEventListener('mouseEnter', handleMouseMove)
-        return ()=> window.removeEventListener('mouseEnter', handleMouseMove)
-    } ) 
     return (
         <section className = 'home' id='home' onMouseEnter={handleMouseMove}>
             <div className='container'>

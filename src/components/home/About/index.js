@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './style.scss';
 import SpecItem from '../../../components/SpecItem/SpecItem';
 import about from '../../../json/aboutItems.js';
@@ -19,11 +19,7 @@ const About = () => {
             history.replace(locate.hash)
             }
     }
-
-    useEffect(()=>{
-        window.addEventListener('mouseOver', handleMouseMove)
-        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
-    } )      
+     
     return (
         <section className='about main-padding' id='about' onMouseOver={handleMouseMove}>
             <div className='container'>

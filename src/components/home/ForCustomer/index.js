@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
@@ -24,11 +24,6 @@ const ForCustomer = () => {
             history.replace(locate.hash)
             }
     }
-
-    useEffect(()=>{
-        window.addEventListener('mouseOver', handleMouseMove)
-        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
-    } ) 
 
     const [modal, setModal] = useState(true);
     const [success, setSuccess] = useState(false);
