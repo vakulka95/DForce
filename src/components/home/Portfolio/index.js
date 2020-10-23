@@ -17,17 +17,17 @@ const Portfolio = ({portfolioItems}) => {
           y: e.clientY
         });
         if(position.y){ 
-            locate.hash = '#Dumb'
+            locate.hash = '#portfolio'
             history.replace(locate.hash)
             }
     }
 
     useEffect(()=>{
-        window.addEventListener('scroll', handleMouseMove)
-        return ()=> window.removeEventListener('scroll', handleMouseMove)
+        window.addEventListener('mouseOver', handleMouseMove)
+        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
     } ) 
     return (
-        <section className='portfolio main-padding' id='portfolio' onMouseEnter={handleMouseMove}>
+        <section className='portfolio main-padding' id='portfolio' onMouseOver={handleMouseMove}>
             <div className='container'>
             <h2 className='portfolio-title'>Наші кейси</h2>
                 <div className='portfolio-list'>

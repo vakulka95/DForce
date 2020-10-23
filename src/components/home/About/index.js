@@ -15,17 +15,17 @@ const About = () => {
           y: e.clientY
         });
         if(position.y){ 
-            locate.hash = '#motherfucker'
+            locate.hash = '#about'
             history.replace(locate.hash)
             }
     }
 
     useEffect(()=>{
-        window.addEventListener('scroll', handleMouseMove)
-        return ()=> window.removeEventListener('scroll', handleMouseMove)
+        window.addEventListener('mouseOver', handleMouseMove)
+        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
     } )      
     return (
-        <section className='about main-padding' id='about' onMouseEnter={handleMouseMove}>
+        <section className='about main-padding' id='about' onMouseOver={handleMouseMove}>
             <div className='container'>
                 <h2 className='title-of-block'>Наші цінності</h2>
                 <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям та допомагають компаніями бути більш ефективними. Наша команда зацікавлена у рості вашого бізнесу та довготривалій співпраці!</p>

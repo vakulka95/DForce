@@ -20,14 +20,14 @@ const ForCustomer = () => {
           y: e.clientY
         });
         if(position.y){  
-            locate.hash = '#stupid'
+            locate.hash = '#forcustomer'
             history.replace(locate.hash)
             }
     }
 
     useEffect(()=>{
-        window.addEventListener('scroll', handleMouseMove)
-        return ()=> window.removeEventListener('scroll', handleMouseMove)
+        window.addEventListener('mouseOver', handleMouseMove)
+        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
     } ) 
 
     const [modal, setModal] = useState(true);
@@ -79,7 +79,7 @@ const ForCustomer = () => {
         }
     };
     return (
-        <section className='for-customer' id='forcustomer' onMouseEnter={handleMouseMove}>
+        <section className='for-customer' id='forcustomer' onMouseOver={handleMouseMove}>
 
             {(success || error) && renderModal()}
             <div className='flex'>

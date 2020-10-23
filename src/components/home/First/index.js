@@ -13,14 +13,14 @@ const First = () => {
           y: e.clientY
         });
         if(position.y){ 
-            locate.hash = '#'
+            locate.hash = '#home'
             history.replace(locate.hash)
             }
     }
 
     useEffect(()=>{
-        window.addEventListener('scroll', handleMouseMove)
-        return ()=> window.removeEventListener('scroll', handleMouseMove)
+        window.addEventListener('mouseEnter', handleMouseMove)
+        return ()=> window.removeEventListener('mouseEnter', handleMouseMove)
     } ) 
     return (
         <section className = 'home' id='home' onMouseEnter={handleMouseMove}>

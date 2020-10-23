@@ -53,7 +53,7 @@ const Header = () =>{
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                         smooth activeClassName = { 'header-navigation-link-active' }
-                        to="/" ><span>Головна</span>
+                        to="/#home" ><span>Головна</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'

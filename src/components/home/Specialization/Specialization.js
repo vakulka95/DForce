@@ -8,37 +8,25 @@ function Specialization({specItems}) {
     let history = useHistory()
     let locate = useLocation()
 
+
     const [position,setPosition] = useState({ y: null })
 
     const handleMouseMove = (e)=> {
-        console.log(position.y);
         setPosition({
-          y: e.pageYOffset
+          y: e.clientY
         });
-        if(position.y){
-            console.log( window.pageYOffset,'cho');  
-            locate.hash = '#Sheet'
+        if(position.y){ 
+            locate.hash = '#specialization'
             history.replace(locate.hash)
             }
     }
 
-    window.onscroll = function() {
-        let scrolled = window.pageYOffset;
-        console.log( 'Позиция скрола: '+scrolled  );
-    };
-     const element = document.querySelector('section')
-     console.log(element);
-     element.onscroll= function(){
-       let   intElemScrollTop = element.current.scrollTop;
-        console.log('Позиция скрола у элемента: '+ intElemScrollTop)
-    };
-
     useEffect(()=>{
-        window.addEventListener('scroll', handleMouseMove)
-        return ()=> window.removeEventListener('scroll', handleMouseMove)
+        window.addEventListener('mouseOver', handleMouseMove)
+        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
     } ) 
     return (
-        <section className='specialization main-padding' id='specialization' onScroll={handleMouseMove}>
+        <section className='specialization main-padding' id='specialization' onMouseOver={handleMouseMove}>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>
