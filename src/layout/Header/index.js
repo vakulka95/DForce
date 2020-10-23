@@ -20,12 +20,6 @@ const Header = () =>{
        setMobileNav((prev)=>!prev)
    }
 
-   const isActive = (hash, find) => {
-    return hash === find;
-    }   
-    
-    //console.log(isActive(),useLocation().hash);
-
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = num; 
@@ -33,7 +27,6 @@ const Header = () =>{
     }
 
     let pathName = useLocation().pathname;
-    console.log(pathName)
     const opasityHeader = () => {
         
         if(pathName==='/'){
