@@ -69,50 +69,70 @@
         }
         .animation-one{
             position: relative;
-            animation-name: change-text;
-            animation-duration: 6s;
-            animation-iteration-count: infinite;
+           
             // animation-delay: 2s;
+            @media (min-width: 1024px){
+                animation-name: change-text;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
             @media (min-width: 1900px){
 
             }
 
         }
         .animation-two{
+            display: none;
             position: relative;
-            left: 125px;
-            opacity: 0;
             
-            animation-name: change-text-two;
-            animation-duration: 6s;
-            animation-iteration-count: infinite;
+            // animation-name: text-animation-1600-2;
             // animation-delay: 2s;
+            @media(min-width: 1024px){
+                display: inline;
+                left: 125px;
+                opacity: 0;
+                animation-name: change-text-two;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
             @media (min-width: 1600px){
-                left: -590px;
-                top: 0;
+                animation-name: text-animation-1600-2;
+            }
+            @media (min-width: 1616px){
+                animation-name: text-animation-1616-2;
+                left: -585px;
             }
             @media (min-width: 1900px){
                 left: 125px;
+                animation-name: change-text-two;
             }
         }
         .animation-three{
+            display: none;
             position: relative;
-            left: -210px;
             opacity: 0;
-            bottom: 50%;
-            animation-name: change-text-three;
-            animation-duration: 6s;
-            animation-iteration-count: infinite;
+            
             // animation-delay: 4s;
             @media(min-width: 1024px){
                 left: -140px;
                 white-space: nowrap;
+                display: inline;
+                animation-name: change-text-three;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
+            @media (min-width: 1600px){
+                animation-name:text-animation-1600-3;
+                // left: -845px;
             }
             @media (min-width: 1616px){
+                animation-name:text-animation-1616-3;
                 left: -845px;
             }
+            
             @media (min-width: 1900px){
                 left: -210px;
+                animation-name: change-text-three;
             }
         }
         
@@ -123,6 +143,7 @@
                 margin: 21px 0px 70px 0px;
                 letter-spacing: 0.03em;
                 width: 100%;
+                // margin-top: -80px;
                 @media (min-width: 1023px){
                     width: 45%;
                     margin-top: -80px;
@@ -189,7 +210,7 @@
 @keyframes change-text-three{
     0%{
         opacity: 0;
-        top: 50px;
+        top: -30px;
     }
     60%{
         opacity: 0;
@@ -209,3 +230,97 @@
     }
 }
 
+// // 1600px
+
+@keyframes text-animation-1600-2{
+    0%{
+        opacity: 0;
+        top: 0;
+    }
+    30%{
+        opacity: 0;
+        top: -40px;
+    }
+    45%{
+        opacity: 1;
+        top: -90px;
+    }
+    60%{
+        opacity: 0;
+        top: -170px;
+    }
+    100%{
+        top: -150px;
+        opacity: 0;
+    }
+}
+
+@keyframes text-animation-1600-3{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    60%{
+        opacity: 0;
+        top: -50px;
+    }
+    75%{
+        opacity: 1;
+        top: -90px;
+    }
+    90%{
+        top: -200px;
+        opacity: 0;
+    }
+    100%{
+        top: -180px;
+        opacity: 0;
+    }
+}
+// 1616px
+
+@keyframes text-animation-1616-2{
+    0%{
+        opacity: 0;
+        top: 0;
+    }
+    30%{
+        opacity: 0;
+        top: 30px;
+    }
+    45%{
+        opacity: 1;
+        top: 0;
+    }
+    60%{
+        opacity: 0;
+        top: -100px;
+    }
+    100%{
+        top: -150px;
+        opacity: 0;
+    }
+}
+
+@keyframes text-animation-1616-3{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    60%{
+        opacity: 0;
+        top: 50px;
+    }
+    75%{
+        opacity: 1;
+        top: 0;
+    }
+    90%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: -100px;
+        opacity: 0;
+    }
+}

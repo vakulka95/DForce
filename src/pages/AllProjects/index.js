@@ -34,7 +34,7 @@ const AllProjects = () => {
 
                 <div className='mainProjects-item'>
                     <Link to='/itseems'>
-                        <img src='./images/cases/itSeems/Rectangle-1372.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' />
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
@@ -44,7 +44,7 @@ const AllProjects = () => {
                 </div>
                 <div className='mainProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/itSeems/Rectangle-1372.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' />
                     </a>
                 </div>
                 <div className='mainProjects-item'>
@@ -59,7 +59,7 @@ const AllProjects = () => {
 
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/itSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
@@ -69,7 +69,7 @@ const AllProjects = () => {
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/itSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
@@ -79,7 +79,7 @@ const AllProjects = () => {
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/itSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>

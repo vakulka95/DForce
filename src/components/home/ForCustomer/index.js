@@ -80,7 +80,7 @@ const ForCustomer = () => {
             <div className='flex'>
                 <div className='for-customer-info'>
                     <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
-                    <p className='for-customer-text text'>«Мені здається» – це анонімний онлайн-щоденник, де кожен абсолютно анонімно може поділитися власною історією абсолютно анонімно.</p>
+                    <p className='for-customer-text text'>Залиште свої контакти і ми з радістю допоможемо у вирішенні вашої задачі!</p>
                     <div className='for-customer-contacts'>
                         {contactItem.map(({
                             id,
