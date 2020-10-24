@@ -23,6 +23,10 @@ const ForCustomer = () => {
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
             }
+        if(locate.pathname!=='/'){
+            locate.hash = `${locate.pathname}`
+            history.push(locate.hash)
+        }
     }
 
     const [modal, setModal] = useState(true);
