@@ -25,22 +25,22 @@ const AllProjects = () => {
 
                 <div className='mainProjects-item'>
                     <Link to='/itseems'>
-                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' title='itSeems'/>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
                     <Link to='/tellme'>
-                        <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' />
+                        <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' title='tellMe'/>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
                 <div className='mainProjects-item'>
                     <a href='https://tellme.com.ua/'>
-                        <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' />
+                        <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' title='tellMe'/>
                     </a>
                 </div>
             </div>
@@ -50,32 +50,32 @@ const AllProjects = () => {
 
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='https://tellme.com.ua/'>
-                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' />
+                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='https://tellme.com.ua/'>
-                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' />
+                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='#'>
-                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' />
+                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
                     <a href='https://tellme.com.ua/'>
-                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' />
+                        <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
                     </a>
                 </div>
             </div>

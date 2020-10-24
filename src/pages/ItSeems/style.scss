@@ -63,6 +63,7 @@
       width: 70%;
       line-height: 70px;
       margin-bottom: 20px;
+      padding: 0;
     }
     @media(min-width: 1900px){
       font-size: 54px;
@@ -111,13 +112,13 @@
       
       @media (min-width:1024px){
         padding:0px;
-        width:60%;
+        width:43%;
         margin-bottom: 95px;
         font-size: 18px;
         line-height: 35px;
       }
       @media (min-width:1900px){
-        width: 55%;
+        // width: 55%;
         font-size: 20px;
         line-height: 35px;
         margin-bottom: 0;
