@@ -82,7 +82,7 @@ function FormBlock({ onSuccess }) {
     return (
         <div className='form'>
             <div className='form-wrap'>
-                <h3 className='form-title'>Це анонімний онлайн кожен абсолютно</h3>
+                <h3 className='form-title'>Залиште Ваші контакти тут:</h3>
                 <form>
                     <div className='form-group'>
                         <label>

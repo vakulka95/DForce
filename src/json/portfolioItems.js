@@ -4,7 +4,7 @@ let portfolioItems = [
         image: './images/cases/Group-975.png',
         alt: 'ItSeems',
         backgroundCLass: 'case-image itseems-background',
-        description: 'Інтернет-платформа для психологічних консультацій, яка допомагає всім хто потребує емоційної підтримки.',
+        description: 'Анонімний онлайн-щоденник для людей, які постраждали від насильства.',
         to: '/itseems',
     },
     {
@@ -12,7 +12,7 @@ let portfolioItems = [
         image: './images/cases/Group-977.png',
         alt: 'Tellme',
         backgroundCLass: 'case-image tellme',
-        description: 'Анонімний онлайн-щоденник для людей, які постраждали від насильства.',
+        description: 'Інтернет-платформа для психологічних консультацій, яка допомагає всім хто потребує емоційної підтримки.',
         to: '/tellme',
 
     },

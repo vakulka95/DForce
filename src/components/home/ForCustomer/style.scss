@@ -86,8 +86,7 @@
             // flex-direction: row;
         }
         @media(min-width: 1900px){
-            display: flex;
-            
+            flex-direction: row;            
             justify-content: space-between;
             
         }
