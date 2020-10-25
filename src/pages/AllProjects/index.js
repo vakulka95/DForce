@@ -34,7 +34,7 @@ const AllProjects = () => {
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
-                    <a href='#'>
+                    <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
@@ -49,7 +49,7 @@ const AllProjects = () => {
                 {/* {renderPhoto(itSeemsProject)} */}
 
                 <div className='secondaryProjects-item'>
-                    <a href='#'>
+                    <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
@@ -59,7 +59,7 @@ const AllProjects = () => {
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='#'>
+                    <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
                     </a>
                 </div>
@@ -69,7 +69,7 @@ const AllProjects = () => {
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='#'>
+                    <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
                     </a>
                 </div>
