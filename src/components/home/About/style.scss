@@ -22,9 +22,6 @@
             font-size: 63px;
             line-height: 90px;
         }
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-            color: red;
-        }
     }
     &-content{
         width: 100%;
@@ -122,8 +119,7 @@
                             @media (min-width:1024px){
                                 margin-bottom: 35px;
                             }
-                            @media (min-width:1900px)
-                            {
+                            @media (min-width:1900px){
                                 margin-bottom: 0;
                             }
                         }
@@ -152,12 +148,10 @@
         color: #D0D0D2;
         margin-bottom: 15px!important;
         margin-top: 30px;
-        @media (min-width){
+        @media (min-width: 1024px){
             font-size: 28px;
         }
-        @media (min-width:1900px)
-        
-        {
+        @media (min-width:1900px){
             line-height: 40px;
             margin-bottom: 20px;
             margin-top: 38px;

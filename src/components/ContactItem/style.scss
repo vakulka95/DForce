@@ -13,20 +13,23 @@
 }
 
 .contact-info{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .contact-service{
     p{
-        font-weight: 500;
+        font-weight: 400;
         font-size: 20px;
         line-height: 26px;
         /* identical to box height */
 
         text-align: left;
-        letter-spacing: 0.04em;
+        letter-spacing: 1px;
         color: #fff;
         margin: 15px 0 10px 0;
+        @media (min-width: 1024px){
+            font-weight: 500px;
+        }
     }
 }
 
@@ -36,16 +39,22 @@
         color: rgba(255, 255, 255, 0.8);
 
         // font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 35px;
         // /* identical to box height */
 
         // text-align: left;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.02em;
         // color: #fff;
         margin: 15px 0 10px 0;
         :hover{
             text-decoration: underline;
+        }
+        @media(min-width: 1024px){
+            font-size: 18px;
+            letter-spacing: 0.02em;
+
+
         }
     }
 }

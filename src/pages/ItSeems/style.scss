@@ -237,7 +237,7 @@
   }
   // **** Detail-about **** //
   &-about{
-    @media (min-width: 1900px){
+    @media (min-width: 1300px){
       width: 935px;
       margin: 156px auto 0;
     }
@@ -376,10 +376,13 @@
     display: flex;
     margin-bottom: 39px;
     flex-direction: column;
+    @media(min-width: 1024px){
+      justify-content: space-between;
+
+    }
       @media (min-width:1300px){
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        // align-items: center;
       }
   }
   .dark{
