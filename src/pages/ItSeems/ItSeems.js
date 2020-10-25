@@ -82,7 +82,7 @@ function ItSeems() {
                 </div>
                 <div className='detail-about' key='bottom-div'>
                     <div className='icons' key={technologies}>
-                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
+                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
                     </div>
                     <div className='detail-wrap' key='bottom-div-wrap'>
                         <h3 className='detail-sub-title' key='bottom-title'>Використанні технології</h3>

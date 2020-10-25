@@ -25,6 +25,9 @@
     }
     .detail-text{
       margin-bottom: 0;
+      @media(min-width: 1900px){
+        width: 782px;
+      }
     }
     .btn-wrap{
       margin: 30px 15px;
@@ -41,6 +44,9 @@
           padding: 50px 150px;
 
         }
+        //  a{
+        //    pa
+        //  }
       }
     }
   }
@@ -61,6 +67,7 @@
     @media(min-width: 1024px){
       font-size: 46px;
       width: 70%;
+      font-weight: 500px;
       line-height: 70px;
       margin-bottom: 20px;
       padding: 0;
@@ -80,24 +87,24 @@
       line-height: 30px;
       margin: 0 15px 21px;
       @media (min-width:1024px){
-        font-weight: 600;
+        font-weight: 500;
         font-size: 45px;
         line-height: 70px;
-        width: 60%;
+        width: 645px;
         margin-right: 0;
         margin-left: 0  ;
         // margin-top: 90px;
         // margin-bottom: 20px;
       }
       @media(min-width: 1300px){
-        width: 94%;
+        width: 645px;
 
       }
       @media (min-width:1900px){
-        font-weight: 600;
         font-size: 46px;
         line-height: 70px;
-        width: 79%;
+        width: 690px;
+        letter-spacing: 1px;
         // padding-top: 0;
       }
   }
@@ -108,17 +115,17 @@
       line-height: 30px;
       letter-spacing: 0.03em;
 
-      color: rgba(255, 255, 255, 0.8);
+      color: #D0D0D2;
       
       @media (min-width:1024px){
         padding:0px;
-        width:43%;
+        width:645px;
         margin-bottom: 95px;
         font-size: 18px;
         line-height: 35px;
       }
       @media (min-width:1900px){
-        // width: 55%;
+        width: 690px;
         font-size: 20px;
         line-height: 35px;
         margin-bottom: 0;
@@ -231,8 +238,8 @@
   // **** Detail-about **** //
   &-about{
     @media (min-width: 1900px){
-      width: 50%;
-      margin: 0 auto;
+      width: 935px;
+      margin: 156px auto 0;
     }
     .icons{
       display: flex;
@@ -246,6 +253,24 @@
         display: flex;
         justify-content: space-between;
       }
+      img{
+        width: 50px;
+        // margin-right: 70px;
+        
+      }
+      :last-child(){
+        margin-right: 0;
+      }
+      #figma{
+        width: 33px;
+      }
+      #go{
+        width: 82px;
+      }
+      #sass{
+        width: 76px;
+      }
+
       
     }
     .detail{
@@ -261,13 +286,19 @@
         }
       }
       &-sub-title{
+        @media (min-width: 1300px){
+          width: 645px;
+        }
         @media (min-width: 1900px){
-          width: 100%;
+          width: 690px;
         }
       }
       &-text{
+        @media (min-width: 1300px){
+          width: 645px;
+        }
         @media (min-width: 1900px){
-          width: 100%;
+          width: 690px;
         }
       }
     }
