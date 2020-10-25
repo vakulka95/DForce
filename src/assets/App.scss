@@ -42,16 +42,16 @@ h2{
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
-  letter-spacing: 0.02em;
+  letter-spacing: 1px;
   color: #fff;
     @media screen and (min-width: 1023px){
-      font-weight: 600;
+      font-weight: 500;
       font-size: 47px;
       line-height: 90px;
       letter-spacing: 0.02em;
   }
   @media (min-width:1300px){
-    font-weight: 600;
+    font-weight: 500;
     font-size: 47px;
     line-height: 90px;
   }
@@ -63,11 +63,11 @@ h2{
 h3{
   font-family: CA Saygon Text;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 35px;
   @media (min-width:1900px){
-    font-weight: 500;
+    font-weight: 400;
     font-size: 34px;
     line-height: 45px;
   }
@@ -76,7 +76,7 @@ p{
 color:#D0D0D2;
 font-family: Grandis;
 font-style: normal;
-font-weight: normal;
+font-weight: 300;
 font-size: 15px;
 line-height: 30px;
 @media (min-width:1300px){
