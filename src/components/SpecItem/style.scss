@@ -50,7 +50,7 @@
             font-size: 16px;
             width: 90%;
          }
-         @media (min-width: 1900px),(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+         @media (min-width: 1900px){
             font-size: 18px;
             line-height: 35px;
          }
@@ -61,7 +61,7 @@
             position: relative;
             left: -17px;
         }
-        @media (min-width:1900px),(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+        @media (min-width:1900px){
             width: 140px;
             height: 130px;
             left: -20px;

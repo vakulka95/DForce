@@ -64,6 +64,7 @@
     }
 
     &-title{
+        font-weight: 500;
         margin-bottom: 0;
         line-height: 30px;
         font-size: 18px;
@@ -80,6 +81,7 @@
         @media (min-width:1900px){
             font-size: 36px;
             line-height: 55px;
+            letter-spacing: 1px;
         }
     }
     &-link{
