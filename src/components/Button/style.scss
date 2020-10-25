@@ -31,8 +31,8 @@
         }    
     }
     &-link{
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 26px;
         text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
@@ -45,7 +45,7 @@
         outline: none;
         cursor: pointer;
         @media (min-width:1300px){
-            padding: 20px 100px;
+            padding: 23px 84px;
         }
     }
 }

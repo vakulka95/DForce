@@ -46,7 +46,7 @@ const Portfolio = ({portfolioItems}) => {
                     
                 </div>
                 <div className='button'>
-                    <Button to={'/allprojects'} innerRef message={`всі проекти`} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='lg'/></Button>
+                    <Button to={'/allprojects'} innerRef message={`всі проекти`} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='sm'/></Button>
                 </div>
             </div>
         </section>
