@@ -262,6 +262,8 @@
           justify-content: space-between;
         }
         img{
+          width: 25px;
+          // margin-right: 30px;
           @media (min-width: 1900px){
             width: 50px;
   
@@ -273,16 +275,19 @@
           margin-right: 0;
         }
         #figma{
+          width: 18px;
           @media (min-width: 1900px){
-            width: 33 px;
+            width: 33px;
           }
         }
         #go{
+          width: 40px;
           @media (min-width: 1900px){
             width: 82px;
           }
         }
         #sass{
+          width: 35px;
           @media (min-width: 1900px){
             width: 76px;
           }

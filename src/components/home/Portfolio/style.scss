@@ -38,9 +38,15 @@
         }
         .btn-wrap{
             // display: flex;
-            // width: 100%;
             @media (min-width:1024px){
                 display: block;
+            }
+            .btn-link{
+                font-size: 14px;
+                padding: 22px 80px;
+                @media (min-width:1024px){
+                    font-size: 20px;
+                }
             }
         }
     }

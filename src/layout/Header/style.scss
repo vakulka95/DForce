@@ -63,13 +63,9 @@
         @media (min-width:1024px){
             padding: 0 80px;
         }
-<<<<<<< HEAD
         @media (min-width:1900px){
             padding: 0 150px;
-=======
-        @media (min-width:1900px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-           // padding: 0 150px;
->>>>>>> db74d68edd80e6484905be4b5591c89c8e08400f
+
         }
         
         &-active{
