@@ -4,8 +4,57 @@ import './style.scss';
 import PropTypes from 'prop-types';
 import Button from '../Button';
 import isInvalid from '../../utils/isInvalis';
+import Modal from '../../components/Modal';
+import GeneralModal from '../../components/Modal/GeneralModal';
 
-function FormBlock({ onSuccess }) {
+function FormBlock() {
+    const [modal, setModal] = useState(true);
+    const [success, setSuccess] = useState(false);
+    const [error,setError] = useState(false);
+
+    let showModal = (sending) => {
+        console.log(sending)
+        if(sending===true){
+            setSuccess(true)
+        }
+        else setError(true)
+   
+    }
+
+    const onClose = () => {
+        setModal(false)
+    }
+
+    const renderModal = () => {
+        if (success) {
+            return (
+                <div className='result'>
+                    <Modal isModal={modal}>
+                        <GeneralModal
+                        img = {'./images/modalImage.svg'}
+                        alt = {'success'}
+                        title = {'Title if it need'}
+                        onButtonPress = {onClose}
+                        onClose = {onClose}>
+                        </GeneralModal>
+                    </Modal>
+                </div>
+            )
+        }
+        if(error) {
+            return (
+                <div className='result'>
+                    <Modal isModal={modal}>
+                        <GeneralModal 
+                        title = {'Something went wrong'}
+                        onClose = {onClose}>   
+                        </GeneralModal>
+                    </Modal>
+
+                </div>
+            )
+        }
+    };
 
     const [formData, setFormData] = useState({
         name: '',
@@ -64,12 +113,12 @@ function FormBlock({ onSuccess }) {
 
                 if (res.status === 200) {
                     resetInput()
-                    onSuccess(true)
+                    showModal(true)
                 }
             })
             .catch(() => {
                 console.log('message not send');
-                onSuccess(false)
+                showModal(false)
                 resetInput()
 
             });
@@ -81,6 +130,7 @@ function FormBlock({ onSuccess }) {
 
     return (
         <div className='form'>
+            {(success || error) && renderModal()}
             <div className='form-wrap'>
                 <h3 className='form-title'>Залиште Ваші контакти і побажання тут:</h3>
                 <form>
