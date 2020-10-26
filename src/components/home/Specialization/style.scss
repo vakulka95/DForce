@@ -52,5 +52,18 @@
             }
         }
     }
+   
 }
 
+.spec-section{
+    :nth-child(3){
+        @media (min-width:1300px){
+            margin-right: 0;
+        }
+    }
+    :last-child{
+        @media (min-width:1300px){
+            margin-right: 0;
+        }
+    }
+}

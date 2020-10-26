@@ -43,15 +43,18 @@
             margin: 0 50px 0 15px;
         }
         @media (min-width: 1024px){
-            width: 37%;
-            margin-right: 70px;
+            width: 580px;
+            margin-left: 0;
+            margin-right: 60px;
             border-radius: 8px;
         }
         @media (min-width: 1300px){
-            width: 51%;
+            width: 580px;
+            margin-right: 70px;
+
         }
         @media (min-width:1900px){
-            width: 47%;
+            width: 750px;
         }
     }
     .itseems-background{
@@ -73,10 +76,13 @@
             margin-top: 0;
         }
         @media (min-width: 1024px){
-            width: 36%;
+            width: 510px;
         }
         @media (min-width: 1300px){
-            width: 40%;
+            width: 510px;
+        }
+        @media (min-width: 1900px){
+            width: 660px;
         }
     }
 

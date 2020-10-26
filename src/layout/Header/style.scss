@@ -25,6 +25,9 @@
             margin: 0;
             max-width: 73%;
             margin-left: 15px;
+            @media (min-width:1024px){
+                margin-left: 0;
+            }
             
         }
         &-active{
