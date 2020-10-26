@@ -37,9 +37,19 @@
           position: relative;
           top: -25px;
   
-          button{
-            padding: 50px 150px;
-  
+          
+          //  a{
+          //    pa
+          //  }
+        }
+        a{
+          padding: 23px 50px;
+          width: 100%;
+          @media(min-width: 1024px){
+            padding: 23px 31px;
+          }
+          @media(min-width: 1300px){
+            padding: 23px 80px;
           }
         }
       }
@@ -74,15 +84,15 @@
     }    
     &-sub-title{
         color: #fff;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 20px;
         line-height: 30px;
         margin: 0 15px 21px;
         @media (min-width:1024px){
-          font-weight: 600;
+          font-weight: 500;
           font-size: 45px;
           line-height: 70px;
-          width: 60%;
+          width: 645px;
           margin-right: 0;
           margin-left: 0  ;
           // margin-top: 90px;
@@ -96,33 +106,33 @@
           font-weight: 600;
           font-size: 46px;
           line-height: 70px;
-          width: 79%;
+          width: 786px;
           // padding-top: 0;
         }
     }
     &-text{
-        padding: 0 15px;
-        margin-bottom: 40px;
-        font-size: 15px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
-  
-        color: rgba(255, 255, 255, 0.8);
-        
-        @media (min-width:1024px){
-          padding:0px;
-          width:60%;
-          margin-bottom: 95px;
-          font-size: 18px;
-          line-height: 35px;
-        }
-        @media (min-width:1900px){
-          width: 55%;
-          font-size: 20px;
-          line-height: 35px;
-          margin-bottom: 0;
-        }
-    }
+      padding: 0 15px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+
+      color: #D0D0D2;
+      
+      @media (min-width:1024px){
+        padding:0px;
+        width:645px;
+        margin-bottom: 95px;
+        font-size: 18px;
+        line-height: 35px;
+      }
+      @media (min-width:1900px){
+        width: 690px;
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 0;
+      }
+  }
     &-figure{
         margin: 0px 0 60px 0;
         // width: 100%;
@@ -229,13 +239,18 @@
     }
     // **** Detail-about **** //
     &-about{
-      @media (min-width: 1900px){
-        width: 50%;
-        margin: 0 auto;
+      @media (min-width: 1024px){
+        margin: 215px auto 0;
+      }
+      @media (min-width: 1300px){
+        width: 935px;
       }
       .icons{
         display: flex;
         justify-content: space-around;
+        @media (min-width: 1024px){
+          margin-bottom: 68px;
+        }
         @media (min-width: 1300px){
           width: 80%;
           margin: 0 auto;
@@ -245,10 +260,38 @@
           display: flex;
           justify-content: space-between;
         }
+        img{
+          @media (min-width: 1900px){
+            width: 50px;
+  
+          }
+          // margin-right: 70px;
+          
+        }
+        :last-child(){
+          margin-right: 0;
+        }
+        #figma{
+          @media (min-width: 1900px){
+            width: 33 px;
+          }
+        }
+        #go{
+          @media (min-width: 1900px){
+            width: 82px;
+          }
+        }
+        #sass{
+          @media (min-width: 1900px){
+            width: 76px;
+          }
+        }
+  
         
       }
       .detail{
         &-wrap{
+          margin-top: 40px;
           @media (min-width: 1024px){
             text-align: center;
             display: flex;
@@ -260,13 +303,19 @@
           }
         }
         &-sub-title{
+          @media (min-width: 1300px){
+            width: 645px;
+          }
           @media (min-width: 1900px){
-            width: 100%;
+            width: 690px;
           }
         }
         &-text{
+          @media (min-width: 1300px){
+            width: 645px;
+          }
           @media (min-width: 1900px){
-            width: 100%;
+            width: 690px;
           }
         }
       }

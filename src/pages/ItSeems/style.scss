@@ -20,11 +20,15 @@
       display: flex;
       flex-direction: row;
       margin-bottom: 65px;
+      justify-content: space-between;
     }
     @media(min-width: 1900px){
     }
     .detail-text{
       margin-bottom: 0;
+      @media(min-width: 1024px){
+        width: 550px;
+      }
       @media(min-width: 1900px){
         width: 782px;
       }
@@ -40,13 +44,20 @@
         position: relative;
         top: -25px;
 
-        button{
-          padding: 50px 150px;
-
-        }
+        
         //  a{
         //    pa
         //  }
+      }
+      a{
+        padding: 23px 50px;
+        width: 100%;
+        @media(min-width: 1024px){
+          padding: 23px 31px;
+        }
+        @media(min-width: 1300px){
+          padding: 23px 80px;
+        }
       }
     }
   }
@@ -82,7 +93,7 @@
   }    
   &-sub-title{
       color: #fff;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 20px;
       line-height: 30px;
       margin: 0 15px 21px;
@@ -237,13 +248,18 @@
   }
   // **** Detail-about **** //
   &-about{
+    @media (min-width: 1024px){
+      margin: 215px auto 0;
+    }
     @media (min-width: 1300px){
       width: 935px;
-      margin: 156px auto 0;
     }
     .icons{
       display: flex;
       justify-content: space-around;
+      @media (min-width: 1024px){
+        margin-bottom: 68px;
+      }
       @media (min-width: 1300px){
         width: 80%;
         margin: 0 auto;
@@ -254,7 +270,10 @@
         justify-content: space-between;
       }
       img{
-        width: 50px;
+        @media (min-width: 1900px){
+          width: 50px;
+
+        }
         // margin-right: 70px;
         
       }
@@ -262,19 +281,26 @@
         margin-right: 0;
       }
       #figma{
-        width: 33px;
+        @media (min-width: 1900px){
+          width: 33 px;
+        }
       }
       #go{
-        width: 82px;
+        @media (min-width: 1900px){
+          width: 82px;
+        }
       }
       #sass{
-        width: 76px;
+        @media (min-width: 1900px){
+          width: 76px;
+        }
       }
 
       
     }
     .detail{
       &-wrap{
+        margin-top: 40px;
         @media (min-width: 1024px){
           text-align: center;
           display: flex;

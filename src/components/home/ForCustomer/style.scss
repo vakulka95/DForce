@@ -37,13 +37,14 @@
     &-title{
        display: none;
        @media (min-width:1024px){
-            width: 580px;
-            font-size: 38px;
+            width: 440px;
+            font-size: 36px;
             line-height: 70px;
             display: inline-block;
         }
         @media (min-width:1300px){
-            // font-size: 44px;
+            width: 580px;
+            font-size: 38px;
             // line-height: 70px;
         }
         @media(min-width: 1900px){
