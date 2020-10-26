@@ -3,7 +3,6 @@ import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
-// import Message from '../../../components/Modal/templatesModal/Message';
 import contactItem from '../../../json/contactItem';
 
 
