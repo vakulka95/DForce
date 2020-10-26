@@ -1,0 +1,199 @@
+
+.case{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    margin-bottom: 50px;
+    @media (min-width:940px){
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @media (min-width:1024px){
+        flex-direction: row;
+        margin-bottom: 60px;
+        margin-top: 28px;
+    }
+    @media (min-width:1900px){
+        margin-top: 100px;
+    }
+        
+    &-image{
+        
+        display: flex;
+        justify-content: center;
+        border-radius: 0;
+        margin-right: 0;
+        img{
+            width: 75%;
+            @media (min-width: 1024px){
+                
+                width: 100%;
+            }
+        }
+        @media(min-width:768px){
+            width: 95%;
+            border-radius: 8px;
+            margin: 0px auto;
+        } 
+        @media (min-width:940px){
+            width: 37%;
+            margin: 0 50px 0 15px;
+        }
+        @media (min-width: 1024px){
+            width: 580px;
+            margin-left: 0;
+            margin-right: 60px;
+            border-radius: 8px;
+        }
+        @media (min-width: 1300px){
+            width: 580px;
+            margin-right: 70px;
+
+        }
+        @media (min-width:1900px){
+            width: 750px;
+        }
+    }
+    .itseems-background{
+        img{
+            width: 55%;
+            @media (min-width: 1024px){
+                width: 100%;
+
+                }
+        }   
+    }
+    &-description{
+        padding: 0 15px;
+        width: 90%;
+        margin-top: 30px;
+        text-decoration: none;
+        @media (min-width:940px){
+            width: 49%;
+            margin-top: 0;
+        }
+        @media (min-width: 1024px){
+            width: 510px;
+        }
+        @media (min-width: 1300px){
+            width: 510px;
+        }
+        @media (min-width: 1900px){
+            width: 660px;
+        }
+    }
+
+    &-title{
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 18px;
+        font-family: 'CA Saygon Text';
+        color:#FFFFFF;
+        @media (min-width: 1024px){
+            font-size: 22px;
+            line-height: 40px;
+        }
+        @media (min-width: 1300px){
+            font-size: 28px;
+            line-height: 45px;
+        }
+        @media (min-width:1900px){
+            font-size: 36px;
+            line-height: 55px;
+            letter-spacing: 1px;
+        }
+    }
+    &-link{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        @media (min-width: 1024px){
+            margin-top: 30px;
+        }
+        &-item{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                &:hover{
+                    text-decoration: underline;
+                }
+                @media (min-width: 1024px){
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+        }
+    }
+    &-circle{
+        content: '';
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+        border-radius: 50%;
+        background: linear-gradient(219.47deg, #10CC94 3.01%, #83CC59 107.31%);
+        box-shadow: 0px 4px 8px rgba(58, 204, 129, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.itseems-background{
+    padding-bottom: 0;
+    background: linear-gradient(260.35deg, #DB6948 -22.12%, #D4487D 100%);
+}
+
+.tellme{
+    background: #329AE5;
+}
+.vote{
+    min-height: 30vh;
+    background: #1F1F1F;
+}
+.icons{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+
+    :last-child{
+        margin-right: 0;
+    }
+    @media (min-width: 1024px){
+        justify-content: start;
+    }
+    img{
+        width: 26px;
+        margin-bottom: 5px;
+        
+        height: 25px;
+        // margin-right: auto;
+        @media (min-width:768px){
+            margin-right: 15px;
+        }
+        @media (min-width: 1300px){
+            margin-right: 25px;
+        }
+        @media (min-width:1900px){
+            margin-right: 35px;
+        }
+       
+    }
+    #go{
+        width: 33px;
+    }
+    
+    
+}
+
+

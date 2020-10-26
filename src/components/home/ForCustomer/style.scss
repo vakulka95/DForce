@@ -1,0 +1,106 @@
+.for-customer{
+    background: #0D0E12;
+    padding: 0 15px 27px 15px;
+    @media (min-width:1024px){
+        background: #0D0E12 url('../../../assets/images/FormCustomer.png') no-repeat;
+        padding: 120px 80px 0 80px;
+        background-position-y: 20px;
+    }
+    @media (min-width: 1900px){
+        background-position-x: right;
+        background-position-y: 0px;
+        background-size: cover;
+        padding: 175px 150px 0;
+        position: relative;
+    }
+    .flex{
+        @media (min-width:1024px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &-wrap{
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-info{
+        max-width: 100%;
+        @media (min-width: 1024px){
+            // width: 580px;
+            margin-right: 80px;
+        }
+        @media (min-width: 1900px){
+            // width: 705px;
+        }
+    }
+    &-title{
+       display: none;
+       @media (min-width:1024px){
+            width: 440px;
+            font-size: 36px;
+            line-height: 70px;
+            display: inline-block;
+        }
+        @media (min-width:1300px){
+            width: 580px;
+            font-size: 38px;
+            // line-height: 70px;
+        }
+        @media(min-width: 1900px){
+            width: 705px;
+            color: #fff;
+            font-size: 54px;
+            line-height: 80px;
+        }
+    }
+    &-text{
+        display: none;
+        @media (min-width:1024px){
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            width: 100%;
+
+            font-size: 16px;
+            line-height: 30px;
+        }
+        @media(min-width: 1900px){
+            margin: 39px 0 112px 0;
+            font-size: 18px;
+            line-height: 35px;
+            width: 80%;
+        }
+    }
+    &-contacts{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        .contact-item{
+            margin-bottom: 28px;
+            @media(min-width: 1024px){
+                margin-right: 50px;
+            }
+        }
+        @media(min-width: 1024px){
+            flex-direction: row;
+            margin-top: 39px;
+        }
+        @media (min-width: 1300px){
+            
+            // flex-direction: row;
+        }
+        @media(min-width: 1900px){
+            flex-direction: row;            
+            justify-content: space-between;
+            
+        }
+    }   
+}
+.result{
+    height:100%;
+    display:flex;
+}
+
+
