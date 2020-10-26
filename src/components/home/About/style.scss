@@ -75,7 +75,8 @@
         background: #111217;
         @media (min-width:940px){
             width: 45%;
-            margin: 15px 15px 0 0;
+            margin: 0;
+            margin-bottom: 15px;
         }
 
         // padding: 62px 55px 52px 55px;
@@ -104,6 +105,9 @@
                 .about{
                     &-items{
                         :nth-child(#{$i}){
+                            @media (min-width:940px){
+                                margin-right: 15px; 
+                            }
                             @media (min-width:1024px){
                                 margin-right: 35px;
                             }
