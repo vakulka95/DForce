@@ -45,6 +45,7 @@
         display:flex;
         justify-content: center;
         flex-direction: column;
+        flex-direction: row;
         :last-child{
             margin-right: 0;
             color: #D0D0D2;
@@ -72,6 +73,10 @@
         margin: 7px 0;
         border-radius: 8px;
         background: #111217;
+        @media (min-width:940px){
+            width: 45%;
+            margin: 15px 15px 0 0;
+        }
 
         // padding: 62px 55px 52px 55px;
         @media (min-width: 1024px){
