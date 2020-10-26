@@ -40,7 +40,7 @@ const Header = () =>{
     return(
         <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
-                <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo' mobile={mobileNav?activateMobileNav:null}/>
+                <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo-inner ' mobile={mobileNav?activateMobileNav:null}/>
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
                 <ul className = 'header-navigation-list'>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
