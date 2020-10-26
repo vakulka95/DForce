@@ -10,6 +10,11 @@
     width: 40px;
     height: 40px;
     margin-top: 7px;
+    @media(-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi){
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .contact-info{
