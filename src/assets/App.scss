@@ -14,8 +14,19 @@ body {
 
   }
   .container{
+<<<<<<< HEAD
     max-width: 1620px;
     margin: 0 auto;
+=======
+    @media (min-width: 1300px){
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1900px){
+      max-width: 1620px;
+    }
+    
+>>>>>>> e3be559d09d54b02206e75a79da0707cb8a90d30
   }
   img{
     max-width: 100%;
@@ -44,7 +55,11 @@ h2{
   line-height: 40px;
   letter-spacing: 1px;
   color: #fff;
+<<<<<<< HEAD
     @media screen and (min-width: 1023px){
+=======
+    @media screen and (min-width: 1024px){
+>>>>>>> e3be559d09d54b02206e75a79da0707cb8a90d30
       font-weight: 500;
       font-size: 47px;
       line-height: 90px;
@@ -56,12 +71,20 @@ h2{
     line-height: 90px;
   }
   @media (min-width:1900px){
+<<<<<<< HEAD
     font-size: 63px;
+=======
+    font-size: 50px;
+>>>>>>> e3be559d09d54b02206e75a79da0707cb8a90d30
     line-height: 90px;
   }
 }
 h3{
+<<<<<<< HEAD
   font-family: CA Saygon Text;
+=======
+  font-family: 'CA Saygon Text';
+>>>>>>> e3be559d09d54b02206e75a79da0707cb8a90d30
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -74,7 +97,11 @@ h3{
 }
 p{
 color:#D0D0D2;
+<<<<<<< HEAD
 font-family: Grandis;
+=======
+font-family: 'Grandis';
+>>>>>>> e3be559d09d54b02206e75a79da0707cb8a90d30
 font-style: normal;
 font-weight: 300;
 font-size: 15px;
