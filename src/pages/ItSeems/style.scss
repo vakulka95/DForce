@@ -384,6 +384,14 @@
         flex-direction: row;
         // align-items: center;
       }
+      .detail-title{
+        @media(min-width: 1024px){
+          padding-left: 0;
+        }
+      }
+      .detail-text{
+        
+      }
   }
   .dark{
     background: #21222B;
