@@ -8,10 +8,13 @@
         padding-right: 0;
     }
     @media (min-width:1024px){
-        padding: 110px 80px 129px 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     @media (min-width:1300px){
         text-align: initial;
+        padding: 110px 80px 129px 80px;
+
     }
     @media (min-width:1900px){
         padding: 178px 150px 160px 150px;
@@ -65,7 +68,7 @@
     @if $i % 2 == 0{
         .spec-section{
             :nth-child(#{$i}){
-                @media (min-width:768px){
+                @media (min-width:768px) and (max-width: 1023px){
                     margin-right: 0;
                 }
             }

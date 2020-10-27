@@ -11,7 +11,7 @@
         align-items: flex-start;
     }
     @media (min-width:1024px){
-        min-width: 250px;
+        width: 37%;
         //  width: auto;
         //  max-width: 30%;
  
@@ -71,7 +71,6 @@
         }
          @media (min-width: 1024px){
             font-size: 16px;
-            // width: 90%;
          }
          @media (min-width: 1900px){
             font-size: 18px;

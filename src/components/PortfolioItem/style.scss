@@ -7,10 +7,10 @@
     flex-wrap: wrap;
     margin-top: 23px;
     margin-bottom: 50px;
-    @media (min-width:940px){
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+    // @media (min-width:940px){
+    //     flex-direction: row;
+    //     flex-wrap: nowrap;
+    // }
     @media (min-width:1024px){
         flex-direction: row;
         margin-bottom: 60px;
@@ -34,6 +34,8 @@
             height: 250px;
         } 
         
+        
+        
         img{
             max-width: 80%;
             @media(min-width:400px){
@@ -45,8 +47,12 @@
             @media(min-width:650px){
                 max-width: 50%;
             }
+            @media(min-width:768px){
+                height: 100%;
+                max-width: 100%;
+            } 
             @media (min-width: 1024px){
-                max-width: 75%;
+                max-width: 100%;
             }
             @media (min-width: 1300px){
                 max-width: 100%;
@@ -56,16 +62,15 @@
         
         @media(min-width:768px){
             width: 100%;
+            height: 465px;
             border-radius: 8px;
             margin: 0;
         } 
-        @media (min-width:940px){
-            width: 37%;
-            margin: 0 50px 0 15px;
-        }
+
         @media (min-width: 1024px){
-            width: 580px;
+            width: 372px;
             margin-left: 0;
+            height: 263px;
             margin-right: 60px;
             border-radius: 8px;
         }
@@ -80,26 +85,30 @@
             height: 530px;
         }
     }
-    .itseems-background{
-        img{
-            max-width: 80%;
-            @media(min-width:400px){
-                max-width: 70%;
-            } 
-            @media(min-width:500px){
-                max-width: 60%;
-            } 
-            @media(min-width:650px){
-                max-width: 50%;
-            }
-            @media (min-width: 1024px){
-                max-width: 75%;
-            }
-            @media (min-width: 1300px){
-                max-width: 100%;
-            }
-        }   
-    }
+    // .itseems-background{
+    //     img{
+    //         max-width: 80%;
+    //         @media(min-width:400px){
+    //             max-width: 70%;
+    //         } 
+    //         @media(min-width:500px){
+    //             max-width: 60%;
+    //         } 
+    //         @media(min-width:650px){
+    //             max-width: 50%;
+    //         }
+    //         @media(min-width:768px){
+    //             height: 100%;
+    //             max-width: 100%;
+    //         } 
+    //         @media (min-width: 1024px){
+    //             max-width: 100%;
+    //         }
+    //         @media (min-width: 1300px){
+    //             max-width: 100%;
+    //         }
+    //     }   
+    // }
     &-description{
         padding: 0 15px;
         width: 90%;
@@ -108,13 +117,12 @@
         @media (min-width:768px){
             padding: 0;
         }
-        @media (min-width:940px){
-            width: 49%;
-            margin-top: 0;
-        }
+        // @media (min-width:940px){
+        //     width: 49%;
+        // }
         @media (min-width: 1024px){
             margin-top: 10px;
-            width: 510px;
+            width: 468px;
         }
         @media (min-width: 1300px){
             width: 510px;
@@ -134,9 +142,10 @@
         font-size: 18px;
         font-family: 'CA Saygon Text';
         color:#FFFFFF;
-        @media (min-width: 768){
+        @media (min-width: 768px){
             font-weight: 500;
-
+            font-size: 24px;
+            line-height: 40px;
         }
         @media (min-width: 1024px){
             font-size: 22px;
@@ -230,6 +239,9 @@
         
         height: 25px;
         // margin-right: auto;
+        @media (min-width:768px){
+            margin-right: 25px;
+        }
         @media (min-width:1024px){
             margin-right: 15px;
         }
@@ -243,6 +255,9 @@
     }
     #sass{
         width: 27px;
+        @media (min-width:768px){
+            margin-right: 15px;
+        }
         @media (min-width: 1900px){
             margin-right: 18px;
         }
