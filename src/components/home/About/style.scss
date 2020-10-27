@@ -2,6 +2,10 @@
     background-color: #15161c;
     display: flex;
     padding: 72px 15px 85px 15px;
+    @media (min-width:768px){
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     @media (min-width:1024px){
         padding:  112px 80px 145px;
