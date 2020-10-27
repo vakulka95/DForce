@@ -74,11 +74,12 @@ const Header = () =>{
                         scroll={el => scrollWidthOffset(el)}
                         to="#forcustomer" ><span>Контакти</span>
                         </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Заказать консультацию'}/>}
+                        </li>
                 </ul>
             </div>
-            <div className = 'header-media'><button className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></button></div>
-            {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Заказать консультацию'}/>}
-            </div>
+            <div className = 'header-media'><button className = 'header-media-button' onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></button></div></div>
         </header>
     )
 }
