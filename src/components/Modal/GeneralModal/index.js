@@ -14,7 +14,7 @@ const GeneralModal = ({ title, children, onClose, onButtonPress, link, img, alt 
                 <div className='generalModal__container'>
                 {img&&<div className=''><img src={img} alt={alt} /></div>}
             <div className = 'sub-title'><h3>{title}</h3></div>
-            <div className = 'text'><p>{children}</p></div>
+            <div className = 'text'>{children}</div>
             { (onButtonPress || link)?
                 <div className = 'generalModal__btn-wrap'>
                     {link && <Link className = 'generalModal__btn' to = { link }>ОК</Link>}

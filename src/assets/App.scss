@@ -14,8 +14,17 @@ body {
 
   }
   .container{
-    max-width: 1620px;
-    margin: 0 auto;
+    @media (min-width: 768px){
+      margin: 0 40px;
+    }
+    @media (min-width: 1300px){
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1900px){
+      max-width: 1620px;
+    }
+    
   }
   img{
     max-width: 100%;
@@ -44,7 +53,8 @@ h2{
   line-height: 40px;
   letter-spacing: 1px;
   color: #fff;
-    @media screen and (min-width: 1023px){
+
+    @media screen and (min-width: 1024px){
       font-weight: 500;
       font-size: 47px;
       line-height: 90px;
@@ -52,16 +62,18 @@ h2{
   }
   @media (min-width:1300px){
     font-weight: 500;
-    font-size: 47px;
+    font-size: 44px;
     line-height: 90px;
   }
   @media (min-width:1900px){
-    font-size: 63px;
+
+    font-size: 50px;
     line-height: 90px;
   }
 }
 h3{
-  font-family: CA Saygon Text;
+
+  font-family: 'CA Saygon Text';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -74,7 +86,8 @@ h3{
 }
 p{
 color:#D0D0D2;
-font-family: Grandis;
+
+font-family: 'Grandis';
 font-style: normal;
 font-weight: 300;
 font-size: 15px;
