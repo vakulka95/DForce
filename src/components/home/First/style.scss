@@ -4,7 +4,7 @@
     //color: white;
     height: 100vh;
     background-color: #0D0E12;
-    background-size: cover, contain;
+    background-size: auto, contain;
     background-repeat: no-repeat, repeat-y;
     background-position-y: bottom, top;
     padding: 0px 15px 60px 15px;
@@ -19,7 +19,7 @@
     }
     @media (min-width: 1900px){
         padding: 0 150px;
-        background-size: cover, cover;
+        //background-size: cover, cover;
     }
     .container{
         display: flex;
@@ -40,6 +40,10 @@
         @media (min-width:1300px){
             position: relative;
             justify-content: center;
+            max-height: 700px;
+        }
+        @media (min-width:1900px){
+            max-height: 1000px;
         }
     }
     &-header{
@@ -176,6 +180,7 @@
                     font-size: 18px;
                     width: 635px;
                     line-height: 35px;
+                    margin-top: -50px;
                 }
     }
    

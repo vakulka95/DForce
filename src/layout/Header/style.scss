@@ -28,6 +28,9 @@
             @media (min-width:768px){
                 margin-left: 0;
             }
+            @media (min-width:1300px){
+                max-width: 100%;
+            }
             
         }
         &-active{
@@ -47,6 +50,9 @@
         }
         @media (min-width:1300px){
             padding: 23px 0px 20px 0px; 
+        }
+        @media (min-width:1900px){
+            padding: 50px 0px 30px 0px;
         }
         &-active{
             width: 100%;
@@ -110,6 +116,12 @@
             //font-weight: 400;
             margin-left: 30px;
             cursor: pointer;
+            @media (min-width:1024px){
+                margin-left: 27px;
+            }
+            @media (min-width:1300px){
+                margin-left: 30px;
+            }
                 &-active{
                     margin-top:8vh;
                 }

@@ -16,11 +16,12 @@
     }
 
     .title-of-block{
-        color:#D0D0D2;
+        color:#fff;
         padding-bottom: 16px;
         margin: 0;
         @media (min-width:1024px){
             padding-bottom: 6px;
+            padding-left: 6px;
         }
 
        
@@ -41,6 +42,7 @@
             padding-bottom: 0;
             margin-bottom: 79px;
             font-size: 16px;
+            padding-left: 6px;
         }
 
         @media (min-width:1900px){
@@ -84,7 +86,7 @@
         border-radius: 8px;
         background: #111217;
         @media (min-width:940px){
-            width: 45%;
+            width: 49%;
 
             margin: 0;
             margin-bottom: 15px;
@@ -92,14 +94,14 @@
 
         // padding: 62px 55px 52px 55px;
         @media (min-width: 1024px){
-            width: 47.9%;
+            width: 49.1%;
             margin: 0;
             // padding-right: 50px;
             // padding: 60px 50px 54px 50px;
         }
         @media (min-width: 1300px){
 
-            width: 48%;
+            width: 49.3%;
         }
         // @media (min-width: 1800px){
         //     // width: 48.9%;
@@ -130,7 +132,7 @@
                                 margin-right: 15px; 
                             }
                             @media (min-width:1024px){
-                                margin-right: 35px;
+                                margin-right: 15px;
                             }
                             
                             @media(min-width:1900px){
@@ -149,7 +151,8 @@
                         flex-wrap: wrap;
                         :nth-child(#{$i}){
                             @media (min-width:1024px){
-                                margin-bottom: 35px;
+                                margin-bottom: 15px;
+                                flex-grow: 1;
                             }
 
                             
@@ -173,9 +176,9 @@
         @media (min-width: 1024px){
             margin: 60px 50px 54px 50px!important;
         }
-        // @media (min-width: 1900px){
-        //     margin: 60px 50px 54px 50px;
-        // }
+        @media (min-width: 768px){
+            margin: 50px 40px 50px 50px!important;;
+        }
     }
     &-image{
         img{
@@ -184,7 +187,7 @@
     }
 
     &-title{
-        color: #D0D0D2;
+        color: #fff;
         margin-bottom: 15px!important;
         margin-top: 30px;
         @media (min-width: 1024px){
