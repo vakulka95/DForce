@@ -53,11 +53,20 @@
 }
 
 @for $i from 1 through 6{
-    @if $i >3{
+    @if $i > 3{
         .spec-section{
             :nth-child(#{$i}){
                 @media (min-width:1024px){
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @if $i % 2 == 0{
+        .spec-section{
+            :nth-child(#{$i}){
+                @media (min-width:768px){
+                    margin-right: 0;
                 }
             }
         }
