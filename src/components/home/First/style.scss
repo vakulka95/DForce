@@ -8,6 +8,9 @@
     background-repeat: no-repeat, repeat-y;
     background-position-y: bottom, top;
     padding: 0px 15px 60px 15px;
+    @media (min-width:768px){
+        padding: 0;
+    }
     @media (min-width:1300px){
         padding: 0px 0px 60px 80px;
     }
@@ -20,7 +23,7 @@
     }
     .container{
         display: flex;
-        max-width: 1920px;
+        // max-width: 1920px;
 
         .introduce{
             display: flex;
@@ -107,8 +110,8 @@
                 animation-name: text-animation-1600-2;
             }
             @media (min-width: 1733px){
-                animation-name:text-animation-1616-2;
-                left: -585px;
+                animation-name:text-animation-1600-2;
+                // left: -585px;
             }
             @media (min-width: 1900px){
                 left: 125px;
@@ -134,8 +137,8 @@
                 // left: -845px;
             }
             @media (min-width: 1733px){
-                animation-name:text-animation-1616-3;
-                left: -845px;
+                animation-name:text-animation-1600-3;
+                // left: -845px;
             }
             
             @media (min-width: 1900px){
@@ -166,11 +169,13 @@
                 @media (min-width: 1616px){
                     margin-top: 0;
                 }
+                @media (min-width: 1733px){
+                    margin-top: -70px;
+                }
                 @media (min-width:1900px){
                     font-size: 18px;
                     width: 635px;
                     line-height: 35px;
-                    margin-top: -70px;
                 }
     }
    

@@ -26,6 +26,7 @@
         justify-content: center;
         border-radius: 0;
         margin-right: 0;
+        
         img{
             width: 75%;
             @media (min-width: 1024px){
@@ -34,24 +35,27 @@
             }
         }
         @media(min-width:768px){
-            width: 95%;
+            width: 100%;
             border-radius: 8px;
-            margin: 0px auto;
+            margin: 0;
         } 
         @media (min-width:940px){
             width: 37%;
             margin: 0 50px 0 15px;
         }
         @media (min-width: 1024px){
-            width: 37%;
-            margin-right: 70px;
+            width: 580px;
+            margin-left: 0;
+            margin-right: 60px;
             border-radius: 8px;
         }
         @media (min-width: 1300px){
-            width: 51%;
+            width: 580px;
+            margin-right: 70px;
+
         }
         @media (min-width:1900px){
-            width: 47%;
+            width: 750px;
         }
     }
     .itseems-background{
@@ -68,36 +72,49 @@
         width: 90%;
         margin-top: 30px;
         text-decoration: none;
+        @media (min-width:768px){
+            padding: 0;
+        }
         @media (min-width:940px){
             width: 49%;
             margin-top: 0;
         }
         @media (min-width: 1024px){
-            width: 36%;
+            width: 510px;
         }
         @media (min-width: 1300px){
-            width: 40%;
+            width: 510px;
+
+            margin-top: 40px;
+        }
+        @media (min-width: 1900px){
+            width: 660px;
+            margin-top: 50px;
         }
     }
 
     &-title{
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 0;
         line-height: 30px;
         font-size: 18px;
         font-family: 'CA Saygon Text';
         color:#FFFFFF;
+        @media (min-width: 768){
+            font-weight: 500;
+
+        }
         @media (min-width: 1024px){
             font-size: 22px;
             line-height: 40px;
         }
         @media (min-width: 1300px){
-            font-size: 28px;
-            line-height: 45px;
+            font-size: 26px;
+            line-height: 40px;
         }
         @media (min-width:1900px){
-            font-size: 36px;
-            line-height: 55px;
+            font-size: 32px;
+            line-height: 50px;
             letter-spacing: 1px;
         }
     }
@@ -132,8 +149,12 @@
         height: 60px;
         margin-left: 15px;
         border-radius: 50%;
-        background: linear-gradient(219.47deg, #10CC94 3.01%, #83CC59 107.31%);
-        box-shadow: 0px 4px 8px rgba(58, 204, 129, 0.4);
+
+        border: 1px solid #60CC6B;
+        color:  #60CC6B;
+        background: #111217;
+        // background: linear-gradient(219.47deg, #10CC94 3.01%, #83CC59 107.31%);
+        // box-shadow: 0px 4px 8px rgba(58, 204, 129, 0.4);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -153,27 +174,29 @@
     background: #1F1F1F;
 }
 .icons{
+    width: 290px;
     margin-top: 35px;
     margin-bottom: 35px;
     display: flex;
     // flex-direction: row;
     // flex-wrap: wrap;
     justify-content: space-between;
+
+
     :last-child{
         margin-right: 0;
     }
     @media (min-width: 1024px){
-        // justify-content: start;
+
+        justify-content: start;
     }
     img{
-        width: 26px;
+        width: 19px;
         margin-bottom: 5px;
         
         height: 25px;
         // margin-right: auto;
-        @media (min-width:768px){
-            margin-right: 15px;
-        }
+        
         @media (min-width: 1300px){
             margin-right: 25px;
         }
@@ -182,8 +205,18 @@
         }
        
     }
+    #sass{
+        width: 27px;
+    }
     #go{
         width: 33px;
+        margin-right: 5px;
+        @media (min-width:768px){
+            margin-right: 15px;
+        }
+    }
+    #figma{
+        width: 12px;
     }
     
     
