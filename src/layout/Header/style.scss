@@ -15,15 +15,20 @@
     &-logo{
         //margin-left: 15px;
         //max-width: 81%;
-        @media(min-width:350px){
-           //max-width: 81%; 
+        @media(min-width:320px){
+            width: 151px; 
         };
         @media (min-width:1024px){
             margin-left: 0;
+            width: 200px;
+        }
+        @media (min-width:1900px){
+            margin-left: 0;
+            width: 255px;
         }
         &-inner{
             margin: 0;
-            max-width: 73%;
+            max-width: 100%;
             margin-left: 15px;
             @media (min-width:768px){
                 margin-left: 0;
@@ -52,7 +57,7 @@
             padding: 23px 0px 20px 0px; 
         }
         @media (min-width:1900px){
-            padding: 50px 0px 30px 0px;
+            padding: 25px 0px 25px 0px;
         }
         &-active{
             width: 100%;

@@ -26,14 +26,32 @@
         justify-content: center;
         border-radius: 0;
         margin-right: 0;
+        height: 205px;
+        @media(min-width:400px){
+            height: 225px;
+        } 
+        @media(min-width:500px){
+            height: 250px;
+        } 
         
         img{
-            width: 75%;
-            @media (min-width: 1024px){
-                
-                width: 100%;
+            max-width: 80%;
+            @media(min-width:400px){
+                max-width: 70%;
+            } 
+            @media(min-width:500px){
+                max-width: 60%;
+            } 
+            @media(min-width:650px){
+                max-width: 50%;
             }
+            @media (min-width: 1024px){
+                max-width: 100%;
+
+                }
+            
         }
+        
         @media(min-width:768px){
             width: 100%;
             border-radius: 8px;
@@ -51,18 +69,29 @@
         }
         @media (min-width: 1300px){
             width: 580px;
+            height: 410px;
             margin-right: 70px;
 
         }
         @media (min-width:1900px){
             width: 750px;
+            height: 530px;
         }
     }
     .itseems-background{
         img{
-            width: 55%;
+            max-width: 80%;
+            @media(min-width:400px){
+                max-width: 70%;
+            } 
+            @media(min-width:500px){
+                max-width: 60%;
+            } 
+            @media(min-width:650px){
+                max-width: 50%;
+            }
             @media (min-width: 1024px){
-                width: 100%;
+                max-width: 100%;
 
                 }
         }   
@@ -80,6 +109,7 @@
             margin-top: 0;
         }
         @media (min-width: 1024px){
+            margin-top: 10px;
             width: 510px;
         }
         @media (min-width: 1300px){
@@ -191,29 +221,40 @@
         justify-content: start;
     }
     img{
-        width: 19px;
+        width: 26px;
         margin-bottom: 5px;
         
         height: 25px;
         // margin-right: auto;
-        
+        @media (min-width:1024px){
+            margin-right: 15px;
+        }
         @media (min-width: 1300px){
             margin-right: 25px;
         }
         @media (min-width:1900px){
-            margin-right: 35px;
+            // margin-right: 25px;
         }
        
     }
     #sass{
         width: 27px;
+        @media (min-width: 1900px){
+            margin-right: 18px;
+        }
+        // margin-right: -5px;
     }
     #go{
         width: 33px;
-        margin-right: 5px;
-        @media (min-width:768px){
-            margin-right: 15px;
-        }
+        // margin-right: 5px;
+        // @media (min-width:768px){
+        //     margin-left: -5px;
+        //     margin-right: -3px;
+        // }
+        // @media (min-width:1024px){
+        //     margin-left: 0;
+        //     margin-right: 15px;
+        // }
     }
     #figma{
         width: 12px;

@@ -20,6 +20,9 @@ body {
     @media (min-width: 940px){
       margin: 0 60px;
     }
+    @media (min-width: 1024px){
+      max-width: 900px;
+    }
     @media (min-width: 1300px){
       max-width: 1300px;
       margin: 0 auto;
