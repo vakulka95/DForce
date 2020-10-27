@@ -29,27 +29,29 @@ const ForCustomer = () => {
 
     return (
         <section className='for-customer' id='forcustomer' onMouseOver={handleMouseMove}>
-            <div className='flex'>
-                <div className='for-customer-info'>
-                    <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
-                    <div className='for-customer-contacts'>
-                        {contactItem.map(({
-                            id,
-                            image,
-                            alt,
-                            info,
-                            data
-                        }) => <ContactItem key={id}
-                            id={id}
-                            image={image}
-                            alt={alt}
-                            info={info}
-                            data={data}
-                            />
-                        )}
+            <div className='container'>
+                <div className='flex'>
+                    <div className='for-customer-info'>
+                        <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
+                        <div className='for-customer-contacts'>
+                            {contactItem.map(({
+                                id,
+                                image,
+                                alt,
+                                info,
+                                data
+                            }) => <ContactItem key={id}
+                                id={id}
+                                image={image}
+                                alt={alt}
+                                info={info}
+                                data={data}
+                                />
+                            )}
+                        </div>
                     </div>
+                    <FormBlock />
                 </div>
-                <FormBlock />
             </div>
         </section>
     )
