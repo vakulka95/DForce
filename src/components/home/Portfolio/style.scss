@@ -30,19 +30,29 @@
     }
     .button{
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin: 80px 0 0 15px;
+        justify-content: center;
+        margin: 80px 15px 0 15px;
+        @media (min-width:500px){
+            justify-content: start;
+        }
         @media (min-width:1024px){
             margin-left: 15px;
         }
         .btn-wrap{
+            display: flex;
+            flex: 1;
+            @media (min-width:500px){
+                flex: none;
+                justify-content: start;
+            }
+
             // display: flex;
             @media (min-width:1024px){
                 display: block;
             }
             .btn-link{
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 22px;
                 padding: 22px 80px;
                 @media (min-width:1024px){
                     font-size: 20px;

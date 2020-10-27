@@ -90,22 +90,25 @@
     }
 
     &-title{
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 0;
         line-height: 30px;
         font-size: 18px;
         font-family: 'CA Saygon Text';
         color:#FFFFFF;
+        @media (min-width: 768){
+            font-weight: 500;
+
+        }
         @media (min-width: 1024px){
             font-size: 22px;
             line-height: 40px;
         }
         @media (min-width: 1300px){
-            font-size: 28px;
-            line-height: 45px;
+            font-size: 26px;
+            line-height: 40px;
         }
         @media (min-width:1900px){
-
             font-size: 32px;
             line-height: 50px;
             letter-spacing: 1px;
@@ -167,6 +170,7 @@
     background: #1F1F1F;
 }
 .icons{
+    width: 290px;
     margin-top: 35px;
     margin-bottom: 35px;
     display: flex;
@@ -183,7 +187,7 @@
         justify-content: start;
     }
     img{
-        width: 26px;
+        width: 19px;
         margin-bottom: 5px;
         
         height: 25px;
@@ -199,8 +203,18 @@
         }
        
     }
+    #sass{
+        width: 27px;
+    }
     #go{
         width: 33px;
+        margin-right: 5px;
+        @media (min-width:768px){
+            margin-right: 15px;
+        }
+    }
+    #figma{
+        width: 12px;
     }
     
     

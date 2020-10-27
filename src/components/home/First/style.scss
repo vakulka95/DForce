@@ -107,8 +107,8 @@
                 animation-name: text-animation-1600-2;
             }
             @media (min-width: 1733px){
-                animation-name:text-animation-1616-2;
-                left: -585px;
+                animation-name:text-animation-1600-2;
+                // left: -585px;
             }
             @media (min-width: 1900px){
                 left: 125px;
@@ -134,8 +134,8 @@
                 // left: -845px;
             }
             @media (min-width: 1733px){
-                animation-name:text-animation-1616-3;
-                left: -845px;
+                animation-name:text-animation-1600-3;
+                // left: -845px;
             }
             
             @media (min-width: 1900px){
@@ -166,11 +166,13 @@
                 @media (min-width: 1616px){
                     margin-top: 0;
                 }
+                @media (min-width: 1733px){
+                    margin-top: -70px;
+                }
                 @media (min-width:1900px){
                     font-size: 18px;
                     width: 635px;
                     line-height: 35px;
-                    margin-top: -70px;
                 }
     }
    
