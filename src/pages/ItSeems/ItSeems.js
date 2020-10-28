@@ -43,7 +43,7 @@ function ItSeems() {
                 </div>
                 <div className='detail-block-all-figures' key={`${itseems.group3}-wrap`}>
                     <figure className='detail-figure dark' key={itseems.group3}>
-                     <img className='detail-figure-img' alt={itseems.title} src={itseems.group3}  />
+                     <img className='detail-figure-img big-image' alt={itseems.title} src={itseems.group3}  />
                     </figure>
                     <div className='detail-block-figures fleX' key={`${itseems.group4}-wrap`}>
                         <figure className='detail-figure dark' key={itseems.group4}>

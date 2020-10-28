@@ -1,6 +1,7 @@
 .allContainer{        
     padding:110px 0 44px 0;
     background: #15161C;
+    width: 100%;
     @media (min-width:1024px){
         padding:220px 40px 44px 40px; 
     }
@@ -9,16 +10,25 @@
     }
 }
 .allProjects-title{
-    margin-left: 15px;
-
+    margin: 0 0 0 15px;
     font-weight: 600;
     font-size: 24px;
     line-height: 35px;
+    @media (min-width:768px){
+        max-width: 655px;
+        margin: 0 auto;
+    }
     @media(min-width: 1024px){
-        margin-left: 20px;
+        max-width: 900px;
         font-weight: 600;
         font-size: 46px;
         line-height: 70px;
+    }
+    @media (min-width:1300px){
+        max-width: 1300px;
+    }
+    @media (min-width:1900px){
+        max-width: 1620px;
     }
 }
 .mainProjects{
