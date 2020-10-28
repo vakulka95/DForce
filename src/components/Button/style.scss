@@ -26,6 +26,14 @@
         border: none;
         outline: none;
         cursor: pointer;
+        @media (min-width: 768px){
+            font-size: 20px;
+            line-height: 25px;
+        }
+        @media (min-width: 1024px){
+            font-size: 18px;
+            padding: 22px 0;
+        }
         @media (min-width:1300px){
             padding:22px 105px;
             font-weight: 500;

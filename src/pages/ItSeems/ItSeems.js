@@ -74,7 +74,7 @@ function ItSeems() {
                 <div className='detail-block-all-figures last' key='group-last-wrap'>
 
                     <figure className='detail-figure dark' key={itseems.group7}>
-                        <img className='detail-figure-itseems' alt={itseems.title} src={itseems.group7}/>
+                        <img className='detail-figure-itseems mob-group-map' alt={itseems.title} src={itseems.group7}/>
                     </figure>                     
                      <figure className='detail-figure' style={color} key={itseems.group8}>
                         <img className='detail-figure-img' alt={itseems.title} src={itseems.group8} />

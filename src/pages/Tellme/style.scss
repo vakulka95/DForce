@@ -28,6 +28,9 @@
       }
       .btn-wrap{
         margin: 30px 15px;
+        @media(min-width: 768px){
+          margin-left: 0;
+        }
         @media(min-width: 1024px){
           display: block;
           align-self: flex-end;
@@ -66,8 +69,12 @@
       font-size: 24px;
       line-height: 35px;
       width: 90%;
-      padding: 0 15px 0 15px;
+      padding: 0 15px 0 0;
       margin-bottom: 20px;
+      @media (min-width: 768px){
+        font-size: 30px;
+        line-height: 40px;
+      }
       @media(min-width: 1024px){
         font-size: 46px;
         width: 70%;
@@ -87,7 +94,12 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
-        margin: 0 15px 21px;
+        margin: 0 15px 21px 0;
+        @media(min-width: 768px){
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 40px;
+        }
         @media (min-width:1024px){
           letter-spacing: 1px;
           font-weight: 500;
@@ -112,20 +124,22 @@
         }
     }
     &-text{
-      padding: 0 15px;
+      padding: 0 15px 0 0;
       margin-bottom: 40px;
       font-size: 15px;
       line-height: 30px;
       letter-spacing: 0.03em;
 
       color: #D0D0D2;
-      
+      @media(min-width: 768px){
+        font-size: 16px;
+
+      }
       @media (min-width:1024px){
         padding:0px;
         width:645px;
         margin-bottom: 95px;
-        font-size: 18px;
-        line-height: 35px;
+
       }
       @media (min-width:1900px){
         width: 690px;
@@ -134,13 +148,17 @@
         margin-bottom: 0;
       }
   }
-    &-figure{
-        margin: 0px 0 60px 0;
-        // width: 100%;
-        padding: 50px 0;
-        border-radius: 0;
-        display: block;
-        text-align: center;
+  &-figure{
+    margin: 0px 0 60px 0;
+    // width: 100%;
+    padding: 50px 0;
+    border-radius: 0;
+    display: block;
+    text-align: center;
+        @media (min-width: 768px){
+          padding: 40px 50px;
+          border-radius: 8px;
+        }
         @media (min-width:1024px){
           margin-bottom: 0;
           //margin: 130px 0px;
@@ -162,6 +180,10 @@
         
         &-img{
             width: 75vw;
+            @media (min-width:768px){
+              width: 100%;
+              height: 100%;
+            }
             @media (min-width:1024px){
               width: 60vw;
               height: 100%;
@@ -247,10 +269,40 @@
         width: 935px;
       }
       .icons{
+        width: 100%;
         display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
         justify-content: space-around;
+        
+        img{
+          width: 26px;
+          margin-bottom: 5px;
+          
+          height: 25px;
+          // margin-right: auto;
+          @media(min-width: 500px){
+            margin-right: 20px;
+            margin-left: 15px;
+    
+          }
+          @media (min-width:768px){
+              margin-right: 25px;
+          }
+        }
+        :last-child{
+            margin-right: 0;
+        }
+        // display: flex;
+        // justify-content: space-around;
+        @media(min-width: 500px){
+          justify-content: start;
+  
+        }
         @media (min-width: 1024px){
           margin-bottom: 68px;
+          justify-content: center;
+  
         }
         @media (min-width: 1300px){
           width: 80%;
