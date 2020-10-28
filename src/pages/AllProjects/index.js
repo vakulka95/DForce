@@ -25,23 +25,23 @@ const AllProjects = () => {
 
                 <div className='mainProjects-item'>
                     <Link to='/itseems'>
-                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' title='itSeems'/>
+                        <img src='./images/cases/itSeems-dt.png' alt='ItSeems' title='itSeems'/>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
                     <Link to='/tellme'>
-                        <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' title='tellMe'/>
+                        <img src='./images/cases/tellMe-dt.png' alt='TellMe' title='tellMe'/>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
                     <a href='https://itseems.com.ua'>
-                        <img src='./images/cases/ItSeems/Rectangle-1372.png' alt='ItSeems' title='itSeems' />
+                        <img src='./images/cases/vote-dt.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
                 <div className='mainProjects-item'>
-                    <a href='https://tellme.com.ua/'>
+                    {/* <a href='https://tellme.com.ua/'>
                         <img src='./images/cases/TellMe/tellme1.png' alt='TellMe' title='tellMe'/>
-                    </a>
+                    </a> */}
                 </div>
             </div>
             <h2 className='allProjects-title'>Наші кейси</h2>
@@ -50,33 +50,33 @@ const AllProjects = () => {
 
                 <div className='secondaryProjects-item'>
                     <a href='https://itseems.com.ua'>
-                        <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems' />
+                        <img src='./images/cases/forsmaster-dt.png' alt='ItSeems' title='itSeems' />
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='https://tellme.com.ua/'>
+                    {/* <a href='https://tellme.com.ua/'>
                         <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
-                    </a>
+                    </a> */}
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='https://itseems.com.ua'>
+                    {/* <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
-                    </a>
+                    </a> */}
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='https://tellme.com.ua/'>
+                    {/* <a href='https://tellme.com.ua/'>
                         <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
-                    </a>
+                    </a> */}
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='https://itseems.com.ua'>
+                    {/* <a href='https://itseems.com.ua'>
                         <img src='./images/cases/ItSeems/Group-609.png' alt='ItSeems' title='itSeems'/>
-                    </a>
+                    </a> */}
                 </div>
                 <div className='secondaryProjects-item'>
-                    <a href='https://tellme.com.ua/'>
+                    {/* <a href='https://tellme.com.ua/'>
                         <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </section>
