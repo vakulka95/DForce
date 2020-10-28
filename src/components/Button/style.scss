@@ -18,13 +18,20 @@
         letter-spacing: 0.06em;
     
         color: #FFFFFF;
-        background: #2D9662;
-        box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(222.66deg, #0C996F -14.23%, #629943 141.91%);
+        // box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
         border-radius: 100px;
         width: 100%;
         padding: 18px 35px;
         border: none;
         outline: none;
+        &:hover{
+            box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
+        }
+        &:active{
+            background: linear-gradient(222.66deg, #0B8C66 -14.23%, #5A8C3D 141.91%);
+            box-shadow: 0px 4px 20px rgba(58, 204, 129, 0.3);
+        }
         cursor: pointer;
         @media (min-width: 768px){
             font-size: 20px;
@@ -48,14 +55,22 @@
         text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
-        background: #2D9662;
-        box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(222.66deg, #0C996F -14.23%, #629943 141.91%);
+        // box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
         border-radius: 100px;
         width: 100%;
         padding: 13px 20px;
         border: none;
         outline: none;
+        &:hover{
+            box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
+        }
+        &:active{
+            background: linear-gradient(222.66deg, #0B8C66 -14.23%, #5A8C3D 141.91%);
+            box-shadow: 0px 4px 20px rgba(58, 204, 129, 0.3);
+        }
         cursor: pointer;
+        
         @media (min-width:1300px){
             padding: 23px 84px;
         }
@@ -65,6 +80,13 @@
     margin: 50px 50px 0;
     display: flex;
     justify-content: flex-end;
+    // background: linear-gradient(222.66deg, #0C996F -14.23%, #629943 141.91%);
+    // span{
+    //     :hover{
+    //         box-shadow: none;
+    //         text-decoration: none;
+    //     }
+    // }
     @media (min-width:1024px){
         justify-content: flex-start;
     }
