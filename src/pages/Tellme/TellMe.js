@@ -38,7 +38,7 @@ const color = {
                 </figure>
                 <div className='detail-wrap right' key='paragraph3-wrap'>
                     <h3 className='detail-sub-title right-title' key={tellme.title3}>{tellme.title3}</h3>
-                    <p className='detail-text right-text' key={tellme.paragraph3}>
+                   <p className='detail-text right-text' key={tellme.paragraph3}>
                         {tellme.paragraph3}
                     </p>
                 </div>
@@ -55,7 +55,7 @@ const color = {
                         </figure>
                     </div>   
                 </div>
-                <div key='group4-wrap'>
+                <div key='group4-wrap' className='detail-wrap'>
                     <h3 className='detail-sub-title' key='title4'>{tellme.title4}</h3>
                     <p className='detail-text' key='paragraph4'>
                         {tellme.paragraph4}
@@ -66,10 +66,10 @@ const color = {
                             <img className='detail-figure-img' alt={tellme.title6} src={tellme.group6} key={tellme.group6} />
                         </figure>
                     <figure className='detail-figure dark' key={tellme.group7}>
-                     <img className='detail-figure-img' alt={tellme.title} src={tellme.group7} key={tellme.group7} />
+                        <img className='detail-figure-img' alt={tellme.title} src={tellme.group7} key={tellme.group7} />
                     </figure>
                     <figure className='detail-figure mob-group fleX' style={color} key={tellme.group8}>
-                     <img className='mob-group-map' alt={tellme.title} src={tellme.group8} key={tellme.group8} />
+                        <img className='mob-group-map' alt={tellme.title} src={tellme.group8} key={tellme.group8} />
                     </figure> 
                 </div>
                 <div className='right' key='right-paragraph'>
@@ -81,7 +81,7 @@ const color = {
                 <div className='detail-block-all-figures last' key='last-group'>
                     <div className='detail-block-figures fleX' key='darkGroup'>
                         <figure className='detail-figure dark' key={tellme.group10}>
-                        <img className='detail-figure-tellme' alt={tellme.title} src={tellme.group10} key={tellme.group10} />
+                            <img className='detail-figure-tellme' alt={tellme.title} src={tellme.group10} key={tellme.group10} />
                         </figure>
                         <figure className='detail-figure dark' key={tellme.group11}>
                             <img className='detail-figure-tellme' alt={tellme.title} src={tellme.group11} key={tellme.group11} />
