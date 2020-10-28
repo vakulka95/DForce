@@ -54,7 +54,7 @@ function ItSeems() {
                         </figure>
                     </div>   
                 </div>
-                <div key='group4-wrap'>
+                <div key='group4-wrap' className='detail-wrap'>
                     <h3 className='detail-sub-title' key={itseems.title4}>{itseems.title4}</h3>
                     <p className='detail-text' key={itseems.paragraph4}>
                         {itseems.paragraph4}
