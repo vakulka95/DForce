@@ -58,9 +58,10 @@
        @media (min-width:768px){
            padding: 0;
            max-width: 655px;
+           border-radius: 8px;
        }
         @media(min-width: 1024px){
-            border-radius: 8px;
+
             width: 44.2%;
             max-width: 440px;
             flex-grow: 1;
@@ -91,8 +92,7 @@
     }
     &-item{
         background: #20222B;
-        padding: 20px 0;
-        text-align: center;
+        padding: 0;
         width: 100%;
         margin-bottom: 10px;
         a{
@@ -104,9 +104,9 @@
         @media (min-width:768px){
             padding: 0;
             max-width: 655px;
+            border-radius: 8px;
         }
         @media(min-width: 1024px){
-            border-radius: 8px;
             width: 27.1%;;
             margin-right: 20px;
             max-width: 290px;
