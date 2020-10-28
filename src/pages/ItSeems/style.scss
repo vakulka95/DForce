@@ -94,6 +94,11 @@
     width: 90%;
     padding: 0 15px 0 0;
     margin-bottom: 20px;
+    @media (min-width: 768px){
+      font-size: 30px;
+      line-height: 40px;
+    }
+    
     @media(min-width: 1024px){
       font-size: 46px;
       width: 70%;
@@ -116,6 +121,11 @@
       font-size: 20px;
       line-height: 30px;
       margin: 0 15px 21px 0 ;
+      @media(min-width: 768px){
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+      }
       @media (min-width:1024px){
         letter-spacing: 1px;
         font-weight: 500;
@@ -147,7 +157,10 @@
       letter-spacing: 0.03em;
 
       color: #D0D0D2;
-      
+      @media(min-width: 768px){
+        font-size: 16px;
+
+      }
       @media (min-width:1024px){
         padding:0px;
         width:645px;
@@ -169,6 +182,10 @@
       border-radius: 0;
       display: block;
       text-align: center;
+      @media (min-width: 768px){
+        padding: 40px 50px;
+        border-radius: 8px;
+      }
       @media (min-width:1024px){
         margin-bottom: 0;
         //margin: 130px 0px;
@@ -190,6 +207,11 @@
       
       &-img{
           width: 80%;
+          @media (min-width: 768px){
+            width: 100%;
+            border-radius: 8px;
+
+          }
           @media (min-width:1024px){
             width: 60vw;
             height: 100%;
@@ -251,6 +273,7 @@
           }
           .detail-figure{
             margin-bottom: 10px;
+            
             @media (min-width: 1024px){
               margin-bottom: 0;
               margin-top: 15px;
