@@ -2,10 +2,10 @@
     padding:110px 0 44px 0;
     background: #15161C;
     @media (min-width:1024px){
-        padding: 220px 80px 44px 80px;
+        padding: 220px 120px 44px 80px;
     }
     @media(min-width: 1900px){
-        padding:220px 80px 150px 80px;
+        padding: 220px 150px 150px 119px;
     }
 }
 .allProjects-title{
@@ -28,7 +28,7 @@
         //margin-left: 40px;
     }
     @media (min-width:1900px){
-        max-width: 1620px;
+        max-width: 1565px;
     }
 }
 .mainProjects{
@@ -71,7 +71,7 @@
         }
         @media(min-width: 1900px){
             width: 46.8%;
-            max-width: 800px;
+            max-width: 770px;
         }
     }
 }
@@ -119,7 +119,7 @@
         @media(min-width: 1900px){
             width: 29.8%;
             margin-right: 30px;
-            max-width: 510px;
+            max-width: 505px;
         }
     }
 }
@@ -155,7 +155,7 @@
         .mainProjects-item{
             :nth-child(#{$i}){
                 @media(min-width: 1024px){
-                    margin-bottom: 0;
+                    margin: 0;
                 }
             }
         }
