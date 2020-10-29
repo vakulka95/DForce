@@ -115,7 +115,29 @@
             width: 388px;
             flex-wrap: nowrap;
             margin-right: 15px;
+            // background: red;
         }
+        // @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 568px), 
+        //     screen and (-moz-min-device-pixel-ratio: 2) and (max-width: 568px),
+        //     screen and (-ms-min-device-pixel-ratio: 2) and (max-width: 568px),
+        //     screen and (-o-min-device-pixel-ratio: 2) and (max-width: 568px),
+        //     screen and (min-device-pixel-ratio: 2) and (max-width: 568px){
+        //         background: red;
+        //     }
+        // @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        //     only screen and (min--moz-device-pixel-ratio: 1.5),
+        //     only screen and (-o-min-device-pixel-ratio: 3/2),
+        //     only screen and (min-resolution: 1.5dppx),
+        //     only screen and (min-resolution: 144dpi),{
+        //         background: red;
+        //     }
+        // @media (-webkit-min-device-pixel-ratio: 2), 
+        // (min-resolution: 192dpi) {
+        //     // margin-right: 0;
+        //     width: 388px;
+        //     flex-wrap: nowrap;
+        //     margin-right: 15px;
+        // }
     }
 }
     @for $i from 1 through 4{

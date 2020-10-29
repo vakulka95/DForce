@@ -1,21 +1,29 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
-// import tellmeProject from '../../json/tellmeProject.json';
-// import itSeemsProject from '../../json/itSeemsProject.json';
 
 const AllProjects = () => {
-    // function renderPhoto (item) {
-    // const loop = (item) => {
-    //     return(
-    //         <div className='allProjectsWrap' key={item}>
-    //         {item.src.map((photo)=><img className='allProjectsItem' src={photo} alt={photo} key={photo} />)}
-    //         </div>
-    //     )
-    // }
-    // return item.map(loop);
-    // }
+    const [windowWidth, setWindowWidth] = useState(true)
+    const [myWidth, setMyWidth] = useState(0)
+
+    useEffect(()=>{
+       
+        const changeWidth = ()=>{
+            let winWidth = window.innerWidth
+            if(winWidth!==myWidth){
+                setMyWidth(winWidth)
+            }
+            console.log(myWidth);
+            if (myWidth<768){
+                setWindowWidth(false)
+            }else setWindowWidth(true)
+            }
+        window.addEventListener('resize',changeWidth())
+        //return window.removeEventListener('resize',changeWidth())
+    },[windowWidth,myWidth])
+    console.log(windowWidth);
+    //console.log(winWidth);
 
     return (
         <section className='allContainer'>
@@ -25,7 +33,7 @@ const AllProjects = () => {
 
                 <div className='mainProjects-item'>
                     <Link to='/itseems'>
-                        <img src='./images/cases/itSeems-dt.png' alt='ItSeems' title='itSeems'/>
+                        <img src={windowWidth?'./images/cases/itSeems-dt.png':'./images/cases/itSeens-mob.png'} alt='ItSeems' title='itSeems'/>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
