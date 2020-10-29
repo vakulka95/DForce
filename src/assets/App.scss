@@ -15,7 +15,7 @@ body {
   }
   .container{
     @media (min-width: 768px){
-      max-width: 658px;
+      width: 658px;
       margin: 0 auto;
 
     }
@@ -23,15 +23,15 @@ body {
     //   margin: 0 60px;
     // }
     @media (min-width: 1024px){
-      max-width: 900px;
+      width: 900px;
       margin: 0 auto;
     }
     @media (min-width: 1300px){
-      max-width: 1300px;
+      width: 1200px;
       margin: 0 auto;
     }
     @media (min-width: 1900px){
-      max-width: 1620px;
+      width: 1620px;
     }
     
   }

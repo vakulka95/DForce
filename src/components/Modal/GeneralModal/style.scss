@@ -9,6 +9,9 @@
         align-items: center;
         flex-direction: column;
         padding: 150px 70px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         .sub-title{
             margin-top: 35px;
         }
