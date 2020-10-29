@@ -292,6 +292,9 @@
             width: 42.5%;
           }
           &-itseems{
+            @media (min-width: 320px){
+              width: 155px;
+            }
             @media (min-width: 1300px){
               width: 285px;
             }
