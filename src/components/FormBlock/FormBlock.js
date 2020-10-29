@@ -6,11 +6,14 @@ import Button from '../Button';
 import isInvalid from '../../utils/isInvalis';
 import Modal from '../../components/Modal';
 import GeneralModal from '../../components/Modal/GeneralModal';
+import Loader from '../Loader';
+import Message from '../Modal/templatesModal/Message';
 
 function FormBlock() {
     const [modal, setModal] = useState(true);
     const [success, setSuccess] = useState(false);
-    const [error,setError] = useState(false);
+    const [load,setLoad] = useState(false);
+    const [error,setError] = useState(false)
 
     let showModal = (sending) => {
         console.log(sending)
@@ -26,28 +29,27 @@ function FormBlock() {
     }
 
     const renderModal = () => {
-        if (success) {
+        if (load) {
             return (
                 <div className='result'>
                     <Modal isModal={modal}>
                         <GeneralModal
-                        img = {'./images/modalImage.svg'}
-                        alt = {'success'}
-                        title = {'Title if it need'}
-                        onButtonPress = {onClose}
                         onClose = {onClose}>
+                            <Loader />
                         </GeneralModal>
                     </Modal>
                 </div>
             )
         }
-        if(error) {
+         if(error || success) {
             return (
                 <div className='result'>
                     <Modal isModal={modal}>
                         <GeneralModal 
-                        title = {'Something went wrong'}
-                        onClose = {onClose}>   
+                        img = {success?'./images/modalImage.svg':null}
+                        alt = {success ?'success':null}
+                        onClose = {onClose}>
+                            {error && <Message />}   
                         </GeneralModal>
                     </Modal>
 
@@ -106,6 +108,7 @@ function FormBlock() {
                 email:formData.email,
                 comment:formData.comment
             };
+            setLoad(true)
             return  axios.post("http://www.testvakulenko.fun/send.php", dataForSend)
             .then(res => {
                 console.log(res)
@@ -113,11 +116,13 @@ function FormBlock() {
 
                 if (res.status === 200) {
                     resetInput()
+                    setLoad(false)
                     showModal(true)
                 }
             })
             .catch(() => {
                 console.log('message not send');
+                setLoad(false)
                 showModal(false)
                 resetInput()
 
@@ -130,7 +135,7 @@ function FormBlock() {
 
     return (
         <div className='form'>
-            {(success || error) && renderModal()}
+            {(load || error || success) && renderModal()}
             <div className='form-wrap'>
                 <h3 className='form-title'>Залиште Ваші контакти і побажання тут:</h3>
                 <form>

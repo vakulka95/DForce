@@ -29,7 +29,7 @@ const GeneralModal = ({ title, children, onClose, onButtonPress, link, img, alt 
 GeneralModal.propTypes = {
     onClose:      PropTypes.func,
     onButtonPress: PropTypes.func,
-    title:        PropTypes.string.isRequired,
+    title:        PropTypes.string,
     link:         PropTypes.string,
     img:          PropTypes.string,
     alt:          PropTypes.string,
