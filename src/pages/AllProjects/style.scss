@@ -48,11 +48,26 @@
         background: #20222B;
         margin-bottom: 10px;
         padding: 20px 0;
+        width: 100%;
+
         a{
             display: block;
          }
-         img{
+         &-img{
             width: 100%;
+            display: inline-block;
+            width: 100%;
+            font-size: 0;
+            line-height: 0;
+            vertical-align: middle;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        &-inner{
+            display: block;
+            height: 0;
+            padding-top: 70.4%;
         }
 
        @media (min-width:768px){
@@ -74,6 +89,34 @@
             width: 46.8%;
             max-width: 770px;
         }
+    }
+}
+.itSeems{
+    background-image: url('../../assets/images/itSeens-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/itSeems-dt.png');
+        border-radius: 8px;
+    }
+}
+.tellMe{
+    background-image: url('../../assets/images/tellMe-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/tellMe-dt.png');
+        border-radius: 8px;
+    } 
+}
+.vote{
+    background-image: url('../../assets/images/vote-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/vote-dt.png');
+        border-radius: 8px;
+    }
+}
+.forsMaster{
+    background-image: url('../../assets/images/forsmaster-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/forsmaster-dt.png');
+        border-radius: 8px;
     }
 }
 
@@ -98,9 +141,7 @@
         a{
            display: block;
         }
-        img{
-            width: 100%;
-        }
+
         @media (min-width:768px){
             padding: 0;
             max-width: 655px;
