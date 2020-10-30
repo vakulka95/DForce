@@ -1,10 +1,11 @@
 .home{
-    background-image: url('../../../assets/images/homeGreen.svg'),
-                    url('../../../assets/images/lines.svg');
+    background: url('../../../assets/images/homeGreen.svg'),
+        // url('../../../assets/images/background-animation.svg') right no-repeat,
+        url('../../../assets/images/lines.svg');
     //color: white;
     height: 100vh;
     background-color: #0D0E12;
-    background-size: auto, contain;
+    // background-size: auto, contain;
     background-repeat: no-repeat, repeat-y;
     background-position-y: bottom, top;
     padding: 0px 15px 60px 15px;
@@ -41,6 +42,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
+        @media (min-width:1024px){
+            flex-direction: row;
+            
+            justify-content: space-between;
+        }
         @media (min-width:1300px){
             position: relative;
             justify-content: center;
@@ -55,6 +62,7 @@
         color:#3ACC81;
         font-size: 38px;
         line-height: 50px;
+        
         @media (min-width: 1024px){
             position: relative;
             top: 106px;
@@ -186,6 +194,75 @@
                     line-height: 35px;
                     margin-top: -50px;
                 }
+    }
+    &-intro{
+        // align-self: flex-end;
+    }
+    &-animation{
+        background: url('../../../assets/images/background-animation.svg');
+        background-size: cover;
+        background-position-x: center;
+        // overflow: visible;
+        height: 600px;
+        @media(min-width: 1900px){
+            perspective: 2000px;
+            width: 900px;
+            // height: 538px;
+        }
+        
+    }
+    &-lego{
+        @media(min-width: 1900px){
+            width: 400px;
+            position: relative;
+            top: 76px;
+            right: -60px;
+        }
+    }
+    .cube{
+        transform-style: preserve-3d;
+        transform: rotateZ(58deg) rotateX(35deg) rotateY(47deg);
+        position: absolute;
+        top: 151px;
+        right: 132px;
+    
+    }
+    .side{
+        color: #fff;
+        text-align: center;
+        width: 55px;
+        height: 55px;
+        border: 1px solid #fff;
+        position: absolute;
+    }
+    .front{
+        transform: translateZ(27.5px), ;
+        background-color: red;
+    }
+    .back{
+        transform: rotateY(180deg) translateZ(27.5px);
+        background-color: green;
+
+    }
+    .right{
+        transform: rotateY(90deg) translateZ(27.5px);
+        background-color: yellow;
+
+    }
+    .left{
+        transform: rotateY(-90deg) translateZ(27.5px);
+        background-color: blue;
+
+    }
+    .top{
+        transform: rotateX(90deg) translateZ(27.5px);
+        background-color: pink;
+
+    }
+    .bottom{
+        transform: rotateX(-90deg) translateZ(27.5px );
+        background-color: violet;
+
     }
    
 }   
@@ -351,3 +428,5 @@
         opacity: 0;
     }
 }
+
+
