@@ -119,6 +119,10 @@
 .image{
     display: block;
     width: 100%;
+    overflow: hidden;
+    @media (min-width:768px){
+        border-radius: 8px;
+    }
     @media (min-width:1024px){
         max-width: 41%;
         margin-right: 60px;
@@ -147,6 +151,10 @@
     &-wrap{
     width: 100%;
     display: block;
+    :hover{
+        transition: transform 0.2s ease-out;
+        transform: scale(1.1);
+    }
     &-img{
 
     display: inline-block;
