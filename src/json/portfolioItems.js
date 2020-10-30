@@ -4,7 +4,7 @@ let portfolioItems = [
         image: './images/cases/itSeems-dt.png',
         alt: 'ItSeems',
         backgroundCLass: 'case-image itseems-background',
-        description: 'Анонімний онлайн-щоденник для людей, які постраждали від насильства.',
+        description: 'Анонімний онлайн-щоденник для людей, які постраждали від насильства',
         to: '/itseems',
     },
     {
@@ -12,7 +12,7 @@ let portfolioItems = [
         image: './images/cases/tellMe-dt.png',
         alt: 'Tellme',
         backgroundCLass: 'case-image tellme',
-        description: 'Інтернет-платформа для психологічних консультацій, яка допомагає всім хто потребує емоційної підтримки.',
+        description: 'Інтернет-платформа для психологічних консультацій, яка допомагає всім, хто потребує емоційної підтримки',
         to: '/tellme',
 
     },
@@ -21,7 +21,7 @@ let portfolioItems = [
         image: './images/cases/vote-dt.png',
         alt: 'vote',
         backgroundCLass: 'case-image vote',
-        description: 'Сервіс голосування в раду для МКІП повинен забезпечити ефективну та зручну взаємодію в процесі голосування',
+        description: 'Сервіс інтернет-голосування для обрання відповідної частини складу Наглядової ради Українського культурного фонду для МКІП',
         to: '/vote',
 
     }

@@ -137,7 +137,7 @@ function FormBlock() {
         <div className='form'>
             {(load || error || success) && renderModal()}
             <div className='form-wrap'>
-                <h3 className='form-title'>Залиште Ваші контакти і побажання тут:</h3>
+                <h3 className='form-title'>Залиште свої контактні дані й ми допоможемо вирішити ваше завдання!</h3>
                 <form>
                     <div className='form-group'>
                         <label>
