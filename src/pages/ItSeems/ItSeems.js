@@ -17,7 +17,7 @@ function ItSeems() {
                     <p className='detail-text' key='paragraph1'>
                         {itseems.paragraph1}
                     </p>
-                    <Button to={itseems.to} directly message={'перейти на сайт'} >
+                    <Button to={itseems.to} directly message={'Перейти на сайт'} >
                         <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
                             key={'./images/fontImages/tosite.svg'} />
                     </Button>

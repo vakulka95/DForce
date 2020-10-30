@@ -33,14 +33,10 @@ const First = () => {
                     </div>                                 
                     <div className='home-animation'>
                         <img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/>
-                        {/* <div className='cube'>
-                            <div className='side front'>front</div>
-                            <div className='side back'>back</div>
-                            <div className='side right'>right</div>
-                            <div className='side left'>left</div>
-                            <div className='side top'>top</div>
-                            <div className='side bottom'>bottom</div>
-                        </div> */}
+                        <img src='images/animation/Block.svg' className='block block-first' alt='block-first'/>
+                        <img src='images/animation/Block.svg' className='block block-third' alt='block-third'/>
+                        <img src='images/animation/Block.svg' className='block block-second' alt='block-second'/>
+
                     </div>
                 </div>
             </div>

@@ -50,7 +50,7 @@
         }
         @media (min-width:1300px){
             position: relative;
-            justify-content: center;
+            // justify-content: center;
             max-height: 700px;
         }
         @media (min-width:1900px){
@@ -196,7 +196,18 @@
                 }
     }
     &-intro{
-        // align-self: flex-end;
+        @media(min-width: 1024px){
+            width: 704px;
+
+        }
+        // @media(min-width: 1300px){
+        //     width: 705px;
+
+        // }
+        @media(min-width: 1900px){
+            width: 910px;
+
+        }
     }
     &-animation{
         background: url('../../../assets/images/background-animation.svg');
@@ -204,14 +215,26 @@
         background-position-x: center;
         // overflow: visible;
         height: 600px;
+        @media(min-width: 1024px){
+            display: none;
+        }
+        @media(min-width: 1300px){
+            width: 500px;
+            // height: 538px;
+        }
         @media(min-width: 1900px){
-            perspective: 2000px;
-            width: 900px;
+            width: 500px;
             // height: 538px;
         }
         
     }
     &-lego{
+        @media(min-width: 1300px){
+            width: 350px;
+            position: relative;
+            top: 137px;
+            right: -98px;
+        }
         @media(min-width: 1900px){
             width: 400px;
             position: relative;
@@ -219,53 +242,168 @@
             right: -60px;
         }
     }
-    .cube{
-        transform-style: preserve-3d;
-        transform: rotateZ(58deg) rotateX(35deg) rotateY(47deg);
-        position: absolute;
-        top: 151px;
-        right: 132px;
     
-    }
-    .side{
-        color: #fff;
-        text-align: center;
-        width: 55px;
-        height: 55px;
-        border: 1px solid #fff;
-        position: absolute;
-    }
-    .front{
-        transform: translateZ(27.5px), ;
-        background-color: red;
-    }
-    .back{
-        transform: rotateY(180deg) translateZ(27.5px);
-        background-color: green;
+    .block{
+        @media(min-width: 1300px){
+            width: 105px;
+            position: relative;
+        }
+        @media(min-width: 1900px){
+            width: 120px;
+            position: relative;
+        }
+        &-first{
+            animation-name: block-first;
+            animation-duration: 3s;
+            @media(min-width: 1300px){
+                animation-name: block-first-1300;
+                top: -77px;
+                right: 7px;
+            }
+            @media(min-width: 1900px){
+                top: -313px;
+                right: -340px;
+            }
+        }
+        &-third{
+            opacity: 0;
+            animation-name: block-third;
+            animation-duration: 3s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+            @media(min-width: 1300px){
+                animation-name: block-third-1300;
+                top: -168px;
+                right: -282px;
+            }
+            @media(min-width: 1900px){
+                top: -272px;
+                right: -150px;
+            }
+        }
+        &-second{
+            opacity: 0;
+            animation-name: block-second;
+            animation-duration: 3s;
+            animation-delay: 2.5s;
+            animation-fill-mode: forwards;
+            @media(min-width: 1300px){
+                animation-name: block-second-1300;
+                top: -133px;
+                right: -116px;
+            }
+            @media(min-width: 1900px){
+                top: -232px;
+                right: 41px;
+            }
+        }
+    
 
-    }
-    .right{
-        transform: rotateY(90deg) translateZ(27.5px);
-        background-color: yellow;
+       
 
-    }
-    .left{
-        transform: rotateY(-90deg) translateZ(27.5px);
-        background-color: blue;
-
-    }
-    .top{
-        transform: rotateX(90deg) translateZ(27.5px);
-        background-color: pink;
-
-    }
-    .bottom{
-        transform: rotateX(-90deg) translateZ(27.5px );
-        background-color: violet;
-
+       
+        
     }
    
 }   
+
+// Animation for cube
+// 1300
+
+@keyframes block-first-1300{
+    0%{
+        opacity: 0;
+        right: -100px;
+        top: 50px;
+
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        // right: -340px;
+        
+    }
+}
+
+
+@keyframes block-second-1300{
+    0%{
+        opacity: 0;
+        right: 500px;
+        top: 300px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes block-third-1300{
+    0%{
+        opacity: 0;
+        right: -550px;
+        top: 200px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+// 1900
+@keyframes block-first{
+    0%{
+        opacity: 0;
+        right: -500px;
+        top: -100px;
+
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        // right: -340px;
+        
+    }
+}
+
+
+@keyframes block-second{
+    0%{
+        opacity: 0;
+        right: 500px;
+        top: -100px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes block-third{
+    0%{
+        opacity: 0;
+        right: -400px;
+        top: -100px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+// Animation for text
 
 
 @keyframes change-text{

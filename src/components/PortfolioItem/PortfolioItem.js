@@ -8,11 +8,15 @@ import './style.scss';
 
 
 
-function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
+function PortfolioItem({ id,backgroundCLass, description, to }) {
     return (
         <div className='case'>
-            <div className={backgroundCLass}>
-                <img src={image} alt={alt} key={image}/>
+            <div className='image'>
+                <div className='image-wrap'>
+                    <span className={`image-wrap-img ${backgroundCLass}`}>
+                        <span className='image-wrap-inner'></span>
+                    </span>
+                </div>
             </div>
             <Link to={`${to}`} className='case-description'>
                 <p className='case-title sub-title'>{description}</p>
@@ -33,8 +37,6 @@ function PortfolioItem({ id, image, alt, backgroundCLass, description, to }) {
 }
 
 PortfolioItem.propTypes = {
-    image: PropTypes.string.isRequired,
-    alt: PropTypes.string,
     backgroundCLass: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,

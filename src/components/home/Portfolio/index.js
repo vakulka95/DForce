@@ -29,16 +29,12 @@ const Portfolio = ({portfolioItems}) => {
                 <div className='portfolio-list'>
                     {portfolioItems.map(({
                         id,
-                        image, 
                         backgroundCLass,
-                        alt,
                         description,
                         to
                     })=><PortfolioItem key={id}
                         id={id}
-                        image={image}
                         backgroundCLass={backgroundCLass}
-                        alt={alt}
                         description={description}
                         to={to}
                     />)

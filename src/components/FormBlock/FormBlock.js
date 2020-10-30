@@ -137,7 +137,7 @@ function FormBlock() {
         <div className='form'>
             {(load || error || success) && renderModal()}
             <div className='form-wrap'>
-                <h3 className='form-title'>Залиште свої контактні дані й ми допоможемо вирішити ваше завдання!</h3>
+                <h3 className='form-title'>Залиште свої контактні дані й ми допоможемо вирішити Ваше завдання!</h3>
                 <form>
                     <div className='form-group'>
                         <label>
@@ -166,7 +166,7 @@ function FormBlock() {
                             <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
                         </label>
                     </div>
-                    <Button submit={true} onClick={sendMail} message={'Заказать консультацию'}/>
+                    <Button submit={true} onClick={sendMail} message={'Замовити консультацию'}/>
                 </form>
             </div>
         </div>
