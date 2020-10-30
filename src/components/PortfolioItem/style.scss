@@ -116,12 +116,13 @@
         justify-content: center;
     }
 }
+
 .image{
     display: block;
     width: 100%;
     overflow: hidden;
     @media (min-width:768px){
-        border-radius: 8px;
+    border-radius: 8px;
     }
     @media (min-width:1024px){
         max-width: 41%;
@@ -151,9 +152,12 @@
     &-wrap{
     width: 100%;
     display: block;
-    :hover{
-        transition: transform 0.2s ease-out;
+    :hover{        
         transform: scale(1.1);
+        transition: 0.2s ease-out;
+    }
+    :not(:hover){
+        transition: transform 0.2s 0.2s ease-out;
     }
     &-img{
 
