@@ -35,12 +35,17 @@
     @media(min-width: 1900px){
     }
     .detail-title{
-      @media(min-width: 1024px){
+      @media(min-width: 768px){
         padding-left: 0;
       }
+      
     }
     .detail-text{
       margin-bottom: 0;
+      margin-left: 15px;
+      @media(min-width: 768px){
+        margin-left: 0;
+      }
       @media(min-width: 1024px){
         width: 550px;
       }
@@ -54,6 +59,9 @@
           
       @media(min-width: 500px){
         display: block;
+      }
+      @media(min-width: 768px){
+        margin-left: 0;
       }
       @media(min-width: 1024px){
         display: block;
@@ -69,18 +77,18 @@
         //    pa
         //  }
       }
-      a{
-        font-size: 16px;
-        line-height: 22px;
-        padding: 23px 50px;
-        // width: 100%;
-        @media(min-width: 1024px){
-          padding: 23px 31px;
-        }
-        @media(min-width: 1300px){
-          padding: 23px 80px;
-        }
-      }
+      // a{
+      //   font-size: 16px;
+      //   line-height: 22px;
+      //   padding: 23px 50px;
+      //   // width: 100%;
+      //   @media(min-width: 1024px){
+      //     padding: 23px 31px;
+      //   }
+      //   @media(min-width: 1300px){
+      //     padding: 23px 80px;
+      //   }
+      // }
     }
   }
   &-wrap{
@@ -113,6 +121,7 @@
     @media (min-width: 768px){
       font-size: 30px;
       line-height: 40px;
+      padding-left: 0;
     }
     
     @media(min-width: 1024px){
@@ -123,10 +132,9 @@
     }
     @media(min-width: 1900px){
       font-size: 54px;
-      width: 55%;
+      width: 65%;
       line-height: 75px;
       margin-bottom: 25px;
-      padding-left: 0;
     }
   }    
   &-sub-title{
@@ -134,11 +142,12 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      margin: 0 15px 21px 0 ;
+      margin: 0 15px 21px 15px ;
       @media(min-width: 768px){
         font-weight: 500;
         font-size: 24px;
         line-height: 40px;
+        margin-left: 0;
       }
       @media (min-width:1024px){
         letter-spacing: 1px;
@@ -146,8 +155,7 @@
         font-size: 38px;
         line-height: 50px;
         width: 645px;
-        margin-right: 0;
-        margin-left: 0  ;
+
         // margin-top: 90px;
         // margin-bottom: 20px;
       }
@@ -286,7 +294,7 @@
             width: 38%;
           }
           @media (min-width: 1300px){
-            width: 41.5%;
+            width: 490px;
           }
           @media (min-width: 1900px){
             width: 42.5%;
@@ -314,7 +322,9 @@
           }
           .detail-figure{
             margin-bottom: 10px;
-            
+            @media (min-width: 768px){
+              margin-bottom: 15px;
+            }
             @media (min-width: 1024px){
               margin-bottom: 0;
               margin-top: 15px;
@@ -353,6 +363,11 @@
   &-about{
     @media (min-width: 1024px){
       margin: 115px auto 0;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 1024px){
+      margin: 70px auto 0;
       display: flex;
       flex-direction: column;
     }
@@ -430,13 +445,16 @@
       #go{
         width: 40px;
         @media (min-width: 1900px){
-          width: 82px;
+          width: 50px;
         }
       }
       #sass{
         width: 35px;
         @media (min-width: 1900px){
           width: 76px;
+        }
+        &:hover{
+          fill: #CF649A;
         }
       }
 
@@ -450,7 +468,7 @@
           display: flex;
           margin: 0 auto;
           flex-direction: column;
-          margin-top: 68px;
+          margin-top: 50px;
         }
         
       }
@@ -523,14 +541,15 @@
       &-title{
         @media (min-width:1024px){
           width: 90%;
+
         }
-        @media (min-width:1900px){
-          padding: 0 0 24px 0;
-        }
+        
       }
       &-text{
         @media (min-width:1024px){
           width: 90%;
+          margin-right: 15px;
+
         }
         @media (min-width:1900px){
           padding: 0;

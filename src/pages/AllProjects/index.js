@@ -31,7 +31,7 @@ const AllProjects = () => {
 
     return (
         <section className='allContainer'>
-            <h2 className='allProjects-title'>Наші кейси</h2>
+            <h2 className='allProjects-title'>Провідні проекти</h2>
             <div className='mainProjects'>
                 {/* {renderPhoto(tellmeProject)}  */}
 
@@ -56,7 +56,7 @@ const AllProjects = () => {
                     </a> */}
                 </div>
             </div>
-            <h2 className='allProjects-title'>Наші кейси</h2>
+            <h2 className='allProjects-title'>Веб-сайти</h2>
             <div className='secondaryProjects'>
                 {/* {renderPhoto(itSeemsProject)} */}
 

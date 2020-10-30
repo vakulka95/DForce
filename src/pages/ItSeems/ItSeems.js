@@ -17,7 +17,7 @@ function ItSeems() {
                     <p className='detail-text' key='paragraph1'>
                         {itseems.paragraph1}
                     </p>
-                    <Button to={itseems.to} directly message={'перейти на сайт'} >
+                    <Button to={itseems.to} directly message={'Перейти на сайт'} >
                         <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
                             key={'./images/fontImages/tosite.svg'} />
                     </Button>
@@ -87,8 +87,7 @@ function ItSeems() {
                     <div className='detail-wrap' key='bottom-div-wrap'>
                         <h3 className='detail-sub-title' key='bottom-title'>Використанні технології</h3>
                         <p className='detail-text ' key='bottom-text'>
-                            Для реалізації кожного проекту ми підбираємо найбільш актуальні та ефективні
-                            технології, що дає позитивний результат після релізу продукту
+                            Для реалізації кожного проекту ми добираємо найактуальніші й найефективніші технології, що відображається в позитивному результаті після релізу продукту.
                         </p>
                     </div>
                 </div>

@@ -75,7 +75,7 @@ const Header = () =>{
                         to="#forcustomer" ><span>Контакти</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
-                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Заказать консультацию'}/>}
+                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Замовити консультацию'}/>}
                         </li>
                 </ul>
             </div>

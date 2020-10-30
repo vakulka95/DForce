@@ -18,7 +18,7 @@ const color = {
                     <p className='detail-text' key='paragraph1'>
                         {tellme.paragraph1}
                     </p>
-                    <Button to={tellme.to} directly message={'перейти на сайт'} >
+                    <Button to={tellme.to} directly message={'Перейти на сайт'} >
                         <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
                             key={'./images/fontImages/tosite.svg'} />
                     </Button>
@@ -93,13 +93,12 @@ const color = {
                 </div>
                 <div className='detail-about'>
                     <div className='icons'>
-                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
+                    {technologies.map(icon => (<img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />))}
                     </div>
                     <div className='detail-wrap' key={`${tellme.title2}-wrap`}>
                         <h3 className='detail-sub-title ' key={tellme.title2}>Використанні технології</h3>
                         <p className='detail-text ' key={tellme.paragraph1}>
-                            Для реалізації кожного проекту ми підбираємо найбільш актуальні та ефективні
-                            технології, що дає позитивний результат після релізу продукту
+                            Для реалізації кожного проекту ми добираємо найактуальніші й найефективніші технології, що відображається в позитивному результаті після релізу продукту.
                         </p>
                     </div>
                 </div>

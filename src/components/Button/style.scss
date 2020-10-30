@@ -2,10 +2,16 @@
     display:block;
     &-wrap{
         display:block;
+        button{
+            @media (max-width: 340px){
+                font-size: 15px;
+            }
+        }
         &-active{
             margin-bottom: 75px;
             // position: fixed;
             // bottom: 50px;
+            
         }
     }
     &-btn{
@@ -33,6 +39,7 @@
             box-shadow: 0px 4px 20px rgba(58, 204, 129, 0.3);
         }
         cursor: pointer;
+        
         @media (min-width: 768px){
             font-size: 20px;
             line-height: 25px;
@@ -50,7 +57,7 @@
         }    
     }
     &-link{
-        font-size: 20px;
+        font-size: 16px;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.06em;
@@ -59,7 +66,7 @@
         // box-shadow: 0px 5px 14px rgba(58, 204, 129, 0.4), inset 6px 6px 14px rgba(0, 0, 0, 0.25);
         border-radius: 100px;
         width: 100%;
-        padding: 13px 20px;
+        padding: 20px 30px;
         border: none;
         outline: none;
         &:hover{
@@ -70,7 +77,18 @@
             box-shadow: 0px 4px 20px rgba(58, 204, 129, 0.3);
         }
         cursor: pointer;
-        
+        @media (max-width: 340px){
+            font-size: 15px;
+        }
+        @media (max-width: 500px){
+            width: 100%;
+        }
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+        @media (min-width: 1024px){
+            font-size: 18px;
+        }
         @media (min-width:1300px){
             padding: 23px 84px;
         }
@@ -87,6 +105,7 @@
     //         text-decoration: none;
     //     }
     // }
+    
     @media (min-width:1024px){
         justify-content: flex-start;
     }

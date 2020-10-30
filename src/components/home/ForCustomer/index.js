@@ -32,7 +32,7 @@ const ForCustomer = () => {
             <div className='container'>
                 <div className='flex'>
                     <div className='for-customer-info'>
-                        <h2 className='for-customer-title'>Давайте поговоримо про ваш майбутній продукт</h2>
+                        <h2 className='for-customer-title'>Давайте поговоримо про Ваш майбутній продукт</h2>
                         <div className='for-customer-contacts'>
                             {contactItem.map(({
                                 id,
