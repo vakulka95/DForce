@@ -79,7 +79,7 @@ const Header = () =>{
                         </li>
                 </ul>
             </div>
-            <div className = 'header-media'><button className={mobileNav? 'header-media-x':'header-media-button'} onClick={activateMobileNav}><img src={mobileNav?'./images/mobileClose.svg':'./images/mobileNav.svg'} alt="button" /></button></div></div>
+            <div className = 'header-media'><button className={mobileNav? 'header-media-x':'header-media-button'} onClick={activateMobileNav}><img src={mobileNav?'./images/X.png':'./images/mobileNav.svg'} alt="button" /></button></div></div>
         </header>
     )
 }
