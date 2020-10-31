@@ -197,7 +197,18 @@
         }
     }
     &-image{
+        @media(max-width: 1900px) and (min-width: 1300px) {
+            width: 38px;
+            // / height: 10px;/
+        }
+        
+
+        
         img{
+            @media(max-width: 1900px) and (min-width: 1300px) {
+                height: 40px;
+
+            }
             
         }
     }
