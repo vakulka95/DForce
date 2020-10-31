@@ -68,7 +68,7 @@
             margin-top: 100px;
             position: relative;
             top: 106px;
-            font-size: 50px;
+            font-size: 40px;
             line-height: 90px;
           }
         @media(min-width:1300px){
@@ -89,7 +89,7 @@
             color:white;
             line-height: 40px;
             @media (min-width: 1024px){
-                font-size: 60px;
+                font-size: 50px;
                 line-height: 90px;
               }
               @media(min-width:1900px){
@@ -118,7 +118,7 @@
             // animation-delay: 2s;
             @media(min-width: 1024px){
                 display: inline;
-                left: 125px;
+                left: 95px;
                 opacity: 0;
                 animation-name: change-text-two;
                 animation-duration: 9s;
@@ -126,6 +126,7 @@
             }
             @media (min-width: 1600px){
                 animation-name: text-animation-1600-2;
+                left: 125px;
             }
             @media (min-width: 1733px){
                 animation-name:text-animation-1600-2;
@@ -143,12 +144,15 @@
             
             // animation-delay: 4s;
             @media(min-width: 1024px){
-                left: -140px;
+                left: -107px;
                 white-space: nowrap;
                 display: inline;
                 animation-name: change-text-three;
                 animation-duration: 9s;
                 animation-iteration-count: infinite;
+            }
+            @media (min-width: 1300px){
+                left: -147px;
             }
             @media (min-width: 1600px){
                 animation-name:text-animation-1600-3;
@@ -177,7 +181,7 @@
                 width: 100%;
                 // margin-top: -80px;
                 @media (min-width: 1024px){
-                    width: 540px;
+                    width: 400px;
                     margin: 21px 0px 150px 0px;
                 }
                 @media (min-width:1300px){
@@ -202,13 +206,13 @@
             margin-top: 15px;
         }
         @media(min-width: 1024px){
-            width: 704px;
+            width: 570px;
 
         }
-        // @media(min-width: 1300px){
-        //     width: 705px;
+            @media(min-width: 1300px){
+                width: 705px;
 
-        // }
+            }
         @media(min-width: 1900px){
             width: 910px;
 
@@ -247,12 +251,13 @@
         }   
         
         @media (min-width: 1024px) and (max-width: 1299px){
-            display: none;
+            transform: scale(1, 1);
         }
         @media(min-width: 1300px){
             width: 500px;
-            transform: scale(1, 1);
+            
             height: 600px;
+            transform: scale(1, 1);
 
             // height: 538px;
         }
@@ -262,6 +267,7 @@
         }
         
     }
+   
     &-lego{
         position: relative;
         @media(min-width: 320px) and (max-width: 339px){
@@ -285,6 +291,11 @@
             top: 100px;
             right: -74px;
         }
+        @media (min-width: 1024px){
+            width: 250px;
+            top: 69px;
+            right: -55px;
+        }
         @media(min-width: 1300px){
             width: 350px;
             position: relative;
@@ -300,20 +311,29 @@
     }
     
     .block{
-        @media(max-width: 1024px){
+        @media(max-width: 1023px){
             display: none;
+
+        }
+        @media(min-width: 1024px){
+            width: 70px;
+            position: relative;
+
         }
         @media(min-width: 1300px){
             width: 105px;
-            position: relative;
         }
         @media(min-width: 1900px){
             width: 120px;
-            position: relative;
+            
         }
         &-first{
-            animation-name: block-first;
             animation-duration: 3s;
+            @media(min-width: 1024px){
+                animation-name: block-first-1024;
+                top: -87px;
+                right: 19px;
+            }
             @media(min-width: 1300px){
                 animation-name: block-first-1300;
                 top: -77px;
@@ -322,14 +342,20 @@
             @media(min-width: 1900px){
                 top: -313px;
                 right: -340px;
+                animation-name: block-first;
+
             }
         }
         &-third{
             opacity: 0;
-            animation-name: block-third;
             animation-duration: 3s;
-            animation-delay: 5s;
+            animation-delay: 4.5s;
             animation-fill-mode: forwards;
+            @media(min-width: 1024px){
+                animation-name: block-third-1024;
+                top: -149px;
+                right: -186px;
+            }
             @media(min-width: 1300px){
                 animation-name: block-third-1300;
                 top: -168px;
@@ -338,20 +364,27 @@
             @media(min-width: 1900px){
                 top: -272px;
                 right: -150px;
+                animation-name: block-third;
+
             }
         }
         &-second{
             opacity: 0;
-            animation-name: block-second;
             animation-duration: 3s;
             animation-delay: 2s;
             animation-fill-mode: forwards;
+            @media(min-width: 1024px){
+                animation-name: block-second-1024;
+                top: -123px;
+                right: -75px;
+            }
             @media(min-width: 1300px){
                 animation-name: block-second-1300;
                 top: -133px;
                 right: -116px;
             }
             @media(min-width: 1900px){
+                animation-name: block-second;
                 top: -232px;
                 right: 41px;
             }
@@ -367,6 +400,54 @@
 }   
 
 // Animation for cube
+// 1024
+@keyframes block-first-1024{
+    0%{
+        opacity: 0;
+        right: -50px;
+        top: 50px;
+
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+
+        
+    }
+}
+
+
+@keyframes block-second-1024{
+    0%{
+        opacity: 0;
+        right: 250px;
+        top: 300px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes block-third-1024{
+    0%{
+        opacity: 0;
+        right: -550px;
+        top: 200px;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
 // 1300
 
 @keyframes block-first-1300{
@@ -380,7 +461,8 @@
         opacity: 1;
     }
     100%{
-        // right: -340px;
+        opacity: 1;
+
         
     }
 }
@@ -419,9 +501,8 @@
 @keyframes block-first{
     0%{
         opacity: 0;
-        right: 500px;
-        top: -100px;
-
+        right: -500px;
+        top: -150px;
     }
     40%{
         opacity: 1;
@@ -436,7 +517,7 @@
 @keyframes block-second{
     0%{
         opacity: 0;
-        right: 500px;
+        right: 400px;
         top: -100px;
     }
     40%{
