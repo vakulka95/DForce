@@ -1,10 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
 
 const First = () => {
     let history = useHistory()
     let locate = useLocation()
+
+    // const [animation, setAnimation] = useState(false)
+
+    
+
+    
+    // const changeAnimation = (e) => {
+    //     console.log(window.innerWidth);
+    //     if(window.innerWidth > 319 && window.innerWidth < 1025){
+    //         setAnimation(true)
+    //     }
+    //     else{
+    //         setAnimation(false)
+    //     }
+    // }
+    // useEffect(() => {
+    //     window.addEventListener('resize', changeAnimation());
+    //   });
+        
 
     const [position,setPosition] = useState({ y: null })
 
@@ -32,7 +51,9 @@ const First = () => {
                         <p className = 'home-paragraph'>Dforce — це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя й досвіду людей. Ми допомагаємо нашим клієнтам ефективно реалізувати найамбітніші ідеї!</p>
                     </div>                                 
                     <div className='home-animation'>
-                        <img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/>
+                        {/* {animation ?  */}
+                        {/* // <img src='images/animation/mirror-cube.svg' className='home-lego' alt='home-lego'/>:<img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/>} */}
+                         <img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/> 
                         <img src='images/animation/Block.svg' className='block block-first' alt='block-first'/>
                         <img src='images/animation/Block.svg' className='block block-third' alt='block-third'/>
                         <img src='images/animation/Block.svg' className='block block-second' alt='block-second'/>

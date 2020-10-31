@@ -40,8 +40,8 @@
         width: 100%;
         height: 100vh;
         display: flex;
-        // flex-direction: column-reverse;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        // flex-direction: column;
         justify-content: flex-end;
         align-items: center;
         @media (min-width:1024px){
@@ -59,12 +59,13 @@
         }
     }
     &-header{
-        margin-top: 100px;
+       
         color:#3ACC81;
         font-size: 38px;
         line-height: 50px;
         
         @media (min-width: 1024px){
+            margin-top: 100px;
             position: relative;
             top: 106px;
             font-size: 50px;
@@ -171,7 +172,7 @@
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 30px;
-                margin: 21px 0px 70px 0px;
+                margin: 21px 0px 0 0px;
                 letter-spacing: 0.03em;
                 width: 100%;
                 // margin-top: -80px;
@@ -214,19 +215,32 @@
         background: url('../../../assets/images/background-animation.svg');
         background-size: cover;
         background-position-x: center;
-        // overflow: visible;
-        height: 600px;
+        width: 65%;
+       
+        height: 400px;
+        transform: scale(-1, 1);
         // @media(max-width: 768px){
         //     position: relative;
         //     top: 100px;
         //     // width: 277px;
         //     // height: 538px;
         // }
-        @media(max-width: 1299px){
+
+        @media(min-width: 320px) and (max-width: 339px){
+            position: relative;
+            top: 20px;
+        }
+        @media(min-width: 340px) and (max-width: 768px){
+            width: 100%;
+            
+        }
+        @media (min-width: 1024px) and (max-width: 1299px){
             display: none;
         }
         @media(min-width: 1300px){
             width: 500px;
+            transform: scale(1, 1);
+
             // height: 538px;
         }
         @media(min-width: 1900px){
@@ -236,13 +250,17 @@
         
     }
     &-lego{
-        // position: relative;
-        // @media(min-width: 320px) and (max-width: 339px){
-        //     width: 125px;
-        // }
-        // @media(min-width: 340px) and (max-width: 768px){
-        //     width: 277px;
-        // }
+        position: relative;
+        @media(min-width: 320px) and (max-width: 339px){
+            width: 125px;
+            top: 49px;
+            right: -39px;
+        }
+        @media(min-width: 340px) and (max-width: 768px){
+            width: 70%;
+            top: 80px;
+            right: -70px;
+        }
         @media(min-width: 1300px){
             width: 350px;
             position: relative;
