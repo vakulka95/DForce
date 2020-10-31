@@ -197,16 +197,16 @@
         }
         &-x{
             position: absolute;
-            right: calc((100% - 658px)/2);
+            right: calc((100% - 665px)/2);
             top: 30px;
             border: none;
             outline: none;
             background-color: rgba(255, 255, 255, 0);
-            height: 20px;
-            width: 20px;
+            height: 30px;
+            width: 30px;
             cursor: pointer;
             @media (min-width:320px) and (max-width:767px){
-            right:30px;
+            right:25px;
 
             }
         }
