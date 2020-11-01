@@ -23,8 +23,9 @@
         max-height: 600px;
     }
     @media (min-width: 1900px){
-        padding: 0 150px;
+        padding: 0 150px 180px;
         max-height: 1000px;
+        
         //background-size: cover, cover;
     }
     .container{
@@ -57,6 +58,7 @@
         }
         @media (min-width:1900px){
             max-height: 1000px;
+            margin-top: 100px;
         }
     }
     &-header{
@@ -103,7 +105,7 @@
             @media (min-width: 1024px){
                 position: relative;
                 animation-name: change-text;
-                animation-duration: 9s;
+                animation-duration: 7s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1900px){
@@ -122,7 +124,7 @@
                 left: 95px;
                 opacity: 0;
                 animation-name: change-text-two;
-                animation-duration: 9s;
+                animation-duration: 7s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1600px){
@@ -149,7 +151,7 @@
                 white-space: nowrap;
                 display: inline;
                 animation-name: change-text-three;
-                animation-duration: 9s;
+                animation-duration: 7s;
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1300px){
@@ -215,6 +217,7 @@
 
             }
         @media(min-width: 1900px){
+            margin-bottom: 110px;
             width: 910px;
 
         }
@@ -263,7 +266,8 @@
             // height: 538px;
         }
         @media(min-width: 1900px){
-            width: 500px;
+            width: 600px;
+            height: 700px;
             // height: 538px;
         }
         
@@ -304,10 +308,10 @@
             right: -98px;
         }
         @media(min-width: 1900px){
-            width: 400px;
+            width: 480px;
             position: relative;
-            top: 76px;
-            right: -60px;
+            top: 72px;
+            right: -82px;
         }
     }
     
@@ -325,11 +329,12 @@
             width: 105px;
         }
         @media(min-width: 1900px){
-            width: 120px;
+            width: 145px;
             
         }
         &-first{
-            animation-duration: 3s;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-first-1024;
                 top: -87px;
@@ -341,17 +346,18 @@
                 right: 7px;
             }
             @media(min-width: 1900px){
-                top: -313px;
-                right: -340px;
+                top: -393px;
+                right: -415px;
                 animation-name: block-first;
 
             }
         }
         &-third{
             opacity: 0;
-            animation-duration: 3s;
-            animation-delay: 5.4s;
+            animation-duration: 1.8s;
+            animation-delay: 4s;
             animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-third-1024;
                 top: -149px;
@@ -363,17 +369,18 @@
                 right: -282px;
             }
             @media(min-width: 1900px){
-                top: -272px;
-                right: -150px;
+                top: -344px;
+                right: -188px;
                 animation-name: block-third;
 
             }
         }
         &-second{
             opacity: 0;
-            animation-duration: 3s;
-            animation-delay: 2.7s;
+            animation-duration: 1.8s;
+            animation-delay: 1.8s;
             animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-second-1024;
                 top: -123px;
@@ -386,16 +393,10 @@
             }
             @media(min-width: 1900px){
                 animation-name: block-second;
-                top: -232px;
+                top: -295px;
                 right: 41px;
             }
         }
-    
-
-       
-
-       
-        
     }
    
 }   
@@ -409,7 +410,7 @@
         top: 100px;
 
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -426,7 +427,7 @@
         right: 100px;
         top: 100px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -440,7 +441,7 @@
         right: -300px;
         top: 0;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -458,7 +459,7 @@
         top: 50px;
 
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -475,7 +476,7 @@
         right: 200px;
         top: 150px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -489,7 +490,7 @@
         right: -500px;
         top: 100px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -502,10 +503,10 @@
 @keyframes block-first{
     0%{
         opacity: 0;
-        right: -500px;
-        top: -150px;
+        right: -550px;
+        top: -300px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -519,9 +520,9 @@
     0%{
         opacity: 0;
         right: 200px;
-        top: 0;
+        top: -100px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
@@ -532,10 +533,10 @@
 @keyframes block-third{
     0%{
         opacity: 0;
-        right: -300px;
-        top: -150px;
+        right: -400px;
+        top: -190px;
     }
-    70%{
+    60%{
         opacity: 1;
     }
     100%{
