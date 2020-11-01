@@ -67,7 +67,7 @@
     &-group{
         width: 100%;
         color: #fff;
-        margin-bottom: 4px;
+        margin-bottom: -20px;
     
         font-weight: normal;
         font-size: 12px;
@@ -78,17 +78,17 @@
     
         color: #FFFFFF;
         @media (min-width: 768px){
-            margin-bottom: 18px;
+            margin-bottom: -10px;
             font-size: 16px;
 
         }
         @media (min-width:1024px){
-            margin-bottom: 18px;
+            margin-bottom: -10px;
             font-size: 16px;
 
         }
         @media (min-width:1900px){
-            margin-bottom: 28px;
+            margin-bottom: 0;
         }
         label{
             display: flex;
@@ -117,15 +117,15 @@
         outline: none;
         color: #D0D0D2;
         padding: 0 0 0 17px;
-        height: 40px;
+        height: 50px;
         font-size: 16px;
         font-family: 'Grandis', sans-serif;
-        @media (min-width: 768px){
-            height: 50px;
-        }
-        @media (min-width: 1024px){
-            height: 50px;
-        }
+        // @media (min-width: 768px){
+        //     height: 50px;
+        // }
+        // @media (min-width: 1024px){
+        //     height: 50px;
+        // }
         @media (min-width: 1900px){
             height: 60px;
         }
