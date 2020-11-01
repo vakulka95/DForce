@@ -74,8 +74,11 @@
         }
         
         @media (min-width:1900px){
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) and (min-width:1900px) {
+            flex-wrap: nowrap;
+          }
     }
 
     &-one{
