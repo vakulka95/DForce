@@ -349,7 +349,7 @@
         &-third{
             opacity: 0;
             animation-duration: 3s;
-            animation-delay: 5s;
+            animation-delay: 5.5s;
             animation-fill-mode: forwards;
             @media(min-width: 1024px){
                 animation-name: block-third-1024;
@@ -371,7 +371,7 @@
         &-second{
             opacity: 0;
             animation-duration: 3s;
-            animation-delay: 2.5s;
+            animation-delay: 2.7s;
             animation-fill-mode: forwards;
             @media(min-width: 1024px){
                 animation-name: block-second-1024;

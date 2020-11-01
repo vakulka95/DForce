@@ -110,6 +110,12 @@
             flex-wrap: nowrap;
             margin-right: 15px;
         }
+        @media
+        only screen and (min-resolution: 2dppx),
+        only screen and (-webkit-min-device-pixel-ratio: 2) { 
+                background: red;
+            }
+        // only screen and ( min-device-pixel-ratio: 2)
         // @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 568px), 
         //     screen and (-moz-min-device-pixel-ratio: 2) and (max-width: 568px),
         //     screen and (-ms-min-device-pixel-ratio: 2) and (max-width: 568px),
