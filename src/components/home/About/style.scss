@@ -57,7 +57,6 @@
     &-items{
         display:flex;
         justify-content: center;
-        flex-direction: column;
         flex-direction: row;
         :last-child{
             margin-right: 0;
@@ -100,14 +99,39 @@
         }
         @media (min-width: 1300px){
 
-            width: 24%;
+            width: 48.9%;
         }
+        // @media  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-width:1300px){
+        //     color: red;
+        //    font-size: 25px;
+        // }
+           
         
         @media (min-width: 1900px) {
             width: 388px;
             flex-wrap: nowrap;
             margin-right: 15px;
         }
+        // @media 
+            // only screen and (-webkit-min-device-pixel-ratio: 2),
+            // only screen and (   -webkit-min--moz-device-pixel-ratio: 2),
+            // only screen and (     -o-min-device-pixel-ratio: 2/1),
+            // only screen and (        -webkit-min-device-pixel-ratio: 2),
+            // only screen and (min-resolution: 195dpi),
+            // only screen and (max-resolution:227dpi),
+           // @media only screen and (min-resolution: 195dpi) and (max-resolution:227dpi),
+                // only screen and (   -webkit-min--moz-device-pixel-ratio: 2),
+                // only screen and (     -o-min-device-pixel-ratio: 2/1),
+                // only screen and (        -webkit-min-device-pixel-ratio: 2),
+                // (aspect-ratio:16/10), (min-resolution: 195dpi) and (max-resolution:227dpi), (min-width:1900px)
+                
+                // only screen and (                min-resolution: 2dppx),
+                //only screen and (                aspect-ratio:16/10) 
+                @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px)
+                { 
+                    background: red;
+                }
+        // only screen and ( min-device-pixel-ratio: 2)
         // @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 568px), 
         //     screen and (-moz-min-device-pixel-ratio: 2) and (max-width: 568px),
         //     screen and (-ms-min-device-pixel-ratio: 2) and (max-width: 568px),
@@ -166,9 +190,9 @@
                                 margin-bottom: 15px;
                                 // flex-grow: 1;
                             }
-                            // @media (min-width:1300px){
-                            //     margin-bottom: 35px;
-                            // }
+                            @media (min-width:1300px){
+                                margin-bottom: 15px;
+                            }
                             // @media(min-width:1900px){
                             //     margin-bottom: 0;
                             // }
@@ -195,7 +219,18 @@
         }
     }
     &-image{
+        @media(max-width: 1900px) and (min-width: 1300px) {
+            width: 38px;
+            // / height: 10px;/
+        }
+        
+
+        
         img{
+            @media(max-width: 1900px) and (min-width: 1300px) {
+                height: 40px;
+
+            }
             
         }
     }

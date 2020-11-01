@@ -9,7 +9,7 @@ import {useOnScroll} from '../../utils/useOnScroll';
 const Header = () =>{
     const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
-
+    console.log(window.devicePixelRatio);
 
     let num = 0;
 
@@ -75,7 +75,7 @@ const Header = () =>{
                         to="#forcustomer" ><span>Контакти</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
-                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Замовити консультацию'}/>}
+                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Замовити консультацію'}/>}
                         </li>
                 </ul>
             </div>
