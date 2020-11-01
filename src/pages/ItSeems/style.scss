@@ -519,8 +519,8 @@
           @media (min-width:1900px){
             width: 1169px;
           }
-          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) and (min-width:1900px) {
-            max-height: 299px;
+          @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px) {
+            max-height: 600px;
           }
       }
   }

@@ -200,7 +200,7 @@
                     line-height: 35px;
                     margin-top: -50px;
                 }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) and (min-width:1300px) {
+                @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px) {
                     color: red;
                     font-size: 25px;
                   }
