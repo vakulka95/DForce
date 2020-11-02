@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     margin-top: 23px;
     margin-bottom: 50px;
-
+    
     @media (min-width:1024px){
         flex-direction: row;
         margin-bottom: 60px;
@@ -266,4 +266,35 @@
     
 }
 
-
+.disable{
+    cursor: url(../../assets/images/cowlm_no.cur), pointer;
+    .case-description{
+        margin-top: 0;
+        &:hover{
+            .case{
+                &-title{
+                    text-decoration: none;
+                }
+            }
+        }
+        .in-progress{
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 6px 0;
+            background: #4CCC75;
+            border-radius: 100px;       
+            width: 165px;
+            text-align: center;
+            margin-bottom: 23px;
+            margin-top: 20px;
+            line-height: 26px;
+            @media(min-width: 1024px){
+                margin-top: 0;
+            }
+            @media (min-width: 1900px){
+                padding: 11px 0;
+            }
+        }
+    }
+    
+}

@@ -16,15 +16,15 @@ let portfolioItems = [
         to: '/tellme',
 
     },
-    {
-        id: 3,
-        image: './images/cases/vote-dt.png',
-        alt: 'vote',
-        backgroundCLass: 'vote',
-        description: 'Сервіс інтернет-голосування для обрання відповідної частини складу Наглядової ради Українського культурного фонду для МКІП.',
-        to: '/vote',
+    // {
+    //     id: 3,
+    //     image: './images/cases/vote-dt.png',
+    //     alt: 'vote',
+    //     backgroundCLass: 'vote',
+    //     description: 'Сервіс інтернет-голосування для обрання відповідної частини складу Наглядової ради Українського культурного фонду для МКІП.',
+    //     to: '/vote',
 
-    }
+    // }
 ]
 
 export default portfolioItems

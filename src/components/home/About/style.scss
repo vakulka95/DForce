@@ -127,10 +127,10 @@
                 
                 // only screen and (                min-resolution: 2dppx),
                 //only screen and (                aspect-ratio:16/10) 
-                @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px)
-                { 
-                    background: red;
-                }
+                // @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px)
+                // { 
+                //     background: red;
+                // }
         // only screen and ( min-device-pixel-ratio: 2)
         // @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 568px), 
         //     screen and (-moz-min-device-pixel-ratio: 2) and (max-width: 568px),
