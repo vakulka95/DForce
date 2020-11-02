@@ -45,7 +45,7 @@ const First = () => {
                         <h1 className = 'home-header'><span className = 'home-header-first'>Ми </span> 
                             <span className='animation-one'>створюємо майбутнє!</span>
                             <span className='animation-two'>інженери</span>
-                            <span className='animation-three'>- відмінний результат</span>
+                            <span className='animation-three'>Ми досягаємо цілей.</span>
                         </h1>
 
                         <p className = 'home-paragraph'>Dforce — це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя й досвіду людей. Ми допомагаємо нашим клієнтам ефективно реалізувати найамбітніші ідеї!</p>
