@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
 import {useHistory,useLocation }from 'react-router-dom';
-import PortfolioItem from '../../../components/PortfolioItem/PortfolioItem';
+import PortfolioItems from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
 import './style.scss';
+import portfolioItemsDisabled from '../../../json/portfolioItemsDisabled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,12 +33,27 @@ const Portfolio = ({portfolioItems}) => {
                         backgroundCLass,
                         description,
                         to
-                    })=><PortfolioItem key={id}
+                    })=><PortfolioItems key={id}
                         id={id}
                         backgroundCLass={backgroundCLass}
                         description={description}
                         to={to}
                     />)
+                    }
+
+                    {portfolioItemsDisabled.map(({
+                         id,
+                         imageDis,
+                         altDis,
+                         backgroundCLassDis,
+                         descriptionDis
+                    })=><PortfolioItems key={id}
+                        disable={true}
+                        id={id}
+                        backgroundCLassDis={backgroundCLassDis}
+                        descriptionDis={descriptionDis}
+                    />)
+
                     }
                     
                 </div>

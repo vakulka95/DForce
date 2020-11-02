@@ -8,17 +8,25 @@ import './style.scss';
 
 
 
-function PortfolioItem({ id,backgroundCLass, description, to }) {
+function PortfolioItems({ id,backgroundCLass, description, to , backgroundCLassDis, descriptionDis, disable}) {
     return (
-        <div className='case'>
+        <div className={disable ? 'case disable'  : 'case'}>
             <div className='image'>
                 <div className='image-wrap'>
-                    <span className={`image-wrap-img ${backgroundCLass}`}>
+                    <span className={disable ? `image-wrap-img ${backgroundCLassDis}`: `image-wrap-img ${backgroundCLass}`}>
                         <span className='image-wrap-inner'></span>
                     </span>
                 </div>
             </div>
-            <Link to={`${to}`} className='case-description'>
+            {disable ? 
+            <div className='case-description'>
+                <div className='in-progress'>In progress</div>
+                <p className='case-title sub-title'>{descriptionDis}</p>
+                <div className='icons'>
+                    {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} id={Object.keys(icon).join('')} title={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
+                </div>
+            </div>
+            :<Link to={`${to}`} className='case-description'>
                 <p className='case-title sub-title'>{description}</p>
                 <div className='icons'>
                     {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} id={Object.keys(icon).join('')} title={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
@@ -31,15 +39,15 @@ function PortfolioItem({ id,backgroundCLass, description, to }) {
                         </div>
                     </span> 
                 </div>
-            </Link>
+            </Link>}
         </div>
     )
 }
 
-PortfolioItem.propTypes = {
+PortfolioItems.propTypes = {
     backgroundCLass: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,
 }
 
-export default PortfolioItem
+export default PortfolioItems
