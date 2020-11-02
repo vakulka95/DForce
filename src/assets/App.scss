@@ -38,6 +38,8 @@ body {
   img{
     max-width: 100%;
     display: inline-block;
+    height:auto;
+    image-rendering: -moz-crisp-edges;
   }
 
 h1,h2,h3,h4{
