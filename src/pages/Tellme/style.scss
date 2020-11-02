@@ -503,6 +503,9 @@
         
       }
       &-sub-title{
+        @media (max-width: 768px){
+          text-align: center;
+        }
         @media (min-width: 1300px){
           width: 645px;
         }
@@ -511,6 +514,9 @@
         }
       }
       &-text{
+        @media (max-width: 768px){
+          text-align: center;
+        }
         @media (min-width: 1300px){
           width: 645px;
         }

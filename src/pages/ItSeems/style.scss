@@ -142,7 +142,7 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      margin: 0 15px 21px 15px ;
+      margin: 0 15px 21px 0 ;
       @media(min-width: 768px){
         font-weight: 500;
         font-size: 24px;
@@ -513,6 +513,9 @@
         
       }
       &-sub-title{
+        @media (max-width: 500px){
+          text-align: center;
+        }
         @media (min-width: 1300px){
           width: 645px;
         }
@@ -521,6 +524,9 @@
         }
       }
       &-text{
+        @media (max-width: 500px){
+          text-align: center;
+        }
         @media (min-width: 1300px){
           width: 645px;
         }

@@ -30,6 +30,7 @@
     }
     .container{
         display: flex;
+        height: 100%;
         // max-width: 1920px;
 
         .introduce{
@@ -40,7 +41,7 @@
     }
     &-wrap{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column-reverse;
         // flex-direction: column;
@@ -131,7 +132,7 @@
             }
             @media (min-width: 1600px){
                 animation-name: text-animation-1600-2;
-                left: 125px;
+                left: 83px;
             }
             @media (min-width: 1733px){
                 animation-name:text-animation-1600-2;
@@ -157,7 +158,7 @@
                 animation-iteration-count: infinite;
             }
             @media (min-width: 1300px){
-                left: -147px;
+                left: -162px;
             }
             @media (min-width: 1600px){
                 animation-name:text-animation-1600-3;
@@ -246,9 +247,9 @@
 
         @media(min-width: 320px) and (max-width: 339px){
             position: relative;
-            top: -9px;
+            top: 20px;
             height: 236px;
-            width: 206px;
+            width: 180px;
         }
         @media(min-width: 340px) and (max-width: 410px){
             width: 257px;
@@ -269,6 +270,8 @@
        @media (min-width: 768px) and (max-width: 1023px){
             width: 61%;
             height: 464px;
+            position: relative;
+            top: -100px;
         }   
         
         @media (min-width: 1024px) and (max-width: 1299px){
@@ -294,7 +297,7 @@
     &-lego{
         position: relative;
         @media(min-width: 320px) and (max-width: 339px){
-            width: 141px;
+            width: 120px;
             top: 49px;
             right: -39px;
         }

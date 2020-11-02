@@ -46,9 +46,12 @@ const AllProjects = () => {
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
-                    <Link to='./vote' className='mainProjects-item-img vote'>
+                    {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
+                    <div className='mainProjects-item-img vote'>
+                    <div className='in-progress'>In progress</div>
                         <span className='mainProjects-item-inner'></span>
-                    </Link>
+                    </div>
+                    {/* </Link> */}
                 </div>
                 <div className='mainProjects-item'>
                     {/* <a href='https://tellme.com.ua/'>
@@ -62,7 +65,7 @@ const AllProjects = () => {
 
                 <div className='secondaryProjects-item'>
                     <a href='https://www.fors-master.com.ua' className='mainProjects-item-img forsMaster'>
-                    <span className='mainProjects-item-inner'></span>
+                        <span className='mainProjects-item-inner'></span>
                     </a>
                 </div>
                 <div className='secondaryProjects-item'>

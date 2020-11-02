@@ -45,6 +45,7 @@
         margin: 43px 0 135px 0 ;
     }
     &-item{
+        position: relative;
         background: #20222B;
         margin-bottom: 10px;
         padding: 20px 0;
@@ -107,6 +108,9 @@
 }
 .vote{
     background-image: url('../../assets/images/vote-mob.png');
+    &:hover{
+        cursor: url('../../assets/images/cowlm_no.cur'), pointer;
+    }
     @media (min-width:768px){
         background-image: url('../../assets/images/vote-dt.png');
         border-radius: 8px;
@@ -165,7 +169,23 @@
     }
 }
 
-
+.in-progress{
+    position: relative;
+    z-index: 20;
+    top: 35px;
+    left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 0;
+    background: #4CCC75;
+    border-radius: 100px;       
+    width: 165px;
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 20px;
+    line-height: 26px
+}
 
 
 
