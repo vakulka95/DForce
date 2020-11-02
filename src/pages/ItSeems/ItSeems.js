@@ -32,7 +32,7 @@ function ItSeems() {
                         {itseems.paragraph2}
                     </p>
                 </div>
-                <figure className='detail-figure mob-group fleX' style={color} key={`${itseems.group2}-wrap`}>
+                <figure className='detail-figure-group' style={color} key={`${itseems.group2}-wrap`}>
                      <img className='mob-group-map' alt={itseems.title} src={itseems.group2} key={itseems.group2} />
                 </figure>
                 <div className='detail-wrap right' key={`${itseems.title3}-wrap`}>
@@ -42,14 +42,14 @@ function ItSeems() {
                     </p>
                 </div>
                 <div className='detail-block-all-figures' key={`${itseems.group3}-wrap`}>
-                    <figure className='detail-figure dark' key={itseems.group3}>
-                     <img className='detail-figure-img big-image' alt={itseems.title} src={itseems.group3}  />
+                    <figure className='detail-big-image dark' key={itseems.group3}>
+                     <img className='detail-figure-img' alt={itseems.title} src={itseems.group3}  />
                     </figure>
                     <div className='detail-block-figures fleX' key={`${itseems.group4}-wrap`}>
-                        <figure className='detail-figure dark' key={itseems.group4}>
+                        <figure className='detail-Figure dark' key={itseems.group4}>
                          <img className='detail-figure-itseems' alt={itseems.title} src={itseems.group4}  />
                         </figure>
-                        <figure className='detail-figure dark' key={itseems.group5}>
+                        <figure className='detail-Figure dark' key={itseems.group5}>
                             <img className='detail-figure-itseems' alt={itseems.title} src={itseems.group5}  />
                         </figure>
                     </div>   
@@ -73,7 +73,7 @@ function ItSeems() {
                 </div>
                 <div className='detail-block-all-figures last' key='group-last-wrap'>
 
-                    <figure className='detail-figure dark' key={itseems.group7}>
+                    <figure className='detail-figure-group dark' key={itseems.group7}>
                         <img className='detail-figure-itseems mob-group-map' alt={itseems.title} src={itseems.group7}/>
                     </figure>                     
                      <figure className='detail-figure' style={color} key={itseems.group8}>
