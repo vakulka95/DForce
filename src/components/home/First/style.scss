@@ -205,10 +205,7 @@
                     line-height: 35px;
                     margin-top: -50px;
                 }
-                @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1900px) {
-                    color: red;
-                    font-size: 25px;
-                  }
+
     }
     &-intro{
         @media (min-width: 360px){
