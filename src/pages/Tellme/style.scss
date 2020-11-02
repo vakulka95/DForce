@@ -6,7 +6,7 @@
 }
 
 .detail{
-  background-color: #000000;
+  background-color: #111217;
   padding: 146px 0 69px 0;
   // @media (min-width:1024px){
   //   padding: 180px 80px 100px 80px;
@@ -15,7 +15,7 @@
   //   padding: 220px 80px 201px 80px;
   // }
   @media (min-width:1900px){
-    padding: 243px 150px 188px 150px;
+    padding: 243px 150px 220px 150px;
   }
 
   .intro-wrap{
@@ -67,7 +67,7 @@
       }
       @media(min-width: 1024px){
         display: block;
-        align-self: flex-end;
+        align-self: center;
       }
       @media(min-width: 1900px){
         align-self: flex-end;
@@ -389,10 +389,10 @@
       
       
       img{
-        width: 26px;
+        width: 50px;
         margin-bottom: 5px;
         
-        height: 25px;
+        height: 47px;
         // margin-right: auto;
         @media(min-width: 500px){
           margin-right: 20px;
