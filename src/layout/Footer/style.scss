@@ -9,11 +9,29 @@ $backgroundColor: #0D0D0D;
     padding: 57px 0;
    .container{
        display: flex;
-       flex-direction: column;
+       flex-direction: row-reverse;
        align-items: center;
+       justify-content: space-between;
        p{
            font-size: 11px;
+           position: relative;
+           top: 40px;
+           left: 50%;
+           transform: translate(-50%);
+           @media (min-width:768px){
+            font-size: 9px;
+               position: static;
+               transform: translate(0);
+           }
+           @media (min-width:1024px){
+               font-size: 11px;
+           }
        }
+   }
+   &-logo{
+    position: relative;
+    left: -50%;
+    transform: translate(43%);
    }
 }
 
