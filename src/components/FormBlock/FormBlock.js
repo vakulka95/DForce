@@ -8,6 +8,7 @@ import Modal from '../../components/Modal';
 import GeneralModal from '../../components/Modal/GeneralModal';
 import Loader from '../Loader';
 import Message from '../Modal/templatesModal/Message';
+import MessageOk from '../Modal/templatesModal/MessageOk';
 
 function FormBlock() {
     const [modal, setModal] = useState(true);
@@ -16,7 +17,7 @@ function FormBlock() {
     const [error,setError] = useState(false)
 
     let showModal = (sending) => {
-        console.log(sending)
+        //console.log(sending)
         if(sending===true){
             setSuccess(true)
         }
@@ -48,7 +49,9 @@ function FormBlock() {
                         <GeneralModal 
                         img = {success?'./images/modalImage.svg':null}
                         alt = {success ?'success':null}
-                        onClose = {onClose}>
+                        onClose = {onClose}
+                        title={success?'Ваше повідомлення відправлено':null}>
+                            {success && <MessageOk/>}
                             {error && <Message />}   
                         </GeneralModal>
                     </Modal>
@@ -70,7 +73,7 @@ function FormBlock() {
     })
 
     let onChange = ({ target }) => {
-        console.log(target.value)
+        //console.log(target.value)
         setFormData(prevState => ({
             ...prevState,
             [target.name]: target.value
@@ -111,8 +114,8 @@ function FormBlock() {
             setLoad(true)
             return  axios.post("http://www.testvakulenko.fun/send.php", dataForSend)
             .then(res => {
-                console.log(res)
-                console.log(res.data)
+                //console.log(res)
+                //console.log(res.data)
 
                 if (res.status === 200) {
                     resetInput()
@@ -121,7 +124,7 @@ function FormBlock() {
                 }
             })
             .catch(() => {
-                console.log('message not send');
+               // console.log('message not sent');
                 setLoad(false)
                 showModal(true)
                 resetInput()

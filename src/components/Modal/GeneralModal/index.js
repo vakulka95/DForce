@@ -9,11 +9,11 @@ const GeneralModal = ({ title, children, onClose, onButtonPress, link, img, alt 
         <div className = 'generalModal' >{
             onClose?
                 <div className = 'generalModal__close-wrap' >
-                    <button className = 'generalModal__close' onClick = { onClose } />
+                    <button className = 'generalModal__close' onClick = { onClose }></button>
                 </div>: null}
                 <div className='generalModal__container'>
                 {img&&<div className=''><img src={img} alt={alt} /></div>}
-            <div className = 'sub-title'><h3>{title}</h3></div>
+            <div className = 'generalModal__title'><h3>{title}</h3></div>
             <div className = 'text'>{children}</div>
             { (onButtonPress || link)?
                 <div className = 'generalModal__btn-wrap'>

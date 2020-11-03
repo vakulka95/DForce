@@ -45,9 +45,9 @@ function PortfolioItems({ id,backgroundCLass, description, to , backgroundCLassD
 }
 
 PortfolioItems.propTypes = {
-    backgroundCLass: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired,
+    backgroundCLass: PropTypes.string,
+    description: PropTypes.string,
+    to: PropTypes.string,
 }
 
 export default PortfolioItems

@@ -9,7 +9,7 @@ import {useOnScroll} from '../../utils/useOnScroll';
 const Header = () =>{
     const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
-    console.log(window.devicePixelRatio);
+    //console.log(window.devicePixelRatio);
 
     let num = 0;
 
