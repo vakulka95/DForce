@@ -358,17 +358,15 @@
             animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-first-1024;
-                top: -120px;
-                right: 29px;
+                 position: relative;
+                transform: translate(-27px, -122px);
             }
             @media(min-width: 1300px){
                 animation-name: block-first-1300;
-                top: -77px;
-                right: 7px;
+                transform: translate(-8px, -77px);
             }
             @media(min-width: 1900px){
-                top: -393px;
-                right: -415px;
+                transform: translate(417px, -388px);
                 animation-name: block-first;
 
             }
@@ -381,17 +379,16 @@
             animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-third-1024;
-                top: -202px;
-                right: -221px;
+                position: relative;
+                transform: translate(222px, -202px);
             }
             @media(min-width: 1300px){
                 animation-name: block-third-1300;
-                top: -168px;
-                right: -282px;
+               
+                transform: translate(280px, -164px);
             }
             @media(min-width: 1900px){
-                top: -344px;
-                right: -188px;
+                transform: translate(184px, -334px);
                 animation-name: block-third;
 
             }
@@ -404,18 +401,17 @@
             animation-timing-function: ease-in;
             @media(min-width: 1024px){
                 animation-name: block-second-1024;
-                top: -172px;
-                right: -74px;
+                position: relative;
+                transform: translate(75px, -170px);
             }
             @media(min-width: 1300px){
                 animation-name: block-second-1300;
-                top: -133px;
-                right: -116px;
+               
+                transform: translate(114px, -130px);;
             }
             @media(min-width: 1900px){
                 animation-name: block-second;
-                top: -295px;
-                right: 41px;
+                transform: translate(-47px, -287px);
             }
         }
     }
@@ -427,8 +423,7 @@
 @keyframes block-first-1024{
     0%{
         opacity: 0;
-        right: -50px;
-        top: -20px;
+        transform: translate(550px, -185px);
 
     }
     50%{
@@ -445,8 +440,7 @@
 @keyframes block-second-1024{
     0%{
         opacity: 0;
-        right: 50px;
-        top: -20px;
+        transform: translate(200px, -100px);
     }
     50%{
         opacity: 1;
@@ -459,8 +453,7 @@
 @keyframes block-third-1024{
     0%{
         opacity: 0;
-        right: -350px;
-        top: -100px;
+        transform: translate(400px, -100px);
     }
     50%{
         opacity: 1;
@@ -476,8 +469,7 @@
 @keyframes block-first-1300{
     0%{
         opacity: 0;
-        right: -100px;
-        top: 50px;
+        transform: translate(550px, -185px);
 
     }
     50%{
@@ -494,8 +486,7 @@
 @keyframes block-second-1300{
     0%{
         opacity: 0;
-        right: 100px;
-        top: 150px;
+        transform: translate(200px, -100px);
     }
     50%{
         opacity: 1;
@@ -508,8 +499,7 @@
 @keyframes block-third-1300{
     0%{
         opacity: 0;
-        right: -500px;
-        top: 100px;
+        transform: translate(400px, -100px);
     }
     50%{
         opacity: 1;
@@ -524,8 +514,7 @@
 @keyframes block-first{
     0%{
         opacity: 0;
-        right: -550px;
-        top: -300px;
+        transform: translate(550px, -185px);
     }
     50%{
         opacity: 1;
@@ -540,8 +529,7 @@
 @keyframes block-second{
     0%{
         opacity: 0;
-        right: 200px;
-        top: -100px;
+        transform: translate(200px, -100px);
     }
     50%{
         opacity: 1;
@@ -554,8 +542,7 @@
 @keyframes block-third{
     0%{
         opacity: 0;
-        right: -400px;
-        top: -190px;
+        transform: translate(400px, -100px);
     }
     50%{
         opacity: 1;
