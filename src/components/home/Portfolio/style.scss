@@ -1,0 +1,84 @@
+.portfolio{
+    background: #111217;
+    padding: 60px 0px 60px 0px;
+    @media (min-width:1024px){
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 120px;
+    }
+    @media (min-width: 1300px){
+        padding: 112px 80px 140px 80px;
+    }
+    @media (min-width:1900px){
+        padding: 178px 150px 200px 150px;
+    }
+
+    &-list{
+        @media (min-width:1024px){
+            :last-child{
+                margin-bottom: 0;
+                
+            }
+        }
+    }
+    &-title{
+        margin-left: 15px;
+        @media (min-width:768px){
+            margin-left: 0;
+        }
+        @media (min-width:1024px){
+            margin-left: 0px;
+        }
+        @media (min-width: 1900px){
+
+            line-height: 90px;
+        }
+        
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin: 80px 15px 0 15px;
+        @media (min-width:500px){
+            justify-content: start;
+        }
+        @media (min-width:768px){
+            margin-left: 0;
+        }
+        @media (min-width:1024px){
+            margin-left: 15px;
+        }
+        .btn-wrap{
+            display: flex;
+            flex: 1;
+            @media (min-width:500px){
+                flex: none;
+                justify-content: start;
+            }
+            @media (min-width:768px){
+                margin: 0 auto;
+            }
+            // display: flex;
+            @media (min-width:1024px){
+                display: block;
+            }
+            .btn-link{
+                font-size: 16px;
+                line-height: 20px;
+                padding: 20px 80px;
+                @media (min-width:1024px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    // .vote{
+    //     img{
+    //         width: 50%;
+    //     }
+    // }
+
+}
+
+

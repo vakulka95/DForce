@@ -1,0 +1,265 @@
+.allContainer{        
+    padding:110px 0 44px 0;
+    background: #15161C;
+    @media (min-width:1024px){
+        padding: 220px 120px 44px 80px;
+    }
+    @media(min-width: 1900px){
+        padding: 220px 150px 150px 119px;
+    }
+}
+.allProjects-title{
+    margin: 0 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    @media (min-width:768px){
+        max-width: 655px;
+        margin: 0 auto;
+    }
+    @media(min-width: 1024px){
+        max-width: 900px;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 70px;
+    }
+    @media (min-width:1300px){
+        max-width: 1300px;
+        //margin-left: 40px;
+    }
+    @media (min-width:1900px){
+        max-width: 1565px;
+    }
+}
+.mainProjects{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 39px 0 60px 0;
+    @media(min-width: 1024px){
+        margin: 33px 0 105px 0 ;
+    }
+    @media(min-width: 1900px){
+        margin: 43px 0 135px 0 ;
+    }
+    &-item{
+        position: relative;
+        background: #20222B;
+        margin-bottom: 10px;
+        padding: 20px 0;
+        width: 100%;
+
+        a{
+            display: block;
+         }
+         &-img{
+            width: 100%;
+            display: inline-block;
+            width: 100%;
+            font-size: 0;
+            line-height: 0;
+            vertical-align: middle;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            
+            .in-progress{
+                position: absolute;
+                z-index: 20;
+                top: 10px;
+                left: 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 16px;
+                padding: 6px 0;
+                background: #4CCC75;
+                border-radius: 100px;       
+                width: 165px;
+                text-align: center;
+                // margin-bottom: 23px;
+                margin-top: 20px;
+                line-height: 26px;
+                @media(min-width: 768px){
+                    top: 15px;
+                }
+                @media(min-width: 1024px){
+                    top: 15px;
+                }
+            }
+        }
+        &-inner{
+            display: block;
+            height: 0;
+            padding-top: 70.4%;
+        }
+
+       @media (min-width:768px){
+           padding: 0;
+           max-width: 655px;
+           border-radius: 8px;
+       }
+        @media(min-width: 1024px){
+
+            width: 44.2%;
+            max-width: 440px;
+            flex-grow: 1;
+        }
+        @media(min-width: 1300px){
+            width: 44.7%;
+            max-width: 640px;
+        }
+        @media(min-width: 1900px){
+            width: 46.8%;
+            max-width: 770px;
+        }
+    }
+}
+.itSeems{
+    background-image: url('../../assets/images/itSeens-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/itSeems-dt.png');
+        border-radius: 8px;
+    }
+}
+.tellMe{
+    background-image: url('../../assets/images/tellMe-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/tellMe-dt.png');
+        border-radius: 8px;
+    } 
+}
+.vote{
+    background-image: url('../../assets/images/vote-mob.png');
+    &:hover{
+        cursor: url('../../assets/images/cowlm_no.cur'), pointer;
+    }
+    @media (min-width:768px){
+        background-image: url('../../assets/images/vote-dt.png');
+        border-radius: 8px;
+    }
+}
+.forsMaster{
+    background-image: url('../../assets/images/forsmaster-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/forsmaster-dt.png');
+        border-radius: 8px;
+    }
+}
+
+.secondaryProjects{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 39px 0 60px 0;
+    @media (min-width:1024px){
+        margin: 39px 0 220px 0;
+    }
+    @media(min-width: 1900px){
+        margin: 43px 0 0 0 ;
+    }
+    &-item{
+        background: #20222B;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        a{
+           display: block;
+        }
+
+        @media (min-width:768px){
+            padding: 0;
+            max-width: 655px;
+            border-radius: 8px;
+        }
+        @media(min-width: 1024px){
+            width: 27.1%;;
+            margin-right: 20px;
+            max-width: 290px;
+            flex-grow: 1;
+        }
+        @media(min-width: 1300px){
+            width: 28%;
+            max-width: 425px;
+        }
+        @media(min-width: 1900px){
+            width: 29.8%;
+            margin-right: 30px;
+            max-width: 505px;
+        }
+    }
+}
+
+
+
+
+
+@for $i from 1 through 6{
+    @if($i % 2) == 1{
+        .mainProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-right: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    @if($i < 3){
+        .mainProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .mainProjects-item{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // Secondary //
+    @if( $i % 3 == 0){
+        .secondaryProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-right: 0;
+                }
+                @media(min-width: 1900px){
+                    // margin-right: 30px;
+                }
+            }
+        }
+    }
+    @if($i < 4){
+        .secondaryProjects{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 20px;
+                }
+                @media(min-width: 1900px){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .secondaryProjects-item{
+            :nth-child(#{$i}){
+                @media(min-width: 1024px){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

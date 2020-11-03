@@ -1,0 +1,128 @@
+.detailVote{
+    background-color: #000000;
+    padding: 146px 0 69px 0;
+    @media (min-width:1024px){
+      padding: 220px 80px 201px 80px;
+    }
+    @media (min-width:1900px){
+      padding: 243px 150px 188px 150px;
+    }
+    &-width{
+      margin: 0 auto;
+      @media (min-width:768px){
+        max-width: 655px;
+      }
+      @media (min-width:1024px){
+        max-width: 900px;
+      }
+      @media (min-width:1300px){
+        max-width: 1300px;
+      }
+      @media (min-width:1900px){
+        max-width: 1650px;
+      }
+    }
+    &-title{
+        color: #fff;
+        // font-size: 24px;
+        // line-height: 35px;
+        width: 90%;
+        padding: 0 15px 15px 15px;
+        margin-bottom: 20px;
+        @media (min-width:768px){
+          padding: 0;
+        }
+        @media(min-width: 1024px){
+          //font-size: 46px;
+          width: 70%;
+          //line-height: 70px;
+          margin-bottom: 20px;
+        }
+        @media(min-width: 1900px){
+          //font-size: 54px;
+          width: 55%;
+          //line-height: 75px;
+          margin-bottom: 25px;
+          padding-left: 0;
+        }
+      } 
+    &-text{
+        padding: 0 15px;
+        margin-bottom: 40px;
+        // font-size: 15px;
+        // line-height: 30px;
+        // letter-spacing: 0.03em;
+        // color: rgba(255, 255, 255, 0.8);
+        @media (min-width:768px){
+          padding: 0;
+        }
+        @media (min-width:1024px){
+          padding:0px;
+          width:60%;
+          margin-bottom: 95px;
+          //font-size: 18px;
+          //line-height: 35px;
+        }
+        @media (min-width:1900px){
+          width: 55%;
+          //font-size: 20px;
+         // line-height: 35px;
+          margin-bottom: 0;
+        }
+    }
+    &-figure{
+        margin: 50px 0 60px 0;
+        padding: 50px 0;
+        display: block;
+        text-align: center;
+        @media (min-width:1024px){
+          margin-bottom: 0;
+          border-radius: 10px;
+        }
+        @media (min-width:1900px){
+          margin-top: 120px;
+          padding-top: 133px;
+          padding-bottom: 133px;
+        }
+          
+    &-img{
+        width: 75vw;
+        margin-top: 50px;
+        @media (min-width:1024px){
+          width: 60vw;
+          height: 100%;
+        }
+    }
+}
+&-item{
+  &-img{
+    width: 100%;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/vote-mob.png');
+    @media (min-width:768px){
+      border-radius: 10px;
+    }
+    @media (min-width:1024px){
+      max-width: 900px;
+    }
+    @media (min-width:1300px){
+      max-width: 1300px;
+    }
+    @media (min-width:1900px){
+      max-width: 1650px;
+    }
+  }
+  &-inner{
+    display: block;
+    height: 0;
+    padding-top: 70.4%;
+  }
+}
+}

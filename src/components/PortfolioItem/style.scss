@@ -1,0 +1,300 @@
+.case{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    margin-bottom: 50px;
+    
+    @media (min-width:1024px){
+        flex-direction: row;
+        margin-bottom: 60px;
+        margin-top: 28px;
+    }
+    @media (min-width:1900px){
+        margin-top: 100px;
+    }
+
+    &-description{
+        padding: 0 15px;
+        width: 90%;
+        margin-top: 30px;
+        text-decoration: none;
+        &:hover{
+            .case{
+                &-title{
+                    text-decoration: underline;
+                }
+                &-link-item{
+                    color: #4CCC75;
+                }
+            }
+        }
+        @media (min-width:768px){
+            padding: 0;
+        }
+        @media (min-width: 1024px){
+            margin-top: 10px;
+            width: 468px;
+        }
+        @media (min-width: 1300px){
+            width: 510px;
+            margin-top: 40px;
+        }
+        @media (min-width: 1600px){
+            width: 510px;
+            margin-top: 50px;
+        }
+        @media (min-width: 1900px){
+            width: 660px;
+            margin-top: 60px;
+        }
+    }
+
+    &-title{
+        font-weight: 400;
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 18px;
+        font-family: 'CA Saygon Text';
+        color:#FFFFFF;
+        @media (min-width: 768px){
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 40px;
+        }
+        @media (min-width: 1024px){
+            font-size: 22px;
+            line-height: 40px;
+        }
+        @media (min-width: 1300px){
+            font-size: 26px;
+            line-height: 40px;
+        }
+        @media (min-width:1900px){
+            font-size: 32px;
+            line-height: 50px;
+            letter-spacing: 1px;
+        }
+    }
+    &-link{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        @media (min-width: 1024px){
+            margin-top: 30px;
+        }
+        &-item{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                
+                @media (min-width: 1024px){
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+        }
+    }
+    &-circle{
+        content: '';
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+        border-radius: 50%;
+
+        border: 1px solid #60CC6B;
+        color:  #60CC6B;
+        background: #111217;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.image{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    @media (min-width:768px){
+    border-radius: 8px;
+    }
+    @media (min-width:1024px){
+        max-width: 41%;
+        margin-right: 60px;
+        height: max-content;
+    }
+    @media (min-width:1300px){
+        max-width: 49%;
+        margin-right: 70px;
+    }
+    // @media (min-width:1450px){
+    //     max-width: 51%;
+    //     margin-right: 75px;
+    // }
+    // @media (min-width:1600px){
+    //     max-width: 53%;
+    //     margin-right: 80px;
+    // }
+    // @media (min-width:1750px){
+    //     max-width: 53%;
+    //     margin-right: 80px;
+    // }
+    @media (min-width:1900px){
+        max-width: 52%;
+        margin-right: 90px;
+    }
+
+    &-wrap{
+    width: 100%;
+    display: block;
+    :hover{        
+        transform: scale(1.1);
+        transition: 0.2s ease-out;
+    }
+    :not(:hover){
+        transition: transform 0.2s 0.2s ease-out;
+    }
+    &-img{
+
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+        }
+    &-inner{
+    display: block;
+    height: 0;
+    padding-top: 70%;
+        }
+    }
+}
+
+.itseems-background{
+    background-image: url('../../assets/images/itSeens-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/itSeems-dt.png');
+    }
+}
+
+.tellme{
+    background-image: url('../../assets/images/tellMe-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/tellMe-dt.png');
+    }
+}
+.vote{
+    background-image: url('../../assets/images/vote-mob.png');
+    @media (min-width:768px){
+        background-image: url('../../assets/images/vote-dt.png');
+    }
+}
+.icons{
+    width: 290px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width:1300px){
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    @media (min-width:1500px){
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    @media (min-width:1700px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }  
+     @media (min-width:1900px){
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    :last-child{
+        margin-right: 0;
+    }
+    @media (min-width: 1024px){
+
+        justify-content: start;
+    }
+    img{
+        width: 26px;
+        margin-bottom: 5px;        
+        height: 25px;
+        @media (min-width:768px){
+            margin-right: 25px;
+        }
+        @media (min-width:1024px){
+            margin-right: 15px;
+        }
+        @media (min-width: 1300px){
+            margin-right: 25px;
+        }
+        @media (min-width:1900px){
+            // margin-right: 25px;
+        }
+       
+    }
+    #sass{
+        width: 27px;
+        @media (min-width:768px){
+            margin-right: 15px;
+        }
+        @media (min-width: 1900px){
+            margin-right: 18px;
+        }
+        // margin-right: -5px;
+    }
+    #go{
+        width: 33px;
+    }
+    #figma{
+        width: 12px;
+    }
+    
+    
+}
+
+.disable{
+    cursor: url(../../assets/images/cowlm_no.cur), pointer;
+    .case-description{
+        margin-top: 0;
+        &:hover{
+            .case{
+                &-title{
+                    text-decoration: none;
+                }
+            }
+        }
+        .in-progress{
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 6px 0;
+            background: #4CCC75;
+            border-radius: 100px;       
+            width: 165px;
+            text-align: center;
+            margin-bottom: 23px;
+            margin-top: 20px;
+            line-height: 26px;
+            @media(min-width: 1024px){
+                margin-top: 0;
+            }
+            @media (min-width: 1900px){
+                padding: 11px 0;
+            }
+        }
+    }
+    
+}
