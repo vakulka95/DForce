@@ -51,6 +51,7 @@ PortfolioItems.propTypes = {
     backgroundCLassDis: PropTypes.string,
     descriptionDis: PropTypes.string,
     disable: PropTypes.bool
+
 }
 
 export default PortfolioItems

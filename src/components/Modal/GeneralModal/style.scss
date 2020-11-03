@@ -23,23 +23,25 @@
     
   
     &__close{
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       position: relative;
-      background-color: #2D9662;
+      background-color: #15161C;
+      border: none;
+      cursor: pointer;
   
       &-wrap{
         position: relative;
-        top: 20px;
-        right: 20px;
+        top: 30px;
+        right: 30px;
       }
   
       &:before,&:after{
         content: '';
         position: absolute;
-        width: 70%;
-        height: 2px;
-        background-color: #9296A7;
+        width: 100%;
+        height: 5px;
+        background-color: #2D9662;
         top: 50%;
         left: 50%
       }
@@ -59,12 +61,11 @@
     }
   
     &__title{
-      font-size: 24px;
-      margin: 0 10px 20px;
+      font-size: 27px;
+      margin: 90px 0px 60px;
       font-weight: bold;
-      @media screen and (max-width: 340px) {
-        margin-bottom: 14px;
-      }
+      color: white;
+      text-align: center;
     }
   
     &__content{
