@@ -382,7 +382,7 @@
         }
         &-first{
             animation-duration: 1.8s;
-            animation-timing-function: ease-in;
+            animation-timing-function: cubic-bezier(0.78, 0, 1, 1);
             @media(min-width: 1024px){
                 animation-name: block-first-1024;
                 position: relative;
@@ -403,7 +403,7 @@
             animation-duration: 1.8s;
             animation-delay: 4s;
             animation-fill-mode: forwards;
-            animation-timing-function: ease-in;
+            animation-timing-function: cubic-bezier(0.78, 0, 1, 1);
             @media(min-width: 1024px){
                 animation-name: block-third-1024;
                 position: relative;
@@ -425,7 +425,7 @@
             animation-duration: 1.8s;
             animation-delay: 1.8s;
             animation-fill-mode: forwards;
-            animation-timing-function: ease-in;
+            animation-timing-function: cubic-bezier(0.78, 0, 1, 1);
             @media(min-width: 1024px){
                 animation-name: block-second-1024;
                 position: relative;
