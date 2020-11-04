@@ -24,10 +24,6 @@
             }
         }
         .case{
-            &-description{
-                transform: scale(1.1);
-                transition: 0.2s ease-out;
-            }
             &-title{
                 text-decoration: underline;
             }
@@ -37,9 +33,6 @@
         }
     }
     &:not(:hover){
-        .case-description{
-            transition: transform 0.2s 0.2s ease-out;
-        }
         .image{
             &-wrap {
                 transition: transform 0.2s 0.2s ease-out;
@@ -53,16 +46,6 @@
         width: 90%;
         margin-top: 30px;
         text-decoration: none;
-        // &:hover{
-        //     .case{
-        //         &-title{
-        //             text-decoration: underline;
-        //         }
-        //         &-link-item{
-        //             color: #4CCC75;
-        //         }
-        //     }
-        // }
         @media (min-width:768px){
             padding: 0;
         }
@@ -171,13 +154,7 @@
     &-wrap{
     width: 100%;
     display: block;
-    // :hover{        
-    //     transform: scale(1.1);
-    //     transition: 0.2s ease-out;
-    // }
-    // :not(:hover){
-    //     transition: transform 0.2s 0.2s ease-out;
-    // }
+    
     &-img{
 
     display: inline-block;
