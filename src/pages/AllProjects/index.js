@@ -31,6 +31,7 @@ const AllProjects = () => {
 
     return (
         <section className='allContainer'>
+            <div className='container'>
             <h2 className='allProjects-title'>Провідні проекти</h2>
             <div className='mainProjects'>
                 {/* {renderPhoto(tellmeProject)}  */}
@@ -93,6 +94,7 @@ const AllProjects = () => {
                         <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
                     </a> */}
                 </div>
+            </div>
             </div>
         </section>
     )

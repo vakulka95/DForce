@@ -125,5 +125,24 @@
 .result{
     display:flex;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+    .for-customer{
+        padding: 80px 80px 0 80px;
+        background-position-y:  -211px;        
+        background-position-x:  -87px;
+        height: 800px;
+        &-title{
+            font-size: 40px;
+            line-height: 60px;
+        }
+        &-contacts{
+            margin-top: 60px;
+            margin-right: 50px;
+        .contact-item{
+            margin-top: 0px;
+        }
+        }
+    }
+}
 
 

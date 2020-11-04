@@ -2,10 +2,10 @@
     padding:110px 0 44px 0;
     background: #15161C;
     @media (min-width:1024px){
-        padding: 220px 120px 44px 80px;
+        padding: 220px 0px 44px 0px;
     }
     @media(min-width: 1900px){
-        padding: 220px 150px 150px 119px;
+        padding: 220px 0px 150px 0px;
     }
 }
 .allProjects-title{
@@ -261,5 +261,17 @@
                 }
             }
         }
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+    .allContainer{
+        padding: 180px 0px 44px 0px;
+    }
+    .allProjects-title{
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .mainProjects{
+        margin: 50px 0 105px 0 ;
     }
 }
