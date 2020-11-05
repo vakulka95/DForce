@@ -153,3 +153,26 @@ and (max-width: 760px){
         }
     }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .spec-item{
+        margin-bottom: 100px;
+        margin-right: 100px;
+
+        .spec-title{
+            font-size: 30px;
+            line-height: 35px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .spec-text{
+            width: 100%;
+            font-size: 22px;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+        }
+        .spec-image{
+            width: 115px;
+        }
+    }
+}
