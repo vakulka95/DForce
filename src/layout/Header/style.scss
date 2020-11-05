@@ -217,9 +217,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .header{
-        &-logo{
-            width: 100px;
-        }
+
         &-navigation{
             &-link{
                 font-size: 13px;
@@ -229,7 +227,8 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
-    .header{
+    .header-opasity{
+        padding-top: 40px;
         &-logo{
             width: 200px;
         }
