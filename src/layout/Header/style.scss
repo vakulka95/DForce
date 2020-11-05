@@ -240,4 +240,11 @@
             }
         }
     } 
+    .header{
+        &-navigation{
+            &-link{
+                font-size: 16px;
+            }
+        }
+    }
 }
