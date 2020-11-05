@@ -2,10 +2,10 @@
     padding:110px 0 44px 0;
     background: #15161C;
     @media (min-width:1024px){
-        padding: 220px 120px 44px 80px;
+        padding: 220px 0px 44px 0px;
     }
     @media(min-width: 1900px){
-        padding: 220px 150px 150px 119px;
+        padding: 220px 0px 150px 0px;
     }
 }
 .allProjects-title{
@@ -46,24 +46,25 @@
     }
     &-item{
         position: relative;
-        background: #20222B;
+        background: rgba(32, 34, 43, 0.5);
         margin-bottom: 10px;
         padding: 20px 0;
         width: 100%;
-
+        overflow: hidden;
+        
         a{
             display: block;
          }
          &-img{
             width: 100%;
             display: inline-block;
-            width: 100%;
             font-size: 0;
             line-height: 0;
             vertical-align: middle;
             background-size: 100%;
             background-position: 50% 50%;
             background-repeat: no-repeat;
+           
             
             .in-progress{
                 position: absolute;
@@ -93,6 +94,8 @@
             display: block;
             height: 0;
             padding-top: 70.4%;
+
+           
         }
 
        @media (min-width:768px){
@@ -113,6 +116,18 @@
         @media(min-width: 1900px){
             width: 46.8%;
             max-width: 770px;
+        }
+        &:hover{
+            .mainProjects-item-img{
+                transform: scale(1.1);
+                transition: 0.2s ease-out;
+            }
+        }
+
+        &:not(:hover){
+            .mainProjects-item-img{
+                transition: transform 0.2s 0.2s ease-out;
+            }
         }
     }
 }
@@ -161,11 +176,26 @@
     @media(min-width: 1900px){
         margin: 43px 0 0 0 ;
     }
+    
     &-item{
-        background: #20222B;
+        background: rgba(32, 34, 43, 0.5);
         padding: 0;
         width: 100%;
         margin-bottom: 10px;
+        overflow: hidden;
+
+        &:hover{
+            .mainProjects-item-img{
+                transform: scale(1.1);
+                transition: 0.2s ease-out;
+            }
+        }
+    
+        &:not(:hover){
+            .mainProjects-item-img{
+                transition: transform 0.2s 0.2s ease-out;
+            }
+        }
         a{
            display: block;
         }
@@ -261,5 +291,20 @@
                 }
             }
         }
+    }
+}
+
+ @media (-webkit-min-device-pixel-ratio: 2), 
+        (   min--moz-device-pixel-ratio: 2),
+        (     -o-min-device-pixel-ratio: 2/1) and (min-width:1300px){
+    .allContainer{
+        padding: 180px 0px 44px 0px;
+    }
+    .allProjects-title{
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .mainProjects{
+        margin: 50px 0 105px 0 ;
     }
 }

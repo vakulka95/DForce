@@ -1,6 +1,6 @@
 .portfolio{
     background: #111217;
-    padding: 60px 0px 60px 0px;
+    padding: 57px 0px 60px 0px;
     @media (min-width:1024px){
         padding-left: 60px;
         padding-right: 60px;
@@ -60,7 +60,7 @@
             }
             // display: flex;
             @media (min-width:1024px){
-                display: block;
+                //display: block;
             }
             .btn-link{
                 font-size: 16px;
@@ -72,13 +72,41 @@
             }
         }
     }
-
-    // .vote{
-    //     img{
-    //         width: 50%;
-    //     }
-    // }
-
 }
+
+
+ @media (-webkit-min-device-pixel-ratio: 2), 
+        (   min--moz-device-pixel-ratio: 2),
+        (     -o-min-device-pixel-ratio: 2/1) and (min-width:1300px){
+    .portfolio{
+
+        padding: 80px 0px 80px 0px;
+        .button{
+            .btn-wrap{
+            .btn-link{
+                padding: 18px 75px;
+            }
+        }
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .portfolio{
+
+        padding: 80px 0px 80px 0px;
+        .button{
+            .btn-wrap{
+                .btn-link{
+                    padding: 18px 75px;
+                }
+            }
+        }
+        &-list{
+            margin-top: 50px;
+        }
+    }
+}
+
 
 

@@ -81,6 +81,9 @@ h2{
     font-size: 58px;
     line-height: 90px;
   }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    font-size: 65px;
+  }
 }
 h3{
 

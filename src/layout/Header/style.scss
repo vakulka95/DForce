@@ -13,8 +13,8 @@
         background-color: #0D0E12;
     }
     &-logo{
-        //margin-left: 15px;
-        //max-width: 81%;
+
+
         @media(min-width:320px){
             width: 151px; 
         };
@@ -214,4 +214,40 @@
 }
 .activeLink{
     color:#3ACC81;
+}
+
+ @media (-webkit-min-device-pixel-ratio: 2), 
+        (   min--moz-device-pixel-ratio: 2),
+        (     -o-min-device-pixel-ratio: 2/1) and (min-width:1300px){
+    .header{
+
+        &-navigation{
+            &-link{
+                font-size: 13px;
+            }
+        }
+    } 
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .header-opasity{
+        padding-top: 40px;
+        .header{
+            &-logo{
+                width: 300px;
+            }
+            &-navigation{
+                &-link{
+                    font-size: 16px;
+                }
+            }
+        }
+    } 
+    .header{
+        &-navigation{
+            &-link{
+                font-size: 16px;
+            }
+        }
+    }
 }

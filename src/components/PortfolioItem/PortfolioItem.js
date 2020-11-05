@@ -10,14 +10,14 @@ import './style.scss';
 
 function PortfolioItems({ id,backgroundCLass, description, to , backgroundCLassDis, descriptionDis, disable}) {
     return (
-        <div className={disable ? 'case disable'  : 'case'}>
-            <div className='image'>
+        <div className={disable ? 'case disable' : 'case'}>
+            <Link to={`${to}`} className={disable ? 'image disable' : 'image'}>
                 <div className='image-wrap'>
                     <span className={disable ? `image-wrap-img ${backgroundCLassDis}`: `image-wrap-img ${backgroundCLass}`}>
                         <span className='image-wrap-inner'></span>
                     </span>
                 </div>
-            </div>
+            </Link>
             {disable ? 
             <div className='case-description'>
                 <div className='in-progress'>In progress</div>
