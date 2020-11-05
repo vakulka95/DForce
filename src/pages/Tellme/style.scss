@@ -335,6 +335,7 @@
           margin-bottom: 160px;
           margin-top: 100px;
         }
+        
         .detail-figure{
           margin-bottom: 0;
           margin-top: 10px;
@@ -352,6 +353,9 @@
           }
           @media (min-width: 1900px){
             margin-top: 40px;
+          }
+          &-group{
+            margin-top: 10px;
           }
           &-img{
             //width: 60%;
@@ -595,26 +599,7 @@
     width: 100%;
     
   }
-  // .intro-wrap{
-   
-    
-      
-      
-  //     .detail-text{
-        
-  //     }
-  //     .btn{
-  //       &-wrap{
-  //         display: flex;
-          
-  //         @media(min-width: 500px){
-  //           display: block;
-  //         }
-  //       }
-        
-  //     }
-      
-  // }
+
   .dark{
     background: #21222B;
   }

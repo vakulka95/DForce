@@ -68,7 +68,7 @@ const color = {
                     <figure className='detail-figure dark' key={tellme.group7}>
                         <img className='detail-figure-img' alt={tellme.title} src={tellme.group7} key={tellme.group7} />
                     </figure>
-                    <figure className='detail-figure mob-group fleX' style={color} key={tellme.group8}>
+                    <figure className='detail-figure-group' style={color} key={tellme.group8}>
                         <img className='mob-group-map' alt={tellme.title} src={tellme.group8} key={tellme.group8} />
                     </figure> 
                 </div>
