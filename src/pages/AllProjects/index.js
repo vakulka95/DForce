@@ -4,30 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 const AllProjects = () => {
-    // const [windowWidth, setWindowWidth] = useState(true)
-    // const [myWidth, setMyWidth] = useState(0)
-
-    // useEffect(()=>{
-       
-    //     const changeWidth = ()=>{
-    //         let winWidth = window.innerWidth
-    //         if(winWidth!==myWidth){
-    //             setMyWidth(winWidth)
-    //             console.log(winWidth, myWidth);
-    //         }
-    //         console.log(myWidth);
-    //         if (myWidth<768){
-    //             setWindowWidth(false)
-    //         }else {
-    //             setWindowWidth(true)
-    //         }
-    //         console.log(windowWidth);
-    //         }
-    //     window.addEventListener('resize',changeWidth())
-    //     //return window.removeEventListener('resize',changeWidth())
-    // },[windowWidth,myWidth])
-    // //console.log(windowWidth);
-    // //console.log(winWidth);
 
     return (
         <section className='allContainer'>
