@@ -636,3 +636,14 @@
   }
 
 
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .detail{
+      &-about{
+        .icons{
+          img{
+            height: 30px;
+          }
+        }
+      }
+    }
+  }

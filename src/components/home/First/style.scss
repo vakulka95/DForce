@@ -24,7 +24,6 @@
     }
     @media (min-width: 1900px){
         padding: 0 150px 180px;
-        height: 100vh;
         max-height: 1500px;
         
         //background-size: cover, cover;
@@ -216,6 +215,10 @@
                 animation-name:text-animation-1900-3;
 
             }
+            @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+                max-height: 1500px;
+            }
+
         }
         
     }
