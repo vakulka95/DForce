@@ -219,8 +219,21 @@
     .header{
 
         &-navigation{
-            &-item{
+            &-link{
                 font-size: 13px;
+            }
+        }
+    } 
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .header{
+        &-logo{
+            width: 200px;
+        }
+        &-navigation{
+            &-link{
+                font-size: 18px;
             }
         }
     } 

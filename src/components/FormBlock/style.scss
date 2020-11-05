@@ -209,3 +209,29 @@
         }
     }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .form{
+        width: 40%;
+        top: -150px;
+        &-title{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &-group{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &-input{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .btn-wrap{
+            button{
+                font-size: 21px;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+

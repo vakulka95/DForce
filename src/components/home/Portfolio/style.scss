@@ -88,4 +88,22 @@
     }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .portfolio{
+
+        padding: 80px 0px 80px 0px;
+        .button{
+            .btn-wrap{
+                .btn-link{
+                    padding: 18px 75px;
+                }
+            }
+        }
+        &-list{
+            margin-top: 50px;
+        }
+    }
+}
+
+
 
