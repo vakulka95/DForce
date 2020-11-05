@@ -133,7 +133,7 @@ and (max-width: 760px){
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .spec-item{
-        margin-bottom: 60px;
+        margin-bottom: 55px;
         margin-right: 70px;
 
         .spec-title{
@@ -144,12 +144,12 @@ and (max-width: 760px){
         }
         .spec-text{
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 22px;
             letter-spacing: 0.02em;
         }
         .spec-image{
-            width: 90px;
+            width: 85px;
         }
     }
 }

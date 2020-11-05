@@ -48,10 +48,6 @@ and (max-width: 768px){
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .footer{
         padding: 53px 0;
-        &-logo{
-            width: 100px;
-        }
-        
     }
 }
 
@@ -66,6 +62,5 @@ and (max-width: 768px){
                 font-size: 18px;
             }
         }
-
     }
 }
