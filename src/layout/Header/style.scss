@@ -215,3 +215,28 @@
 .activeLink{
     color:#3ACC81;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+    .header{
+        &-logo{
+            width: 100px;
+        }
+        &-navigation{
+            &-link{
+                font-size: 13px;
+            }
+        }
+    } 
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .header{
+        &-logo{
+            width: 200px;
+        }
+        &-navigation{
+            &-link{
+                font-size: 18px;
+            }
+        }
+    } 
+}

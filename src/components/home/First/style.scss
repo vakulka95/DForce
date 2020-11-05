@@ -136,7 +136,7 @@
                 // display: inline-block;
             }
             @media (min-width: 768px){
-                // display: inline-block;
+                display: inline-block;
             }
             @media (min-width: 1024px){
                 position: relative;  
@@ -162,7 +162,7 @@
             // animation-name: text-animation-1600-2;
             // animation-delay: 2s;
             @media(min-width: 1024px){
-                // display: inline-block;
+                display: inline-block;
                 transform: translate(-87px, 0px);
                 // left: 87px;
                 opacity: 0;
@@ -190,7 +190,7 @@
                 transform: translate(88px, 0px);
 
                 white-space: nowrap;
-                // display: inline-block;
+                display: inline-block;
                 animation-name: change-text-three;
                 animation-duration: 7s;
                 animation-iteration-count: infinite;
@@ -244,6 +244,10 @@
                     width: 635px;
                     line-height: 35px;
                     margin-top: -50px;
+                }
+                @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+                    font-size: 22px;
+                    width: 670px;
                 }
     }
     &-intro{
