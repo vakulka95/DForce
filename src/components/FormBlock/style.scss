@@ -187,15 +187,19 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .form{
-        width: 440px;
-        top: -150px;
+        width: 490px;
+        top: -140px;
+        &-wrap{
+            padding: 55px 50px;
+        }
         &-title{
-            font-size: 26px;
-            line-height: 36px;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 20px;
         }
         &-group{
-            font-size: 15px;
-            line-height: 30px;
+            font-size: 14px;
+            line-height: 27px;
         }
         .btn-wrap{
             button{

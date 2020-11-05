@@ -92,5 +92,8 @@
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .specialization{
         padding: 80px 0px 110px 0px;
+        .spec-section{
+            margin-top: 70px;
+        }
     }
 }
