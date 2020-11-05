@@ -131,7 +131,10 @@ and (max-width: 760px){
         margin-top: 31px;
     }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+
+ @media (-webkit-min-device-pixel-ratio: 2), 
+        (   min--moz-device-pixel-ratio: 2),
+        (     -o-min-device-pixel-ratio: 2/1) and (min-width:1300px){
     .spec-item{
         margin-bottom: 55px;
         margin-right: 70px;
