@@ -115,6 +115,11 @@
             line-height: 90px;
             transform: translateY(-30px);
         }
+        // @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+        //     font-size: 66px;
+        //     line-height: 90px;
+        // }
+        
         &-first{
             color:white;
             line-height: 40px;
@@ -149,11 +154,7 @@
                 animation-name: change-text-1300;
                 // transform: translate(100px, 0px);
             }
-            // @media (min-width: 1900px){
-            //     animation-name: text-animation-1900-;
-            //     // left: 83px;
-
-            // }
+            
 
         }
         .animation-two{
@@ -247,7 +248,8 @@
                 }
                 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
                     font-size: 22px;
-                    width: 670px;
+                    line-height: 40px;
+                    width: 790px;
                 }
     }
     &-intro{
