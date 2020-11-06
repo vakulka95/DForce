@@ -279,21 +279,17 @@
             }
         }
         .in-progress{
-            text-transform: uppercase;
-            font-weight: 600;
-            padding: 6px 0;
-            background: #4CCC75;
-            border-radius: 100px;       
             width: 165px;
             text-align: center;
             margin-bottom: 23px;
             margin-top: 20px;
-            line-height: 26px;
             @media(min-width: 1024px){
+                // width: 165px;
                 margin-top: 0;
+                margin-bottom: 10px;
             }
             @media (min-width: 1900px){
-                padding: 11px 0;
+                width: 200px;
             }
         }
     }
