@@ -349,13 +349,17 @@
           }
           @media (min-width: 1300px){
             margin-bottom: 30px;
-            margin-top: 0px;
+
           }
           @media (min-width: 1900px){
             margin-top: 40px;
           }
           &-group{
             margin-top: 10px;
+            @media (min-width: 1300px){
+              margin-bottom: 40px;
+  
+            }
           }
           &-img{
             //width: 60%;
