@@ -338,6 +338,7 @@
               margin-bottom: 0;
               margin-top: 15px;
             }
+            
             @media (min-width: 1900px){
               margin-top: 40px;
             }
@@ -621,11 +622,19 @@
         padding: 75px 143px;
         text-align: center;
       }
-      &-block-figures{
-        .detail-Figure{
-          padding: 95px 51px;
+      &-block{
+        &-figures{
+          .detail-Figure{
+            padding: 95px 51px;
+          }
+        }
+        &-all-figures{
+          .detail-figure{
+            margin-top: 40px;
+          }
         }
       }
+      
       &-about{
         margin: 110px auto 0;
         .icons{
