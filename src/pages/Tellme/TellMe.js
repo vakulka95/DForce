@@ -93,7 +93,7 @@ const color = {
                 </div>
                 <div className='detail-about'>
                     <div className='icons'>
-                    {technologies.map(icon => (<img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />))}
+                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
                     </div>
                     <div className='detail-wrap' key={`${tellme.title2}-wrap`}>
                         <h3 className='detail-sub-title ' key={tellme.title2}>Використанні технології</h3>
