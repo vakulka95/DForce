@@ -216,9 +216,8 @@
 
             }
             
- @media (-webkit-min-device-pixel-ratio: 2), 
-        (   min--moz-device-pixel-ratio: 2),
-        (     -o-min-device-pixel-ratio: 2/1) and (min-width:1300px){
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
                 max-height: 1500px;
             }
 
