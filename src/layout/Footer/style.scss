@@ -49,6 +49,9 @@ and (max-width: 768px){
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .footer{
+        &-logo{
+            width: 210px;
+        }
         padding: 53px 0;
     }
 }
@@ -57,8 +60,9 @@ and (max-width: 768px){
     .footer{
         padding: 83px 0;
         &-logo{
-            width: 300px;
+            width: 240px;
         }
+
         .container{
             p{
                 font-size: 18px;

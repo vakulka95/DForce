@@ -219,6 +219,9 @@
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
     .header{
+        &-logo-inner{
+            max-width: 95%;
+        }
 
         &-navigation{
             &-link{
@@ -232,9 +235,10 @@
     .header-opasity{
         padding-top: 40px;
         .header{
-            &-logo{
-                width: 300px;
+            &-logo-inner{
+                max-width: 95%;
             }
+
             &-navigation{
                 &-link{
                     font-size: 16px;
