@@ -25,7 +25,7 @@ const AllProjects = () => {
                 <div className='mainProjects-item'>
                     {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
                     <div className='mainProjects-item-img vote'>
-                    <div className='in-progress'>In progress</div>
+                    <img src='./images/cases/inProgressProjects.svg' alt='inProgress' className='in-progress'/>
                         <span className='mainProjects-item-inner'></span>
                     </div>
                     {/* </Link> */}
