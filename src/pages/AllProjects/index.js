@@ -4,33 +4,10 @@ import { Link } from 'react-router-dom';
 
 
 const AllProjects = () => {
-    // const [windowWidth, setWindowWidth] = useState(true)
-    // const [myWidth, setMyWidth] = useState(0)
-
-    // useEffect(()=>{
-       
-    //     const changeWidth = ()=>{
-    //         let winWidth = window.innerWidth
-    //         if(winWidth!==myWidth){
-    //             setMyWidth(winWidth)
-    //             console.log(winWidth, myWidth);
-    //         }
-    //         console.log(myWidth);
-    //         if (myWidth<768){
-    //             setWindowWidth(false)
-    //         }else {
-    //             setWindowWidth(true)
-    //         }
-    //         console.log(windowWidth);
-    //         }
-    //     window.addEventListener('resize',changeWidth())
-    //     //return window.removeEventListener('resize',changeWidth())
-    // },[windowWidth,myWidth])
-    // //console.log(windowWidth);
-    // //console.log(winWidth);
 
     return (
         <section className='allContainer'>
+            <div className='container'>
             <h2 className='allProjects-title'>Провідні проекти</h2>
             <div className='mainProjects'>
                 {/* {renderPhoto(tellmeProject)}  */}
@@ -48,7 +25,7 @@ const AllProjects = () => {
                 <div className='mainProjects-item'>
                     {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
                     <div className='mainProjects-item-img vote'>
-                    <div className='in-progress'>In progress</div>
+                    <img src='./images/cases/inProgressProjects.svg' alt='inProgress' className='in-progress'/>
                         <span className='mainProjects-item-inner'></span>
                     </div>
                     {/* </Link> */}
@@ -93,6 +70,7 @@ const AllProjects = () => {
                         <img src='./images/cases/TellMe/Group-949.png' alt='TellMe' title='tellMe'/>
                     </a> */}
                 </div>
+            </div>
             </div>
         </section>
     )

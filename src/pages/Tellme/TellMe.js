@@ -68,7 +68,7 @@ const color = {
                     <figure className='detail-figure dark' key={tellme.group7}>
                         <img className='detail-figure-img' alt={tellme.title} src={tellme.group7} key={tellme.group7} />
                     </figure>
-                    <figure className='detail-figure mob-group fleX' style={color} key={tellme.group8}>
+                    <figure className='detail-figure-group' style={color} key={tellme.group8}>
                         <img className='mob-group-map' alt={tellme.title} src={tellme.group8} key={tellme.group8} />
                     </figure> 
                 </div>
@@ -93,7 +93,7 @@ const color = {
                 </div>
                 <div className='detail-about'>
                     <div className='icons'>
-                    {technologies.map(icon => (<img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />))}
+                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
                     </div>
                     <div className='detail-wrap' key={`${tellme.title2}-wrap`}>
                         <h3 className='detail-sub-title ' key={tellme.title2}>Використанні технології</h3>

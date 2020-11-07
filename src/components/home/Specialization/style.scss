@@ -89,3 +89,22 @@
         }
     }
 }
+
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+    .specialization{
+        padding: 70px 0px 110px 0px;
+        .spec-section{
+            margin-top: 65px;
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1900px){
+    .specialization{
+        padding: 110px 0px 130px 0px;
+        .spec-section{
+            margin-top: 50px;
+        }
+    }
+}
