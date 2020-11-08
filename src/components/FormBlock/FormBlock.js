@@ -76,11 +76,8 @@ function FormBlock() {
 
         setFormData(prevState => ({
             ...prevState,
-            [target.name]: target.value
+            [target.name]: target.value,
         }))
-        // if(formData.comment.length > 10){
-        //     return false;
-        // }
     }
     
     const resetInput = () => {

@@ -4,6 +4,7 @@ import './style.scss'
 import technologies from '../../json/technologies.json';
 import Button from '../../components/Button';
 
+
 function TellMe() {
     
 const color = {
@@ -92,9 +93,17 @@ const color = {
                     </figure> 
                 </div>
                 <div className='detail-about'>
-                    <div className='icons'>
-                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
-                    </div>
+                        <div className='icons '>
+                            <p className='icon-react' title='react'></p>  
+                            <p className='icon-opera' title='opera'></p> 
+                            <p className='icon-webpack' title='webpack'></p> 
+                            <p className='icon-sass' title='sass'></p>  
+                            <p className='icon-go' title='go'></p> 
+                            <p className='icon-postgre-sql' title='postgreSQL'></p> 
+                            <p className='icon-docker' title='docker'></p> 
+                            <p className='icon-figma' title='figma'></p> 
+                        {/* {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)} */}
+                        </div>
                     <div className='detail-wrap' key={`${tellme.title2}-wrap`}>
                         <h3 className='detail-sub-title ' key={tellme.title2}>Використанні технології</h3>
                         <p className='detail-text ' key={tellme.paragraph1}>

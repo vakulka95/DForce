@@ -269,15 +269,28 @@
 
 .disable{
     cursor: url(../../assets/images/cowlm_no.cur), pointer;
+    &:hover{
+        .case{
+            &-title{
+                text-decoration: none;
+            }
+            
+        }
+        .image-wrap{
+            transform: none;
+            transition: none;
+        }
+    }
+    &:not(:hover){
+            .image-wrap{
+                transform: none;
+                transition: none;
+            }
+            
+    }
     .case-description{
         margin-top: 0;
-        &:hover{
-            .case{
-                &-title{
-                    text-decoration: none;
-                }
-            }
-        }
+       
         .in-progress{
             width: 165px;
             text-align: center;
