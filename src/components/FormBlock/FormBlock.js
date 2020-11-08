@@ -78,8 +78,11 @@ function FormBlock() {
             ...prevState,
             [target.name]: target.value
         }))
+        // if(formData.comment.length > 10){
+        //     return false;
+        // }
     }
-
+    
     const resetInput = () => {
         setFormData({
             name: '',
@@ -143,7 +146,7 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                            <span>Ваше ім'я:</span>
-                            <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} />
+                            <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} maxLength='20'/>
                             {/* {formData.nameInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>} */}
                             <div style={formData.nameInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>
                         </label>
