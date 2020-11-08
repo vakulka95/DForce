@@ -18,7 +18,7 @@ function ItSeems() {
                     </p>
                     <Button to={itseems.to} directly message={'Перейти на сайт'} >
                         <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
-                            key={'./images/fontImages/tosite.svg'} />
+                            key={'./images/fontImages/tosite.svg'} className='tosite'/>
                     </Button>
                 </div>
 

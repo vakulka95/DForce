@@ -17,7 +17,13 @@
   @media (min-width:1900px){
     padding: 243px 150px 220px 150px;
   }
-
+  .detail-title{
+    @media(min-width: 768px){
+      padding-left: 0;
+    }
+    
+    
+  }
   .intro-wrap{
     display: flex;
     margin-bottom: 39px;
@@ -36,12 +42,7 @@
     }
     @media(min-width: 1900px){
     }
-    .detail-title{
-      @media(min-width: 768px){
-        padding-left: 0;
-      }
-      
-    }
+   
     .detail-text{
       margin-bottom: 0;
       margin-left: 15px;
@@ -78,6 +79,9 @@
         //  a{
         //    pa
         //  }
+      }
+      .tosite{
+        width: 14px;
       }
       
     }
@@ -121,6 +125,9 @@
       line-height: 50px;
       margin-bottom: 20px;
     }
+    @media(min-width: 1300px){
+      line-height: 70px;
+    }
     @media(min-width: 1900px){
       font-size: 54px;
       width: 65%;
@@ -152,7 +159,7 @@
       }
       @media(min-width: 1300px){
         width: 645px;
-
+        line-height: 70px;
       }
       @media (min-width:1900px){
         font-size: 46px;
