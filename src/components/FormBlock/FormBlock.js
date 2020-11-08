@@ -78,6 +78,9 @@ function FormBlock() {
             ...prevState,
             [target.name]: target.value,
         }))
+        // if(formData.comment.length >= 11){
+        //     target.value.substr(0, 11);
+        // }
     }
     
     const resetInput = () => {
