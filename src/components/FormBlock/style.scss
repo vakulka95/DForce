@@ -94,7 +94,7 @@
             display: flex;
             flex-direction: column;
         }
-        textarea{
+        &-textarea{
             height: 125px;
             // width: 100%;
             background: #262833;
@@ -105,6 +105,18 @@
             padding: 10px 0px 0px 15px;
             font-size: 16px;
             font-family: 'Grandis', sans-serif;
+            &-error{
+                border: 1px solid red;
+                outline: none;
+                color: #fff;
+                padding: 10px 0px 0px 15px;
+                font-size: 16px;
+                font-family: 'Grandis', sans-serif;
+                height: 125px;
+                background: #262833;
+                border-radius: 8px;
+                
+            }
         }
         
     }

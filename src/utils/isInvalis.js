@@ -3,7 +3,11 @@ const isInvalid = (key, val, /*compareVal*/) => {
         return "Поле не може бути порожнім"
     };
     switch (key) {
-
+        case "name":
+            if(val.length > 20){
+                return 'Ваше ім я не може бути довшим за 20 символів'
+            }
+            return null;
         case "email":
             if (!val.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
                 return 'Неправильний формат електронної пошти';
@@ -17,6 +21,11 @@ const isInvalid = (key, val, /*compareVal*/) => {
                     return `"Неправильний формат телефону": (ххх) ххх хх хх`;
                 }
                 return null;
+            case"comment":
+            if(val.length > 20){
+                return 'Kоментарій не може бути довшим за 20 символів'
+            }
+            return null;
                 default:
                     return null;
         }

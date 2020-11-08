@@ -78,6 +78,16 @@ function FormBlock() {
             ...prevState,
             [target.name]: target.value
         }))
+        let name,phone,email,comment;
+        
+         name = isInvalid("name", formData.name);
+         phone = isInvalid("phone", formData.phone);
+         email = isInvalid("email",formData.email);
+         comment = isInvalid("comment",formData.comment);
+        formData.nameInvalid = name;
+        formData.phoneInvalid = phone;
+        formData.emailInvalid = email;
+        formData.commentInvalid = comment;
     }
 
     const resetInput = () => {
@@ -96,15 +106,12 @@ function FormBlock() {
         let sendMail = () =>{
         const newData = { ...formData };
 
-        const name = isInvalid("name", formData.name);
-        const phone = isInvalid("phone", formData.phone);
-        const email = isInvalid("email",formData.email);
+        const name =  formData.name;
+        const phone = formData.phone;
+        const email = formData.email;
+        const comment = formData.comment;
 
-        newData.nameInvalid = name;
-        newData.phoneInvalid = phone;
-        newData.emailInvalid = email;
-
-        if (!name && !phone && !email) {
+        if (name && phone && email && comment) {
             const dataForSend = {
                 name:formData.name,
                 phone:formData.phone,
@@ -167,7 +174,8 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                         <span>Залиште свій коментар:</span>
-                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
+                            <textarea style={{ resize: 'none' }} className={formData.commentInvalid? 'form-group-textarea-error':'form-group-textarea'} name='comment' onChange={onChange} value={formData.comment}></textarea>
+                            <div style={formData.commentInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.commentInvalid}</p></div>
                         </label>
                     </div>
                     <Button submit={true} onClick={sendMail} message={'Замовити консультацію'}/>
