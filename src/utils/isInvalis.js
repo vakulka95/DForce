@@ -17,8 +17,8 @@ const isInvalid = (key, val, /*compareVal*/) => {
 
                 const onlyNum = val.replace(/\D/g, '');
     
-                if (onlyNum.length !== 10) {
-                    return `"Неправильний формат телефону": (ххх) ххх хх хх`;
+                if (onlyNum.length !== 12) {
+                    return `"Невірний формат телефону": +38(0хх) ххх хх хх`;
                 }
                 return null;
             case"comment":
