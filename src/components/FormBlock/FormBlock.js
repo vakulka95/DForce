@@ -63,7 +63,7 @@ function FormBlock() {
 
     const [formData, setFormData] = useState({
         name: '',
-        phone: '',
+        phone: '+380',
         email: '',
         comment: '',
         nameInvalid:null,
@@ -78,9 +78,16 @@ function FormBlock() {
             ...prevState,
             [target.name]: target.value,
         }))
-        // if(formData.comment.length >= 11){
-        //     target.value.substr(0, 11);
-        // }
+        let name,phone,email,comment;
+        
+         name = isInvalid("name", formData.name);
+         phone = isInvalid("phone", formData.phone);
+         email = isInvalid("email",formData.email);
+         comment = isInvalid("comment",formData.comment);
+        formData.nameInvalid = name;
+        formData.phoneInvalid = phone;
+        formData.emailInvalid = email;
+        formData.commentInvalid = comment;
     }
     
     const resetInput = () => {
@@ -99,15 +106,12 @@ function FormBlock() {
         let sendMail = () =>{
         const newData = { ...formData };
 
-        const name = isInvalid("name", formData.name);
-        const phone = isInvalid("phone", formData.phone);
-        const email = isInvalid("email",formData.email);
+        const name =  formData.name;
+        const phone = formData.phone;
+        const email = formData.email;
+        const comment = formData.comment;
 
-        newData.nameInvalid = name;
-        newData.phoneInvalid = phone;
-        newData.emailInvalid = email;
-
-        if (!name && !phone && !email) {
+        if (name && phone && email && comment) {
             const dataForSend = {
                 name:formData.name,
                 phone:formData.phone,
@@ -146,7 +150,7 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                            <span>Ваше ім'я:</span>
-                            <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name} maxLength='20'/>
+                            <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name}/>
                             {/* {formData.nameInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>} */}
                             <div style={formData.nameInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>
                         </label>
@@ -154,7 +158,7 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                         <span>Ваш телефон:</span>
-                            <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380 123 45 67' onChange={onChange} value={formData.phone} />
+                            <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380' onChange={onChange} value={formData.phone} />
                             {/* {formData.phoneInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>} */}
                             <div style={formData.phoneInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>
                         </label>
@@ -170,7 +174,8 @@ function FormBlock() {
                     <div className='form-group'>
                         <label>
                         <span>Залиште свій коментар:</span>
-                            <textarea style={{ resize: 'none' }} name='comment' onChange={onChange} value={formData.comment}></textarea>
+                            <textarea style={{ resize: 'none' }} className={formData.commentInvalid? 'form-group-textarea-error':'form-group-textarea'} name='comment' onChange={onChange} value={formData.comment}></textarea>
+                            <div style={formData.commentInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.commentInvalid}</p></div>
                         </label>
                     </div>
                     <Button submit={true} onClick={sendMail} message={'Замовити консультацію'}/>

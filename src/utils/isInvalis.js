@@ -14,6 +14,7 @@ const isInvalid = (key, val, /*compareVal*/) => {
             }
             return null;
         case "phone":
+
                 const onlyNum = val.replace(/\D/g, '');
     
                 if (onlyNum.length !== 12) {
