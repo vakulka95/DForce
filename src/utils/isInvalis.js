@@ -1,5 +1,5 @@
 const isInvalid = (key, val, /*compareVal*/) => {
-    if(!val){
+    if (!val) {
         return "Поле не може бути порожнім"
     };
     switch (key) {
@@ -13,7 +13,7 @@ const isInvalid = (key, val, /*compareVal*/) => {
                 return 'Неправильний формат електронної пошти';
             }
             return null;
-            case "phone":
+        case "phone":
 
                 const onlyNum = val.replace(/\D/g, '');
     

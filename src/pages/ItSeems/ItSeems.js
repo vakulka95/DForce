@@ -81,7 +81,15 @@ function ItSeems() {
                 </div>
                 <div className='detail2-about' key='bottom-div'>
                     <div className='icons' key={technologies}>
-                    {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)}
+                    <p className='icon-react' title='react'></p>  
+                            <p className='icon-opera' title='opera'></p> 
+                            <p className='icon-webpack' title='webpack'></p> 
+                            <p className='icon-sass' title='sass'></p>  
+                            <p className='icon-go' title='go'></p> 
+                            <p className='icon-postgre-sql' title='postgreSQL'></p> 
+                            <p className='icon-docker' title='docker'></p> 
+                            <p className='icon-figma' title='figma'></p> 
+                    {/* {technologies.map(icon => <img src={Object.values(icon).join('')} title={Object.keys(icon).join('')} id={Object.keys(icon).join('')} alt={Object.keys(icon).join('')} key={Object.keys(icon).join('')}/>)} */}
                     </div>
                     <div className='detail2-wrap' key='bottom-div-wrap'>
                         <h3 className='detail2-sub-title' key='bottom-title'>Використанні технології</h3>

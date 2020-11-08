@@ -162,7 +162,7 @@
        // margin-top: 35px;
         font-size: 18px;
         display: block;
-        width: 90%;
+        width: 100%;
         margin: 35px auto 0px;
         @media (min-width:320px) and (max-width:355px){
             width:100%;
@@ -171,7 +171,7 @@
         @media (min-width:500px){
             display: inline-block;
             margin: 35px 0px 0px 0px;
-            width:85%
+            width:65%
         }
         @media (min-width:768px){
             width:100%;
