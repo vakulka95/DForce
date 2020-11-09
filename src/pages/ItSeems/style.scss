@@ -39,6 +39,7 @@
         padding-left: 0;
       }
       
+      
     }
     .detail2-text{
       margin-bottom: 0;
@@ -71,6 +72,9 @@
         align-self: flex-end;
         position: relative;
         top: -25px;
+      }
+      .tosite{
+        width: 14px;
       }
 
     }
@@ -114,6 +118,9 @@
       line-height: 50px;
       margin-bottom: 20px;
     }
+    @media(min-width: 1300px){
+      line-height: 70px;
+    }
     @media(min-width: 1900px){
       font-size: 54px;
       width: 65%;
@@ -145,6 +152,7 @@
       }
       @media(min-width: 1300px){
         width: 645px;
+        line-height: 70px;
 
       }
       @media (min-width:1900px){
@@ -424,9 +432,9 @@
           }
         }
         &-go{
-          font-size: 16px;
+          font-size: 27px;
           @media(min-width: 1024px){
-            font-size: 25px;
+            font-size: 40px;
           }
           &:hover{
             color: rgba(255, 255, 255, 1);

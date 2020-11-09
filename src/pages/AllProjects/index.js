@@ -22,7 +22,7 @@ const AllProjects = () => {
                         <span className='mainProjects-item-inner'></span>
                     </Link>
                 </div>
-                <div className='mainProjects-item'>
+                <div className='mainProjects-item disable'>
                     {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
                     <div className='mainProjects-item-img vote'>
                     <img src='./images/cases/inProgressProjects.svg' alt='inProgress' className='in-progress'/>

@@ -124,6 +124,20 @@
         }
     }
 }
+.disable{
+    &:hover{
+        .mainProjects-item-img{
+            transform: none;
+            transition: none;
+        }
+    }
+
+    &:not(:hover){
+        .mainProjects-item-img{
+            transition: none;
+        }
+    }
+}
 .itSeems{
     background-image: url('../../assets/images/itSeens-mob.png');
     @media (min-width:768px){

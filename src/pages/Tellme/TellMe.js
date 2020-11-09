@@ -21,7 +21,7 @@ const color = {
                     </p>
                     <Button to={tellme.to} directly message={'Перейти на сайт'} >
                         <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
-                            key={'./images/fontImages/tosite.svg'} />
+                            key={'./images/fontImages/tosite.svg'} className='tosite'/>
                     </Button>
                 </div>
 
