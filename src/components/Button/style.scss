@@ -67,6 +67,7 @@
             padding: 22px 20px;
         } 
         &-disabled{
+            background: linear-gradient(222.66deg, #0C996F -14.23%, #629943 141.91%);
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
@@ -78,7 +79,6 @@
             padding: 18px 35px;
             border: none;
             outline: none;
-                    
         @media (min-width: 768px){
             font-size: 20px;
             line-height: 25px;

@@ -399,15 +399,16 @@
     .icons{
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       
-      :last-child(){
-        margin-right: 0;
-      }
       p{
         font-size: 20px;
         @media(min-width: 1024px){
+          margin-right: 70px;
           font-size: 30px;
+        }
+        @media(min-width: 1300px){
+          font-size: 50px;
         }
       }
       .icon{
@@ -436,6 +437,10 @@
           font-size: 27px;
           @media(min-width: 1024px){
             font-size: 40px;
+            // align-self: center;
+          }
+          @media(min-width: 1300px){
+            font-size: 60px;
           }
           &:hover{
             color: rgba(255, 255, 255, 1);
@@ -452,6 +457,7 @@
           }
         }
         &-figma{
+          margin-right: 0;
           &:hover{
             color: rgba(251, 63, 44, 1);
           }
@@ -544,6 +550,9 @@
           margin: 0 auto;
           flex-direction: column;
           margin-top: 50px;
+        }
+        @media (min-width: 1300px){
+          margin-top: 70px;
         }
         
       }
