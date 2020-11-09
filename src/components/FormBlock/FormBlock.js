@@ -105,15 +105,16 @@ function FormBlock() {
             [targetName]:targetValue
         })
         )
+
     }
 
     useEffect(()=> {
         setFormData(formData)
-    if(formData.name && formData.phone && formData.email && formData.comment){
+        console.log(formData.nameInvalid, formData.phoneInvalid, formData.emailInvalid, formData.commentInvalid)
+    if(formData.name && formData.phone && formData.email && formData.comment && !formData.nameInvalid && !formData.phoneInvalid && !formData.emailInvalid && !formData.commentInvalid){
         setSubmit(true)
         setDisable(false)
     }
-
     else {
         setSubmit(false)
         setDisable(true)
