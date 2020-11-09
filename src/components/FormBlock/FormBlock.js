@@ -112,11 +112,11 @@ function FormBlock() {
         setFormData(formData)
     if(formData.name && formData.phone && formData.email && formData.comment && !formData.nameInvalid && !formData.phoneInvalid && !formData.emailInvalid && !formData.commentInvalid){
         setSubmit(true)
-        // setDisable(false)
+         setDisable(false)
     }
     else {
         setSubmit(false)
-        // setDisable(true)
+         setDisable(true)
     }},[formData])
     
     const resetInput = () => {

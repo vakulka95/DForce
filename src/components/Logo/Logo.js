@@ -7,7 +7,7 @@ function Logo({logoClass, parentClass, mobile}) {
     return (
         <div className={parentClass}>
             <Link to='/' onClick={mobile}>
-                <img src='./images/logo.svg'  className={logoClass} alt='DForce logo'/>
+                <img src='./images/logo.svg'  className={logoClass} alt='DForce logo / Логотип DForce'/>
             </Link>
         </div>
     )
