@@ -43,7 +43,7 @@ const AllProjects = () => {
                 {/* {renderPhoto(itSeemsProject)} */}
 
                 <div className='secondaryProjects-item'>
-                    <a href='https://www.fors-master.com.ua' target='_blank' className='mainProjects-item-img forsMaster'>
+                    <a href='https://www.fors-master.com.ua' target='_blank' rel="noopener noreferrer" className='mainProjects-item-img forsMaster'>
                         <span className='mainProjects-item-inner'></span>
                     </a>
                 </div>
