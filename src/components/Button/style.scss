@@ -8,6 +8,17 @@
             }
         }
         &-active{
+            margin-top: 25px;
+            @media (min-width: 768px){
+                margin-top: 15px;
+
+            }
+            @media (min-width: 1024px){
+                margin-top: 20px;
+            }
+            @media (min-width: 1900px){
+                margin-top: 0;
+            }
             // margin-bottom: 75px;
             // position: fixed;
             // bottom: 50px;
@@ -75,7 +86,6 @@
         @media (min-width: 1024px){
             font-size: 18px;
             padding: 22px 0;
-                margin-top: 30px;
         }
         @media (min-width:1300px){
             padding:22px 105px;
