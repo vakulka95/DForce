@@ -1,4 +1,5 @@
 import React from 'react';
+import InProgress from '../../components/InProgress/InProgress';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
@@ -13,19 +14,20 @@ const AllProjects = () => {
                 {/* {renderPhoto(tellmeProject)}  */}
 
                 <div className='mainProjects-item'>
-                    <Link to='/itseems' className='mainProjects-item-img itSeems'>
+                    <Link to='/itseems' target='_blank' className='mainProjects-item-img itSeems'>
                         <span className='mainProjects-item-inner'></span>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
-                    <Link to='/tellme' className='mainProjects-item-img tellMe'>
+                    <Link to='/tellme' target='_blank' className='mainProjects-item-img tellMe'>
                         <span className='mainProjects-item-inner'></span>
                     </Link>
                 </div>
                 <div className='mainProjects-item disable'>
+                <InProgress call='in-progress in-projects'/>
                     {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
                     <div className='mainProjects-item-img vote'>
-                    <img src='./images/cases/inProgressProjects.svg' alt='inProgress' className='in-progress'/>
+
                         <span className='mainProjects-item-inner'></span>
                     </div>
                     {/* </Link> */}
@@ -41,7 +43,7 @@ const AllProjects = () => {
                 {/* {renderPhoto(itSeemsProject)} */}
 
                 <div className='secondaryProjects-item'>
-                    <a href='https://www.fors-master.com.ua' className='mainProjects-item-img forsMaster'>
+                    <a href='https://www.fors-master.com.ua' target='_blank' className='mainProjects-item-img forsMaster'>
                         <span className='mainProjects-item-inner'></span>
                     </a>
                 </div>

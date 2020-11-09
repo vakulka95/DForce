@@ -5,6 +5,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import technologies from '../../json/technologies.json'
 import './style.scss';
+import InProgress from '../InProgress/InProgress';
 
 
 
@@ -20,9 +21,7 @@ function PortfolioItems({ id,backgroundCLass, description, to , backgroundCLassD
             </Link>
             {disable ? 
             <div className='case-description'>
-                {/* <div className='in-progress'> */}
-                    <img src='./images/cases/inProgressCase.svg' alt='inProgress' className='in-progress'/>
-                {/* </div> */}
+                <InProgress />
                 <p className='case-title sub-title'>{descriptionDis}</p>
                 <div className='icons'>
                     {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} id={Object.keys(icon).join('')} title={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
