@@ -42,11 +42,11 @@ const First = () => {
             <div className='container'>
                 <div className = 'home-wrap'>
                     <div className='home-intro'>
-                        <h1 className = 'home-header'><span className = 'home-header-first'>Ми </span> 
-                            <span className='animation-one'>створюємо майбутнє!</span>
+                        <div className = 'home-header'>
+                            <h1 className = 'home-header-first'>Ми <span className='animation-one'>створюємо майбутнє!</span></h1> 
                             <span className='animation-two'>інженери</span>
                             <span className='animation-three'>досягаємо цілей</span>
-                        </h1>
+                        </div>
 
                         <p className = 'home-paragraph'>Dforce — це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя й досвіду людей. Ми допомагаємо нашим клієнтам ефективно реалізувати найамбітніші ідеї!</p>
                     </div>                                 

@@ -122,6 +122,7 @@
         &-first{
             color:white;
             line-height: 40px;
+            font-weight: 600;
             @media (min-width: 1024px){
                 font-size: 43px;
                 line-height: 90px;
@@ -132,7 +133,7 @@
             }
         }
         .animation-one{
-            // animation-delay: 2s;
+            color:#3ACC81;
             @media(min-width: 320px) and (max-width: 339px){
                 display: inline;
             }
