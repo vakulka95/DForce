@@ -22,8 +22,8 @@ const isInvalid = (key, val, /*compareVal*/) => {
                 }
                 return null;
             case"comment":
-            if(val.length > 20){
-                return 'Kоментарій не може бути довшим за 20 символів'
+            if(val.length > 500){
+                return 'Kоментарій не може бути довшим за 500 символів'
             }
             return null;
                 default:

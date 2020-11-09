@@ -205,7 +205,7 @@ function FormBlock() {
                         <label>
                         <span>Залиште свій коментар:</span>
                             <textarea style={{ resize: 'none' }} className={formData.commentInvalid? 'form-group-textarea-error':'form-group-textarea'} name='comment' onChange={onChange}  value={formData.comment}></textarea>
-                            <div style={formData.commentInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.commentInvalid}</p></div>
+                            <div style={formData.commentInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px', lineHeight: '20px' }}>{formData.commentInvalid}</p></div>
                         </label>
                     </div>
                     <Button submit={submit} disable={disable} onClick={sendMail} message={'Замовити консультацію'}/>
