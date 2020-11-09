@@ -53,10 +53,10 @@ const First = () => {
                     <div className='home-animation'>
                         {/* {animation ?  */}
                         {/* // <img src='images/animation/mirror-cube.svg' className='home-lego' alt='home-lego'/>:<img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/>} */}
-                         <img src='images/animation/animation.svg' className='home-lego' alt='home-lego'/> 
-                        <img src='images/animation/Block.svg' className='block block-first' alt='block-first'/>
-                        <img src='images/animation/Block.svg' className='block block-third' alt='block-third'/>
-                        <img src='images/animation/Block.svg' className='block block-second' alt='block-second'/>
+                         <img src='images/animation/animation.svg' className='home-lego' alt='DForce animation / Анімація DForce'/> 
+                        <img src='images/animation/Block.svg' className='block block-first' alt='' />
+                        <img src='images/animation/Block.svg' className='block block-third' alt='' />
+                        <img src='images/animation/Block.svg' className='block block-second' alt='' />
 
                     </div>
                 </div>
