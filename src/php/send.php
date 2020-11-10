@@ -6,7 +6,7 @@ $phone = $_POST["phone"];
 $mail = $_POST["email"];
 $comment = $_POST["comment"];
 
-$to = "a.bakhtalovskyi@dforce.com";
+$to = "a.bakhtalovskyi@dforce.com.ua";
 
 $subject = "Заявка із сайту";
 $message = "
