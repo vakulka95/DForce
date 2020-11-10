@@ -8,20 +8,46 @@
             }
         }
         &-active{
-            margin-top: 25px;
+            margin-top: 35px;
+
+            @media (min-width: 500px){
+                width: 65%;
+
+            }
             @media (min-width: 768px){
-                margin-top: 15px;
+                // margin-top: 15px;
+                width: 100%;
 
             }
             @media (min-width: 1024px){
-                margin-top: 20px;
+                margin-top: 0;
+            }
+            @media (min-width: 1300px){
+                margin-top: 15px;
             }
             @media (min-width: 1900px){
                 margin-top: 0;
             }
-            // margin-bottom: 75px;
-            // position: fixed;
-            // bottom: 50px;
+            button{
+                font-family: 'Grandis', sans-serif;
+                font-size: 16px;
+                line-height: 18px;
+                @media (min-width:320px) and (max-width:355px){
+                    font-size: 15px;
+                }
+                
+                @media (min-width: 768px){
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                @media (min-width: 1024px){
+                    font-size: 18px;
+                    padding: 22px 0;
+                }
+                @media (min-width: 1300px){
+                    font-size: 20px;
+                }
+            }
             
         }
     }
