@@ -31,6 +31,13 @@ const routes = [
         components: lazy(
             () => import('../pages/Vote/index.js')
         )  
+    },
+    {
+        path:       [''],
+        components: lazy(
+            
+            () => import('../pages/NotFound/index.js')
+        )  
     }
 
 ];

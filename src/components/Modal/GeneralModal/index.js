@@ -12,7 +12,7 @@ const GeneralModal = ({ title, children, onClose, onButtonPress, link, img, alt 
                     <button className = 'generalModal__close' onClick = { onClose }></button>
                 </div>: null}
                 <div className='generalModal__container'>
-                {img&&<div className=''><img src={img} alt={alt} /></div>}
+                {img&&<div className='generalModal__image'><img src={img} alt={alt} /></div>}
             <div className = 'generalModal__title'><h3>{title}</h3></div>
             <div className = 'text'>{children}</div>
             { (onButtonPress || link)?

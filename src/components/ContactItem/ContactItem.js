@@ -13,7 +13,7 @@ function ContactItem({ image, alt, info, data }) {
                     <p>{info}</p>
                 </div>
                 <div className='contact-data'>
-                    <a href={data}>{data === 'tel: +380631348154' ? '+380631348154' : 'a.bakhtalovskyi@dforce.com'}</a>
+                    <a href={data}>{data === 'tel: +380631348154' ? '+380631348154' : 'a.bakhtalovskyi@dforce.com.ua'}</a>
                 </div>
             </div>
         </div>

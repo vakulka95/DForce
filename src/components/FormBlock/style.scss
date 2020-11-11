@@ -94,7 +94,7 @@
             display: flex;
             flex-direction: column;
         }
-        textarea{
+        &-textarea{
             height: 125px;
             // width: 100%;
             background: #262833;
@@ -105,6 +105,21 @@
             padding: 10px 0px 0px 15px;
             font-size: 16px;
             font-family: 'Grandis', sans-serif;
+            &:focus{
+                background: #303240;
+            }
+            &-error{
+                border: 1px solid red;
+                outline: none;
+                color: #fff;
+                padding: 10px 0px 0px 15px;
+                font-size: 16px;
+                font-family: 'Grandis', sans-serif;
+                height: 125px;
+                background: #262833;
+                border-radius: 8px;
+                
+            }
         }
         
     }
@@ -150,7 +165,7 @@
        // margin-top: 35px;
         font-size: 18px;
         display: block;
-        width: 90%;
+        width: 100%;
         margin: 35px auto 0px;
         @media (min-width:320px) and (max-width:355px){
             width:100%;
@@ -158,12 +173,21 @@
         }
         @media (min-width:500px){
             display: inline-block;
-            margin: 35px 0px 0px 0px;
-            width:85%
+            // margin: 0;
+            width:65%
         }
         @media (min-width:768px){
             width:100%;
         }
+        @media (min-width: 1024px){
+            font-size: 20px;
+            display: block;
+            margin-top: 0;
+        }
+        @media (min-width: 1300px){
+            margin-top: 15px;
+        }
+        
         button{
             font-family: 'Grandis', sans-serif;
             font-size: 16px;
@@ -173,22 +197,18 @@
             }
             
             @media (min-width: 768px){
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 25px;
             }
             @media (min-width: 1024px){
-                font-size: 18px;
+                // font-size: 18px;
                 padding: 22px 0;
             }
+            @media (min-width: 1300px){
+                font-size: 20px;
+            }
         }
-        @media (min-width: 1024px){
-            font-size: 20px;
-            display: block;
-            margin-top: 39px;
-        }
-        @media (min-width: 1900px){
-            margin-top: 65px;
-        }
+        
     }
     
 }
