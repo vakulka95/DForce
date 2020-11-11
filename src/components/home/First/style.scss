@@ -124,7 +124,7 @@
             line-height: 40px;
             font-weight: 600;
             @media (min-width: 1024px){
-                font-size: 43px;
+                font-size: 40px;
                 line-height: 90px;
               }
               @media(min-width:1900px){
@@ -145,6 +145,7 @@
             }
             @media (min-width: 1024px){
                 position: relative;  
+
                 // left: 90px;
                 animation-name: change-text;
                 animation-duration: 7s;
