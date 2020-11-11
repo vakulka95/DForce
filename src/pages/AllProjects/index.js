@@ -27,7 +27,6 @@ const AllProjects = () => {
                 <InProgress call='in-progress in-projects'/>
                     {/* <Link to='./vote' className='mainProjects-item-img vote'> */}
                     <div className='mainProjects-item-img vote'>
-
                         <span className='mainProjects-item-inner'></span>
                     </div>
                     {/* </Link> */}
