@@ -14,12 +14,12 @@ const AllProjects = () => {
                 {/* {renderPhoto(tellmeProject)}  */}
 
                 <div className='mainProjects-item'>
-                    <Link to='/itseems' target='_blank' className='mainProjects-item-img itSeems'>
+                    <Link to='/itseems'  className='mainProjects-item-img itSeems'>
                         <span className='mainProjects-item-inner'></span>
                     </Link>
                 </div>
                 <div className='mainProjects-item'>
-                    <Link to='/tellme' target='_blank' className='mainProjects-item-img tellMe'>
+                    <Link to='/tellme'  className='mainProjects-item-img tellMe'>
                         <span className='mainProjects-item-inner'></span>
                     </Link>
                 </div>
@@ -42,7 +42,7 @@ const AllProjects = () => {
                 {/* {renderPhoto(itSeemsProject)} */}
 
                 <div className='secondaryProjects-item'>
-                    <a href='https://www.fors-master.com.ua' target='_blank' rel="noopener noreferrer" className='mainProjects-item-img forsMaster'>
+                    <a href='https://www.fors-master.com.ua'  rel="noopener noreferrer" className='mainProjects-item-img forsMaster'>
                         <span className='mainProjects-item-inner'></span>
                     </a>
                 </div>

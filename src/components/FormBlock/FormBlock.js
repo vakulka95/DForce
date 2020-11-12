@@ -19,12 +19,10 @@ function FormBlock() {
     const [disable,setDisable] = useState(true);
 
     let showModal = (sending) => {
-
-        if(sending===true){
+        if(sending){
             setSuccess(true)
         }
         else setError(true)
-   
     }
 
     const onClose = () => {
@@ -49,10 +47,10 @@ function FormBlock() {
                 <div className='result'>
                     <Modal isModal={modal}>
                         <GeneralModal 
-                        img = {success?'./images/modalImage.svg':null}
-                        alt = {success ?'success':null}
+                        img = {success?'./images/modalImage.svg':'./images/Error.svg'}
+                        alt = {success ?'success':'error'}
                         onClose = {onClose}
-                        title={success?'Ваше повідомлення відправлено':null}>
+                        title={success?'Ваше повідомлення відправлено':'Заявку не надіслано'}>
                             {success && <MessageOk/>}
                             {error && <Message />}   
                         </GeneralModal>
@@ -160,7 +158,7 @@ function FormBlock() {
             .catch(() => {
 
                 setLoad(false)
-                showModal(true)
+                showModal(false)
                 resetInput()
 
             });
@@ -171,7 +169,7 @@ function FormBlock() {
     };
 
     return (
-        <div className='form'>
+        <div className={(error && modal) ? 'form error' : 'form'} >
             {(load || error || success) && renderModal()}
             <div className='form-wrap'>
                 <h3 className='form-title'>Залиште свої контактні дані, і ми зв'яжемося з Вами!</h3>

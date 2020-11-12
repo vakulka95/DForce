@@ -432,11 +432,11 @@
           margin-right: 45px;
         }
         @media(min-width: 1024px){
-          margin-right: 50px;
+          margin-right: 45px;
           font-size: 30px;
         }
         @media(min-width: 1300px){
-          font-size: 70px;
+          font-size: 45px;
         }
       }
       .icon{
@@ -465,7 +465,7 @@
           font-size: 27px;
           margin-top: -5px;
           @media(min-width: 500px){
-            margin-top: 0;
+            // margin-top: 0;
           }
           @media(min-width: 1024px){
             font-size: 40px;
