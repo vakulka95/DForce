@@ -34,7 +34,7 @@ const color = {
                     </p>
                 </div>
                 <figure className='detail-figure-group' style={color} key={tellme.group2}>
-                     <img className='mob-group-map' alt={`${tellme.title2} є визначальним. TellMe/DForce`} src={tellme.group2} key={tellme.group2} />
+                     <img className='mob-group-map' alt={`${tellme.title2} є визначальним. TellMe-DForce`} src={tellme.group2} key={tellme.group2} />
                 </figure>
                 <div className='detail-wrap right' key='paragraph3-wrap'>
                     <h3 className='detail-sub-title right-title' key={tellme.title3}>{tellme.title3}</h3>
@@ -44,14 +44,14 @@ const color = {
                 </div>
                 <div className='detail-block-all-figures' key='group3'>
                     <figure className='detail-figure dark' key={tellme.group3}>
-                     <img className='detail-figure-img' alt={`${tellme.title3} TellMe/DForce`} src={tellme.group3} key={tellme.group3} />
+                     <img className='detail-figure-img' alt={`${tellme.title3} TellMe-DForce`} src={tellme.group3} key={tellme.group3} />
                     </figure>
                     <div className='detail-block-figures fleX' key='group6'>
                         <figure className='detail-Figure dark' key={tellme.group4}>
-                         <img className='detail-figure-tellme' alt={`${tellme.title3} mobile version TellMe/DForce`} src={tellme.group4} key={tellme.group4} />
+                         <img className='detail-figure-tellme' alt={`${tellme.title3} mobile version TellMe-DForce`} src={tellme.group4} key={tellme.group4} />
                         </figure>
                         <figure className='detail-Figure dark' key={tellme.group5}>
-                            <img className='detail-figure-tellme' alt={`${tellme.title3} mobile version TellMe/DForce`} src={tellme.group5} key={tellme.group5} />
+                            <img className='detail-figure-tellme' alt={`${tellme.title3} mobile version TellMe-DForce`} src={tellme.group5} key={tellme.group5} />
                         </figure>
                     </div>   
                 </div>
@@ -63,13 +63,13 @@ const color = {
                 </div>
                 <div className='detail-block-all-figures' key='group1-wrap'>
                         <figure className='detail-figure' style={color} key={tellme.group6}>
-                            <img className='detail-figure-img' alt={`${tellme.title4} TellMe/DForce`} src={tellme.group6} key={tellme.group6} />
+                            <img className='detail-figure-img' alt={`${tellme.title4} TellMe-DForce`} src={tellme.group6} key={tellme.group6} />
                         </figure>
                     <figure className='detail-figure dark' key={tellme.group7}>
-                        <img className='detail-figure-img' alt={`${tellme.title4} TellMe/DForce`} src={tellme.group7} key={tellme.group7} />
+                        <img className='detail-figure-img' alt={`${tellme.title4} TellMe-DForce`} src={tellme.group7} key={tellme.group7} />
                     </figure>
                     <figure className='detail-figure-group' style={color} key={tellme.group8}>
-                        <img className='mob-group-map' alt={`${tellme.title4} mobile version TellMe/DForce`} src={tellme.group8} key={tellme.group8} />
+                        <img className='mob-group-map' alt={`${tellme.title4} mobile version TellMe-DForce`} src={tellme.group8} key={tellme.group8} />
                     </figure> 
                 </div>
                 <div className='right' key='right-paragraph'>
@@ -81,14 +81,14 @@ const color = {
                 <div className='detail-block-all-figures last' key='last-group'>
                     <div className='detail-block-figures fleX' key='darkGroup'>
                         <figure className='detail-Figure dark' key={tellme.group10}>
-                            <img className='detail-figure-tellme' alt={`${tellme.title5} mobile version TellMe/DForce`} src={tellme.group10} key={tellme.group10} />
+                            <img className='detail-figure-tellme' alt={`${tellme.title5} mobile version TellMe-DForce`} src={tellme.group10} key={tellme.group10} />
                         </figure>
                         <figure className='detail-Figure dark' key={tellme.group11}>
-                            <img className='detail-figure-tellme' alt={`${tellme.title5} mobile version TellMe/DForce`} src={tellme.group11} key={tellme.group11} />
+                            <img className='detail-figure-tellme' alt={`${tellme.title5} mobile version TellMe-DForce`} src={tellme.group11} key={tellme.group11} />
                         </figure>
                     </div>  
                      <figure className='detail-figure' style={color} key={tellme.group9}>
-                         <img className='detail-figure-img' alt={`${tellme.title5} TellMe/DForce`} src={tellme.group9} key={tellme.group9} />
+                         <img className='detail-figure-img' alt={`${tellme.title5} TellMe-DForce`} src={tellme.group9} key={tellme.group9} />
                     </figure> 
                 </div>
                 <div className='detail-about'>
