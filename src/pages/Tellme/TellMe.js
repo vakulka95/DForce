@@ -2,6 +2,7 @@ import React from 'react';
 import tellme from '../../json/tellme.json';
 import './style.scss'
 import Button from '../../components/Button';
+import ScrollToTop from '../../utils/ScrollToTop';
 
 
 function TellMe() {
@@ -117,9 +118,11 @@ const color = {
 
     };
     return (
+        <ScrollToTop>
         <section className='detail'>
             { renderLoop()}
         </section>
+        </ScrollToTop>
     );
 }
 

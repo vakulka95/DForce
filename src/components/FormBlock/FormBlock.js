@@ -143,8 +143,6 @@ function FormBlock() {
         newData.emailInvalid = email;
         newData.commentInvalid = comment;
 
-            console.log(name,phone,email,comment)
-            console.log(newData.nameInvalid,newData.phoneInvalid,newData.emailInvalid, newData.commentInvalid);
          if (!name && !phone && !email && !comment ) {
             const dataForSend = {
                 name:newData.name,
@@ -170,7 +168,6 @@ function FormBlock() {
 
             });
         } else {
-           console.log(newData);
             setFormData(newData);
         }
 

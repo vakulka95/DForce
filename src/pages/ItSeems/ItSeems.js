@@ -3,6 +3,7 @@ import itseems from '../../json/itseems.json';
 import './style.scss'
 import technologies from '../../json/technologies.json';
 import Button from '../../components/Button';
+import ScrollToTop from '../../utils/ScrollToTop';
 
 function ItSeems() {
     const color = {
@@ -105,9 +106,11 @@ function ItSeems() {
 
     };
     return (
+        <ScrollToTop>
         <section className='detail2'>
             { renderLoop()}
         </section>
+        </ScrollToTop>
     );
 }
 
