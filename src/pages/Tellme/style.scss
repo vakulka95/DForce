@@ -440,7 +440,11 @@
           font-size: 35px;
         }
         @media(min-width: 1300px){
+<<<<<<< HEAD
           font-size: 45px;
+=======
+          font-size: 40px;
+>>>>>>> c8117b9d3159e4570fe297bf3d61e7df236f7902
         }
       }
       .icon{
@@ -481,6 +485,8 @@
           }
           @media(min-width: 1300px){
             font-size: 60px;
+            margin-top: -10px;
+
           }
           &:hover{
             color: rgba(255, 255, 255, 1);
