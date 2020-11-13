@@ -423,7 +423,8 @@
           font-size: 35px;
         }
         @media(min-width: 1300px){
-          font-size: 45px;
+
+          font-size: 40px;
         }
       }
       .icon{
@@ -464,6 +465,7 @@
           }
           @media(min-width: 1300px){
             font-size: 60px;
+            margin-top: -10px;
           }
           &:hover{
             color: rgba(255, 255, 255, 1);
