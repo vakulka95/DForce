@@ -46,10 +46,8 @@
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column-reverse;
-        // flex-direction: column;
-        // justify-content: flex-end;
         align-items: center;
         @media (min-width:1024px){
             flex-direction: row;
@@ -272,10 +270,10 @@
         flex-direction: column;
         @media (min-width: 360px){
             // margin-bottom: 65px;
-                transform: translateY(20px);
+                transform: translateY(-40px);
         }
         @media (min-width: 768px){
-            margin-bottom: 85px;
+            // margin-bottom: 85px;
         }
         @media(min-width: 1024px){
             width: 500px;
@@ -284,7 +282,7 @@
         }
         @media(min-width: 1300px){
             width: 705px;
-            // margin-bottom: 50px;
+            margin-top: 200px;
         }
         @media (min-width: 1733px){
             margin-bottom: 0;
@@ -309,31 +307,32 @@
             width: 169px;
         }
         @media(min-width: 340px) and (max-width: 410px){
-            width: 250px;
-            height: 290px;  
-            transform: translateY(10px) scale(-1, 1);        
+            width: 274px;
+            height: 316px;  
+            transform: translateY(-43px) scale(-1, 1);        
             // transform: translateY(-35px) scale(-1, 1);        
         }
         @media(min-width: 411px) and (max-width: 559px){
             width: 296px;
-            height: 345px;
-            transform: translateY(19px) scale(-1, 1);
+            height: 340px;
+            transform: translateY(-43px) scale(-1, 1);   
         }
        @media (min-width: 560px) and (max-width: 767px){
                 width: 450px;
                 height: 531px;
-                transform: translateY(25px) scale(-1, 1);
+                transform: translateY(-45px) scale(-1, 1);
             }
        @media (min-width: 768px) and (max-width: 1023px){
             width: 72%;
             height: 550px;
-            transform: translateY(20px) scale(-1, 1);
+            transform: translateY(-60px) scale(-1, 1);
         }   
         
         @media (min-width: 1024px) and (max-width: 1299px){
             transform: scale(1, 1);
             height: 469px;
             width: 46%;
+            margin-bottom: 105px;
         }
         @media(min-width: 1300px){
             width: 500px;
@@ -360,12 +359,12 @@
             transform: translate(33px, 59px);
         }
         @media(min-width: 340px){
-            width: 180px;
+            width: 200px;
             transform: translate(45px, 50px);
         }
 
         @media(min-width: 411px){
-            // width: 220px;
+            width: 180px;
             transform: translate(77px, 99px);
         }
         @media(min-width: 560px) and (max-width: 767px){
