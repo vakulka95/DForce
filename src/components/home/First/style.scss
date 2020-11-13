@@ -1,8 +1,6 @@
 .home{
-    background: url('../../../assets/images/homeGreen.svg'),
-        // url('../../../assets/images/background-animation.svg') right no-repeat,
-        url('../../../assets/images/lines.svg');
-        overflow: hidden;
+    background: url('../../../assets/images/homeGreen.svg');
+    overflow: hidden;
     height: 100vh;
     background-color: #0D0E12;
     // background-size: auto, contain;
@@ -17,6 +15,11 @@
     }
     @media (min-width: 1024px){
         padding: 60px 81px 0;
+        background: url('../../../assets/images/homeGreen.svg'),
+        url('../../../assets/images/lines.svg');
+        background-color: #0D0E12;
+        background-repeat: no-repeat, repeat-y;
+        background-position-y: bottom, top;
     }
     @media (min-width:1300px){
         padding: 0px 80px 160px 80px;
@@ -158,7 +161,10 @@
             }
             @media (min-width: 1300px){
                 animation-name: change-text-1300;
-                // transform: translate(100px, 0px);
+                font-size: 47px;
+            }
+            @media (min-width: 1900px){
+                font-size: 65px;
             }
             
 
@@ -183,8 +189,7 @@
             }
             @media (min-width: 1900px){
                 animation-name: text-animation-1900-2;
-                // left: 83px;
-
+                font-size: 65px;
             }
         }
         .animation-three{
@@ -217,9 +222,8 @@
             // // }
             
             @media (min-width: 1900px){
-                // left: 135px;
+                font-size: 65px;
                 animation-name:text-animation-1900-3;
-
             }
             
 
