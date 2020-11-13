@@ -25,3 +25,10 @@
     top: 20px;
     left: 15px;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1300px){
+    .in-progress{
+        width: 145px;
+        font-size: 13px;
+    }
+}

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ submit=false, scroll, onClick, to, toForm, message, directly, innerRef, children, disable}) => {
     return (
-        <div className={`btn-wrap${(submit || to)? '':'-active'}`}>
+        <div className={`btn-wrap${(submit || to)? '':'-mob-active'}`}>
             {submit && <button type='button' className='btn-btn' onClick={onClick}>{message}</button>}
             {disable && <button type='button' disabled className='btn-btn-disabled' onClick={onClick}>{message}</button>}
             {toForm && <NavLink to='/#forcustomer' scroll={scroll} onClick={onClick} style={{textDecoration:'none'}}><span className='btn-btn'>{message}</span></NavLink>}
