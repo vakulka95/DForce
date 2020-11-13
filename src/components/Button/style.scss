@@ -95,8 +95,6 @@
         &-disabled{
             background: linear-gradient(222.66deg, #0C996F -14.23%, #629943 141.91%);
             font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
             text-align: center;
             letter-spacing: 0.06em;
             color: #FFFFFF;
@@ -104,22 +102,7 @@
             width: 100%;
             padding: 18px 35px;
             border: none;
-            outline: none;
-        @media (min-width: 768px){
-            font-size: 20px;
-            line-height: 25px;
-        }
-        @media (min-width: 1024px){
-            font-size: 18px;
-            padding: 22px 0;
-        }
-        @media (min-width:1300px){
-            padding:22px 105px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
-            padding: 22px 20px;
-        } 
+            outline: none; 
         }   
     }
     &-link{

@@ -133,17 +133,24 @@ function FormBlock() {
         let sendMail = () =>{
         const newData = { ...formData };
 
-        const name =  formData.name;
-        const phone = formData.phone;
-        const email = formData.email;
-        const comment = formData.comment;
+        const name =  isInvalid("name", newData.name);
+        const phone = isInvalid("phone", newData.phone);
+        const email = isInvalid("email",newData.email);
+        const comment = isInvalid("comment",newData.comment);
 
-        if (name && phone && email && comment) {
+        newData.nameInvalid = name;
+        newData.phoneInvalid = phone;
+        newData.emailInvalid = email;
+        newData.commentInvalid = comment;
+
+            console.log(name,phone,email,comment)
+            console.log(newData.nameInvalid,newData.phoneInvalid,newData.emailInvalid, newData.commentInvalid);
+         if (!name && !phone && !email && !comment ) {
             const dataForSend = {
-                name:formData.name,
-                phone:formData.phone,
-                email:formData.email,
-                comment:formData.comment
+                name:newData.name,
+                phone:newData.phone,
+                email:newData.email,
+                comment:newData.comment
             };
             setLoad(true)
             return  axios.post("http://www.testvakulenko.fun/send.php", dataForSend)
@@ -163,6 +170,7 @@ function FormBlock() {
 
             });
         } else {
+           console.log(newData);
             setFormData(newData);
         }
 
