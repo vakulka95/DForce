@@ -6,12 +6,12 @@
     // background-size: auto, contain;
     background-repeat: no-repeat, repeat-y;
     background-position-y: bottom, top;
-    padding: 0px 15px 60px 15px;
+    padding: 0px 15px 20px 15px;
     @media (min-width:375px){
         max-height: 813px;
     }
     @media (min-width:768px){
-        padding: 60px 0;
+        padding: 60px 0 40px;
     }
     @media (min-width: 1024px){
         padding: 60px 81px 0;
