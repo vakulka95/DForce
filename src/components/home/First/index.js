@@ -1,10 +1,22 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect,useRef} from 'react';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
 
-const First = () => {
+const First = (props) => {
     let history = useHistory()
     let locate = useLocation()
+
+    const ownRef = useRef();
+    const [refForFirst, setrefForFirst] = useState({id:'',height:0})
+    const handleScroll = ()=>{
+        setrefForFirst({id:ownRef.current.id,height:ownRef.current.clientHeight})
+        props.myRef(refForFirst)
+    }
+
+    useEffect(()=>{
+        document.addEventListener('scroll',handleScroll )
+        return ()=>{document.removeEventListener('scroll',handleScroll )}
+    })
 
     // const [animation, setAnimation] = useState(false)
 
@@ -38,7 +50,7 @@ const First = () => {
     }
           
     return (
-        <section className = 'home' id='home' onMouseEnter={handleMouseMove}>
+        <section ref={ownRef} className = 'home' id='home' onMouseEnter={handleMouseMove}>
             <div className='container'>
                 <div className = 'home-wrap'>
                     <div className='home-intro'>

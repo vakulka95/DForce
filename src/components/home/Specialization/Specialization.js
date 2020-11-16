@@ -1,17 +1,39 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect,useRef} from 'react';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
 import SpecItem from '../../SpecItem/SpecItem';
 
 
-function Specialization({specItems}) {
-    let history = useHistory()
-    let locate = useLocation()
+function Specialization({myRef,specItems}) {
+    const ownRef = useRef();
+    const [refForHeight, setRefForHeight] = useState({id:'',height:0})
+    const handleScroll = ()=>{
+        setRefForHeight({id:ownRef.current.id,height:ownRef.current.clientHeight})
+        myRef(refForHeight)
+    }
 
+    useEffect(()=>{
+        document.addEventListener('scroll',handleScroll )
+        return ()=>{document.removeEventListener('scroll',handleScroll )}
+    })
+    
+   // console.log(refForHeight);
+    let history = useHistory(),
+     locate = useLocation();
+     //myRef = React.createRef();
+    //  myRefHeight = myRef.current.offsetHeight,
+    //  myRefWidth = myRef.current.offsetTop;
+
+    // const funcRef = () =>{
+    //     console.log(myRef.current.offsetHeight);
+    //     console.log(myRef.current.offsetTop);
+    // }
 
     const [position,setPosition] = useState({ y: null })
 
     const handleMouseMove = (e)=> {
+        // console.log(myRef.current.offsetHeight);
+        // console.log(myRef.current.offsetTop);
         setPosition({
           y: e.clientY
         });
@@ -26,7 +48,7 @@ function Specialization({specItems}) {
         return ()=> window.removeEventListener('mouseOver', handleMouseMove)
     } ) 
     return (
-        <section className='specialization main-padding' id='specialization' onMouseOver={handleMouseMove}>
+        <section className='specialization main-padding' ref={ownRef} id='specialization' onMouseOver={handleMouseMove}>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>
