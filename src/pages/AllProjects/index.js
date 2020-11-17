@@ -2,11 +2,13 @@ import React from 'react';
 import InProgress from '../../components/InProgress/InProgress';
 import './style.scss';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../../utils/ScrollToTop';
 
 
 const AllProjects = () => {
 
     return (
+        <ScrollToTop>
         <section className='allContainer'>
             <div className='container'>
             <h2 className='allProjects-title'>Провідні проекти</h2>
@@ -74,6 +76,7 @@ const AllProjects = () => {
             </div>
             </div>
         </section>
+        </ScrollToTop>
     )
 }
 

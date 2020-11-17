@@ -1,10 +1,7 @@
 import React, {useState,useEffect,useRef} from 'react';
 import './style.scss';
-import {useHistory,useLocation }from 'react-router-dom';
 
 const First = (props) => {
-    let history = useHistory()
-    let locate = useLocation()
 
     const ownRef = useRef();
     const [refForFirst, setrefForFirst] = useState({id:'',height:0})
@@ -19,10 +16,7 @@ const First = (props) => {
     })
 
     // const [animation, setAnimation] = useState(false)
-
-    
-
-    
+   
     // const changeAnimation = (e) => {
     //     console.log(window.innerWidth);
     //     if(window.innerWidth > 319 && window.innerWidth < 1025){
@@ -35,22 +29,9 @@ const First = (props) => {
     // useEffect(() => {
     //     window.addEventListener('resize', changeAnimation());
     //   });
-        
-
-    const [position,setPosition] = useState({ y: null })
-
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#home'
-            history.replace(locate.hash)
-            }
-    }
-          
+                
     return (
-        <section ref={ownRef} className = 'home' id='home' onMouseEnter={handleMouseMove}>
+        <section ref={ownRef} className = 'home' id='home'>
             <div className='container'>
                 <div className = 'home-wrap'>
                     <div className='home-intro'>

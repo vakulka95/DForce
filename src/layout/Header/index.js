@@ -22,7 +22,7 @@ const Header = () =>{
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = num; 
-        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+        window.scrollTo({ top: yCoordinate + yOffset}); 
     }
 
     let pathName = useLocation().pathname;
@@ -45,25 +45,25 @@ const Header = () =>{
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
-                        smooth activeClassName = { 'header-navigation-link-active' }
+                         activeClassName = { 'header-navigation-link-active' }
                         to="/#home" ><span>Головна</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
-                        smooth activeClassName = { 'header-navigation-link-active' }
+                         activeClassName = { 'header-navigation-link-active' }
                         to="/#specialization" ><span>Послуги</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
-                        smooth activeClassName = { 'header-navigation-link-active' }
+                         activeClassName = { 'header-navigation-link-active' }
                         to="/#portfolio" ><span>Портфоліо</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
-                        smooth activeClassName = { 'header-navigation-link-active' }
+                         activeClassName = { 'header-navigation-link-active' }
                         to="/#about" ><span>Про нас</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>

@@ -1,5 +1,4 @@
 import React,{useState,useEffect,useRef} from 'react';
-import {useHistory,useLocation }from 'react-router-dom';
 import PortfolioItems from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
 import './style.scss';
@@ -8,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = ({myRef,portfolioItems}) => {
-    let history = useHistory()
-    let locate = useLocation()
 
     const ownRef = useRef();
     const [refForPortfolio, setRefForPortfolio] = useState({id:'',height:0})
@@ -23,20 +20,8 @@ const Portfolio = ({myRef,portfolioItems}) => {
         return ()=>{document.removeEventListener('scroll',handleScroll )}
     })
 
-    const [position,setPosition] = useState({ y: null })
-
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#portfolio'
-            history.replace(locate.hash)
-            }
-    }
-
     return (
-        <section ref={ownRef} className='portfolio main-padding' id='portfolio' onMouseOver={handleMouseMove}>
+        <section ref={ownRef} className='portfolio main-padding' id='portfolio'>
             <div className='container'>
             <h2 className='portfolio-title'>Наші кейси</h2>
                 <div className='portfolio-list'>

@@ -1,6 +1,6 @@
 import React, {useState,useEffect,useRef} from 'react';
 import './style.scss';
-import {useHistory,useLocation }from 'react-router-dom';
+//import {useHistory,useLocation }from 'react-router-dom';
 import SpecItem from '../../SpecItem/SpecItem';
 
 
@@ -18,8 +18,8 @@ function Specialization({myRef,specItems}) {
     })
     
    // console.log(refForHeight);
-    let history = useHistory(),
-     locate = useLocation();
+    // let history = useHistory(),
+    //  locate = useLocation();
      //myRef = React.createRef();
     //  myRefHeight = myRef.current.offsetHeight,
     //  myRefWidth = myRef.current.offsetTop;
@@ -29,26 +29,26 @@ function Specialization({myRef,specItems}) {
     //     console.log(myRef.current.offsetTop);
     // }
 
-    const [position,setPosition] = useState({ y: null })
+    // const [position,setPosition] = useState({ y: null })
 
-    const handleMouseMove = (e)=> {
-        // console.log(myRef.current.offsetHeight);
-        // console.log(myRef.current.offsetTop);
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#specialization'
-            history.replace(locate.hash)
-            }
-    }
+    // const handleMouseMove = (e)=> {
+    //     // console.log(myRef.current.offsetHeight);
+    //     // console.log(myRef.current.offsetTop);
+    //     setPosition({
+    //       y: e.clientY
+    //     });
+    //     if(position.y){ 
+    //         locate.hash = '#specialization'
+    //         history.replace(locate.hash)
+    //         }
+    // }
 
-    useEffect(()=>{
-        window.addEventListener('mouseOver', handleMouseMove)
-        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
-    } ) 
+    // useEffect(()=>{
+    //     window.addEventListener('mouseOver', handleMouseMove)
+    //     return ()=> window.removeEventListener('mouseOver', handleMouseMove)
+    // } ) 
     return (
-        <section className='specialization main-padding' ref={ownRef} id='specialization' onMouseOver={handleMouseMove}>
+        <section className='specialization main-padding' ref={ownRef} id='specialization'>
             <div className='container'>
             <h2 className='title-of-block'>Наша спеціалізація</h2>
                 <div className='spec-section'>
