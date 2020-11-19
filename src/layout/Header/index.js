@@ -5,10 +5,19 @@ import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
 import {useOnScroll} from '../../utils/useOnScroll';
+//simport useHeight from '../../utils/useHeight';
 
-const Header = () =>{
+const Header = ({collect}) =>{
     const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
+    // const [rect, ref] = useHeight()
+    // let block;
+
+    //     if(rect){
+    //     block = {id:'header', height:rect}
+        
+    // }
+    // useEffect(()=>collect(block),[])
 
     let num = 0;
 

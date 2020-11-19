@@ -1,23 +1,21 @@
-import React,{useState,useRef,useEffect} from 'react';
+import React from 'react';
 import './style.scss';
 import SpecItem from '../../../components/SpecItem/SpecItem';
 import about from '../../../json/aboutItems.js';
+import useHeight from '../../../utils/useHeight';
 
-const About = (props) => {
-    const ownRef = useRef();
-    const [refForAbout, setrefForAbout] = useState({id:'',height:0})
-    const handleScroll = ()=>{
-        setrefForAbout({id:ownRef.current.id,height:ownRef.current.clientHeight})
-        props.myRef(refForAbout)
+
+const About = ({collectHeight}) => {
+
+    const [rect, ref] = useHeight()
+    const block = {id:'about', height:rect}
+
+        if(rect){
+        collectHeight(block)
     }
-
-    useEffect(()=>{
-        document.addEventListener('scroll',handleScroll )
-        return ()=>{document.removeEventListener('scroll',handleScroll )}
-    })
          
     return (
-        <section ref={ownRef}  className='about main-padding' id='about'>
+        <section ref={ref} className='about main-padding' id='about'>
             <div className='container'>
                 <h2 className='title-of-block'>Наші цінності</h2>
                 <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям і допомагають компаніями ставати ефективнішими. Наша команда зацікавлена в розвитку вашого бізнесу й довготривалій співпраці!</p>

@@ -8,6 +8,7 @@ import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
 import ScrollToTop from '../../utils/ScrollToTop';
 
+
 function Home() {
     let history = useHistory()
     let locate = useLocation()
@@ -18,16 +19,18 @@ function Home() {
         aboutTop:null,
 
     })
+    let arr=[];
 
-    let arr = []
-
-    const spec = (refForBlock)=>{
-        let block = refForBlock;
+    const myRef = (block)=>{        
         arr.push(block)
         arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
+        console.log(arr);
+        return arr
     }
 
+
     const handleScroll = ()=>{
+        console.log(arr);
         let aboutHeight,homeHeight,portfolioHeight,specializationHeight;
         let win = window.pageYOffset
         arr.map(item=>{
@@ -52,10 +55,7 @@ function Home() {
                     return height
         })
         console.log(height,win);
-        if((height.homeTop===null || height.homeTop===undefined) && (height.specializationTop===null || height.specializationTop===undefined)  && (height.portfolioTop===null ||height.portfolioTop===undefined) && (height.aboutTop===null || height.aboutTop===undefined)){
-            locate.hash = '#home'
-            history.replace(locate.hash) 
-        }
+
         if(win<height.homeTop){
             locate.hash = '#home'
             history.replace(locate.hash)
@@ -68,13 +68,17 @@ function Home() {
             locate.hash = '#portfolio'
             history.replace(locate.hash)
         }
-       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop) && win<(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop)){
+       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop) && win<(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
             locate.hash = '#about'
             history.replace(locate.hash)
         }
-        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop)) {
+        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
+        }
+        else{
+            locate.hash = '#home'
+            history.push(locate.hash)
         }
 
     }
@@ -88,10 +92,10 @@ function Home() {
 
         <ScrollToTop>
         <Fragment>
-            <First myRef={spec} id='home'/>
-            <Specialization myRef={spec}  specItems={specItems} id='specialization' />
-            <Portfolio myRef ={spec}  portfolioItems={portfolioItems} id='portfolio' />
-            <About myRef={spec} id='about' />
+            <First collectHeight={myRef} id='home'/>
+            <Specialization collectHeight={myRef}  specItems={specItems} id='specialization' />
+            <Portfolio collectHeight={myRef} portfolioItems={portfolioItems} id='portfolio' />
+            <About collectHeight={myRef} id='about' />
         </Fragment>
         </ScrollToTop>
 

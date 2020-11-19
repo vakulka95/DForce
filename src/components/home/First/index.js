@@ -1,37 +1,18 @@
-import React, {useState,useEffect,useRef} from 'react';
+import React from 'react';
 import './style.scss';
+import useHeight from '../../../utils/useHeight';
 
-const First = (props) => {
 
-    const ownRef = useRef();
-    const [refForFirst, setrefForFirst] = useState({id:'',height:0})
-    const handleScroll = ()=>{
-        setrefForFirst({id:ownRef.current.id,height:ownRef.current.clientHeight})
-        props.myRef(refForFirst)
-    }
+const First = ({collectHeight}) => {
 
-    useEffect(()=>{
-        document.addEventListener('scroll',handleScroll )
-        return ()=>{document.removeEventListener('scroll',handleScroll )}
-    })
-
-    // const [animation, setAnimation] = useState(false)
-   
-    // const changeAnimation = (e) => {
-    //     console.log(window.innerWidth);
-    //     if(window.innerWidth > 319 && window.innerWidth < 1025){
-    //         setAnimation(true)
-    //     }
-    //     else{
-    //         setAnimation(false)
-    //     }
-    // }
-    // useEffect(() => {
-    //     window.addEventListener('resize', changeAnimation());
-    //   });
+    const [rect, ref] = useHeight()
+    const block = {id:'home', height:rect}
+        if(rect){
+        collectHeight(block)
+    } 
                 
     return (
-        <section ref={ownRef} className = 'home' id='home'>
+        <section ref={ref} className = 'home' id='home'>
             <div className='container'>
                 <div className = 'home-wrap'>
                     <div className='home-intro'>

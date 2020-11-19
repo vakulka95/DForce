@@ -1,27 +1,24 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React from 'react';
 import PortfolioItems from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
 import './style.scss';
 import portfolioItemsDisabled from '../../../json/portfolioItemsDisabled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import useHeight from '../../../utils/useHeight';
 
-const Portfolio = ({myRef,portfolioItems}) => {
 
-    const ownRef = useRef();
-    const [refForPortfolio, setRefForPortfolio] = useState({id:'',height:0})
-    const handleScroll = ()=>{
-        setRefForPortfolio({id:ownRef.current.id,height:ownRef.current.clientHeight})
-        myRef(refForPortfolio)
+const Portfolio = ({portfolioItems,collectHeight}) => {
+
+    const [rect, ref] = useHeight()
+    const block = {id:'portfolio', height:rect}
+
+        if(rect){
+        collectHeight(block)
     }
 
-    useEffect(()=>{
-        document.addEventListener('scroll',handleScroll )
-        return ()=>{document.removeEventListener('scroll',handleScroll )}
-    })
-
     return (
-        <section ref={ownRef} className='portfolio main-padding' id='portfolio'>
+        <section ref={ref} className='portfolio main-padding' id='portfolio'>
             <div className='container'>
             <h2 className='portfolio-title'>Наші кейси</h2>
                 <div className='portfolio-list'>
