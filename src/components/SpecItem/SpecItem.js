@@ -1,17 +1,15 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
 
 function SpecItem({image, alt, title, text, classItem, classImage, classTitle, classText, keys}) {
-    const { t } = useTranslation();
     return (
         <div className={classItem} key={keys}>
             <div className={classImage}>
                 <img src={image} alt={alt} />
             </div>
             <h3 className={classTitle}>{title}</h3>
-            <p className={classText}>{{text},t("description")}</p>
+            <p className={classText}>{text}</p>
         </div>
     )
 }

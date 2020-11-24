@@ -5,7 +5,6 @@ import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
 import {useOnScroll} from '../../utils/useOnScroll';
-import { useTranslation } from 'react-i18next';
 
 const Header = () =>{
     const [mobileNav, setMobileNav] = useState(false);
@@ -38,12 +37,7 @@ const Header = () =>{
     };
     let opasity = opasityHeader();
 
-    const { t } = useTranslation();
-
-    let changeLanguage = code => {
-        localStorage.setItem('language', code);
-        window.location.reload();
-    }
+    
     return(
         <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
