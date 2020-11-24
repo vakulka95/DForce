@@ -9,11 +9,6 @@ import Header from './layout/Header';
 const customHistory = createBrowserHistory();
 
 function App() {
-  // const [headerHeight,setHeaderHeight] = useState(null)
-  // const collector = (arg)=>{
-  //   setHeaderHeight(arg)
-  //   console.log(headerHeight)
-  // }
   return (
     <Router history = {customHistory}>
         <div className="App">

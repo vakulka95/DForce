@@ -1,4 +1,4 @@
-import React, { Fragment,useState,useEffect } from 'react';
+import React, { Fragment,useState,useEffect,useCallback } from 'react';
 import {useHistory,useLocation }from 'react-router-dom';
 import Specialization from '../../components/home/Specialization/Specialization';
 import First from '../../components/home/First';
@@ -21,16 +21,17 @@ function Home() {
     })
     let arr=[];
 
-    const myRef = (block)=>{        
+    const myRef = useCallback((block)=>{        
         arr.push(block)
-        arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
-        console.log(arr);
         return arr
-    }
+    },[arr])
+    
 
 
     const handleScroll = ()=>{
-        console.log(arr);
+        let hHeight = +localStorage.getItem('height')
+        arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
+        console.log(arr,hHeight);
         let aboutHeight,homeHeight,portfolioHeight,specializationHeight;
         let win = window.pageYOffset
         arr.map(item=>{
@@ -54,25 +55,26 @@ function Home() {
                     })
                     return height
         })
-        console.log(height,win);
+       // console.log(height,win);
 
         if(win<height.homeTop){
             locate.hash = '#home'
             history.replace(locate.hash)
         }
-       else if(win>=height.homeTop && (win<(height.homeTop + height.specializationTop))){
+       else if(win>=height.homeTop-hHeight && (win<(height.homeTop + height.specializationTop ))){
+           //console.log(height.homeTop-hHeight,win,height.homeTop + height.specializationTop );
             locate.hash = '#specialization'
             history.replace(locate.hash)
         }
-     else if(win>=(height.homeTop + height.specializationTop) && win<(height.homeTop + height.specializationTop + height.portfolioTop)){
+     else if(win>=(height.homeTop + height.specializationTop - hHeight) && win<(height.homeTop + height.specializationTop + height.portfolioTop - hHeight)){
             locate.hash = '#portfolio'
             history.replace(locate.hash)
         }
-       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop) && win<(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
+       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop - hHeight) && win<(height.homeTop - hHeight + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
             locate.hash = '#about'
             history.replace(locate.hash)
         }
-        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
+        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - hHeight - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
         }

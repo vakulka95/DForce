@@ -5,19 +5,18 @@ import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
 import {useOnScroll} from '../../utils/useOnScroll';
-//simport useHeight from '../../utils/useHeight';
+import useHeight from '../../utils/useHeight';
 
-const Header = ({collect}) =>{
+const Header = () =>{
     const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
-    // const [rect, ref] = useHeight()
-    // let block;
+    const [rect, ref] = useHeight()
 
-    //     if(rect){
-    //     block = {id:'header', height:rect}
-        
-    // }
-    // useEffect(()=>collect(block),[])
+
+        if(rect!==null){
+          localStorage.setItem('height',rect)
+    }
+    //console.log(rect,block);
 
     let num = 0;
 
@@ -46,7 +45,7 @@ const Header = ({collect}) =>{
     };
     let opasity = opasityHeader();
     return(
-        <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
+        <header ref={ref} style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
                 <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo-inner ' mobile={mobileNav?activateMobileNav:null}/>
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
@@ -54,25 +53,25 @@ const Header = ({collect}) =>{
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
-                         activeClassName = { 'header-navigation-link-active' }
+                        smooth activeClassName = { 'header-navigation-link-active' }
                         to="/#home" ><span>Головна</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
-                         activeClassName = { 'header-navigation-link-active' }
+                        smooth activeClassName = { 'header-navigation-link-active' }
                         to="/#specialization" ><span>Послуги</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
-                         activeClassName = { 'header-navigation-link-active' }
+                        smooth activeClassName = { 'header-navigation-link-active' }
                         to="/#portfolio" ><span>Портфоліо</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
-                         activeClassName = { 'header-navigation-link-active' }
+                        smooth activeClassName = { 'header-navigation-link-active' }
                         to="/#about" ><span>Про нас</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
