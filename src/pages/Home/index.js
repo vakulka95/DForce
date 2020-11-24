@@ -31,9 +31,9 @@ function Home() {
     const handleScroll = ()=>{
         let hHeight = +localStorage.getItem('height')
         arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
-        console.log(arr,hHeight);
         let aboutHeight,homeHeight,portfolioHeight,specializationHeight;
         let win = window.pageYOffset
+        //console.log(arr,hHeight,win);
         arr.map(item=>{
                     if(item.id ==="home"){  
                 homeHeight = item.height         
@@ -55,26 +55,29 @@ function Home() {
                     })
                     return height
         })
-       // console.log(height,win);
+
 
         if(win<height.homeTop){
             locate.hash = '#home'
             history.replace(locate.hash)
         }
-       else if(win>=height.homeTop-hHeight && (win<(height.homeTop + height.specializationTop ))){
-           //console.log(height.homeTop-hHeight,win,height.homeTop + height.specializationTop );
+       else if(win>=height.homeTop-hHeight && (win<(height.homeTop + height.specializationTop +hHeight))){
+           //console.log(height.homeTop-hHeight,win);
             locate.hash = '#specialization'
             history.replace(locate.hash)
         }
-     else if(win>=(height.homeTop + height.specializationTop - hHeight) && win<(height.homeTop + height.specializationTop + height.portfolioTop - hHeight)){
+     else if(win>=(height.homeTop + height.specializationTop +hHeight) && win<(height.homeTop + height.specializationTop + height.portfolioTop + hHeight)){
+         //console.log(height.homeTop + height.specializationTop +hHeight,win);
             locate.hash = '#portfolio'
             history.replace(locate.hash)
         }
-       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop - hHeight) && win<(height.homeTop - hHeight + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
+       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + hHeight) && win<(height.homeTop + hHeight + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
+           //console.log(height.homeTop + height.specializationTop + height.portfolioTop + hHeight,win);
             locate.hash = '#about'
             history.replace(locate.hash)
         }
-        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - hHeight - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
+        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop + hHeight - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
+            //console.log(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop + hHeight - 240,win);
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
         }
@@ -89,6 +92,10 @@ function Home() {
     useEffect(()=>{
         document.addEventListener('scroll', handleScroll)
         return ()=>document.removeEventListener('scroll', handleScroll)
+    })
+    useEffect(()=>{
+        document.addEventListener('resize', handleScroll)
+        return ()=>document.removeEventListener('resize', handleScroll)
     })
     return (
 

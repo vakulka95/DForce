@@ -30,7 +30,7 @@ const Header = () =>{
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = num; 
-        window.scrollTo({ top: yCoordinate + yOffset}); 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior:'smooth'}); 
     }
 
     let pathName = useLocation().pathname;
