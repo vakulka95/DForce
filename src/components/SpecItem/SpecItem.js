@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
 
+
 function SpecItem({image, alt, title, text, classItem, classImage, classTitle, classText, keys}) {
     return (
         <div className={classItem} key={keys}>

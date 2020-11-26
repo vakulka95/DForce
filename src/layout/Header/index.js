@@ -5,6 +5,9 @@ import {useLocation} from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
 import {useOnScroll} from '../../utils/useOnScroll';
+import I18n from '../../i18n/I18n';
+import { LANG } from "../../utils/constants";
+
 
 const Header = () =>{
     const [mobileNav, setMobileNav] = useState(false);
@@ -37,46 +40,61 @@ const Header = () =>{
     };
     let opasity = opasityHeader();
 
+   
+    const onChangeLang = (event) => {
+        console.log('TRUE');
+        const lg = event?.target?.lang;
+
+        if (LANG === lg) {
+            return null;
+        }
+
+        window.localStorage.setItem('lg', lg);
+        window.location = lg === 'uk' ? '/' : `/${lg}`;
+
+    };
     
     return(
         <header style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
             <div className={`container header-container${mobileNav? '-active':''}`}>
                 <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo-inner ' mobile={mobileNav?activateMobileNav:null}/>
+                <button lang = 'uk' onClick={onChangeLang}>UK</button>
+                <button lang = 'en' onClick={onChangeLang}>EN</button>
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
                 <ul className = 'header-navigation-list'>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                         smooth activeClassName = { 'header-navigation-link-active' }
-                        to="/#home" ><span>Головна</span>
+                        to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         smooth activeClassName = { 'header-navigation-link-active' }
-                        to="/#specialization" ><span>Спеціалізація</span>
+                        to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                         smooth activeClassName = { 'header-navigation-link-active' }
-                        to="/#portfolio" ><span>Портфоліо</span>
+                        to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         smooth activeClassName = { 'header-navigation-link-active' }
-                        to="/#about" ><span>Про нас</span>
+                        to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         activeClassName = { 'header-navigation-link-active' }
                         scroll={el => scrollWidthOffset(el)}
-                        to="#forcustomer" ><span>Контакти</span>
+                        to="#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
-                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={'Замовити консультацію'}/>}
+                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={I18n.t('buttonModal')}/>}
                         </li>
                 </ul>
             </div>

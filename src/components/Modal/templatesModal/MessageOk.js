@@ -1,10 +1,11 @@
 import React from 'react';
 import './style.scss';
+import I18n from '../../../i18n/I18n';
 
 const MessageOk = () => {
     return (
         <>
-            <p className = 'templatesModal__content-text'>Дякуємо Вам за довіру. Ми цінуємо Ваш час, тому наші спеціалісти зв`яжуться з вами найближчим часом</p>
+            <p className = 'templatesModal__content-text'>{I18n.t('modalMessageOk')}</p>
         </>
     )
 }

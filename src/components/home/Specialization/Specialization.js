@@ -2,9 +2,9 @@ import React, {useState,useEffect} from 'react';
 import './style.scss';
 import {useHistory,useLocation }from 'react-router-dom';
 import SpecItem from '../../SpecItem/SpecItem';
-
-
-function Specialization({specItems}) {
+import I18n from '../../../i18n/I18n';
+import { specItem } from '../../../json/index';
+function Specialization() {
     let history = useHistory()
     let locate = useLocation()
 
@@ -28,10 +28,10 @@ function Specialization({specItems}) {
     return (
         <section className='specialization main-padding' id='specialization' onMouseOver={handleMouseMove}>
             <div className='container'>
-            <h2 className='title-of-block'>Наша спеціалізація</h2>
+            <h2 className='title-of-block'>{I18n.t('specTitle')}</h2>
                 <div className='spec-section'>
                     {
-                    specItems.map(({ 
+                    specItem.map(({ 
                         id,
                         image,
                         alt,

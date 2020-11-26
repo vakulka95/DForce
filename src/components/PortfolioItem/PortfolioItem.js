@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import technologies from '../../json/technologies.json'
 import './style.scss';
 import InProgress from '../InProgress/InProgress';
+import I18n from '../../i18n/I18n';
 
 
 
@@ -33,7 +34,7 @@ function PortfolioItems({ id,backgroundCLass, description, to , backgroundCLassD
                     {technologies.map((icon)=><img src={Object.values(icon).join('')} alt={Object.keys(icon).join('')} id={Object.keys(icon).join('')} title={Object.keys(icon).join('')} key={Object.keys(icon).join('')} />)}
                 </div>
                 <div className='case-link'>
-                    <p  className='case-link-item'>Подивитися проект</p> 
+                    <p  className='case-link-item'>{I18n.t('portfolioMore')}</p> 
                     <span className='case-link-item'>
                         <div className='case-circle'>
                             <FontAwesomeIcon className='icon' icon={faAngleRight} size='lg'/>

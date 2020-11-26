@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
 import './style.scss';
 import SpecItem from '../../../components/SpecItem/SpecItem';
-import about from '../../../json/aboutItems.js';
 import {useHistory,useLocation }from 'react-router-dom';
+import I18n from '../../../i18n/I18n';
+import { aboutItem } from '../../../json/index';
+
 
 const About = () => {
     let history = useHistory()
@@ -23,10 +25,10 @@ const About = () => {
     return (
         <section className='about main-padding' id='about' onMouseOver={handleMouseMove}>
             <div className='container'>
-                <h2 className='title-of-block'>Наші цінності</h2>
-                <p className='about-content text'>Ми створюємо тільки ті цифрові продукти, які приносять користь людям і допомагають компаніями ставати ефективнішими. Наша команда зацікавлена в розвитку вашого бізнесу й довготривалій співпраці!</p>
+                <h2 className='title-of-block'>{I18n.t('aboutTitle')}</h2>
+                <p className='about-content text'>{I18n.t('aboutDescription')}</p>
                 <div className='about-items'>{
-                    about.map((item) => <div className='about-one' key={item.alt}>
+                    aboutItem.map((item) => <div className='about-one' key={item.alt}>
                         <SpecItem
                             keys={item.id}
                             title={item.title}

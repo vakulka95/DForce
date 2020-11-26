@@ -1,4 +1,5 @@
-const about = [{
+const aboutItems = [
+{
     id: 1,
     image: "./images/about/heart1.svg",
     title: "Чесність між людьми",
@@ -28,4 +29,4 @@ const about = [{
 }
 ];
 
-export default about;
+export default aboutItems;

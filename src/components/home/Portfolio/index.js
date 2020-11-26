@@ -3,11 +3,12 @@ import {useHistory,useLocation }from 'react-router-dom';
 import PortfolioItems from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
 import './style.scss';
-import portfolioItemsDisabled from '../../../json/portfolioItemsDisabled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import I18n from '../../../i18n/I18n';
+import { portfolioItem, portfolioItemDisabled } from '../../../json/index';
 
-const Portfolio = ({portfolioItems}) => {
+const Portfolio = () => {
     let history = useHistory()
     let locate = useLocation()
 
@@ -26,9 +27,9 @@ const Portfolio = ({portfolioItems}) => {
     return (
         <section className='portfolio main-padding' id='portfolio' onMouseOver={handleMouseMove}>
             <div className='container'>
-            <h2 className='portfolio-title'>Наші кейси</h2>
+            <h2 className='portfolio-title'>{I18n.t('portfolioTitle')}</h2>
                 <div className='portfolio-list'>
-                    {portfolioItems.map(({
+                    {portfolioItem.map(({
                         id,
                         backgroundCLass,
                         description,
@@ -41,7 +42,7 @@ const Portfolio = ({portfolioItems}) => {
                     />)
                     }
 
-                    {portfolioItemsDisabled.map(({
+                    {portfolioItemDisabled.map(({
                          id,
                          imageDis,
                          altDis,
@@ -58,7 +59,7 @@ const Portfolio = ({portfolioItems}) => {
                     
                 </div>
                 <div className='button'>
-                    <Button to={'/allprojects'} innerRef message={`Всі проекти`} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='sm'/></Button>
+                    <Button to={'/allprojects'} innerRef message={I18n.t('buttonAllProjects')} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='sm'/></Button>
                 </div>
             </div>
         </section>
