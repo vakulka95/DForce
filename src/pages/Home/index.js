@@ -33,7 +33,7 @@ function Home() {
         arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
         let aboutHeight,homeHeight,portfolioHeight,specializationHeight;
         let win = window.pageYOffset
-        console.log(arr,hHeight,win);
+       // console.log(arr,hHeight,win);
         arr.map(item=>{
                     if(item.id ==="home"){  
                 homeHeight = item.height         
@@ -56,21 +56,21 @@ function Home() {
                     return height
         })
 
-        if(win<height.homeTop){
+        if(win<height.homeTop - hHeight){
             locate.hash = '#home'
             history.replace(locate.hash)
         }
-       else if(win>=height.homeTop && (win<(height.homeTop + height.specializationTop ))){
+       else if(win>=height.homeTop - hHeight && (win<(height.homeTop + height.specializationTop - hHeight ))){
           // console.log(height.homeTop,win);
             locate.hash = '#specialization'
             history.replace(locate.hash)
         }
-     else if(win>=(height.homeTop + height.specializationTop ) && win<(height.homeTop + height.specializationTop + height.portfolioTop )){
+     else if(win>=(height.homeTop + height.specializationTop - hHeight ) && win<(height.homeTop + height.specializationTop + height.portfolioTop - hHeight )){
         // console.log(height.homeTop + height.specializationTop ,win);
             locate.hash = '#portfolio'
             history.replace(locate.hash)
         }
-       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop ) && win<(height.homeTop  + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
+       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop - hHeight ) && win<(height.homeTop  + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
           //console.log(height.homeTop + height.specializationTop + height.portfolioTop ,win);
             locate.hash = '#about'
             history.replace(locate.hash)

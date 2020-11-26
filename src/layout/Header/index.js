@@ -21,8 +21,9 @@ const Header = () =>{
     let num = 0;
 
     if (mobileNav){
-        num=-150;
+        num=-88;
     } else num=-240
+
    const activateMobileNav = () => {
        setMobileNav((prev)=>!prev)
    }
@@ -60,18 +61,21 @@ const Header = () =>{
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         smooth activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
                         to="/#specialization" ><span>Послуги</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                         smooth activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
                         to="/#portfolio" ><span>Портфоліо</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         smooth activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
                         to="/#about" ><span>Про нас</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
