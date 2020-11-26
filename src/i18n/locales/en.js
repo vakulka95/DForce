@@ -36,6 +36,7 @@ export default {
     buttonForm: "Submit",
     buttonModal: "Get a consultation",
     buttonToSite: "Continue to site",
+    buttonImageDetail: "../images/fontImages/tosite.svg",
 
     pageNotFound: "Page not found",
 
@@ -44,4 +45,6 @@ export default {
 
     allProjects: "Leading Projects",
     webSites: "Web Sites",
+
+    logo: "../images/logo.svg"
 };

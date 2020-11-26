@@ -21,8 +21,8 @@ function ItSeems() {
                         {itseem.paragraph1}
                     </p>
                     <Button to={itseem.to} directly message={I18n.t('buttonToSite')} >
-                        <img src={'./images/fontImages/tosite.svg'} alt={'ref'}
-                            key={'./images/fontImages/tosite.svg'} className='tosite' />
+                        <img src={I18n.t('buttonImageDetail')} alt={'ref'}
+                            key={I18n.t('buttonImageDetail')} className='tosite' />
                     </Button>
                 </div>
 
@@ -50,10 +50,10 @@ function ItSeems() {
                     </figure>
                     <div className='detail2-block-figures fleX' key={`${itseem.group4}-wrap`}>
                         <figure className='detail2-Figure dark' key={itseem.group4}>
-                            <img className='detail2-figure-itseem' alt={itseem.alt4} src={itseem.group4} />
+                            <img className='detail2-figure-itseems' alt={itseem.alt4} src={itseem.group4} />
                         </figure>
                         <figure className='detail2-Figure dark' key={itseem.group5}>
-                            <img className='detail2-figure-itseem' alt={itseem.alt5} src={itseem.group5} />
+                            <img className='detail2-figure-itseems' alt={itseem.alt5} src={itseem.group5} />
                         </figure>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ let portfolioItemsEn = [
         alt: 'ItSeems',
         backgroundCLass: 'itseems-background',
         description: 'Anonymous online diary for people who are victims of violence',
-        to: '/itseems',
+        to: '/en/itseems',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ let portfolioItemsEn = [
         alt: 'Tellme',
         backgroundCLass: 'tellme',
         description: 'Online platform for psychological counseling that provides assistance to anyone in need of emotional support',
-        to: '/tellme',
+        to: '/en/tellme',
 
     },
 

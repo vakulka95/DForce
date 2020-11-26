@@ -36,6 +36,7 @@ export default {
     buttonForm: "Замовити консультацію",
     buttonModal: "Замовити консультацію",
     buttonToSite: "Перейти на сайт",
+    buttonImageDetail: "./images/fontImages/tosite.svg",
 
     pageNotFound: "Сторінку не знайдено",
 
@@ -44,5 +45,7 @@ export default {
 
     allProjects: "Провідні проекти",
     webSites: "Веб-сайти",
+
+    logo: "./images/logo.svg"
 
 };                      

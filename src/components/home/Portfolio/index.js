@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import I18n from '../../../i18n/I18n';
 import { portfolioItem, portfolioItemDisabled } from '../../../json/index';
-
+import { URL_LANG } from '../../../utils/constants';
 const Portfolio = () => {
     let history = useHistory()
     let locate = useLocation()
@@ -59,7 +59,7 @@ const Portfolio = () => {
                     
                 </div>
                 <div className='button'>
-                    <Button to={'/allprojects'} innerRef message={I18n.t('buttonAllProjects')} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='sm'/></Button>
+                    <Button to={`${URL_LANG}/allprojects`} innerRef message={I18n.t('buttonAllProjects')} ><FontAwesomeIcon className='icon' icon={faAngleRight} size='sm'/></Button>
                 </div>
             </div>
         </section>

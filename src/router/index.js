@@ -9,7 +9,7 @@ const routes = [
         ),
     },
     {
-        path:       ['/itseems', '/en/itseems'],
+        path:       ['/itseems',  '/en/itseems'],
         components: lazy(
             () => import('../pages/ItSeems/ItSeems.js')
         ),

@@ -42,7 +42,6 @@ const Header = () =>{
 
    
     const onChangeLang = (event) => {
-        console.log('TRUE');
         const lg = event?.target?.lang;
 
         if (LANG === lg) {
