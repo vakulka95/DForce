@@ -33,7 +33,7 @@ function Home() {
         arr=Array.from(new Set(arr.map(JSON.stringify))).map(JSON.parse);
         let aboutHeight,homeHeight,portfolioHeight,specializationHeight;
         let win = window.pageYOffset
-        //console.log(arr,hHeight,win);
+        console.log(arr,hHeight,win);
         arr.map(item=>{
                     if(item.id ==="home"){  
                 homeHeight = item.height         
@@ -48,36 +48,35 @@ function Home() {
                 aboutHeight = item.height
                     }
                     setHeight({
-                        homeTop:homeHeight,
-                        specializationTop:specializationHeight,
-                        portfolioTop:portfolioHeight,
-                        aboutTop:aboutHeight,
+                        homeTop:Math.floor(homeHeight),
+                        specializationTop:Math.floor(specializationHeight),
+                        portfolioTop:Math.floor(portfolioHeight),
+                        aboutTop:Math.floor(aboutHeight),
                     })
                     return height
         })
-
 
         if(win<height.homeTop){
             locate.hash = '#home'
             history.replace(locate.hash)
         }
-       else if(win>=height.homeTop-hHeight && (win<(height.homeTop + height.specializationTop +hHeight))){
-           //console.log(height.homeTop-hHeight,win);
+       else if(win>=height.homeTop && (win<(height.homeTop + height.specializationTop ))){
+          // console.log(height.homeTop,win);
             locate.hash = '#specialization'
             history.replace(locate.hash)
         }
-     else if(win>=(height.homeTop + height.specializationTop +hHeight) && win<(height.homeTop + height.specializationTop + height.portfolioTop + hHeight)){
-         //console.log(height.homeTop + height.specializationTop +hHeight,win);
+     else if(win>=(height.homeTop + height.specializationTop ) && win<(height.homeTop + height.specializationTop + height.portfolioTop )){
+        // console.log(height.homeTop + height.specializationTop ,win);
             locate.hash = '#portfolio'
             history.replace(locate.hash)
         }
-       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + hHeight) && win<(height.homeTop + hHeight + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
-           //console.log(height.homeTop + height.specializationTop + height.portfolioTop + hHeight,win);
+       else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop ) && win<(height.homeTop  + height.specializationTop + height.portfolioTop + height.aboutTop - 240)){
+          //console.log(height.homeTop + height.specializationTop + height.portfolioTop ,win);
             locate.hash = '#about'
             history.replace(locate.hash)
         }
-        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop + hHeight - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
-            //console.log(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop + hHeight - 240,win);
+        else if(win>=(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
+           // console.log(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240,win);
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
         }
