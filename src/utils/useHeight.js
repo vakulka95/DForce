@@ -5,7 +5,7 @@ import {useState,useCallback} from 'react';
     const [rect, setRect] = useState(null);
     const ref = useCallback(node => {
       if (node !== null) {
-        setTimeout(()=>{  setRect(node.getBoundingClientRect().height)},500)
+        setTimeout(()=>{  setRect(node.getBoundingClientRect().height)},100)
       
       }
     }, []);
