@@ -44,9 +44,10 @@ const First = () => {
                 <div className = 'home-wrap'>
                     <div className='home-intro'>
                         <div className = 'home-header'>
-                            <h1 className = 'home-header-first'>{I18n.t('firstTitleWe')}<span className='animation-one'>{I18n.t('firstTitleAnimationOne')}</span></h1> 
+                            <h1 className = 'home-header-first'>{I18n.t('firstTitleWe')} <span className='animation-one'>{I18n.t('firstTitleAnimationOne')}</span></h1> 
                             <span className='animation-two'>{I18n.t('firstTitleAnimationTwo')}</span>
-                            <span className='animation-three'>{I18n.t('firstTitleAnimationThree')}</span>
+                            {/* {console.log(window.location.pathname === '/en')} */}
+                            <span className={window.location.pathname === '/en' ? "animation-three-en" : 'animation-three'}>{I18n.t('firstTitleAnimationThree')}</span>
                         </div>
 
                         <p className = 'home-paragraph'>{I18n.t('firstDescription')}</p>

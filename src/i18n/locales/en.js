@@ -6,7 +6,7 @@ export default {
     headerLinkContact: "Contact Us",
 
     firstTitleWe: "We",
-    firstTitleAnimationOne: "create the future!",
+    firstTitleAnimationOne: "are creating the future!",
     firstTitleAnimationTwo: "are engineers",
     firstTitleAnimationThree: "make thıngs happen",
     firstDescription: "Dforce is a leading IT company, which creates digital products to improve people’s lives and experiences. We effectively help our clients to implement their most ambitious ideas!",
