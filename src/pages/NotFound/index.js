@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.scss'
+import './style.scss';
+import I18n from '../../i18n/I18n';
 
 const NotFound = () => {
 
@@ -9,7 +10,7 @@ const NotFound = () => {
             <div className='notFound-title'>
                 <h2>404</h2>
             </div>
-            <h3>Сторінку не знайдено</h3>
+            <h3>{I18n.t('pageNotFound')}</h3>
             </div>
         </section>
     )

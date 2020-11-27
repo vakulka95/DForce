@@ -508,44 +508,6 @@
       }
 
     }
-    .detail{
-      &-wrap{
-        margin-top: 40px;
-        @media (min-width: 1024px){
-          text-align: center;
-          display: flex;
-          margin: 0 auto;
-          flex-direction: column;
-          margin-top: 50px;
-        }
-        @media (min-width: 1300px){
-          margin-top: 70px;
-        }
-        
-      }
-      &-sub-title{
-        @media (max-width: 768px){
-          text-align: center;
-        }
-        @media (min-width: 1300px){
-          width: 645px;
-        }
-        @media (min-width: 1900px){
-          width: 690px;
-        }
-      }
-      &-text{
-        @media (max-width: 768px){
-          text-align: center;
-        }
-        @media (min-width: 1300px){
-          width: 645px;
-        }
-        @media (min-width: 1900px){
-          width: 690px;
-        }
-      }
-    }
   }
   // **** Detail-about **** //
   .fleX{

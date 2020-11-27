@@ -4,6 +4,8 @@ import SpecItem from '../../SpecItem/SpecItem';
 import useHeight from '../../../utils/useHeight';
 
 
+import I18n from '../../../i18n/I18n';
+import { specItem } from '../../../json/index';
 
 function Specialization({specItems,collectHeight}) {
 
@@ -17,10 +19,10 @@ function Specialization({specItems,collectHeight}) {
     return (
         <section ref={ref} className='specialization main-padding'  id='specialization'>
             <div className='container'>
-            <h2 className='title-of-block'>Наша спеціалізація</h2>
+            <h2 className='title-of-block'>{I18n.t('specTitle')}</h2>
                 <div className='spec-section'>
                     {
-                    specItems.map(({ 
+                    specItem.map(({ 
                         id,
                         image,
                         alt,

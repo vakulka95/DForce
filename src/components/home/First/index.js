@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.scss';
 import useHeight from '../../../utils/useHeight';
+//import {useHistory,useLocation }from 'react-router-dom';
+import I18n from '../../../i18n/I18n';
 
 
 const First = ({collectHeight}) => {
@@ -17,12 +19,13 @@ const First = ({collectHeight}) => {
                 <div className = 'home-wrap'>
                     <div className='home-intro'>
                         <div className = 'home-header'>
-                            <h1 className = 'home-header-first'>Ми <span className='animation-one'>створюємо майбутнє!</span></h1> 
-                            <span className='animation-two'>інженери</span>
-                            <span className='animation-three'>досягаємо цілей</span>
+                            <h1 className = 'home-header-first'>{I18n.t('firstTitleWe')} <span className='animation-one'>{I18n.t('firstTitleAnimationOne')}</span></h1> 
+                            <span className='animation-two'>{I18n.t('firstTitleAnimationTwo')}</span>
+                            {/* {console.log(window.location.pathname === '/en')} */}
+                            <span className={window.location.pathname === '/en' ? "animation-three-en" : 'animation-three'}>{I18n.t('firstTitleAnimationThree')}</span>
                         </div>
 
-                        <p className = 'home-paragraph'>Dforce — це провідна ІТ-компанія, яка створює цифрові продукти для покращення життя й досвіду людей. Ми допомагаємо нашим клієнтам ефективно реалізувати найамбітніші ідеї!</p>
+                        <p className = 'home-paragraph'>{I18n.t('firstDescription')}</p>
                     </div>                                 
                     <div className='home-animation'>
                         {/* {animation ?  */}

@@ -3,6 +3,8 @@ import InProgress from '../../components/InProgress/InProgress';
 import './style.scss';
 import { Link } from 'react-router-dom';
 import ScrollToTop from '../../utils/ScrollToTop';
+import I18n from '../../i18n/I18n';
+
 
 
 const AllProjects = () => {
@@ -11,7 +13,7 @@ const AllProjects = () => {
         <ScrollToTop>
         <section className='allContainer'>
             <div className='container'>
-            <h2 className='allProjects-title'>Провідні проекти</h2>
+            <h2 className='allProjects-title'>{I18n.t('allProjects')}</h2>
             <div className='mainProjects'>
                 {/* {renderPhoto(tellmeProject)}  */}
 
@@ -39,7 +41,7 @@ const AllProjects = () => {
                     </a> */}
                 </div>
             </div>
-            <h2 className='allProjects-title'>Веб-сайти</h2>
+            <h2 className='allProjects-title'>{I18n.t('webSites')}</h2>
             <div className='secondaryProjects'>
                 {/* {renderPhoto(itSeemsProject)} */}
 

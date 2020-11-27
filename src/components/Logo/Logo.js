@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 //import {Link} from 'react-router-dom';
 import './style.scss';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+//import I18n from '../../i18n/I18n';
 
 function Logo({logoClass, parentClass, mobile}) {
     return (

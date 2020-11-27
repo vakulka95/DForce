@@ -9,6 +9,7 @@ import GeneralModal from '../../components/Modal/GeneralModal';
 import Loader from '../Loader';
 import Message from '../Modal/templatesModal/Message';
 import MessageOk from '../Modal/templatesModal/MessageOk';
+import I18n from '../../i18n/I18n';
 
 function FormBlock() {
     const [modal, setModal] = useState(true);
@@ -50,7 +51,7 @@ function FormBlock() {
                         img = {success?'./images/modalImage.svg':'./images/Error.svg'}
                         alt = {success ?'success':'error'}
                         onClose = {onClose}
-                        title={success?'Ваше повідомлення відправлено':'Заявку не надіслано'}>
+                        title={success ? I18n.t('modalTitleOk') : I18n.t('modalTitleError')}>
                             {success && <MessageOk/>}
                             {error && <Message />}   
                         </GeneralModal>
@@ -177,11 +178,11 @@ function FormBlock() {
         <div className={(error && modal) ? 'form error' : 'form'} >
             {(load || error || success) && renderModal()}
             <div className='form-wrap'>
-                <h3 className='form-title'>Залиште свої контактні дані, і ми зв'яжемося з Вами!</h3>
+                <h3 className='form-title'>{I18n.t('formTitle')}</h3>
                 <form>
                     <div className='form-group'>
                         <label>
-                           <span>Ваше ім'я:</span>
+                           <span>{I18n.t('formName')}</span>
                             <input type='text' name='name' className={formData.nameInvalid ? 'form-input error' : 'form-input '} placeholder='Name' onChange={onChange} value={formData.name}/>
                             {/* {formData.nameInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>} */}
                             <div style={formData.nameInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.nameInvalid}</p></div>
@@ -189,7 +190,7 @@ function FormBlock() {
                     </div>
                     <div className='form-group'>
                         <label>
-                        <span>Ваш телефон:</span>
+                        <span>{I18n.t('formPhone')}</span>
                             <input type='text' name='phone' className={formData.phoneInvalid ? 'form-input error' : 'form-input '} placeholder='+380' onChange={onChange}  value={formData.phone} />
                             {/* {formData.phoneInvalid && <div><p style={{ color: 'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>} */}
                             <div style={formData.phoneInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.phoneInvalid}</p></div>
@@ -197,7 +198,7 @@ function FormBlock() {
                     </div>
                     <div className='form-group'>
                         <label>
-                        <span>Ваша пошта:</span>
+                        <span>{I18n.t('formEmail')}</span>
                             <input type='email' name='email' className={formData.emailInvalid ? 'form-input error' : 'form-input '} placeholder='Mail@example.com' onChange={onChange}  value={formData.email} />
                             {/* {formData.emailInvalid && <div style={{visibility:'hidden'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.emailInvalid}</p></div>} */}
                             <div style={formData.emailInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px' }}>{formData.emailInvalid}</p></div>
@@ -205,12 +206,12 @@ function FormBlock() {
                     </div>
                     <div className='form-group'>
                         <label>
-                        <span>Залиште свій коментар:</span>
+                        <span>{I18n.t('formComment')}</span>
                             <textarea style={{ resize: 'none' }} className={formData.commentInvalid? 'form-group-textarea-error':'form-group-textarea'} name='comment' onChange={onChange}  value={formData.comment}></textarea>
                             <div style={formData.commentInvalid ? {visibility:'visible', height: '35px'} : {visibility:'hidden', height: '35px'}}><p style={{ color:'red', fontSize: '14px', lineHeight: '20px' }}>{formData.commentInvalid}</p></div>
                         </label>
                     </div>
-                    <Button submit={submit} disable={disable} onClick={sendMail} message={'Замовити консультацію'}/>
+                    <Button submit={submit} disable={disable} onClick={sendMail} message={I18n.t('buttonForm')}/>
                 </form>
             </div>
         </div>
