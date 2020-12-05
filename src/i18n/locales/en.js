@@ -6,9 +6,9 @@ export default {
     headerLinkContact: "Contact Us",
 
     firstTitleWe: "We",
-    firstTitleAnimationOne: "are creating the future!",
+    firstTitleAnimationOne: "create the future!",
     firstTitleAnimationTwo: "are engineers",
-    firstTitleAnimationThree: "make thıngs happen",
+    firstTitleAnimationThree: "make things happen",
     firstDescription: "Dforce is a leading IT company, which creates digital products to improve people’s lives and experiences. We effectively help our clients to implement their most ambitious ideas!",
 
     specTitle: "Our Expertise",
@@ -26,6 +26,8 @@ export default {
     formPhone: "Telephone:",
     formEmail: "Email:",
     formComment: "Please, leave your comment:",
+
+    
 
     modalTitleOk: "Your request has been submitted",
     modalMessageOk: "Thank you for trusting us! We value your time, so our specialists will contact you shortly.",
