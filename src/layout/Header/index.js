@@ -50,7 +50,7 @@ const Header = () =>{
 
         window.localStorage.setItem('lg', lg);
         window.location = lg === 'uk' ? '/' : `/${lg}`;
-
+        // console.log(lg)
     };
     
     return(
@@ -59,6 +59,8 @@ const Header = () =>{
                 <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo-inner ' mobile={mobileNav?activateMobileNav:null}/>
                 <button lang = 'uk' onClick={onChangeLang}>UK</button>
                 <button lang = 'en' onClick={onChangeLang}>EN</button>
+                <button lang = 'ru' onClick={onChangeLang}>RU</button>
+
             <div className = {`header-navigation${mobileNav? '-active': ''}`}>
                 <ul className = 'header-navigation-list'>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
