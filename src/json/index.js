@@ -7,6 +7,7 @@ import contactItemEn from './en/contactItemEn';
 import contactItemRu from './ru/contactItemRu';
 import itseems from './itseems.json';
 import itseemsEn from './en/itseemsEn.json';
+import itseemsRu from './ru/itseemsRu.json';
 import itSeemsProject from './itSeemsProject.json';
 import portfolioItems from './portfolioItems';
 import portfolioItemsEn from './en/portfolioItemsEn';
@@ -34,11 +35,11 @@ switch (LANG){
         contactIt = contactItemRu;
         portfolioItem = portfolioItemsRu;
         portfolioItemDisabled = portfolioItemsDisabledRu;
-        // itseem = itseemsEn;
+        itseem = itseemsRu;
         telme = tellmeRu;
-        // itSeemProject = itSeemsProject;
-        // telmeProject = tellmeProject;
-        // tecnology = technologies;
+        itSeemProject = itSeemsProject;
+        telmeProject = tellmeProject;
+        tecnology = technologies;
         break;
     case 'en':
         aboutItem = aboutItemsEn;
