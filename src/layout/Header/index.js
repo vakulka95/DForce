@@ -4,7 +4,9 @@ import Logo from '../../components/Logo/Logo';
 import { useLocation } from 'react-router-dom';
 import './style.scss';
 import Button from '../../components/Button';
-import { useOnScroll } from '../../utils/useOnScroll';
+
+import {useOnScroll} from '../../utils/useOnScroll';
+import useHeight from '../../utils/useHeight';
 import I18n from '../../i18n/I18n';
 import { LANG } from "../../utils/constants";
 
@@ -12,21 +14,29 @@ import { LANG } from "../../utils/constants";
 const Header = () => {
     const [mobileNav, setMobileNav] = useState(false);
     const usingScrolling = useOnScroll();
-    const [activeLang, setActiveLang] = useState(false)
+    const [activeLang, setActiveLang] = useState(false);
+    const [rect, ref] = useHeight()
+
+
+        if(rect!==null){
+          localStorage.setItem('height',rect)
+    }
+    //console.log(rect,block);
 
     let num = 0;
 
-    if (mobileNav) {
-        num = -150;
-    } else num = -240
-    const activateMobileNav = () => {
-        setMobileNav((prev) => !prev)
-    }
+    if (mobileNav){
+        num=-88;
+    } else num=-240
+
+   const activateMobileNav = () => {
+       setMobileNav((prev)=>!prev)
+   }
 
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = num;
-        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+        const yOffset = num; 
+        window.scrollTo({ top: yCoordinate + yOffset}); 
     }
 
     let pathName = useLocation().pathname;
@@ -53,53 +63,53 @@ const Header = () => {
         window.location = lg === 'uk' ? '/' : `/${lg}`;
         // console.log(lg)
     };
-
     const chooseLanguage = () => {
         setActiveLang(!activeLang)
     }
-    return (
-        <header style={usingScrolling ? { background: "#0D0E12", zIndex: "500" } : null} className={`header${!opasity ? '' : '-opasity'}${mobileNav ? '-active' : ''}`}>
-            <div className={`container header-container${mobileNav ? '-active' : ''}`}>
-                <Logo parentClass={`header-logo${mobileNav ? '-active' : ''}`} logoClass='header-logo-inner ' mobile={mobileNav ? activateMobileNav : null} />
-                {/* <button lang = 'uk' onClick={onChangeLang}>UK</button>
-                <button lang = 'en' onClick={onChangeLang}>EN</button>
-                <button lang = 'ru' onClick={onChangeLang}>RU</button> */}
 
-                <div className={`header-navigation${mobileNav ? '-active' : ''}`}>
-                    <ul className='header-navigation-list'>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            <NavLink className='header-navigation-link'
-                                onClick={mobileNav ? activateMobileNav : null}
-                                smooth activeClassName={'header-navigation-link-active'}
-                                to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
-                            </NavLink></li>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            <NavLink className='header-navigation-link'
-                                onClick={mobileNav ? activateMobileNav : null}
-                                smooth activeClassName={'header-navigation-link-active'}
-                                to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
-                            </NavLink></li>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            <NavLink className='header-navigation-link'
-                                onClick={mobileNav ? activateMobileNav : null}
-                                smooth activeClassName={'header-navigation-link-active'}
-                                to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
-                            </NavLink></li>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            <NavLink className='header-navigation-link'
-                                onClick={mobileNav ? activateMobileNav : null}
-                                smooth activeClassName={'header-navigation-link-active'}
-                                to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
-                            </NavLink></li>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            <NavLink className='header-navigation-link'
-                                onClick={mobileNav ? activateMobileNav : null}
-                                activeClassName={'header-navigation-link-active'}
-                                scroll={el => scrollWidthOffset(el)}
-                                to="#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
-                            </NavLink></li>
-                        <li className={`header-navigation-item${mobileNav ? '-active' : ''}`}>
-                            {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={I18n.t('buttonModal')} />}
+    return(
+        <header ref={ref} style={usingScrolling?{background:"#0D0E12",zIndex:"500"}:null} className = {`header${!opasity? '': '-opasity'}${mobileNav? '-active': ''}`}>
+            <div className={`container header-container${mobileNav? '-active':''}`}>
+                <Logo parentClass={`header-logo${mobileNav?'-active':''}`} logoClass='header-logo-inner ' mobile={mobileNav?activateMobileNav:null}/>
+
+            <div className = {`header-navigation${mobileNav? '-active': ''}`}>
+                <ul className = 'header-navigation-list'>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        <NavLink className = 'header-navigation-link'
+                        onClick={mobileNav? activateMobileNav:null}
+                         activeClassName = { 'header-navigation-link-active' }
+                        to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
+                        </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        <NavLink className = 'header-navigation-link'
+                        onClick={mobileNav? activateMobileNav:null} 
+                         activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
+                        to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
+                        </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        <NavLink className = 'header-navigation-link'
+                        onClick={mobileNav? activateMobileNav:null}
+                         activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
+                        to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
+                        </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        <NavLink className = 'header-navigation-link'
+                        onClick={mobileNav? activateMobileNav:null} 
+                         activeClassName = { 'header-navigation-link-active' }
+                        scroll={mobileNav? el => scrollWidthOffset(el):null}
+                        to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
+                        </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        <NavLink className = 'header-navigation-link'
+                        onClick={mobileNav? activateMobileNav:null} 
+                        activeClassName = { 'header-navigation-link-active' }
+                        scroll={el => scrollWidthOffset(el)}
+                        to="#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
+                        </NavLink></li>
+                    <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
+                        {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={I18n.t('buttonModal')}/>}
                         </li>
                     </ul>
                     <div className='lang-wrapper'>

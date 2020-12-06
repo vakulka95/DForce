@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
-import {useHistory,useLocation }from 'react-router-dom';
+//import {useHistory,useLocation }from 'react-router-dom';
 import contactItem from '../../../json/contactItem';
 import I18n from '../../../i18n/I18n';
 
 
 const ForCustomer = () => {
-    let history = useHistory()
-    let locate = useLocation()
+    // let history = useHistory()
+    // let locate = useLocation()
 
-    const [position,setPosition] = useState({ y: null })
+    // const [position,setPosition] = useState({ y: null })
 
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){  
-            locate.hash = '#forcustomer'
-            history.replace(locate.hash)
-            }
-        if(locate.pathname!=='/'){
-            locate.hash = `${locate.pathname}`
-            history.push(locate.hash)
-        }
-    }
+    // const handleMouseMove = (e)=> {
+    //     setPosition({
+    //       y: e.clientY
+    //     });
+    //     if(position.y){  
+    //         locate.hash = '#forcustomer'
+    //         history.replace(locate.hash)
+    //         }
+    //     if(locate.pathname!=='/'){
+    //         locate.hash = `${locate.pathname}`
+    //         history.push(locate.hash)
+    //     }
+    // }
 
 
     return (
-        <section className='for-customer' id='forcustomer' onMouseOver={handleMouseMove}>
+        <section className='for-customer' id='forcustomer' >
             <div className='container'>
                 <div className='flex'>
                     <div className='for-customer-info'>

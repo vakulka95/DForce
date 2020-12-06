@@ -2,6 +2,7 @@ import React from 'react';
 import InProgress from '../../components/InProgress/InProgress';
 import './style.scss';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../../utils/ScrollToTop';
 import I18n from '../../i18n/I18n';
 
 
@@ -9,6 +10,7 @@ import I18n from '../../i18n/I18n';
 const AllProjects = () => {
 
     return (
+        <ScrollToTop>
         <section className='allContainer'>
             <div className='container'>
             <h2 className='allProjects-title'>{I18n.t('allProjects')}</h2>
@@ -76,6 +78,7 @@ const AllProjects = () => {
             </div>
             </div>
         </section>
+        </ScrollToTop>
     )
 }
 

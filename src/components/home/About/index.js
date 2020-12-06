@@ -1,29 +1,25 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './style.scss';
 import SpecItem from '../../../components/SpecItem/SpecItem';
-import {useHistory,useLocation }from 'react-router-dom';
+//import about from '../../../json/aboutItems.js';
+import useHeight from '../../../utils/useHeight';
+//import {useHistory,useLocation }from 'react-router-dom';
 import I18n from '../../../i18n/I18n';
 import { aboutItem } from '../../../json/index';
 
 
-const About = () => {
-    let history = useHistory()
-    let locate = useLocation()
 
-    const [position,setPosition] = useState({ y: null })
+const About = ({collectHeight}) => {
 
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#about'
-            history.replace(locate.hash)
-            }
+    const [rect, ref] = useHeight()
+    const block = {id:'about', height:rect}
+
+        if(rect){
+        collectHeight(block)
     }
-     
+         
     return (
-        <section className='about main-padding' id='about' onMouseOver={handleMouseMove}>
+        <section ref={ref} className='about main-padding' id='about'>
             <div className='container'>
                 <h2 className='title-of-block'>{I18n.t('aboutTitle')}</h2>
                 <p className='about-content text'>{I18n.t('aboutDescription')}</p>

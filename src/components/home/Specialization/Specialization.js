@@ -1,32 +1,23 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import './style.scss';
-import {useHistory,useLocation }from 'react-router-dom';
 import SpecItem from '../../SpecItem/SpecItem';
+import useHeight from '../../../utils/useHeight';
+
+
 import I18n from '../../../i18n/I18n';
 import { specItem } from '../../../json/index';
-function Specialization() {
-    let history = useHistory()
-    let locate = useLocation()
 
+function Specialization({specItems,collectHeight}) {
 
-    const [position,setPosition] = useState({ y: null })
-
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#specialization'
-            history.replace(locate.hash)
-            }
+    const [rect, ref] = useHeight()
+    const block = {id:'specialization', height:rect}
+    
+        if(rect){
+        collectHeight(block)
     }
 
-    useEffect(()=>{
-        window.addEventListener('mouseOver', handleMouseMove)
-        return ()=> window.removeEventListener('mouseOver', handleMouseMove)
-    } ) 
     return (
-        <section className='specialization main-padding' id='specialization' onMouseOver={handleMouseMove}>
+        <section ref={ref} className='specialization main-padding'  id='specialization'>
             <div className='container'>
             <h2 className='title-of-block'>{I18n.t('specTitle')}</h2>
                 <div className='spec-section'>
@@ -57,5 +48,6 @@ function Specialization() {
         </section>
     )
 }
+
 
 export default Specialization

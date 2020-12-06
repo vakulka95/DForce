@@ -1,45 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.scss';
-import {useHistory,useLocation }from 'react-router-dom';
+import useHeight from '../../../utils/useHeight';
+//import {useHistory,useLocation }from 'react-router-dom';
 import I18n from '../../../i18n/I18n';
 
-const First = () => {
-    let history = useHistory()
-    let locate = useLocation()
 
-    // const [animation, setAnimation] = useState(false)
+const First = ({collectHeight}) => {
 
-    
-
-    
-    // const changeAnimation = (e) => {
-    //     console.log(window.innerWidth);
-    //     if(window.innerWidth > 319 && window.innerWidth < 1025){
-    //         setAnimation(true)
-    //     }
-    //     else{
-    //         setAnimation(false)
-    //     }
-    // }
-    // useEffect(() => {
-    //     window.addEventListener('resize', changeAnimation());
-    //   });
-        
-
-    const [position,setPosition] = useState({ y: null })
-
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#home'
-            history.replace(locate.hash)
-            }
-    }
-          
+    const [rect, ref] = useHeight()
+    const block = {id:'home', height:rect}
+        if(rect){
+        collectHeight(block)
+    } 
+                
     return (
-        <section className = 'home' id='home' onMouseEnter={handleMouseMove}>
+        <section ref={ref} className = 'home' id='home'>
             <div className='container'>
                 <div className = 'home-wrap'>
                     <div className='home-intro'>

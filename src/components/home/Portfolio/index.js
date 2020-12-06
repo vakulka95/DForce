@@ -1,31 +1,26 @@
-import React,{useState} from 'react';
-import {useHistory,useLocation }from 'react-router-dom';
+import React from 'react';
 import PortfolioItems from '../../../components/PortfolioItem/PortfolioItem';
 import Button from '../../Button';
 import './style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import useHeight from '../../../utils/useHeight';
+
 import I18n from '../../../i18n/I18n';
 import { portfolioItem, portfolioItemDisabled } from '../../../json/index';
 import { URL_LANG } from '../../../utils/constants';
-const Portfolio = () => {
-    let history = useHistory()
-    let locate = useLocation()
 
-    const [position,setPosition] = useState({ y: null })
+const Portfolio = ({portfolioItems,collectHeight}) => {
 
-    const handleMouseMove = (e)=> {
-        setPosition({
-          y: e.clientY
-        });
-        if(position.y){ 
-            locate.hash = '#portfolio'
-            history.replace(locate.hash)
-            }
+    const [rect, ref] = useHeight()
+    const block = {id:'portfolio', height:rect}
+
+        if(rect){
+        collectHeight(block)
     }
 
     return (
-        <section className='portfolio main-padding' id='portfolio' onMouseOver={handleMouseMove}>
+        <section ref={ref} className='portfolio main-padding' id='portfolio'>
             <div className='container'>
             <h2 className='portfolio-title'>{I18n.t('portfolioTitle')}</h2>
                 <div className='portfolio-list'>
