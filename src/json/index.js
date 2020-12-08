@@ -18,7 +18,7 @@ import portfolioItemsDisabledRu from './ru/portfolioItemsDisabledRu';
 import specItems from './specItems';
 import specItemsEn from './en/specItemsEn';
 import specItemsRu from './ru/specItemsRu';
-// import tech from './tech.json';
+import tech from './tech.json';
 import technologies from './technologies.json';
 import tellme from './tellme.json';
 import tellmeEn from './en/tellmeEn.json';
@@ -63,7 +63,7 @@ switch (LANG){
         itSeemProject = itSeemsProject;
         telme = tellme;
         telmeProject = tellmeProject;
-        tecnology = technologies;
+        tec = tech;
 
         break;
 }
