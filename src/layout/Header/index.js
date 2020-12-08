@@ -77,28 +77,28 @@ const Header = () => {
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                          activeClassName = { 'header-navigation-link-active' }
-                        to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
+                        to="#home" ><span>{I18n.t('headerLinkHome')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
+                        to="#specialization" ><span>{I18n.t('headerLinkServices')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
+                        to="#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
+                        to="#about" ><span>{I18n.t('headerLinkAbout')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
