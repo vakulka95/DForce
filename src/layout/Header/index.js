@@ -42,8 +42,7 @@ const Header = () => {
     let pathName = useLocation().pathname;
     const opasityHeader = () => {
 
-        if (pathName === '/' || pathName === '/en' || pathName === '/ru') {
-
+        if (pathName === '/' || pathName === '/en/' || pathName === '/ru/') {
             return true
         } else {
             return false
@@ -115,8 +114,8 @@ const Header = () => {
                     <div className='lang-wrapper'>
                         <div className={activeLang ? "icon-language active-lang" : "icon-language"} onClick={chooseLanguage}></div>
                         <div className="lang-list" style={activeLang || mobileNav ? {display: 'flex'} : {display: 'none'}}>
-                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en' ? 'lang-link __active' : 'lang-link'}>EN</button>
-                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru' ? 'lang-link __active' : 'lang-link'}>RU</button>
+                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en/' ? 'lang-link __active' : 'lang-link'}>EN</button>
+                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru/' ? 'lang-link __active' : 'lang-link'}>RU</button>
                             <button lang = 'uk' onClick={onChangeLang} className={window.location.pathname === '/' ? 'lang-link __active' : 'lang-link'}>UK</button>
                         </div>
                     </div>
