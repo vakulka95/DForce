@@ -163,7 +163,7 @@ function Home() {
             <Portfolio collectHeight={myRef} portfolioItems={portfolioItems} id='portfolio' />
             <About collectHeight={myRef} id='about' />
         </Fragment>
-        // </ScrollToTop> 
+        //</ScrollToTop>  
 
     )
 }

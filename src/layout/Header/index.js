@@ -42,7 +42,7 @@ const Header = () => {
     let pathName = useLocation().pathname;
     const opasityHeader = () => {
 
-        if (pathName === '/' || pathName === '/en/' || pathName === '/ru/') {
+        if (pathName === '/' || pathName.search('/en') || pathName.search('/ru')    ) {
             return true
         } else {
             return false
@@ -76,8 +76,8 @@ const Header = () => {
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
-                         activeClassName = { 'header-navigation-link-active' }
-                        to="#home" ><span>{I18n.t('headerLinkHome')}</span>
+                        activeClassName = { 'header-navigation-link-active' }
+                        to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
