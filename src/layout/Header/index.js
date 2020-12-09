@@ -105,7 +105,7 @@ const Header = () => {
                         onClick={mobileNav? activateMobileNav:null} 
                         activeClassName = { 'header-navigation-link-active' }
                         scroll={el => scrollWidthOffset(el)}
-                        to="/#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
+                        to="#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={I18n.t('buttonModal')}/>}
@@ -114,8 +114,8 @@ const Header = () => {
                     <div className='lang-wrapper'>
                         <div className={activeLang ? "icon-language active-lang" : "icon-language"} onClick={chooseLanguage}></div>
                         <div className="lang-list" style={activeLang || mobileNav ? {display: 'flex'} : {display: 'none'}}>
-                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en/' ? 'lang-link __active' : 'lang-link'}>EN</button>
-                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru/' ? 'lang-link __active' : 'lang-link'}>RU</button>
+                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en' ? 'lang-link __active' : 'lang-link'}>EN</button>
+                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru' ? 'lang-link __active' : 'lang-link'}>RU</button>
                             <button lang = 'uk' onClick={onChangeLang} className={window.location.pathname === '/' ? 'lang-link __active' : 'lang-link'}>UK</button>
                         </div>
                     </div>
