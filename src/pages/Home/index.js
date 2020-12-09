@@ -156,7 +156,7 @@ function Home() {
     })
     return (
 
-        <ScrollToTop>
+      <ScrollToTop>
         <Fragment>
             <First collectHeight={myRef} id='home' />
             <Specialization collectHeight={myRef} specItems={specItems} id='specialization' />

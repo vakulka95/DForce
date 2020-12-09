@@ -59,7 +59,7 @@ const Header = () => {
         }
 
         window.localStorage.setItem('lg', lg);
-        window.location = lg === 'uk' ? '/' : `/${lg}`;
+        window.location = lg === 'uk' ? '/' : `/${lg}/`;
         // console.log(lg)
     };
     const chooseLanguage = () => {
