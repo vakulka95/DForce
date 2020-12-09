@@ -3,7 +3,7 @@ import ContactItem from '../../../components/ContactItem/ContactItem';
 import FormBlock from '../../../components/FormBlock/FormBlock';
 import './style.scss';
 //import {useHistory,useLocation }from 'react-router-dom';
-import contactItem from '../../../json/contactItem';
+import {contactIt} from '../../../json/index';
 import I18n from '../../../i18n/I18n';
 
 
@@ -35,7 +35,7 @@ const ForCustomer = () => {
                     <div className='for-customer-info'>
                         <h2 className='for-customer-title'>{I18n.t('forCustomerTitle')}</h2>
                         <div className='for-customer-contacts'>
-                            {contactItem.map(({
+                            {contactIt.map(({
                                 id,
                                 image,
                                 alt,

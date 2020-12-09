@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss'
 import technologies from '../../json/technologies.json';
 import Button from '../../components/Button';
-import ScrollToTop from '../../utils/ScrollToTop';
+// import ScrollToTop from '../../utils/ScrollToTop';
 import Technologies from '../../components/Technologies/Technologies';
 import I18n from '../../i18n/I18n';
 import { itseem } from '../../json/index';
@@ -103,11 +103,11 @@ function ItSeems() {
 
     };
     return (
-        <ScrollToTop>
+        // <ScrollToTop>
         <section className='detail2'>
             { renderLoop()}
         </section>
-        </ScrollToTop>
+       // </ScrollToTop>
     );
 }
 

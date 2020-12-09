@@ -2,7 +2,7 @@ import React from 'react';
 // import tellme from '../../json/tellme.json';
 import './style.scss'
 import Button from '../../components/Button';
-import ScrollToTop from '../../utils/ScrollToTop';
+// import ScrollToTop from '../../utils/ScrollToTop';
 import Technologies from '../../components/Technologies/Technologies';
 import I18n from '../../i18n/I18n';
 import { telme } from '../../json/index';
@@ -115,11 +115,11 @@ const color = {
 
     };
     return (
-        <ScrollToTop>
+        // <ScrollToTop>
         <section className='detail'>
             { renderLoop()}
         </section>
-        </ScrollToTop>
+        // </ScrollToTop>
     );
 }
 

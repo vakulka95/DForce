@@ -84,28 +84,28 @@ const Header = () => {
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="#specialization" ><span>{I18n.t('headerLinkServices')}</span>
+                        to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
+                        to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="#about" ><span>{I18n.t('headerLinkAbout')}</span>
+                        to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                         activeClassName = { 'header-navigation-link-active' }
                         scroll={el => scrollWidthOffset(el)}
-                        to="#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
+                        to="/#forcustomer" ><span>{I18n.t('headerLinkContact')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         {mobileNav && <Button scroll={scrollWidthOffset} onClick={activateMobileNav} toForm message={I18n.t('buttonModal')}/>}
@@ -120,7 +120,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className='header-media'><button className={mobileNav ? 'header-media-x' : 'header-media-button'} onClick={activateMobileNav}><img src={mobileNav ? './images/X.png' : './images/mobileNav.svg'} alt="button" /></button></div></div>
+                <div className='header-media'><button className={mobileNav ? 'header-media-x' : 'header-media-button'} onClick={activateMobileNav}><img src={mobileNav ? '../images/X.png' : '../images/mobileNav.svg'} alt="button" /></button></div></div>
         </header>
     )
 }
