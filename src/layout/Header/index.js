@@ -77,28 +77,28 @@ const Header = () => {
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                         activeClassName = { 'header-navigation-link-active' }
-                        to="/#home" ><span>{I18n.t('headerLinkHome')}</span>
+                        to="#home" ><span>{I18n.t('headerLinkHome')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#specialization" ><span>{I18n.t('headerLinkServices')}</span>
+                        to="#specialization" ><span>{I18n.t('headerLinkServices')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null}
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
+                        to="#portfolio" ><span>{I18n.t('headerLinkPortfolio')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
                         onClick={mobileNav? activateMobileNav:null} 
                          activeClassName = { 'header-navigation-link-active' }
                         scroll={mobileNav? el => scrollWidthOffset(el):null}
-                        to="/#about" ><span>{I18n.t('headerLinkAbout')}</span>
+                        to="#about" ><span>{I18n.t('headerLinkAbout')}</span>
                         </NavLink></li>
                     <li className = {`header-navigation-item${mobileNav? '-active': ''}`}>
                         <NavLink className = 'header-navigation-link'
@@ -114,8 +114,8 @@ const Header = () => {
                     <div className='lang-wrapper'>
                         <div className={activeLang ? "icon-language active-lang" : "icon-language"} onClick={chooseLanguage}></div>
                         <div className="lang-list" style={activeLang || mobileNav ? {display: 'flex'} : {display: 'none'}}>
-                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en' ? 'lang-link __active' : 'lang-link'}>EN</button>
-                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru' ? 'lang-link __active' : 'lang-link'}>RU</button>
+                            <button lang = 'en' onClick={onChangeLang} className={window.location.pathname === '/en/' ? 'lang-link __active' : 'lang-link'}>EN</button>
+                            <button lang = 'ru' onClick={onChangeLang} className={window.location.pathname === '/ru/' ? 'lang-link __active' : 'lang-link'}>RU</button>
                             <button lang = 'uk' onClick={onChangeLang} className={window.location.pathname === '/' ? 'lang-link __active' : 'lang-link'}>UK</button>
                         </div>
                     </div>

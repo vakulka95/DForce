@@ -6,7 +6,7 @@ import About from '../../components/home/About';
 import Portfolio from '../../components/home/Portfolio';
 import specItems from '../../json/specItems';
 import portfolioItems from '../../json/portfolioItems';
-// import ScrollToTop from '../../utils/ScrollToTop';
+import ScrollToTop from '../../utils/ScrollToTop';
 
 
 function Home() {
@@ -60,77 +60,77 @@ function Home() {
         })
 
         if (win < height.homeTop - hHeight) {
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#home'
             history.replace(locate.hash)
 
         }
         else if (win >= height.homeTop - hHeight && (win < (height.homeTop + height.specializationTop - hHeight))) {
             // console.log(height.homeTop,win);
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#specialization'
             history.replace(locate.hash)
 
         }
         else if (win >= (height.homeTop + height.specializationTop - hHeight) && win < (height.homeTop + height.specializationTop + height.portfolioTop - hHeight)) {
             // console.log(height.homeTop + height.specializationTop ,win);
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#portfolio'
             history.replace(locate.hash)
 
         }
         else if (win >= (height.homeTop + height.specializationTop + height.portfolioTop - hHeight) && win < (height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240)) {
             //console.log(height.homeTop + height.specializationTop + height.portfolioTop ,win);
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#about'
             history.replace(locate.hash)
 
         }
         else if (win >= (height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240) && height.homeTop && height.specializationTop && height.portfolioTop && height.aboutTop) {
             // console.log(height.homeTop + height.specializationTop + height.portfolioTop + height.aboutTop - 240,win);
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#forcustomer'
             history.replace(locate.hash)
 
         }
         else {
-            // if(lg === 'en'){
-            //     locate.pathname = '/en/'
-            // }
+            if(lg === 'en'){
+                locate.pathname = '/en/'
+            }
 
-            // if(lg === 'ru'){
-            //     locate.pathname = '/ru/'
-            // }
+            if(lg === 'ru'){
+                locate.pathname = '/ru/'
+            }
             locate.hash = '#home'
             history.replace(locate.hash)
         }
@@ -156,14 +156,14 @@ function Home() {
     })
     return (
 
-        // <ScrollToTop>
+        <ScrollToTop>
         <Fragment>
             <First collectHeight={myRef} id='home' />
             <Specialization collectHeight={myRef} specItems={specItems} id='specialization' />
             <Portfolio collectHeight={myRef} portfolioItems={portfolioItems} id='portfolio' />
             <About collectHeight={myRef} id='about' />
         </Fragment>
-        //</ScrollToTop>  
+        </ScrollToTop>  
 
     )
 }
